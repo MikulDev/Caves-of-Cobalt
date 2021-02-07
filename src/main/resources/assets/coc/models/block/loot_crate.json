@@ -1,0 +1,9 @@
+{
+  "parent": "coc:custom/crate",
+  "textures": {
+    "all": "coc:blocks/crate_top",
+    "particle": "coc:blocks/crate_top",
+    "crate_side": "coc:blocks/crate_side",
+    "crate_top": "coc:blocks/crate_top"
+  }
+}

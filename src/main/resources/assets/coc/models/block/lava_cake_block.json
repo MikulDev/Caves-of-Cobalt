@@ -1,0 +1,8 @@
+{
+  "parent": "coc:custom/lava_cake",
+  "textures": {
+    "all": "coc:blocks/lava_cake",
+    "particle": "coc:blocks/lava_cake",
+    "lava_cake": "coc:blocks/lava_cake"
+  }
+}

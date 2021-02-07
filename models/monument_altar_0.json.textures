@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "monument_altar_bottom": "monument_altar_bottom",
+        "monument_altar_top": "monument_altar_top",
+        "monument_altar_trident": "monument_altar_trident",
+        "monument_altar_side": "monument_altar_side"
+      },
+      "name": "default"
+    }
+  }
+}

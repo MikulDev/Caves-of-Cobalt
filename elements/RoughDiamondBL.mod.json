@@ -1,0 +1,20 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "lumpsmelt2",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:RoughDiamond"
+    },
+    "blastingReturnStack": {
+      "value": "Items.DIAMOND"
+    },
+    "name": "roughdiamondbl",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/heart_of_blizzard",
+    "up": "coc:blocks/heart_of_blizzard",
+    "north": "coc:blocks/heart_of_blizzard",
+    "east": "coc:blocks/heart_of_blizzard",
+    "south": "coc:blocks/heart_of_blizzard",
+    "west": "coc:blocks/heart_of_blizzard",
+    "particle": "coc:blocks/heart_of_blizzard"
+  }
+}

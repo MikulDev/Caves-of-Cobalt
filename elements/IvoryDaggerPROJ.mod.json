@@ -1,0 +1,43 @@
+{
+  "_fv": 15,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "tusk_dagger",
+    "customModelName": "Normal",
+    "name": "Ivory Dagger PROJ",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 5.0,
+    "onRangedItemUsed": {
+      "name": "IvoryDaggerThrow"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:WormTusk"
+    },
+    "bulletModel": "Modelivory_dagger",
+    "customBulletModelTexture": "infusion_table.png",
+    "onBulletHitsBlock": {
+      "name": "IvoryDaggerPROJBlock"
+    }
+  }
+}

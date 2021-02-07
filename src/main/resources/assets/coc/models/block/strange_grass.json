@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/nonglowing_stone",
+    "up": "coc:blocks/mushroom_grass_top",
+    "north": "coc:blocks/mushroom_grass_side",
+    "east": "coc:blocks/mushroom_grass_side",
+    "south": "coc:blocks/mushroom_grass_side",
+    "west": "coc:blocks/mushroom_grass_side",
+    "particle": "coc:blocks/nonglowing_stone"
+  }
+}

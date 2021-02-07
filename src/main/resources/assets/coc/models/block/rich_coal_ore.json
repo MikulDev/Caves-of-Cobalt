@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coc:blocks/rich_coal",
+    "particle": "coc:blocks/rich_coal"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "coc:custom/fake_stalagmite",
+  "textures": {
+    "all": "coc:blocks/stalagmite",
+    "particle": "coc:blocks/stalagmite",
+    "stalagmite_fake_2": "coc:blocks/stalagmite_fake_2",
+    "stalagmite_fake_3": "coc:blocks/stalagmite_fake_3",
+    "stalagmite_fake": "coc:blocks/stalagmite_fake"
+  }
+}

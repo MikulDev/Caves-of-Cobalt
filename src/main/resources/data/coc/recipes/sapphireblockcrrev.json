@@ -1,0 +1,13 @@
+{
+  "group": "uncraftblock",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "coc:sapphire",
+    "count": 9
+  }
+}

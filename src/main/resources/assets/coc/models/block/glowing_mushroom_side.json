@@ -1,0 +1,9 @@
+{
+  "parent": "coc:custom/glowing_mushroom_side",
+  "textures": {
+    "all": "coc:blocks/glowing_mushroom",
+    "particle": "coc:blocks/glowing_mushroom",
+    "glowing_mushroom_side_2": "coc:blocks/glowing_mushroom_side_2",
+    "glowing_mushroom_side": "coc:blocks/glowing_mushroom_side"
+  }
+}

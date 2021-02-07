@@ -1,0 +1,20 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 1.0,
+    "cookingTime": 50,
+    "recipeRetstackSize": 1,
+    "group": "ashroot2",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:AshrootSeed"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:PoppedAshrootSeed"
+    },
+    "name": "ashrootseedsm2",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/rich_diamond",
+    "up": "coc:blocks/rich_diamond",
+    "north": "coc:blocks/rich_diamond",
+    "east": "coc:blocks/rich_diamond",
+    "south": "coc:blocks/rich_diamond",
+    "west": "coc:blocks/rich_diamond",
+    "particle": "coc:blocks/rich_diamond"
+  }
+}

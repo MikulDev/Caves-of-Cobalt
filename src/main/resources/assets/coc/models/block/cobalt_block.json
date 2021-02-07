@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/cobalt_block",
+    "up": "coc:blocks/cobalt_block",
+    "north": "coc:blocks/cobalt_block",
+    "east": "coc:blocks/cobalt_block",
+    "south": "coc:blocks/cobalt_block",
+    "west": "coc:blocks/cobalt_block",
+    "particle": "coc:blocks/cobalt_block"
+  }
+}

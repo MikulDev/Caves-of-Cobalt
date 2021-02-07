@@ -1,0 +1,54 @@
+{
+  "_fv": 15,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "gold_helmet_sapphire",
+    "enableBody": true,
+    "textureBody": "gold_chestplate_sapphire",
+    "enableLeggings": true,
+    "textureLeggings": "gold_leggings_sapphire",
+    "enableBoots": true,
+    "textureBoots": "gold_boots_sapphire",
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "armorTextureFile": "gold__sapphire",
+    "helmetName": "Gold Helmet",
+    "bodyName": "Gold Chestplate",
+    "leggingsName": "Gold Leggings",
+    "bootsName": "Gold Boots",
+    "helmetSpecialInfo": [
+      "§9Sapphire§r"
+    ],
+    "bodySpecialInfo": [
+      "§9Sapphire§r"
+    ],
+    "leggingsSpecialInfo": [
+      "§9Sapphire§r"
+    ],
+    "bootsSpecialInfo": [
+      "§9Sapphire§r"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 4,
+    "damageValueBoots": 2,
+    "enchantability": 35,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

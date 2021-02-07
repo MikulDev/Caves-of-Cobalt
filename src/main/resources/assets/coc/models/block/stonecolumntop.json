@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/stone_column_top",
+    "particle": "coc:blocks/stone_column_top"
+  }
+}

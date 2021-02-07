@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coc:block/jigsaw_block_center"
+    }
+  }
+}

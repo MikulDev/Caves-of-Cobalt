@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/strange_sprouts_2",
+    "particle": "coc:blocks/strange_sprouts_2"
+  }
+}

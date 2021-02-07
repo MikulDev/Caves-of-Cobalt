@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:golden_mushroom"
+    },
+    "title": {
+      "translate": "advancements.golden_antidote_adv.title"
+    },
+    "description": {
+      "translate": "advancements.golden_antidote_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "golden_antidote_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "coc:astrangeplaceadv"
+}

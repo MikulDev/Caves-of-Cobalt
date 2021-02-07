@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/jigsaw_bottom",
+    "up": "coc:blocks/jigsaw_top",
+    "north": "coc:blocks/jigsaw_up",
+    "east": "coc:blocks/jigsaw_up",
+    "south": "coc:blocks/jigsaw_up",
+    "west": "coc:blocks/jigsaw_up",
+    "particle": "coc:blocks/jigsaw_bottom"
+  }
+}

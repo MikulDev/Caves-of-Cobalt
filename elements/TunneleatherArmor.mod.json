@@ -1,0 +1,68 @@
+{
+  "_fv": 15,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "tunneleather_helmet",
+    "enableBody": true,
+    "textureBody": "tunneleather_vest",
+    "enableLeggings": true,
+    "textureLeggings": "tunneleather_leggings",
+    "enableBoots": true,
+    "textureBoots": "tunneleather_boots",
+    "onHelmetTick": {
+      "name": "TunnelhideGiveInsulated"
+    },
+    "onBodyTick": {
+      "name": "TunnelhideGiveInsulated"
+    },
+    "onLeggingsTick": {
+      "name": "TunnelhideGiveInsulated"
+    },
+    "onBootsTick": {
+      "name": "TunnelhideGiveInsulated"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "tunnel_leather_",
+    "helmetName": "Tunnelhide Cap",
+    "bodyName": "Tunnelhide Vest",
+    "leggingsName": "Tunnelhide Trousers",
+    "bootsName": "Tunnelhide Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 7,
+    "damageValueHelmet": 2,
+    "damageValueBody": 3,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.75,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_leather"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:TunnelbugHide"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "darkmirewood",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:mirewood_planks"
+    },
+    "1": {
+      "item": "coc:mirewood_planks"
+    },
+    "2": {
+      "item": "coc:mirewood_planks"
+    },
+    "3": {
+      "item": "coc:mirewood_planks"
+    },
+    "4": {
+      "item": "coc:dormant_sporite"
+    },
+    "5": {
+      "item": "coc:mirewood_planks"
+    },
+    "6": {
+      "item": "coc:mirewood_planks"
+    },
+    "7": {
+      "item": "coc:mirewood_planks"
+    },
+    "8": {
+      "item": "coc:mirewood_planks"
+    }
+  },
+  "result": {
+    "item": "coc:dark_mirewood_planks",
+    "count": 8
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "malachiteaxe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:malachite"
+    },
+    "1": {
+      "item": "coc:malachite"
+    },
+    "2": {
+      "item": "coc:malachite"
+    },
+    "3": {
+      "item": "coc:obsidian_scales"
+    },
+    "5": {
+      "item": "coc:obsidian_scales"
+    }
+  },
+  "result": {
+    "item": "coc:malachite_axe",
+    "count": 1
+  }
+}

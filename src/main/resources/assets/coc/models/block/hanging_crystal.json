@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/hanging_crystal",
+    "particle": "coc:blocks/hanging_crystal"
+  }
+}

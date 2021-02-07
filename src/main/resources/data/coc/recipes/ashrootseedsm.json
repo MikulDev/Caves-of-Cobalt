@@ -1,0 +1,12 @@
+{
+  "group": "ashroot",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "coc:ashroot_seed"
+  },
+  "result": {
+    "item": "coc:popped_ashroot_seed"
+  }
+}

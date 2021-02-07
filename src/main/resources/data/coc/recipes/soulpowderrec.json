@@ -1,0 +1,22 @@
+{
+  "group": "soulpowder",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:soul_sprout"
+    },
+    {
+      "item": "coc:cobalt"
+    },
+    {
+      "item": "coc:cobalt"
+    },
+    {
+      "item": "coc:cobalt"
+    }
+  ],
+  "result": {
+    "item": "coc:soul_powder",
+    "count": 1
+  }
+}

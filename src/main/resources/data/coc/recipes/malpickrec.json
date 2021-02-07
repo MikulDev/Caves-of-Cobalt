@@ -1,0 +1,30 @@
+{
+  "group": "malachitepick",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "coc:malachite"
+    },
+    "1": {
+      "item": "coc:malachite"
+    },
+    "2": {
+      "item": "coc:malachite"
+    },
+    "4": {
+      "item": "coc:obsidian_scales"
+    },
+    "7": {
+      "item": "coc:obsidian_scales"
+    }
+  },
+  "result": {
+    "item": "coc:malachite_pickaxe",
+    "count": 1
+  }
+}

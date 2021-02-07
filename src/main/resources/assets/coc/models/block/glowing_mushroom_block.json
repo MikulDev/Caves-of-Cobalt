@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/glowing_mushroom",
+    "particle": "coc:blocks/glowing_mushroom"
+  }
+}

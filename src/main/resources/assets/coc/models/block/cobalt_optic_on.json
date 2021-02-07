@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/pivoter_back",
+    "up": "coc:blocks/pivoter_back",
+    "north": "coc:blocks/cobalt_optic_front_on",
+    "east": "coc:blocks/cobalt_optic_side_f_on",
+    "south": "coc:blocks/cobalt_optic_back_on",
+    "west": "coc:blocks/cobalt_optic_side_on",
+    "particle": "coc:blocks/pivoter_back"
+  }
+}

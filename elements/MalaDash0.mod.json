@@ -1,0 +1,23 @@
+{
+  "_fv": 15,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "malachite_dash_0.png",
+          "use1Xscale": false,
+          "name": "malachite_dash_0.png",
+          "x": 323,
+          "y": 220
+        }
+      }
+    ],
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "MalaDash0Display"
+    }
+  }
+}

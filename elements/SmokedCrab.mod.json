@@ -1,0 +1,20 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 5.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "crab2",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:RawCrab"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:CookedCrab"
+    },
+    "name": "smokedcrab",
+    "namespace": "mod"
+  }
+}

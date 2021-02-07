@@ -1,0 +1,42 @@
+{
+  "group": "gemblocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:amethyst"
+    },
+    "1": {
+      "item": "coc:amethyst"
+    },
+    "2": {
+      "item": "coc:amethyst"
+    },
+    "3": {
+      "item": "coc:amethyst"
+    },
+    "4": {
+      "item": "coc:amethyst"
+    },
+    "5": {
+      "item": "coc:amethyst"
+    },
+    "6": {
+      "item": "coc:amethyst"
+    },
+    "7": {
+      "item": "coc:amethyst"
+    },
+    "8": {
+      "item": "coc:amethyst"
+    }
+  },
+  "result": {
+    "item": "coc:amethyst_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 15,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Use Wings",
+    "keyBindingCategoryKey": "caves_of_cobalt",
+    "onKeyPressed": {
+      "name": "PhoenixWingsUse"
+    }
+  }
+}

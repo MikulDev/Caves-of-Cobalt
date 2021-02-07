@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "coc:sporite",
+    "coc:dormant_sporite",
+    "coc:strange_grass",
+    "coc:mirewood_planks",
+    "coc:dark_mirewood_planks",
+    "minecraft:stone",
+    "coc:glowing_mushroom_stem",
+    "coc:stripped_mirewood_log",
+    "coc:mirewood_log"
+  ]
+}

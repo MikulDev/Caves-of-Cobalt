@@ -1,0 +1,32 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gold_sword_topaz",
+    "customModelName": "Normal",
+    "name": "§eRadiant Scabbard§r",
+    "specialInfo": [
+      "§6Radiant Topaz§r"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 3,
+    "efficiency": 14.0,
+    "attackSpeed": 1.8,
+    "enchantability": 50,
+    "damageVsEntity": 6.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "RadaintSwordFire"
+    }
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        135,
+        0
+      ],
+      "translation": [
+        0,
+        0.5,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        45,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        0.5,
+        0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "Body",
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        10,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#back",
+          "uv": [
+            0,
+            6,
+            14,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#left_side",
+          "uv": [
+            0,
+            6,
+            14,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#front",
+          "uv": [
+            0,
+            6,
+            14,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#right_side",
+          "uv": [
+            0,
+            6,
+            14,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#bottom",
+          "uv": [
+            0,
+            2,
+            14,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lid",
+      "from": [
+        1,
+        10,
+        1
+      ],
+      "to": [
+        15,
+        14,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#back",
+          "uv": [
+            0,
+            2,
+            14,
+            6
+          ]
+        },
+        "east": {
+          "texture": "#left_side",
+          "uv": [
+            0,
+            2,
+            14,
+            6
+          ]
+        },
+        "south": {
+          "texture": "#front",
+          "uv": [
+            0,
+            2,
+            14,
+            6
+          ]
+        },
+        "west": {
+          "texture": "#right_side",
+          "uv": [
+            0,
+            2,
+            14,
+            6
+          ]
+        },
+        "up": {
+          "texture": "#top",
+          "uv": [
+            0,
+            2,
+            14,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Latch",
+      "from": [
+        7,
+        7,
+        14.5
+      ],
+      "to": [
+        9,
+        11,
+        16.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lock_latch",
+          "uv": [
+            14,
+            2,
+            16,
+            6
+          ]
+        },
+        "east": {
+          "texture": "#lock_latch",
+          "uv": [
+            12,
+            2,
+            14,
+            6
+          ]
+        },
+        "south": {
+          "texture": "#lock_latch",
+          "uv": [
+            10,
+            2,
+            12,
+            6
+          ]
+        },
+        "west": {
+          "texture": "#lock_latch",
+          "uv": [
+            8,
+            2,
+            10,
+            6
+          ]
+        },
+        "up": {
+          "texture": "#lock_latch",
+          "uv": [
+            10,
+            0,
+            12,
+            2
+          ]
+        },
+        "down": {
+          "texture": "#lock_latch",
+          "uv": [
+            12,
+            0,
+            14,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "name": "LockA",
+      "from": [
+        9,
+        6,
+        15
+      ],
+      "to": [
+        10,
+        9,
+        16
+      ],
+      "faces": {
+        "east": {
+          "texture": "#lock_latch",
+          "uv": [
+            1,
+            1,
+            2,
+            4
+          ]
+        },
+        "south": {
+          "texture": "#lock_latch",
+          "uv": [
+            2,
+            1,
+            3,
+            4
+          ]
+        },
+        "west": {
+          "texture": "#lock_latch",
+          "uv": [
+            3,
+            1,
+            4,
+            4
+          ]
+        },
+        "up": {
+          "texture": "#lock_latch",
+          "uv": [
+            1,
+            0,
+            2,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "LockMain",
+      "from": [
+        5.5,
+        2,
+        15
+      ],
+      "to": [
+        10.5,
+        6,
+        17
+      ],
+      "faces": {
+        "east": {
+          "texture": "#lock_latch",
+          "uv": [
+            7,
+            10,
+            9,
+            14
+          ]
+        },
+        "south": {
+          "texture": "#lock_latch",
+          "uv": [
+            2,
+            10,
+            7,
+            14
+          ]
+        },
+        "west": {
+          "texture": "#lock_latch",
+          "uv": [
+            0,
+            10,
+            2,
+            14
+          ]
+        },
+        "up": {
+          "texture": "#lock_latch",
+          "uv": [
+            2,
+            8,
+            7,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#lock_latch",
+          "uv": [
+            7,
+            8,
+            12,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "name": "LockB",
+      "from": [
+        6,
+        6,
+        15
+      ],
+      "to": [
+        7,
+        9,
+        16
+      ],
+      "faces": {
+        "east": {
+          "texture": "#lock_latch",
+          "uv": [
+            1,
+            1,
+            2,
+            4
+          ]
+        },
+        "south": {
+          "texture": "#lock_latch",
+          "uv": [
+            2,
+            1,
+            3,
+            4
+          ]
+        },
+        "west": {
+          "texture": "#lock_latch",
+          "uv": [
+            3,
+            1,
+            4,
+            4
+          ]
+        },
+        "up": {
+          "texture": "#lock_latch",
+          "uv": [
+            1,
+            0,
+            2,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

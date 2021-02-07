@@ -1,0 +1,8 @@
+{
+  "parent": "coc:custom/tiki_torch_north",
+  "textures": {
+    "all": "coc:blocks/tiki_torch_item",
+    "particle": "coc:blocks/tiki_torch_item",
+    "tiki_torch_single": "coc:blocks/tiki_torch"
+  }
+}

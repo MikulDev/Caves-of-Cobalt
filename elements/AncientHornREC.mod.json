@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "horn",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ExoticLeather"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WormTusk"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WormTusk"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AncientHorn"
+    },
+    "name": "ancienthornrec",
+    "namespace": "mod"
+  }
+}

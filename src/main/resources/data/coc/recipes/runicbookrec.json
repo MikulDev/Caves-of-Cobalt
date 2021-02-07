@@ -1,0 +1,22 @@
+{
+  "group": "runebook",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "coc:exotic_leather"
+    }
+  ],
+  "result": {
+    "item": "coc:runic_book",
+    "count": 1
+  }
+}

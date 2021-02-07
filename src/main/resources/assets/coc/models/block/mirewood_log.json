@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/mirewood_log_top",
+    "up": "coc:blocks/mirewood_log_top",
+    "north": "coc:blocks/mirewood_log",
+    "east": "coc:blocks/mirewood_log",
+    "south": "coc:blocks/mirewood_log",
+    "west": "coc:blocks/mirewood_log",
+    "particle": "coc:blocks/mirewood_log_top"
+  }
+}

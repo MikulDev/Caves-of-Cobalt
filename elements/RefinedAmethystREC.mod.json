@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "refinedgems",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Amethyst"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Amethyst"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:Amethyst"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Amethyst"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RefinedAmethyst"
+    },
+    "name": "refinedamethystrec",
+    "namespace": "mod"
+  }
+}

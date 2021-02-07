@@ -1,0 +1,74 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "glowing_mushroom_side_2": "minecraft:blocks/glowing_mushroom_side_2",
+        "glowing_mushroom_side": "minecraft:blocks/glowing_mushroom_side"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 4, -9 ],
+            "scale": [ 1, 1, -1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 8, 0, 0 ], 
+            "to": [ 8, 16, 16 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#glowing_mushroom_side", "uv": [ 0, 0, 0, 16 ] },
+                "east": { "texture": "#glowing_mushroom_side", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#glowing_mushroom_side", "uv": [ 16, 0, 0, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 5, 3, 9 ], 
+            "to": [ 10, 3, 16 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 3, 16 ], "axis": "x", "angle": 22.5 },
+            "faces": {
+                "up": { "texture": "#glowing_mushroom_side_2", "uv": [ 11, 9, 6, 16 ] },
+                "down": { "texture": "#glowing_mushroom_side_2", "uv": [ 6, 9, 11, 16 ], "rotation": 180, "cullface": "down" }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 5.6, 9.5 ], 
+            "to": [ 15, 14.6, 9.5 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 5.7, 9.5 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#glowing_mushroom_side_2", "uv": [ 1, 1, 14, 10 ] },
+                "south": { "texture": "#glowing_mushroom_side_2", "uv": [ 14, 1, 1, 10 ] }
+            }
+        }
+    ]
+}

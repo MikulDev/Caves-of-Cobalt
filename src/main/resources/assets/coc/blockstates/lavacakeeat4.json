@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/lavacakeeat4"
+    },
+    "facing=east": {
+      "model": "coc:block/lavacakeeat4",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/lavacakeeat4",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/lavacakeeat4",
+      "y": 270
+    }
+  }
+}

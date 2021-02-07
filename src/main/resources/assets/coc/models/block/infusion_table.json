@@ -1,0 +1,9 @@
+{
+  "parent": "coc:custom/crate",
+  "textures": {
+    "all": "coc:blocks/gem_forge",
+    "particle": "coc:blocks/gem_forge",
+    "crate_side": "coc:blocks/infusion_block",
+    "crate_top": "coc:blocks/infusion_block"
+  }
+}

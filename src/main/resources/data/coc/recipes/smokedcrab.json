@@ -1,0 +1,12 @@
+{
+  "group": "crab2",
+  "type": "minecraft:smoking",
+  "experience": 5,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "coc:raw_crab"
+  },
+  "result": {
+    "item": "coc:cooked_crab"
+  }
+}

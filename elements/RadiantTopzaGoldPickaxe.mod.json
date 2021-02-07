@@ -1,0 +1,39 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gold_pickaxe_topaz",
+    "customModelName": "Normal",
+    "name": "§eRadiant Pickaxe§r",
+    "specialInfo": [
+      "§6Radiant Topaz§r"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 5,
+    "efficiency": 14.0,
+    "attackSpeed": 1.8,
+    "enchantability": 30,
+    "damageVsEntity": 6.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:LesserTopaz"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "RadiantPickaxeAbility"
+    },
+    "onItemInInventoryTick": {
+      "name": "RadiantPickaxeTickINV"
+    }
+  }
+}

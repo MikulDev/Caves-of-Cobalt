@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:shroomium_bar"
+    },
+    "title": {
+      "translate": "advancements.shroom_time.title"
+    },
+    "description": {
+      "translate": "advancements.shroom_time.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shroom_time": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "parent": "coc:astrangeplaceadv"
+}

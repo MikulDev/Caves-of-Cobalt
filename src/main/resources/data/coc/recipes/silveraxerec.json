@@ -1,0 +1,30 @@
+{
+  "group": "silveraxe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:silver_ingot"
+    },
+    "1": {
+      "item": "coc:silver_ingot"
+    },
+    "2": {
+      "item": "coc:silver_ingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "coc:silver_axe",
+    "count": 1
+  }
+}

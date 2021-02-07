@@ -1,0 +1,25 @@
+{
+  "group": "mushlamp",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:glowing_mushroom"
+    },
+    {
+      "item": "coc:glowing_mushroom"
+    },
+    {
+      "item": "minecraft:torch"
+    },
+    {
+      "item": "coc:glowing_mushroom"
+    },
+    {
+      "item": "coc:glowing_mushroom"
+    }
+  ],
+  "result": {
+    "item": "coc:mushroom_lamp",
+    "count": 1
+  }
+}

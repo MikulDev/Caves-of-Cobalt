@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "glowing_mushroom_side_2": "glowing_mushroom_side_2",
+        "glowing_mushroom_side": "glowing_mushroom_side"
+      },
+      "name": "default"
+    }
+  }
+}

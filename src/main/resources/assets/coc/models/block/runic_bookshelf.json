@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/planks_oak",
+    "up": "coc:blocks/planks_oak",
+    "north": "coc:blocks/runic_bookshelf",
+    "east": "coc:blocks/runic_bookshelf",
+    "south": "coc:blocks/runic_bookshelf",
+    "west": "coc:blocks/runic_bookshelf",
+    "particle": "coc:blocks/planks_oak"
+  }
+}

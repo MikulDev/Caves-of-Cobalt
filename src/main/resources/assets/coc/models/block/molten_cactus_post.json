@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "coc:blocks/cactus",
+    "particle": "coc:blocks/cactus"
+  }
+}

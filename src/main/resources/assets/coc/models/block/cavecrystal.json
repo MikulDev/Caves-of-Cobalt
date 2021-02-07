@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/cave_crystal",
+    "up": "coc:blocks/cave_crystal",
+    "north": "coc:blocks/cave_crystal",
+    "east": "coc:blocks/cave_crystal",
+    "south": "coc:blocks/cave_crystal",
+    "west": "coc:blocks/cave_crystal",
+    "particle": "coc:blocks/cave_crystal"
+  }
+}

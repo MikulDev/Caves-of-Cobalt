@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/nonglowing_stone",
+    "up": "coc:blocks/rot_remover_top",
+    "north": "coc:blocks/rot_remover",
+    "east": "coc:blocks/rot_remover",
+    "south": "coc:blocks/rot_remover",
+    "west": "coc:blocks/rot_remover",
+    "particle": "coc:blocks/nonglowing_stone"
+  }
+}

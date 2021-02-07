@@ -1,0 +1,326 @@
+/**
+ * This mod element is always locked. Enter your code in the methods below.
+ * If you don't need some of these methods, you can remove them as they
+ * are overrides of the base class CocModElements.ModElement.
+ *
+ * You can register new events in this class too.
+ *
+ * As this class is loaded into mod element list, it NEEDS to extend
+ * ModElement class. If you remove this extend statement or remove the
+ * constructor, the compilation will fail.
+ *
+ * If you want to make a plain independent class, create it in
+ * "Workspace" -> "Source" menu.
+ *
+ * If you change workspace package, modid or prefix, you will need
+ * to manually adapt this file to these changes or remake it.
+*/
+package net.mcreator.coc;
+
+import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
+import net.minecraft.world.gen.feature.template.Template;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.Direction;
+import net.minecraft.fluid.Fluids;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
+
+@CocModElements.ModElement.Tag
+public class PlaceHelper extends CocModElements.ModElement  {
+	/**
+	 * Do not remove this constructor
+	 */
+	public PlaceHelper(CocModElements instance) {
+		super(instance, 789);
+	}
+
+	public static void carveArea (World world, BlockPos pos, int sizeX, int sizeY, int sizeZ)
+	{
+		int x = pos.getX() - sizeX;
+		int y = pos.getY() - sizeY;
+		int z = pos.getZ() - sizeZ;
+		int lengthX = sizeX;
+		int lengthY = sizeY;
+		int lengthZ = sizeZ;
+
+		for (int xr = 0; xr < lengthX * 2; ++xr)
+		{
+			for (int yr = 0; yr < lengthY * 2; ++yr)
+			{
+				for (int zr = 0; zr < lengthZ * 2; ++zr)
+				{
+					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1)
+					{
+						world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 2);
+					}
+					/*else
+					{
+						world.setBlockState(new BlockPos(x, y, z), Blocks.GLASS.getDefaultState(), 2);
+					}*/
+					//System.out.println((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2)));
+					z++;
+				}
+				z = pos.getZ() - sizeZ;
+				y++;
+			}
+			y = pos.getY() - sizeY;
+			x++;
+		}
+	}
+
+	public static void fillArea (World world, BlockState block, BlockPos pos, int sizeX, int sizeY, int sizeZ, Block replace)
+	{
+		int x = pos.getX() - sizeX;
+		int y = pos.getY() - sizeY;
+		int z = pos.getZ() - sizeZ;
+		int lengthX = sizeX;
+		int lengthY = sizeY;
+		int lengthZ = sizeZ;
+
+		for (int xr = 0; xr < lengthX * 2; ++xr)
+		{
+			for (int yr = 0; yr < lengthY * 2; ++yr)
+			{
+				for (int zr = 0; zr < lengthZ * 2; ++zr)
+				{
+					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1 
+					&& (world.getBlockState(new BlockPos(x, y, z)).getBlock() == replace || replace == null))
+					{
+						world.setBlockState(new BlockPos(x, y, z), block, 2);
+					}
+					/*else
+					{
+						world.setBlockState(new BlockPos(x, y, z), Blocks.GLASS.getDefaultState(), 2);
+					}*/
+					//System.out.println((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2)));
+					z++;
+				}
+				z = pos.getZ() - sizeZ;
+				y++;
+			}
+			y = pos.getY() - sizeY;
+			x++;
+		}
+	}
+
+	public static void carveArea (World world, BlockPos pos, int size)
+	{
+		PlaceHelper.carveArea(world, pos, size, size, size);
+	}
+
+	public boolean noAir(World world, BlockPos startPos, int length, int height, int width, Rotation rotation, String structureName)
+	{
+		boolean foundAir = false;
+		int x = startPos.getX();
+		int y = startPos.getY();
+		int z = startPos.getZ();
+		Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager().getTemplateDefaulted(new ResourceLocation("coc", structureName));
+		if (length == -1)
+		{
+			length = template.getSize().getX();
+			//System.out.println("length was -1");
+		}
+		if (height == -1)
+		{
+			height = template.getSize().getY();
+			//System.out.println("height was -1");
+		}
+		if (width == -1)
+		{
+			width = template.getSize().getZ();
+			//System.out.println("width was -1");
+		}
+		
+		if (rotation == Rotation.NONE)
+		{
+			int x2 = x + length;
+			int y2 = y + height;
+			int z2 = z + width;
+			if (x > x2)
+			{
+				int temp = x2;
+				x2 = x;
+				x = temp;
+			}
+			if (y > y2)
+			{
+				int temp = y2;
+				y2 = y;
+				y = temp;
+			}
+			if (z > z2)
+			{
+				int temp = z2;
+				z2 = z;
+				z = temp;
+			}
+			//System.out.println("dimensions " + (length) + " " + height + " " + width);
+			//System.out.println("corners " + x + ", " + y + ", " + z + " and " + x2 + ", " + y2 + ", " + z2);
+			for(BlockPos blockpos : BlockPos.getAllInBoxMutable(x, y, z, x2, y2, z2))
+			{
+				if (world.getBlockState(blockpos).getBlock() == Blocks.AIR || world.getFluidState(blockpos).getFluid() == Fluids.WATER || world.getFluidState(blockpos).getFluid() == Fluids.FLOWING_WATER)
+				{
+					foundAir = true;
+					//System.out.println("found air at" + blockpos);
+					break;
+				}
+			}
+		}
+			
+		else if (rotation == Rotation.CLOCKWISE_90)
+		{
+			int x2 = x - width;
+			int y2 = y + height;
+			int z2 = z + length;
+			if (x > x2)
+			{
+				int temp = x2;
+				x2 = x;
+				x = temp;
+			}
+			if (y > y2)
+			{
+				int temp = y2;
+				y2 = y;
+				y = temp;
+			}
+			if (z > z2)
+			{
+				int temp = z2;
+				z2 = z;
+				z = temp;
+			}
+			//System.out.println("dimensions " + (width) + " " + height + " " + length);
+			//System.out.println("corners " + x + ", " + y + ", " + z + " and " + x2 + ", " + y2 + ", " + z2);
+			for (BlockPos blockpos : BlockPos.getAllInBoxMutable(x, y, z, x2, y2, z2))
+			{
+				if (world.getBlockState(blockpos).getBlock() == Blocks.AIR || world.getFluidState(blockpos).getFluid() == Fluids.WATER || world.getFluidState(blockpos).getFluid() == Fluids.FLOWING_WATER)
+				{
+					foundAir = true;
+					//System.out.println("found air at" + blockpos);
+					break;
+				}
+			}
+		}
+
+		else if (rotation == Rotation.CLOCKWISE_180)
+		{
+			int x2 = x - length;
+			int y2 = y + height;
+			int z2 = z - width;
+			if (x > x2)
+			{
+				int temp = x2;
+				x2 = x;
+				x = temp;
+			}
+			if (y > y2)
+			{
+				int temp = y2;
+				y2 = y;
+				y = temp;
+			}
+			if (z > z2)
+			{
+				int temp = z2;
+				z2 = z;
+				z = temp;
+			}
+			//System.out.println("dimensions " + (width) + " " + height + " " + length);
+			//System.out.println("corners " + x + ", " + y + ", " + z + " and " + x2 + ", " + y2 + ", " + z2);
+			for(BlockPos blockpos : BlockPos.getAllInBoxMutable(x, y, z, x2, y2, z2))
+			{
+				if (world.getBlockState(blockpos).getBlock() == Blocks.AIR || world.getFluidState(blockpos).getFluid() == Fluids.WATER || world.getFluidState(blockpos).getFluid() == Fluids.FLOWING_WATER)
+				{
+					foundAir = true;
+					//System.out.println("found air at" + blockpos);
+					break;
+				}
+			}
+		}
+
+		else if (rotation == Rotation.COUNTERCLOCKWISE_90)
+		{
+			int x2 = x + width;
+			int y2 = y + height;
+			int z2 = z - length;
+			if (x > x2)
+			{
+				int temp = x2;
+				x2 = x;
+				x = temp;
+			}
+			if (y > y2)
+			{
+				int temp = y2;
+				y2 = y;
+				y = temp;
+			}
+			if (z > z2)
+			{
+				int temp = z2;
+				z2 = z;
+				z = temp;
+			}
+			//System.out.println("dimensions " + (width) + " " + height + " " + length);
+			//System.out.println("corners " + x + ", " + y + ", " + z + " and " + x2 + ", " + y2 + ", " + z2);
+			for(BlockPos blockpos : BlockPos.getAllInBoxMutable(x, y, z, x2, y2, z2))
+			{
+				if (world.getBlockState(blockpos).getBlock() == Blocks.AIR || world.getFluidState(blockpos).getFluid() == Fluids.WATER || world.getFluidState(blockpos).getFluid() == Fluids.FLOWING_WATER)
+				{
+					foundAir = true;
+					//System.out.println("found air at" + blockpos);
+					break;
+				}
+			}
+		}
+		return !foundAir;
+	}
+
+	public boolean touchingAir(World world, BlockPos testPos)
+	{
+		return (world.isAirBlock(testPos.add(1, 0, 0)) || world.isAirBlock(testPos.add(-1, 0, 0)) || 
+				world.isAirBlock(testPos.add(0, 1, 0)) || world.isAirBlock(testPos.add(0, -1, 0)) || 
+				world.isAirBlock(testPos.add(0, 0, 1)) || world.isAirBlock(testPos.add(0, 0, -1)));
+	}
+
+	public Direction touchingSolid(World world, BlockPos testPos)
+	{
+		if		(world.getBlockState(testPos.add(1, 0, 0)).isSolid()) return Direction.EAST;
+		else if (world.getBlockState(testPos.add(-1, 0, 0)).isSolid()) return Direction.WEST;
+		else if (world.getBlockState(testPos.add(0, 1, 0)).isSolid()) return Direction.UP;
+		else if (world.getBlockState(testPos.add(0, -1, 0)).isSolid()) return Direction.DOWN;
+		else if (world.getBlockState(testPos.add(0, 0, 1)).isSolid()) return Direction.SOUTH;
+		else if (world.getBlockState(testPos.add(0, 0, -1)).isSolid()) return Direction.NORTH;
+		return null;
+	}
+
+	public Direction touchingBlock(World world, BlockPos testPos)
+	{
+		if		(!world.isAirBlock(testPos.add(1, 0, 0))) return Direction.EAST;
+		else if (!world.isAirBlock(testPos.add(-1, 0, 0))) return Direction.WEST;
+		else if (!world.isAirBlock(testPos.add(0, 1, 0))) return Direction.UP;
+		else if (!world.isAirBlock(testPos.add(0, -1, 0))) return Direction.DOWN;
+		else if (!world.isAirBlock(testPos.add(0, 0, 1))) return Direction.SOUTH;
+		else if (!world.isAirBlock(testPos.add(0, 0, -1))) return Direction.NORTH;
+		return null;
+	}
+
+	public boolean getClearance(World world, BlockPos bpos, int clearance)
+	{
+		int checks = 0;
+		int level = 0;
+		for (int i = 0; i < clearance; ++i)
+		{
+			if (!world.getBlockState(bpos.up(level)).isSolid()) checks++;
+			level++;
+		}
+		return checks == clearance;
+	}
+}

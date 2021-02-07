@@ -1,0 +1,26 @@
+{
+  "_fv": 15,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "fruit_of_evil",
+    "customModelName": "Normal",
+    "name": "§6Apple of Eden§r",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 8,
+    "saturation": 0.30000001192092896,
+    "eatingSpeed": 64,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "EvilFruitEffects"
+    }
+  }
+}

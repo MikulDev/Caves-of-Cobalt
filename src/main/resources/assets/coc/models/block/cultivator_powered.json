@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/pivoter_back",
+    "up": "coc:blocks/cultivator_top",
+    "north": "coc:blocks/cultivator_front",
+    "east": "coc:blocks/cultivator_side",
+    "south": "coc:blocks/cultivator_side",
+    "west": "coc:blocks/cultivator_side",
+    "particle": "coc:blocks/pivoter_back"
+  }
+}

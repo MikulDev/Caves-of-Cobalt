@@ -1,0 +1,19 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "Bottled Shroomilk",
+    "effectName": "Truffle Treatment",
+    "icon": "toadstool_treatment.png",
+    "color": {
+      "value": -9713409,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true
+  }
+}

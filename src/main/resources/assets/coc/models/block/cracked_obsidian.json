@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/cracked_obsidian",
+    "up": "coc:blocks/cracked_obsidian",
+    "north": "coc:blocks/cracked_obsidian",
+    "east": "coc:blocks/cracked_obsidian",
+    "south": "coc:blocks/cracked_obsidian",
+    "west": "coc:blocks/cracked_obsidian",
+    "particle": "coc:blocks/cracked_obsidian"
+  }
+}

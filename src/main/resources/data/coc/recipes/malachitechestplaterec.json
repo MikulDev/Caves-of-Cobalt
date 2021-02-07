@@ -1,0 +1,39 @@
+{
+  "group": "malachitechestplate",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:obsidian_scales"
+    },
+    "2": {
+      "item": "coc:obsidian_scales"
+    },
+    "3": {
+      "item": "coc:obsidian_scales"
+    },
+    "4": {
+      "item": "coc:malachite"
+    },
+    "5": {
+      "item": "coc:obsidian_scales"
+    },
+    "6": {
+      "item": "coc:malachite"
+    },
+    "7": {
+      "item": "coc:malachite"
+    },
+    "8": {
+      "item": "coc:malachite"
+    }
+  },
+  "result": {
+    "item": "coc:malachite_chestplate",
+    "count": 1
+  }
+}

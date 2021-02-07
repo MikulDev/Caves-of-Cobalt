@@ -1,0 +1,36 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gold_hoe_topaz",
+    "customModelName": "Normal",
+    "name": "§eRadiant Hoe§r",
+    "specialInfo": [
+      "§6Radiant Topaz§r"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 4,
+    "efficiency": 12.0,
+    "attackSpeed": 1.0,
+    "enchantability": 32,
+    "damageVsEntity": 5.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:RadientTopaz"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "RadiantHoeBreak"
+    }
+  }
+}

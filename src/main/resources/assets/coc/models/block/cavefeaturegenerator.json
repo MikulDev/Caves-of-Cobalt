@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/stone_column_middle",
+    "up": "coc:blocks/stone_column_middle",
+    "north": "coc:blocks/stone_column_middle",
+    "east": "coc:blocks/stone_column_middle",
+    "south": "coc:blocks/stone_column_middle",
+    "west": "coc:blocks/stone_column_middle",
+    "particle": "coc:blocks/stone_column_middle"
+  }
+}

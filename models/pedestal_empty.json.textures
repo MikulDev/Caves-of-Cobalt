@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "pedestal_top": "pedestal_top",
+        "temple_bricks": "temple_bricks",
+        "pedestal_top_side": "pedestal_top_side"
+      },
+      "name": "default"
+    }
+  }
+}

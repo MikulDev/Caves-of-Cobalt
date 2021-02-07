@@ -1,0 +1,27 @@
+{
+  "group": "silver_hoe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:silver_ingot"
+    },
+    "1": {
+      "item": "coc:silver_ingot"
+    },
+    "3": {
+      "item": "minecraft:debug_stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "coc:silver_hoe",
+    "count": 1
+  }
+}

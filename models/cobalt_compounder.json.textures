@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "cobalt_compounder_side_blank": "cobalt_compounder_side_blank",
+        "cobalt_compounder_inside": "cobalt_compounder_inside",
+        "cobalt_compounder_other": "cobalt_compounder_other",
+        "cobalt_compounder_bottom": "cobalt_compounder_bottom",
+        "cobalt_compounder_side": "cobalt_compounder_side",
+        "cobalt_compounder_inside_2": "cobalt_compounder_inside_2"
+      },
+      "name": "default"
+    }
+  }
+}

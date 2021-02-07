@@ -1,0 +1,32 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gold_axe_topaz",
+    "customModelName": "Normal",
+    "name": "§eRadiant Axe§r",
+    "specialInfo": [
+      "§6Radiant Topaz§r"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 5,
+    "efficiency": 14.0,
+    "attackSpeed": 1.0,
+    "enchantability": 50,
+    "damageVsEntity": 10.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "RadAxeAbility"
+    }
+  }
+}

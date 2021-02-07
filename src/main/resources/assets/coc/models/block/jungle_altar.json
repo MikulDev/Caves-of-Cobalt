@@ -1,0 +1,11 @@
+{
+  "parent": "coc:custom/jungle_pedestal",
+  "textures": {
+    "all": "coc:blocks/pedestal_top",
+    "particle": "coc:blocks/pedestal_top",
+    "pedestal_top": "coc:blocks/pedestal_top",
+    "temple_bricks": "coc:blocks/temple_bricks",
+    "jungle_soul": "coc:blocks/jungle_soul",
+    "pedestal_top_side": "coc:blocks/pedestal_top_side"
+  }
+}

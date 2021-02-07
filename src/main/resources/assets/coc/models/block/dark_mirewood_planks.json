@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/mirewood_planks_dark",
+    "up": "coc:blocks/mirewood_planks_dark",
+    "north": "coc:blocks/mirewood_planks_dark",
+    "east": "coc:blocks/mirewood_planks_dark",
+    "south": "coc:blocks/mirewood_planks_dark",
+    "west": "coc:blocks/mirewood_planks_dark",
+    "particle": "coc:blocks/mirewood_planks_dark"
+  }
+}

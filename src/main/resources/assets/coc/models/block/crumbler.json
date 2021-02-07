@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/crumbler_side_180",
+    "up": "coc:blocks/crumbler_side_off",
+    "north": "coc:blocks/block_buster_top",
+    "east": "coc:blocks/crumbler_side_90",
+    "south": "coc:blocks/crumbler_bottom",
+    "west": "coc:blocks/crumbler_side_-90",
+    "particle": "coc:blocks/crumbler_side_180"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "_fv": 15,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 177,
+          "y": 66
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 204,
+          "y": 66
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 231,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cobalt Cleanser",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Cobalt Cleanser",
+          "x": 176,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cobalt_icon.png",
+          "use1Xscale": false,
+          "name": "cobalt_icon.png",
+          "x": 178,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cobalt_icon.png",
+          "use1Xscale": false,
+          "name": "cobalt_icon.png",
+          "x": 205,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cobalt_icon.png",
+          "use1Xscale": false,
+          "name": "cobalt_icon.png",
+          "x": 232,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mushrooms.png",
+          "use1Xscale": false,
+          "name": "mushrooms.png",
+          "x": 149,
+          "y": 88
+        }
+      }
+    ]
+  }
+}

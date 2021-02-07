@@ -1,0 +1,22 @@
+{
+  "group": "edenapple",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:infernal_dye"
+    },
+    {
+      "item": "coc:ruby"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "coc:infernal_dye"
+    }
+  ],
+  "result": {
+    "item": "coc:eden_apple",
+    "count": 1
+  }
+}

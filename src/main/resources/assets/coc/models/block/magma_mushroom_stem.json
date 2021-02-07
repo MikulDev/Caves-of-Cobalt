@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/magma_mushroom_stem_top",
+    "up": "coc:blocks/magma_mushroom_stem_top",
+    "north": "coc:blocks/magma_mushroom_stem",
+    "east": "coc:blocks/magma_mushroom_stem",
+    "south": "coc:blocks/magma_mushroom_stem",
+    "west": "coc:blocks/magma_mushroom_stem",
+    "particle": "coc:blocks/magma_mushroom_stem_top"
+  }
+}

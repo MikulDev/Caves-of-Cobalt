@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/stalagmite",
+    "particle": "coc:blocks/stalagmite"
+  }
+}

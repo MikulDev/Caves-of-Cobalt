@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "infusion_small": "infusion_small"
+      },
+      "name": "default"
+    }
+  }
+}

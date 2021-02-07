@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/black_quartz_block_chiseled",
+    "up": "coc:blocks/black_quartz_block_chiseled",
+    "north": "coc:blocks/black_quartz_block_pillar",
+    "east": "coc:blocks/black_quartz_block_pillar",
+    "south": "coc:blocks/black_quartz_block_pillar",
+    "west": "coc:blocks/black_quartz_block_pillar",
+    "particle": "coc:blocks/black_quartz_block_chiseled"
+  }
+}

@@ -1,0 +1,119 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "monument_altar_bottom": "minecraft:blocks/monument_altar/monument_altar_bottom",
+        "monument_altar_top": "minecraft:blocks/monument_altar/monument_altar_top",
+        "monument_altar_trident": "minecraft:blocks/monument_altar/monument_altar_trident",
+        "monument_altar_side": "minecraft:blocks/monument_altar/monument_altar_side"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ -4, 0, 0 ],
+            "scale": [ 0.35, 0.35, 0.35 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 7, -1, 9 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 2.5, 1, 2.5 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "top",
+            "from": [ 2, 8, 2 ], 
+            "to": [ 30, 13, 30 ], 
+            "faces": {
+                "north": { "texture": "#monument_altar_side", "uv": [ 0, 0, 14, 2.5 ] },
+                "east": { "texture": "#monument_altar_side", "uv": [ 0, 0, 14, 2.5 ] },
+                "south": { "texture": "#monument_altar_side", "uv": [ 0, 0, 14, 2.5 ] },
+                "west": { "texture": "#monument_altar_side", "uv": [ 0, 0, 14, 2.5 ] },
+                "up": { "texture": "#monument_altar_top", "uv": [ 0, 0, 14, 14 ] },
+                "down": { "texture": "#monument_altar_top", "uv": [ 0, 0, 14, 14 ] }
+            }
+        },
+        {
+            "name": "base",
+            "from": [ 4, 0, 4 ], 
+            "to": [ 28, 8, 28 ], 
+            "faces": {
+                "north": { "texture": "#monument_altar_bottom", "uv": [ 0, 0, 12, 4 ] },
+                "east": { "texture": "#monument_altar_bottom", "uv": [ 0, 0, 12, 4 ] },
+                "south": { "texture": "#monument_altar_bottom", "uv": [ 0, 0, 12, 4 ] },
+                "west": { "texture": "#monument_altar_bottom", "uv": [ 0, 0, 12, 4 ] },
+                "down": { "texture": "#monument_altar_bottom", "uv": [ 4, 4, 16, 16 ] }
+            }
+        },
+        {
+            "name": "trident_rod",
+            "from": [ 15.5, 14, 0 ], 
+            "to": [ 16.5, 15, 25 ], 
+            "faces": {
+                "north": { "texture": "#monument_altar_trident", "uv": [ 8, 12, 8.5, 13.5 ], "rotation": 270 },
+                "east": { "texture": "#monument_altar_trident", "uv": [ 7, 3, 7.5, 15.5 ], "rotation": 270 },
+                "west": { "texture": "#monument_altar_trident", "uv": [ 7, 3, 7.5, 15.5 ], "rotation": 90 },
+                "up": { "texture": "#monument_altar_trident", "uv": [ 7, 3, 7.5, 15.5 ], "rotation": 180 },
+                "down": { "texture": "#monument_altar_trident", "uv": [ 7, 3, 7.5, 15.5 ] }
+            }
+        },
+        {
+            "name": "trident_head",
+            "from": [ 14.5, 14, 25 ], 
+            "to": [ 17.5, 15, 27 ], 
+            "faces": {
+                "north": { "texture": "#monument_altar_trident", "uv": [ 11.5, 1, 13, 1.5 ] },
+                "east": { "texture": "#monument_altar_trident", "uv": [ 11.5, 0.5, 12, 1.5 ], "rotation": 270 },
+                "south": { "texture": "#monument_altar_trident", "uv": [ 9.5, 0, 11, 0.5 ] },
+                "west": { "texture": "#monument_altar_trident", "uv": [ 11.5, 0.5, 12, 1.5 ], "rotation": 90 },
+                "up": { "texture": "#monument_altar_trident", "uv": [ 9.5, 0.5, 11, 1.5 ], "rotation": 180 },
+                "down": { "texture": "#monument_altar_trident", "uv": [ 9.5, 0.5, 11, 1.5 ] }
+            }
+        },
+        {
+            "name": "trident_tip_1",
+            "from": [ 13.5, 14, 26 ], 
+            "to": [ 14.5, 15, 30 ], 
+            "faces": {
+                "north": { "texture": "#monument_altar_trident", "uv": [ 8.5, 1, 9, 0.5 ] },
+                "east": { "texture": "#monument_altar_trident", "uv": [ 8.5, 0.5, 9, 2.5 ], "rotation": 90 },
+                "south": { "texture": "#monument_altar_trident", "uv": [ 8.5, 1, 9, 0.5 ] },
+                "west": { "texture": "#monument_altar_trident", "uv": [ 8.5, 0.5, 9, 2.5 ], "rotation": 90 },
+                "up": { "texture": "#monument_altar_trident", "uv": [ 8.5, 0.5, 9, 2.5 ] },
+                "down": { "texture": "#monument_altar_trident", "uv": [ 8.5, 0.5, 9, 2.5 ] }
+            }
+        },
+        {
+            "name": "trident_tip_3",
+            "from": [ 17.5, 14, 26 ], 
+            "to": [ 18.5, 15, 30 ], 
+            "faces": {
+                "north": { "texture": "#monument_altar_trident", "uv": [ 8.5, 1, 9, 0.5 ] },
+                "east": { "texture": "#monument_altar_trident", "uv": [ 8.5, 0.5, 9, 2.5 ], "rotation": 90 },
+                "south": { "texture": "#monument_altar_trident", "uv": [ 8.5, 1, 9, 0.5 ] },
+                "west": { "texture": "#monument_altar_trident", "uv": [ 8.5, 0.5, 9, 2.5 ], "rotation": 90 },
+                "up": { "texture": "#monument_altar_trident", "uv": [ 8.5, 0.5, 9, 2.5 ] },
+                "down": { "texture": "#monument_altar_trident", "uv": [ 8.5, 0.5, 9, 2.5 ] }
+            }
+        }
+    ]
+}

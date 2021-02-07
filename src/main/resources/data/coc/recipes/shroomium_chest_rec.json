@@ -1,0 +1,39 @@
+{
+  "group": "shroomchest",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:shroomium_bar"
+    },
+    "2": {
+      "item": "coc:shroomium_bar"
+    },
+    "3": {
+      "item": "coc:shroomium_bar"
+    },
+    "4": {
+      "item": "coc:shroomium_bar"
+    },
+    "5": {
+      "item": "coc:shroomium_bar"
+    },
+    "6": {
+      "item": "coc:shroomium_bar"
+    },
+    "7": {
+      "item": "coc:shroomium_bar"
+    },
+    "8": {
+      "item": "coc:shroomium_bar"
+    }
+  },
+  "result": {
+    "item": "coc:shroomium_chestplate",
+    "count": 1
+  }
+}

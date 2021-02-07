@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "coc:block/mirewood_log"
+    },
+    "facing=north": {
+      "model": "coc:block/mirewood_log"
+    },
+    "facing=east": {
+      "model": "coc:block/mirewood_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "coc:block/mirewood_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "coc:block/mirewood_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "coc:block/mirewood_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "tunnelarmor",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:tunnelbug_hide"
+    },
+    {
+      "item": "minecraft:leather_boots"
+    },
+    {
+      "item": "coc:tunnelbug_hide"
+    }
+  ],
+  "result": {
+    "item": "coc:tunneleather_boots",
+    "count": 1
+  }
+}

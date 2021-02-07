@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/mirewood_sapling",
+    "particle": "coc:blocks/mirewood_sapling"
+  }
+}

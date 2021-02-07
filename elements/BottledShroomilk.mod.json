@@ -1,0 +1,26 @@
+{
+  "_fv": 15,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bottled_shroomilk",
+    "customModelName": "Normal",
+    "name": "Bottled Shroomilk",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "BREWING"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 1,
+    "saturation": 0.30000001192092896,
+    "eatingSpeed": 30,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ShroomilkDrink"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/giant_mushroom_under",
+    "up": "coc:blocks/glowing_mushroom_skin",
+    "north": "coc:blocks/glowing_mushroom_skin",
+    "east": "coc:blocks/glowing_mushroom_skin",
+    "south": "coc:blocks/glowing_mushroom_skin",
+    "west": "coc:blocks/glowing_mushroom_skin",
+    "particle": "coc:blocks/giant_mushroom_under"
+  }
+}

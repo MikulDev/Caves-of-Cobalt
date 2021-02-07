@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/ghastlet_hive_bottom",
+    "up": "coc:blocks/infernal_wool",
+    "north": "coc:blocks/ghastlet_hive_side_broken_1",
+    "east": "coc:blocks/ghastlet_hive_side_broken_1",
+    "south": "coc:blocks/ghastlet_hive_side_broken_1",
+    "west": "coc:blocks/ghastlet_hive_side_broken_1",
+    "particle": "coc:blocks/ghastlet_hive_bottom"
+  }
+}

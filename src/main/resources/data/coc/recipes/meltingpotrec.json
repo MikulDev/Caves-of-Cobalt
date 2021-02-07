@@ -1,0 +1,42 @@
+{
+  "group": "meltingpot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gold_ingot"
+    },
+    "1": {
+      "item": "coc:stone_shell"
+    },
+    "2": {
+      "item": "minecraft:gold_ingot"
+    },
+    "3": {
+      "item": "coc:ruby"
+    },
+    "4": {
+      "item": "minecraft:cauldron"
+    },
+    "5": {
+      "item": "coc:ruby"
+    },
+    "6": {
+      "item": "minecraft:gold_ingot"
+    },
+    "7": {
+      "item": "coc:cobalt"
+    },
+    "8": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "coc:midas_melting_pot",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gold_shovel_sapphire",
+    "customModelName": "Normal",
+    "name": "Golden Shovel",
+    "specialInfo": [
+      "§9Sapphire§r"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 2,
+    "efficiency": 10.0,
+    "attackSpeed": 2.8,
+    "enchantability": 35,
+    "damageVsEntity": 4.0,
+    "usageCount": 300,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

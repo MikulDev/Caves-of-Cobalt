@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/eden_log_top",
+    "up": "coc:blocks/eden_log_top",
+    "north": "coc:blocks/eden_log",
+    "east": "coc:blocks/eden_log",
+    "south": "coc:blocks/eden_log",
+    "west": "coc:blocks/eden_log",
+    "particle": "coc:blocks/eden_log_top"
+  }
+}

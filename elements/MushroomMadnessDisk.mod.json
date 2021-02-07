@@ -1,0 +1,17 @@
+{
+  "_fv": 15,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_mushroom",
+    "name": "Music Disc",
+    "description": "rmsandegs - mire",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:music.mushrooms"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

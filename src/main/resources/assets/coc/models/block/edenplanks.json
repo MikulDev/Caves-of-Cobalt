@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/eden_planks",
+    "up": "coc:blocks/eden_planks",
+    "north": "coc:blocks/eden_planks",
+    "east": "coc:blocks/eden_planks",
+    "south": "coc:blocks/eden_planks",
+    "west": "coc:blocks/eden_planks",
+    "particle": "coc:blocks/eden_planks"
+  }
+}

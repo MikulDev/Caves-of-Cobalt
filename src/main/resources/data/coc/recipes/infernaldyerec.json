@@ -1,0 +1,16 @@
+{
+  "group": "infernaldye",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "coc:hellberry"
+    }
+  ],
+  "result": {
+    "item": "coc:infernal_dye",
+    "count": 2
+  }
+}

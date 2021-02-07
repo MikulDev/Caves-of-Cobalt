@@ -1,0 +1,42 @@
+{
+  "group": "lavacake",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:sugar"
+    },
+    "1": {
+      "item": "minecraft:sugar"
+    },
+    "2": {
+      "item": "minecraft:sugar"
+    },
+    "3": {
+      "item": "coc:hellberry"
+    },
+    "4": {
+      "item": "coc:molten_bark"
+    },
+    "5": {
+      "item": "coc:hellberry"
+    },
+    "6": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "7": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "8": {
+      "item": "minecraft:cocoa_beans"
+    }
+  },
+  "result": {
+    "item": "coc:lava_cake",
+    "count": 1
+  }
+}

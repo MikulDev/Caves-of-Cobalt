@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/ashroot_stage_0",
+    "particle": "coc:blocks/ashroot_stage_0"
+  }
+}

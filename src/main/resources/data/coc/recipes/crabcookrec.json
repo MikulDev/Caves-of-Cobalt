@@ -1,0 +1,12 @@
+{
+  "group": "crab",
+  "type": "minecraft:smelting",
+  "experience": 0,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "coc:raw_crab"
+  },
+  "result": {
+    "item": "coc:cooked_crab"
+  }
+}

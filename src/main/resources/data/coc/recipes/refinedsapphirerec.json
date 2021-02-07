@@ -1,0 +1,30 @@
+{
+  "group": "refinedgems",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "coc:sapphire"
+    },
+    "3": {
+      "item": "coc:sapphire"
+    },
+    "4": {
+      "item": "minecraft:ender_pearl"
+    },
+    "5": {
+      "item": "coc:sapphire"
+    },
+    "7": {
+      "item": "coc:sapphire"
+    }
+  },
+  "result": {
+    "item": "coc:refined_sapphire",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/pivoteron"
+    },
+    "facing=east": {
+      "model": "coc:block/pivoteron",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/pivoteron",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/pivoteron",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "coc:block/pivoteron",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "coc:block/pivoteron",
+      "x": 90
+    }
+  }
+}

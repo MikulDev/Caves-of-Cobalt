@@ -1,0 +1,13 @@
+{
+  "group": "uncraftblock",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:amethyst_block"
+    }
+  ],
+  "result": {
+    "item": "coc:amethyst",
+    "count": 9
+  }
+}

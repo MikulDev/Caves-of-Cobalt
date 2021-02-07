@@ -1,0 +1,16 @@
+{
+  "group": "ashdye",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:ashroot_seed"
+    }
+  },
+  "result": {
+    "item": "minecraft:red_dye",
+    "count": 2
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "shroompick",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "coc:shroomium_bar"
+    },
+    "1": {
+      "item": "coc:shroomium_bar"
+    },
+    "2": {
+      "item": "coc:shroomium_bar"
+    },
+    "4": {
+      "item": "coc:stone_rod"
+    },
+    "7": {
+      "item": "coc:stone_rod"
+    }
+  },
+  "result": {
+    "item": "coc:shroomium_pickaxe",
+    "count": 1
+  }
+}

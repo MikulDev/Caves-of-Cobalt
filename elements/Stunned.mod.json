@@ -1,0 +1,28 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "Potion of Stunning",
+    "effectName": "Stunned",
+    "icon": "stunned.png",
+    "color": {
+      "value": -3394816,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "StunnedStart"
+    },
+    "onActiveTick": {
+      "name": "StunnedTick"
+    },
+    "onExpired": {
+      "name": "StunnedEnd"
+    }
+  }
+}

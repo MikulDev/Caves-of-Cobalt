@@ -1,0 +1,12 @@
+{
+  "_fv": 15,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "W",
+    "keyBindingName": "Malachite Dash (W)",
+    "keyBindingCategoryKey": "caves_of_cobalt",
+    "onKeyReleased": {
+      "name": "MalaDashWUnpress"
+    }
+  }
+}

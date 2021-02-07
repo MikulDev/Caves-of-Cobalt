@@ -1,0 +1,153 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "coc:malachite",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:radiant_topaz",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:lesser_topaz",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:ruby",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:sapphire",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:amethyst",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:strange_petal",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:shroomium_bar",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:glowing_mushroom",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:refined_ruby",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:refined_sapphire",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:refined_amethyst",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:bottledshroomilk",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:soulbound_dagger",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:boreal_key",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:soulpowder",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:disabled_mushroom_midigator",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:broken_chipper",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:lump_of_iron",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:lump_of_gold",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:malachite_shard",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:truffle",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coc:bedrock_shard",
+          "weight": 1
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:exploration_map",
+                            "destination": "coc:hidden_cave",
+                            "decoration": "red_x",
+                            "zoom": 1,
+                            "skip_existing_chunks": false
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "filled_map.venture.huge_ore"
+                            }
+                        }
+                    ],
+                    "name": "minecraft:map"
+                }
+            ]
+        }
+      ]
+    }
+  ]
+}

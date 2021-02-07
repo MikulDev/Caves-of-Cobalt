@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/tendrils_bottom",
+    "particle": "coc:blocks/tendrils_bottom"
+  }
+}

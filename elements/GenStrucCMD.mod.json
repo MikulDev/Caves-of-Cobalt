@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "command",
+  "definition": {
+    "commandName": "genstruc",
+    "permissionLevel": 4,
+    "onCommandExecuted": {
+      "name": "SpawnBiomeParams"
+    }
+  }
+}

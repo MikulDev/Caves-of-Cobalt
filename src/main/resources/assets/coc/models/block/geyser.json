@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/geyser_top",
+    "up": "coc:blocks/geyser_top",
+    "north": "coc:blocks/geyser_side",
+    "east": "coc:blocks/geyser_side",
+    "south": "coc:blocks/geyser_side",
+    "west": "coc:blocks/geyser_side",
+    "particle": "coc:blocks/geyser_top"
+  }
+}

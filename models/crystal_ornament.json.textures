@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "crystal_ornament": "crystal_ornament"
+      },
+      "name": "default"
+    }
+  }
+}

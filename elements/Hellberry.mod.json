@@ -1,0 +1,34 @@
+{
+  "_fv": 15,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "hellberry",
+    "customModelName": "Normal",
+    "name": "Hellberry",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "§9Fire Resistance (0:30)"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 3,
+    "saturation": 0.3,
+    "eatingSpeed": 20,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onRightClicked": {
+      "name": "HellberryPlace"
+    },
+    "onEaten": {
+      "name": "HellberriesEffect"
+    }
+  }
+}

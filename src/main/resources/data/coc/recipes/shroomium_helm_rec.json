@@ -1,0 +1,29 @@
+{
+  "group": "shroomhelm",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:shroomium_bar"
+    },
+    "1": {
+      "item": "coc:shroomium_bar"
+    },
+    "2": {
+      "item": "coc:shroomium_bar"
+    },
+    "3": {
+      "item": "coc:shroomium_bar"
+    },
+    "5": {
+      "item": "coc:shroomium_bar"
+    }
+  },
+  "result": {
+    "item": "coc:shroomium_helmet",
+    "count": 1
+  }
+}

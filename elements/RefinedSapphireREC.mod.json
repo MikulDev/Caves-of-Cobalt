@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "refinedgems",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Sappphire"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Sappphire"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:Sappphire"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Sappphire"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RefinedSapphire"
+    },
+    "name": "refinedsapphirerec",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/kyanyte_cluster",
+    "up": "coc:blocks/kyanyte_cluster",
+    "north": "coc:blocks/kyanyte_cluster",
+    "east": "coc:blocks/kyanyte_cluster",
+    "south": "coc:blocks/kyanyte_cluster",
+    "west": "coc:blocks/kyanyte_cluster",
+    "particle": "coc:blocks/kyanyte_cluster"
+  }
+}

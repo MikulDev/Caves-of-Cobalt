@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/glowing_mushroom_side"
+    },
+    "facing=east": {
+      "model": "coc:block/glowing_mushroom_side",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/glowing_mushroom_side",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/glowing_mushroom_side",
+      "y": 270
+    }
+  }
+}

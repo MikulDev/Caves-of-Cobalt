@@ -1,0 +1,24 @@
+{
+  "group": "shroomsword",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:shroomium_bar"
+    },
+    "1": {
+      "item": "coc:shroomium_bar"
+    },
+    "2": {
+      "item": "coc:stone_rod"
+    }
+  },
+  "result": {
+    "item": "coc:shroomium_sword",
+    "count": 1
+  }
+}

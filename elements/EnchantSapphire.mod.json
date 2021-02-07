@@ -1,0 +1,7 @@
+{
+  "_fv": 15,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable id=\"enchNum\" type=\"Number\">enchNum</variable></variables><block type=\"event_trigger\" x=\"0\" y=\"0\"><field name=\"trigger\">no_ext_trigger</field></block><block type=\"variables_set_number\" x=\"0\" y=\"0\"><field name=\"VAR\">local:enchNum</field></block></xml>"
+  }
+}

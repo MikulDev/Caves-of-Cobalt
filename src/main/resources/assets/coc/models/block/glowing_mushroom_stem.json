@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/glowing_mushroom_stem_top",
+    "up": "coc:blocks/glowing_mushroom_stem_top",
+    "north": "coc:blocks/glowing_mushroom_stem",
+    "east": "coc:blocks/glowing_mushroom_stem",
+    "south": "coc:blocks/glowing_mushroom_stem",
+    "west": "coc:blocks/glowing_mushroom_stem",
+    "particle": "coc:blocks/glowing_mushroom_stem_top"
+  }
+}

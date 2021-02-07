@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/radiant_topaz_nether",
+    "up": "coc:blocks/radiant_topaz_nether",
+    "north": "coc:blocks/radiant_topaz_nether",
+    "east": "coc:blocks/radiant_topaz_nether",
+    "south": "coc:blocks/radiant_topaz_nether",
+    "west": "coc:blocks/radiant_topaz_nether",
+    "particle": "coc:blocks/radiant_topaz_nether"
+  }
+}

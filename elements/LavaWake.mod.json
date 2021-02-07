@@ -1,0 +1,19 @@
+{
+  "_fv": 15,
+  "_type": "particle",
+  "definition": {
+    "texture": "ambient_lava_bubble.png",
+    "animate": true,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 1.0,
+    "speedFactor": 1.0,
+    "gravity": -0.05,
+    "maxAge": 30,
+    "maxAgeDiff": 10,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

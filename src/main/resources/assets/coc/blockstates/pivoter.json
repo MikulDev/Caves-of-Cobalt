@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/pivoter"
+    },
+    "facing=east": {
+      "model": "coc:block/pivoter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/pivoter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/pivoter",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "coc:block/pivoter",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "coc:block/pivoter",
+      "x": 90
+    }
+  }
+}

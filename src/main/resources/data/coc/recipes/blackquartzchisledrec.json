@@ -1,0 +1,9 @@
+{
+  "group": "blackquartz2",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "coc:black_quartz"
+  },
+  "result": "coc:black_quartz_chiseled"
+}

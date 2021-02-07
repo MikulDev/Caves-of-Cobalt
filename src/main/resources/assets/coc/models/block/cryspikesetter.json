@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/jigsaw_crystal",
+    "particle": "coc:blocks/jigsaw_crystal"
+  }
+}

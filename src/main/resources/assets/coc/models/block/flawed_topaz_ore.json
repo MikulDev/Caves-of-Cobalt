@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/sandstone_bottom",
+    "up": "coc:blocks/sandstone_top",
+    "north": "coc:blocks/topaz_sandstone",
+    "east": "coc:blocks/topaz_sandstone",
+    "south": "coc:blocks/topaz_sandstone",
+    "west": "coc:blocks/topaz_sandstone",
+    "particle": "coc:blocks/sandstone_bottom"
+  }
+}

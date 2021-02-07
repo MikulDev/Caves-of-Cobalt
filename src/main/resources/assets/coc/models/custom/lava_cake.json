@@ -1,0 +1,598 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "center",
+      "from": [
+        4,
+        0,
+        4
+      ],
+      "to": [
+        12,
+        7,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            1,
+            16,
+            8
+          ]
+        },
+        "east": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            1,
+            16,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            1,
+            16,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            1,
+            16,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#lava_cake",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        },
+        "down": {
+          "texture": "#lava_cake",
+          "uv": [
+            0,
+            8,
+            8,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "north_side",
+      "from": [
+        5,
+        0,
+        3
+      ],
+      "to": [
+        11,
+        6,
+        4
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lava_cake",
+          "uv": [
+            9,
+            2,
+            15,
+            8
+          ]
+        },
+        "east": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            2,
+            9,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#lava_cake",
+          "uv": [
+            15,
+            2,
+            16,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            3,
+            14,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#lava_cake",
+          "uv": [
+            9,
+            7,
+            15,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "name": "west_side",
+      "from": [
+        3,
+        0,
+        5
+      ],
+      "to": [
+        4,
+        6,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            2,
+            9,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#lava_cake",
+          "uv": [
+            15,
+            2,
+            16,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#lava_cake",
+          "uv": [
+            9,
+            2,
+            15,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#lava_cake",
+          "uv": [
+            7,
+            1,
+            8,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#lava_cake",
+          "uv": [
+            7,
+            9,
+            8,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "name": "south_side",
+      "from": [
+        5,
+        0,
+        12
+      ],
+      "to": [
+        11,
+        6,
+        13
+      ],
+      "faces": {
+        "east": {
+          "texture": "#lava_cake",
+          "uv": [
+            15,
+            2,
+            16,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#lava_cake",
+          "uv": [
+            9,
+            2,
+            15,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            2,
+            9,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#lava_cake",
+          "uv": [
+            9,
+            5,
+            15,
+            6
+          ]
+        },
+        "down": {
+          "texture": "#lava_cake",
+          "uv": [
+            2,
+            7,
+            8,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "name": "east_side",
+      "from": [
+        12,
+        0,
+        5
+      ],
+      "to": [
+        13,
+        6,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lava_cake",
+          "uv": [
+            15,
+            2,
+            16,
+            8
+          ]
+        },
+        "east": {
+          "texture": "#lava_cake",
+          "uv": [
+            9,
+            2,
+            15,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            2,
+            9,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#lava_cake",
+          "uv": [
+            15,
+            1,
+            16,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#lava_cake",
+          "uv": [
+            0,
+            9,
+            1,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "name": "choco_1",
+      "from": [
+        8,
+        0,
+        13
+      ],
+      "to": [
+        10,
+        5,
+        14
+      ],
+      "faces": {
+        "east": {
+          "texture": "#lava_cake",
+          "uv": [
+            10,
+            11,
+            11,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            11,
+            10,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#lava_cake",
+          "uv": [
+            10,
+            11,
+            11,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#lava_cake",
+          "uv": [
+            13,
+            9,
+            15,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "name": "choco_2",
+      "from": [
+        6,
+        0,
+        13
+      ],
+      "to": [
+        8,
+        2,
+        15
+      ],
+      "faces": {
+        "east": {
+          "texture": "#lava_cake",
+          "uv": [
+            13,
+            11,
+            15,
+            13
+          ]
+        },
+        "south": {
+          "texture": "#lava_cake",
+          "uv": [
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#lava_cake",
+          "uv": [
+            9,
+            14,
+            11,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            8,
+            10,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            12,
+            10,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "name": "choco_3",
+      "from": [
+        8,
+        0,
+        11
+      ],
+      "to": [
+        13,
+        1,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#lava_cake",
+          "uv": [
+            11,
+            9,
+            16,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#lava_cake",
+          "uv": [
+            10,
+            15,
+            15,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#lava_cake",
+          "uv": [
+            8,
+            15,
+            13,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#lava_cake",
+          "uv": [
+            11,
+            8,
+            16,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#lava_cake",
+          "uv": [
+            11,
+            11,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#lava_cake",
+          "uv": [
+            1,
+            9,
+            6,
+            14
+          ]
+        }
+      }
+    }
+  ]
+}

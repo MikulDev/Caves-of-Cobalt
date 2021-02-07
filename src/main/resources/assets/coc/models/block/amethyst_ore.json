@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/amethyst_ore",
+    "up": "coc:blocks/amethyst_ore",
+    "north": "coc:blocks/amethyst_ore",
+    "east": "coc:blocks/amethyst_ore",
+    "south": "coc:blocks/amethyst_ore",
+    "west": "coc:blocks/amethyst_ore",
+    "particle": "coc:blocks/amethyst_ore"
+  }
+}

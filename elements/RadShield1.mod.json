@@ -1,0 +1,23 @@
+{
+  "_fv": 15,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "shield_1.png",
+          "use1Xscale": false,
+          "name": "shield_1.png",
+          "x": 305,
+          "y": 220
+        }
+      }
+    ],
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "RadShield1Display"
+    }
+  }
+}

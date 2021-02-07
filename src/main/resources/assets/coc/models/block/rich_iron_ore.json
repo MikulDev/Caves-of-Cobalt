@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/rich_iron",
+    "up": "coc:blocks/rich_iron",
+    "north": "coc:blocks/rich_iron",
+    "east": "coc:blocks/rich_iron",
+    "south": "coc:blocks/rich_iron",
+    "west": "coc:blocks/rich_iron",
+    "particle": "coc:blocks/rich_iron"
+  }
+}

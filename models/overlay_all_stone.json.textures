@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "overlay": ""
+      },
+      "name": "default"
+    },
+    "silver": {
+      "map": {
+        "overlay": "silver_ore_over"
+      },
+      "name": "silver"
+    }
+  }
+}

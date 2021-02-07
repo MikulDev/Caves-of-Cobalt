@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "tab",
+  "definition": {
+    "name": "Jeweling",
+    "icon": {
+      "value": "CUSTOM:JewelingTabIcon"
+    },
+    "showSearch": false
+  }
+}

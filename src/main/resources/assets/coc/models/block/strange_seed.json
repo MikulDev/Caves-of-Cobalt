@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/strange_seed",
+    "particle": "coc:blocks/strange_seed"
+  }
+}

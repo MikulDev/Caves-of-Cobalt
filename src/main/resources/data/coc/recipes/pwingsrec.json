@@ -1,0 +1,28 @@
+{
+  "group": "phoenixwings",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:infernofeather"
+    },
+    {
+      "item": "coc:soul_powder"
+    },
+    {
+      "item": "coc:infernofeather"
+    },
+    {
+      "item": "coc:ruby"
+    },
+    {
+      "item": "coc:infernal_dye"
+    },
+    {
+      "item": "coc:ruby"
+    }
+  ],
+  "result": {
+    "item": "coc:phoenixwings",
+    "count": 1
+  }
+}

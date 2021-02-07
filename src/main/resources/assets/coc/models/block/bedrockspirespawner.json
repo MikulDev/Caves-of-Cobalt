@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/lava_cake",
+    "up": "coc:blocks/lava_cake",
+    "north": "coc:blocks/lava_cake",
+    "east": "coc:blocks/lava_cake",
+    "south": "coc:blocks/lava_cake",
+    "west": "coc:blocks/lava_cake",
+    "particle": "coc:blocks/lava_cake"
+  }
+}

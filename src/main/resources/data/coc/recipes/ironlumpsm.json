@@ -1,0 +1,12 @@
+{
+  "group": "lumpsmelt",
+  "type": "minecraft:smelting",
+  "experience": 10,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "coc:lump_of_iron"
+  },
+  "result": {
+    "item": "minecraft:iron_ingot"
+  }
+}

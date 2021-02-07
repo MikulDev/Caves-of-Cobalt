@@ -1,0 +1,442 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "base",
+      "from": [
+        2,
+        0,
+        2
+      ],
+      "to": [
+        14,
+        18,
+        14
+      ],
+      "faces": {
+        "north": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            12,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#temple_bricks",
+          "uv": [
+            4,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            12,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#temple_bricks",
+          "uv": [
+            4,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#temple_bricks",
+          "uv": [
+            2,
+            0,
+            14,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "top",
+      "from": [
+        0,
+        17,
+        0
+      ],
+      "to": [
+        16,
+        20,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pedestal_top_side",
+          "uv": [
+            0,
+            0,
+            16,
+            3
+          ]
+        },
+        "east": {
+          "texture": "#pedestal_top_side",
+          "uv": [
+            0,
+            0,
+            16,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#pedestal_top_side",
+          "uv": [
+            0,
+            0,
+            16,
+            3
+          ]
+        },
+        "west": {
+          "texture": "#pedestal_top_side",
+          "uv": [
+            0,
+            0,
+            16,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#pedestal_top",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "side_west",
+      "from": [
+        1,
+        0,
+        7
+      ],
+      "to": [
+        2,
+        17,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#temple_bricks",
+          "uv": [
+            2,
+            0,
+            4,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "name": "side_north",
+      "from": [
+        7,
+        0,
+        1
+      ],
+      "to": [
+        9,
+        17,
+        2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#temple_bricks",
+          "uv": [
+            10,
+            0,
+            12,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            2,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "side_east",
+      "from": [
+        14,
+        0,
+        7
+      ],
+      "to": [
+        15,
+        17,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#temple_bricks",
+          "uv": [
+            3,
+            0,
+            4,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#temple_bricks",
+          "uv": [
+            10,
+            0,
+            12,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#temple_bricks",
+          "uv": [
+            8,
+            0,
+            9,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "name": "side_south",
+      "from": [
+        7,
+        0,
+        14
+      ],
+      "to": [
+        9,
+        17,
+        15
+      ],
+      "faces": {
+        "east": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#temple_bricks",
+          "uv": [
+            11,
+            0,
+            13,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            1,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#temple_bricks",
+          "uv": [
+            0,
+            0,
+            2,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

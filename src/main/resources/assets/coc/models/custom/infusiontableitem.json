@@ -1,0 +1,872 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        1.5,
+        0
+      ],
+      "scale": [
+        0.88,
+        1,
+        0.825
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        4,
+        0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        291,
+        0
+      ],
+      "translation": [
+        2,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.3
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        31,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "base",
+      "from": [
+        4.5,
+        0,
+        4.5
+      ],
+      "to": [
+        11.5,
+        6,
+        11.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            0,
+            0,
+            7,
+            6
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            0,
+            0,
+            7,
+            6
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            0,
+            0,
+            7,
+            6
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            0,
+            0,
+            7,
+            6
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            0,
+            7,
+            7,
+            14
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            0,
+            15,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "name": "spike1a",
+      "from": [
+        4.5,
+        6,
+        9.5
+      ],
+      "to": [
+        6.5,
+        10,
+        11.5
+      ],
+      "rotation": {
+        "origin": [
+          6,
+          6,
+          6
+        ],
+        "axis": "z",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            8,
+            10,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            8,
+            10,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            10,
+            10,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "spike2a",
+      "from": [
+        4.5,
+        6,
+        4.5
+      ],
+      "to": [
+        6.5,
+        10,
+        6.5
+      ],
+      "rotation": {
+        "origin": [
+          6,
+          6,
+          6
+        ],
+        "axis": "z",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            8,
+            10,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            8,
+            10,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            10,
+            10,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "spike3a",
+      "from": [
+        9.5,
+        6,
+        4.5
+      ],
+      "to": [
+        11.5,
+        10,
+        6.5
+      ],
+      "rotation": {
+        "origin": [
+          10,
+          6,
+          6
+        ],
+        "axis": "z",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            8,
+            10,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            8,
+            10,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            10,
+            10,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "spike4a",
+      "from": [
+        9.5,
+        6,
+        9.5
+      ],
+      "to": [
+        11.5,
+        10,
+        11.5
+      ],
+      "rotation": {
+        "origin": [
+          10,
+          6,
+          6
+        ],
+        "axis": "z",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            8,
+            10,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            8,
+            10,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            8,
+            13,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            8,
+            10,
+            10,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "crystal",
+      "from": [
+        7,
+        6.5,
+        7
+      ],
+      "to": [
+        9,
+        9.5,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            7,
+            13,
+            9,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            9,
+            13,
+            11,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            7,
+            13,
+            9,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            9,
+            13,
+            11,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            11,
+            13,
+            13,
+            15
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            13,
+            16,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "name": "spike1b",
+      "from": [
+        4,
+        9.5,
+        5
+      ],
+      "to": [
+        5,
+        13.5,
+        6
+      ],
+      "rotation": {
+        "origin": [
+          3,
+          11,
+          5
+        ],
+        "axis": "z",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            9
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            11,
+            15,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "spike2b",
+      "from": [
+        4,
+        9.5,
+        10
+      ],
+      "to": [
+        5,
+        13.5,
+        11
+      ],
+      "rotation": {
+        "origin": [
+          3,
+          11,
+          5
+        ],
+        "axis": "z",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            9
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            11,
+            15,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "spike3b",
+      "from": [
+        11,
+        9.5,
+        5
+      ],
+      "to": [
+        12,
+        13.5,
+        6
+      ],
+      "rotation": {
+        "origin": [
+          13,
+          11,
+          5
+        ],
+        "axis": "z",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            9
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            11,
+            15,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "spike4b",
+      "from": [
+        11,
+        9.5,
+        10
+      ],
+      "to": [
+        12,
+        13.5,
+        11
+      ],
+      "rotation": {
+        "origin": [
+          13,
+          11,
+          5
+        ],
+        "axis": "z",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            8,
+            15,
+            9
+          ]
+        },
+        "down": {
+          "texture": "#infusion_small",
+          "uv": [
+            14,
+            11,
+            15,
+            12
+          ]
+        }
+      }
+    }
+  ]
+}

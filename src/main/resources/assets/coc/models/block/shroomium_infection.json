@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/infection",
+    "up": "coc:blocks/infection",
+    "north": "coc:blocks/infection",
+    "east": "coc:blocks/infection",
+    "south": "coc:blocks/infection",
+    "west": "coc:blocks/infection",
+    "particle": "coc:blocks/infection"
+  }
+}

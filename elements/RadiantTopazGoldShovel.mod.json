@@ -1,0 +1,29 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gold_shovel_topaz",
+    "customModelName": "Normal",
+    "name": "§eGolden Shovel§r",
+    "specialInfo": [
+      "§6Radiant Topaz§r"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 5,
+    "efficiency": 14.0,
+    "attackSpeed": 2.8,
+    "enchantability": 50,
+    "damageVsEntity": 3.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

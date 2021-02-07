@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "tiki_torch_single": "tiki_torch"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "_fv": 15,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "gold_helmet_lesser_t",
+    "enableBody": true,
+    "textureBody": "gold_chestplate_lesser_t",
+    "enableLeggings": true,
+    "textureLeggings": "gold_leggings_lesser_t",
+    "enableBoots": true,
+    "textureBoots": "gold_boots_lesser_t",
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "armorTextureFile": "gold__lesser_t",
+    "helmetName": "Gold Helmet",
+    "bodyName": "Gold Chestplate",
+    "leggingsName": "Gold Leggings",
+    "bootsName": "Gold Boots",
+    "helmetSpecialInfo": [
+      "§eFlawed Topaz§r"
+    ],
+    "bodySpecialInfo": [
+      "§eFlawed Topaz§r"
+    ],
+    "leggingsSpecialInfo": [
+      "§eFlawed Topaz§r"
+    ],
+    "bootsSpecialInfo": [
+      "§eFlawed Topaz§r"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 15,
+    "damageValueHelmet": 1,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 1,
+    "enchantability": 20,
+    "toughness": 0.5,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/mirewood_leaves",
+    "up": "coc:blocks/mirewood_leaves",
+    "north": "coc:blocks/mirewood_leaves",
+    "east": "coc:blocks/mirewood_leaves",
+    "south": "coc:blocks/mirewood_leaves",
+    "west": "coc:blocks/mirewood_leaves",
+    "particle": "coc:blocks/mirewood_leaves"
+  }
+}

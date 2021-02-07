@@ -1,0 +1,22 @@
+{
+  "_fv": 15,
+  "_type": "particle",
+  "definition": {
+    "texture": "stunned_effect.png",
+    "animate": true,
+    "frameDuration": 2,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 1.0,
+    "speedFactor": 0.0,
+    "gravity": 0.0,
+    "maxAge": 10000,
+    "maxAgeDiff": 0,
+    "canCollide": false,
+    "alwaysShow": true,
+    "renderType": "LIT",
+    "additionalExpiryCondition": {
+      "name": "StunParticleShow"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/jigsaw_temple_flat",
+    "up": "coc:blocks/jigsaw_temple_flat",
+    "north": "coc:blocks/jigsaw_temple_flat",
+    "east": "coc:blocks/jigsaw_temple_flat",
+    "south": "coc:blocks/jigsaw_temple_flat",
+    "west": "coc:blocks/jigsaw_temple_flat",
+    "particle": "coc:blocks/jigsaw_temple_flat"
+  }
+}

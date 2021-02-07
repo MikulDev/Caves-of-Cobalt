@@ -1,0 +1,26 @@
+{
+  "group": "gemblocks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:radiant_topaz"
+    },
+    "1": {
+      "item": "coc:radiant_topaz"
+    },
+    "2": {
+      "item": "coc:radiant_topaz"
+    },
+    "3": {
+      "item": "coc:radiant_topaz"
+    }
+  },
+  "result": {
+    "item": "coc:radiant_topaz_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_fv": 15,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:GlowingStone"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "CUSTOM:StrangeGrass"
+      },
+      {
+        "value": "CUSTOM:InfectedPlanks"
+      },
+      {
+        "value": "CUSTOM:DarkMirewoodPlanks"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "CUSTOM:BigMushroomStem"
+      },
+      {
+        "value": "CUSTOM:StrippedMirewoodLog"
+      },
+      {
+        "value": "CUSTOM:MirewoodLog"
+      }
+    ],
+    "functions": [],
+    "name": "mushroom_placeable",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "coc:custom/monument_altar_empty",
+  "textures": {
+    "all": "coc:blocks/monument_altar_top",
+    "particle": "coc:blocks/monument_altar_top",
+    "monument_altar_bottom": "coc:blocks/monument_altar_bottom",
+    "monument_altar_top": "coc:blocks/monument_altar_top",
+    "monument_altar_side": "coc:blocks/monument_altar_side"
+  }
+}

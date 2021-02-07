@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "coc:block/strange_plant"
+    },
+    "half=lower": {
+      "model": "coc:block/strange_plant_bottom"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "lava_sponge",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "coc:infernal_dye"
+    },
+    "3": {
+      "item": "coc:infernal_dye"
+    },
+    "4": {
+      "item": "coc:charred_stone"
+    },
+    "5": {
+      "item": "coc:infernal_dye"
+    },
+    "7": {
+      "item": "coc:infernal_dye"
+    }
+  },
+  "result": {
+    "item": "coc:lava_sponge",
+    "count": 1
+  }
+}

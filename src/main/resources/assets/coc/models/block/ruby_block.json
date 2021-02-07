@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coc:blocks/ruby_block",
+    "particle": "coc:blocks/ruby_block"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "group": "chippers",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:shroomium_bar"
+    },
+    "1": {
+      "item": "coc:broken_chipper"
+    },
+    "2": {
+      "item": "coc:stone_rod"
+    }
+  },
+  "result": {
+    "item": "coc:shroomium_chipper",
+    "count": 1
+  }
+}

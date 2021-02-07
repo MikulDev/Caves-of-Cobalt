@@ -1,0 +1,19 @@
+{
+  "group": "strangestew",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:beetroot_soup"
+    },
+    {
+      "item": "coc:glowing_mushroom"
+    },
+    {
+      "item": "coc:glowing_mushroom"
+    }
+  ],
+  "result": {
+    "item": "coc:strange_stew",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/malachite_block",
+    "up": "coc:blocks/malachite_block",
+    "north": "coc:blocks/malachite_block",
+    "east": "coc:blocks/malachite_block",
+    "south": "coc:blocks/malachite_block",
+    "west": "coc:blocks/malachite_block",
+    "particle": "coc:blocks/malachite_block"
+  }
+}

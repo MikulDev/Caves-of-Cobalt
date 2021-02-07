@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/rich_lapis",
+    "up": "coc:blocks/rich_lapis",
+    "north": "coc:blocks/rich_lapis",
+    "east": "coc:blocks/rich_lapis",
+    "south": "coc:blocks/rich_lapis",
+    "west": "coc:blocks/rich_lapis",
+    "particle": "coc:blocks/rich_lapis"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/jigsaw_lantern",
+    "up": "coc:blocks/jigsaw_lantern",
+    "north": "coc:blocks/jigsaw_lantern",
+    "east": "coc:blocks/jigsaw_lantern",
+    "south": "coc:blocks/jigsaw_lantern",
+    "west": "coc:blocks/jigsaw_lantern",
+    "particle": "coc:blocks/jigsaw_lantern"
+  }
+}

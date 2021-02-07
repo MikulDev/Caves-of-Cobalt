@@ -1,0 +1,9 @@
+{
+  "parent": "coc:custom/ice_chest_open",
+  "textures": {
+    "all": "coc:blocks/ice_chest_inside",
+    "particle": "coc:blocks/ice_chest_inside",
+    "ice_chest_inside": "coc:blocks/ice_chest_inside",
+    "ice_chest_side": "coc:blocks/ice_chest_side"
+  }
+}

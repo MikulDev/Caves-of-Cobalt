@@ -1,0 +1,122 @@
+{
+  "_fv": 15,
+  "_type": "block",
+  "definition": {
+    "texture": "stalagmite",
+    "textureTop": "stalagmite",
+    "textureLeft": "stalagmite",
+    "textureFront": "stalagmite",
+    "textureRight": "stalagmite",
+    "textureBack": "stalagmite",
+    "renderType": 2,
+    "customModelName": "fake_stalagmite:default",
+    "rotationMode": 0,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "CUTOUT_MIPPED",
+    "mx": 0.19999999999999998,
+    "my": 0.0,
+    "mz": 0.19999999999999998,
+    "Mx": 0.7999999999999999,
+    "My": 0.7,
+    "Mz": 0.7999999999999999,
+    "name": "Infested Stalagmite",
+    "specialInfo": [],
+    "hardness": 2.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "DECORATIONS"
+    },
+    "destroyTool": "pickaxe",
+    "customDrop": {
+      "value": "Blocks.AIR"
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 1,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "onBlockAdded": {
+      "name": "FakeStalaPlace"
+    },
+    "onTickUpdate": {
+      "name": "StalagmiteUpdateTick"
+    },
+    "onDestroyedByPlayer": {
+      "name": "FakeStalaMDestroy"
+    },
+    "onStartToDestroy": {
+      "name": "FakeStalaMine"
+    },
+    "onEntityWalksOn": {
+      "name": "SpawnCrab"
+    },
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.AIR"
+      }
+    ],
+    "frequencyPerChunks": 50,
+    "frequencyOnChunk": 5,
+    "minGenerateHeight": 10,
+    "maxGenerateHeight": 62
+  }
+}

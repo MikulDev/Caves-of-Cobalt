@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "coc:textures/nonglowing_stone.png",
+    "icon": {
+      "item": "coc:cobalt"
+    },
+    "title": {
+      "translate": "advancements.cocbaseadv.title"
+    },
+    "description": {
+      "translate": "advancements.cocbaseadv.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "cocbaseadv": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

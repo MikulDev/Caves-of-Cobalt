@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/freezing_mist",
+    "up": "coc:blocks/freezing_mist",
+    "north": "coc:blocks/freezing_mist",
+    "east": "coc:blocks/freezing_mist",
+    "south": "coc:blocks/freezing_mist",
+    "west": "coc:blocks/freezing_mist",
+    "particle": "coc:blocks/freezing_mist"
+  }
+}

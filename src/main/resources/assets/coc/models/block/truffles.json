@@ -1,0 +1,9 @@
+{
+  "parent": "coc:custom/truffles",
+  "textures": {
+    "all": "coc:blocks/truffle_item",
+    "particle": "coc:blocks/truffle_item",
+    "truffle_block_2": "coc:blocks/truffle_block_2",
+    "truffle_block": "coc:blocks/truffle_block"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "lava_cake": "lava_cake"
+      },
+      "name": "default"
+    }
+  }
+}

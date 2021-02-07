@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:raw_crab"
+    },
+    "title": {
+      "translate": "advancements.mineanddineadv.title"
+    },
+    "description": {
+      "translate": "advancements.mineanddineadv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mineanddineadv": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "coc:cooked_crab"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "coc:cocbaseadv"
+}

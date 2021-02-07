@@ -1,0 +1,67 @@
+{
+  "_fv": 15,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "gold_helmet_topaz",
+    "enableBody": true,
+    "textureBody": "gold_chestplate_topaz",
+    "enableLeggings": true,
+    "textureLeggings": "gold_leggings_topaz",
+    "enableBoots": true,
+    "textureBoots": "gold_boots_topaz",
+    "onHelmetTick": {
+      "name": "RadiantTopazHelmEffect"
+    },
+    "onLeggingsTick": {
+      "name": "RadGoldLegsTick"
+    },
+    "onBootsTick": {
+      "name": "RadiantTopazBootsEffect"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "armorTextureFile": "gold__topaz",
+    "helmetName": "§eGolden Helmet§r",
+    "bodyName": "§eGolden Chestplate§r",
+    "leggingsName": "§eGold Leggings§r",
+    "bootsName": "§eRadiant Boots§r",
+    "helmetSpecialInfo": [
+      "§6Radiant§f",
+      "§7Ability: §8Press §9X §8to strike lightning around you"
+    ],
+    "bodySpecialInfo": [
+      "§6Radiant§f",
+      "§7Ability: §8Press §9Z §8to create a shield that pushes enemies"
+    ],
+    "leggingsSpecialInfo": [
+      "§6Radiant§r"
+    ],
+    "bootsSpecialInfo": [
+      "§6Radiant§f",
+      "§7Passive Ability: §8Fall slower and recieve no fall damage. Crouch to fall normally"
+    ],
+    "helmetModelName": "Modelradiant_helmet",
+    "helmetModelPart": "helmet",
+    "helmetModelTexture": "radiant_helmet.png",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 150,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 30,
+    "toughness": 2.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_gold"
+    },
+    "repairItems": []
+  }
+}

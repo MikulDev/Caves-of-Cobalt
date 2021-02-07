@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/nether_bedrock_ore",
+    "up": "coc:blocks/nether_bedrock_ore",
+    "north": "coc:blocks/nether_bedrock_ore",
+    "east": "coc:blocks/nether_bedrock_ore",
+    "south": "coc:blocks/nether_bedrock_ore",
+    "west": "coc:blocks/nether_bedrock_ore",
+    "particle": "coc:blocks/nether_bedrock_ore"
+  }
+}

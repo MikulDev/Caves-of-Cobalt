@@ -1,0 +1,10 @@
+{
+  "parent": "coc:custom/pedestal_empty",
+  "textures": {
+    "all": "coc:blocks/pedestal_top",
+    "particle": "coc:blocks/pedestal_top",
+    "pedestal_top": "coc:blocks/pedestal_top",
+    "temple_bricks": "coc:blocks/temple_bricks",
+    "pedestal_top_side": "coc:blocks/pedestal_top_side"
+  }
+}

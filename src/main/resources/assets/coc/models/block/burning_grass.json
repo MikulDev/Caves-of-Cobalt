@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/molten_stone",
+    "up": "coc:blocks/molten_grass_top",
+    "north": "coc:blocks/molten_grass_side",
+    "east": "coc:blocks/molten_grass_side",
+    "south": "coc:blocks/molten_grass_side",
+    "west": "coc:blocks/molten_grass_side",
+    "particle": "coc:blocks/molten_stone"
+  }
+}

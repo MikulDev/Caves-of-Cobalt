@@ -1,0 +1,32 @@
+{
+  "group": "tomes",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:exotic_leather"
+    },
+    "1": {
+      "item": "minecraft:fire_charge"
+    },
+    "2": {
+      "item": "coc:exotic_leather"
+    },
+    "3": {
+      "item": "coc:infernal_dye"
+    },
+    "4": {
+      "item": "minecraft:enchanted_book"
+    },
+    "5": {
+      "item": "coc:infernal_dye"
+    }
+  },
+  "result": {
+    "item": "coc:tome_of_inferno",
+    "count": 1
+  }
+}

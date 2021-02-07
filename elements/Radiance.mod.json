@@ -1,0 +1,25 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "Radiance",
+    "effectName": "Radiance",
+    "icon": "radiance.png",
+    "color": {
+      "value": -13261,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "RadianceTick"
+    },
+    "onExpired": {
+      "name": "RadiancePotionReset"
+    }
+  }
+}

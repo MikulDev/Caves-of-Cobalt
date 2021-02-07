@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "lavacake",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "CUSTOM:Hellberry"
+      },
+      {
+        "value": "CUSTOM:InfernalBark"
+      },
+      {
+        "value": "CUSTOM:Hellberry"
+      },
+      {
+        "value": "Items.DYE#3"
+      },
+      {
+        "value": "Items.DYE#3"
+      },
+      {
+        "value": "Items.DYE#3"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LavaCake"
+    },
+    "name": "lavacakerec",
+    "namespace": "mod"
+  }
+}

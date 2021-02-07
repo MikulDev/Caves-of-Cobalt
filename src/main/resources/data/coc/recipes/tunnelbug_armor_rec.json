@@ -1,0 +1,29 @@
+{
+  "group": "tunnelbugarmor",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:silver_ingot"
+    },
+    "1": {
+      "item": "coc:silver_ingot"
+    },
+    "3": {
+      "tag": "minecraft:wool"
+    },
+    "4": {
+      "item": "coc:silver_ingot"
+    },
+    "5": {
+      "item": "coc:silver_ingot"
+    }
+  },
+  "result": {
+    "item": "coc:tunnelbug_armor",
+    "count": 1
+  }
+}

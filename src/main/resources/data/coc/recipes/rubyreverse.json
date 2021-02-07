@@ -1,0 +1,13 @@
+{
+  "group": "uncraftblock",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:ruby_block"
+    }
+  ],
+  "result": {
+    "item": "coc:ruby",
+    "count": 9
+  }
+}

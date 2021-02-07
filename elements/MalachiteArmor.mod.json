@@ -1,0 +1,65 @@
+{
+  "_fv": 15,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "malachite_helmet",
+    "enableBody": true,
+    "textureBody": "malachite_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "malachite_leggings",
+    "enableBoots": true,
+    "textureBoots": "malachite_skippers",
+    "onHelmetTick": {
+      "name": "GiveLavaVision"
+    },
+    "onBodyTick": {
+      "name": "GiveLavaSpeed"
+    },
+    "onBootsTick": {
+      "name": "MalachiteBootsTick"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "gold__lesser_t",
+    "helmetName": "Malachite Helmet",
+    "bodyName": "Malachite Chestplate",
+    "leggingsName": "Malachite Leggings",
+    "bootsName": "Malachite Lava Skippers",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "ModelMalachiteArmor",
+    "helmetModelPart": "head",
+    "helmetModelTexture": "malachite_skippers.png",
+    "bodyModelName": "ModelMalachiteArmor",
+    "bodyModelPart": "body",
+    "bodyModelTexture": "malachite_skippers.png",
+    "leggingsModelName": "ModelMalachiteLeggings",
+    "leggingsModelPartL": "left_leg",
+    "leggingsModelPartR": "right_leg",
+    "leggingsModelTexture": "malachite_skippers.png",
+    "bootsModelName": "ModelMalachiteArmor",
+    "bootsModelPartL": "left_leg",
+    "bootsModelPartR": "right_leg",
+    "bootsModelTexture": "malachite_skippers.png",
+    "maxDamage": 40,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 13,
+    "toughness": 2.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_chain"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Malachite"
+      }
+    ]
+  }
+}

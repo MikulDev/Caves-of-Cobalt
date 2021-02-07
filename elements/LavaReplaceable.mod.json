@@ -1,0 +1,40 @@
+{
+  "_fv": 15,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:SingedGrass"
+      },
+      {
+        "value": "CUSTOM:LavaLily0"
+      },
+      {
+        "value": "CUSTOM:LavaLily1"
+      },
+      {
+        "value": "CUSTOM:LavaLilySprout"
+      },
+      {
+        "value": "CUSTOM:HellberryBush"
+      },
+      {
+        "value": "CUSTOM:Cactus"
+      },
+      {
+        "value": "CUSTOM:Wartweed"
+      },
+      {
+        "value": "Blocks.CAVE_AIR"
+      },
+      {
+        "value": "Blocks.AIR"
+      }
+    ],
+    "functions": [],
+    "name": "lava_replaceable",
+    "namespace": "forge"
+  }
+}

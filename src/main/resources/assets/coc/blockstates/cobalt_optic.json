@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/cobalt_optic"
+    },
+    "facing=east": {
+      "model": "coc:block/cobalt_optic",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/cobalt_optic",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/cobalt_optic",
+      "y": 270
+    }
+  }
+}

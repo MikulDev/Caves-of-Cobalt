@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/ancientobserver"
+    },
+    "facing=east": {
+      "model": "coc:block/ancientobserver",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/ancientobserver",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/ancientobserver",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "group": "ashroot2",
+  "type": "minecraft:smoking",
+  "experience": 1,
+  "cookingtime": 50,
+  "ingredient": {
+    "item": "coc:ashroot_seed"
+  },
+  "result": {
+    "item": "coc:popped_ashroot_seed"
+  }
+}

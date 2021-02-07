@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/lava_sponge_filled",
+    "up": "coc:blocks/lava_sponge_filled",
+    "north": "coc:blocks/lava_sponge_filled",
+    "east": "coc:blocks/lava_sponge_filled",
+    "south": "coc:blocks/lava_sponge_filled",
+    "west": "coc:blocks/lava_sponge_filled",
+    "particle": "coc:blocks/lava_sponge_filled"
+  }
+}

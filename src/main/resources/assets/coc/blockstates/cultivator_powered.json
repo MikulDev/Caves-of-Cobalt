@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/cultivator_powered"
+    },
+    "facing=east": {
+      "model": "coc:block/cultivator_powered",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/cultivator_powered",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/cultivator_powered",
+      "y": 270
+    }
+  }
+}

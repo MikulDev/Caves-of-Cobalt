@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "crate_side": "crate_side",
+        "crate_top": "crate_top"
+      },
+      "name": "default"
+    },
+    "none": {
+      "map": {
+        "crate_side": "infusion_block",
+        "crate_top": "infusion_block"
+      },
+      "name": "none"
+    }
+  }
+}

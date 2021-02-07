@@ -1,0 +1,33 @@
+{
+  "group": "malachitehelmet",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "1": {
+      "item": "coc:obsidian_scales"
+    },
+    "3": {
+      "item": "coc:malachite"
+    },
+    "4": {
+      "item": "coc:obsidian_scales"
+    },
+    "5": {
+      "item": "coc:malachite"
+    },
+    "6": {
+      "item": "coc:malachite"
+    },
+    "8": {
+      "item": "coc:malachite"
+    }
+  },
+  "result": {
+    "item": "coc:malachite_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "group": "lumpsmelt2",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "coc:rough_diamond"
+  },
+  "result": {
+    "item": "minecraft:diamond"
+  }
+}

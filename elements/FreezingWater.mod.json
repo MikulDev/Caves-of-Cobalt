@@ -1,0 +1,21 @@
+{
+  "_fv": 15,
+  "_type": "fluid",
+  "definition": {
+    "name": "FreezingWater",
+    "textureStill": "cold_water_still",
+    "textureFlowing": "cold_water_flowing",
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1500,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": true,
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "onEntityCollides": {
+      "name": "LiquidSlow"
+    }
+  }
+}

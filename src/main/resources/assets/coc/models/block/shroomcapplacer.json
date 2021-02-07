@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/jigsaw_spawner",
+    "up": "coc:blocks/jigsaw_spawner",
+    "north": "coc:blocks/jigsaw_spawner",
+    "east": "coc:blocks/jigsaw_spawner",
+    "south": "coc:blocks/jigsaw_spawner",
+    "west": "coc:blocks/jigsaw_spawner",
+    "particle": "coc:blocks/jigsaw_spawner"
+  }
+}

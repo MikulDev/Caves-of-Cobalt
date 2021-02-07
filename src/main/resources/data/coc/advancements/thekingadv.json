@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:empty_gold_chestplate"
+    },
+    "title": {
+      "translate": "advancements.thekingadv.title"
+    },
+    "description": {
+      "translate": "advancements.thekingadv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thekingadv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "parent": "coc:cocbaseadv"
+}

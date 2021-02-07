@@ -1,0 +1,22 @@
+{
+  "group": "exleather",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "1": {
+      "item": "coc:strange_petal"
+    },
+    "2": {
+      "item": "minecraft:rabbit_hide"
+    }
+  },
+  "result": {
+    "item": "coc:exotic_leather",
+    "count": 4
+  }
+}

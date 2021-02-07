@@ -1,0 +1,8 @@
+{
+  "parent": "coc:custom/watcher_stone",
+  "textures": {
+    "all": "coc:blocks/watcher_stone",
+    "particle": "coc:blocks/watcher_stone",
+    "watcher_stone": "coc:blocks/watcher_stone"
+  }
+}

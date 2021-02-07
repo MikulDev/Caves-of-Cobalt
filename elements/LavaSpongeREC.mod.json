@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "lava_sponge",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:InfernalDye"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:InfernalDye"
+      },
+      {
+        "value": "CUSTOM:Charstone"
+      },
+      {
+        "value": "CUSTOM:InfernalDye"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:InfernalDye"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LavaSponge"
+    },
+    "name": "lava_sponge_rec",
+    "namespace": "mod"
+  }
+}

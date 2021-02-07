@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "coc:liquid_slime",
+    "coc:liquid_slime_flowing",
+    "coc:freezing_water",
+    "coc:freezing_water_flowing"
+  ]
+}

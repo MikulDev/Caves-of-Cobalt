@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:strange_grass"
+    },
+    "title": {
+      "translate": "advancements.astrangeplaceadv.title"
+    },
+    "description": {
+      "translate": "advancements.astrangeplaceadv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "astrangeplaceadv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "parent": "coc:cocbaseadv"
+}

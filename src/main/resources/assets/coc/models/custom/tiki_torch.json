@@ -1,0 +1,424 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.505,
+        0.585,
+        0.525
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        217,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0.5,
+        0
+      ],
+      "scale": [
+        0.175,
+        0.175,
+        0.175
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "stick",
+      "from": [
+        7,
+        0,
+        7
+      ],
+      "to": [
+        9,
+        6,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tiki_torch",
+          "uv": [
+            14,
+            10,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#tiki_torch",
+          "uv": [
+            14,
+            4,
+            16,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#tiki_torch",
+          "uv": [
+            14,
+            10,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#tiki_torch",
+          "uv": [
+            14,
+            4,
+            16,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#tiki_torch",
+          "uv": [
+            11,
+            14,
+            13,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "case",
+      "from": [
+        5.5,
+        7,
+        5.5
+      ],
+      "to": [
+        10.5,
+        12,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            11,
+            9,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            11,
+            9,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            11,
+            9,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            11,
+            9,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#tiki_torch",
+          "uv": [
+            9,
+            12,
+            13,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            11,
+            9,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "flame",
+      "from": [
+        6,
+        12,
+        6
+      ],
+      "to": [
+        10,
+        15,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tiki_torch",
+          "uv": [
+            0,
+            7,
+            4,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            7,
+            0,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#tiki_torch",
+          "uv": [
+            0,
+            7,
+            4,
+            10
+          ]
+        },
+        "west": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            7,
+            0,
+            10
+          ]
+        },
+        "up": {
+          "texture": "#tiki_torch",
+          "uv": [
+            0,
+            7,
+            4,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "name": "flame_top_1",
+      "from": [
+        8,
+        15,
+        6
+      ],
+      "to": [
+        8,
+        18,
+        10
+      ],
+      "faces": {
+        "east": {
+          "texture": "#tiki_torch",
+          "uv": [
+            0,
+            10,
+            4,
+            13
+          ]
+        },
+        "west": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            10,
+            0,
+            13
+          ]
+        }
+      }
+    },
+    {
+      "name": "flame_top_2",
+      "from": [
+        6,
+        15,
+        8
+      ],
+      "to": [
+        10,
+        18,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tiki_torch",
+          "uv": [
+            0,
+            10,
+            4,
+            13
+          ]
+        },
+        "south": {
+          "texture": "#tiki_torch",
+          "uv": [
+            4,
+            10,
+            0,
+            13
+          ]
+        }
+      }
+    },
+    {
+      "name": "case_bottom",
+      "from": [
+        6,
+        5,
+        6
+      ],
+      "to": [
+        10,
+        7,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#tiki_torch",
+          "uv": [
+            9,
+            14,
+            13,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#tiki_torch",
+          "uv": [
+            9,
+            14,
+            13,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#tiki_torch",
+          "uv": [
+            9,
+            14,
+            13,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#tiki_torch",
+          "uv": [
+            9,
+            14,
+            13,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#tiki_torch",
+          "uv": [
+            9,
+            12,
+            13,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}

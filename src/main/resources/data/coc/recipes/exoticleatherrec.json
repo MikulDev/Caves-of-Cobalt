@@ -1,0 +1,19 @@
+{
+  "group": "exleather",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "coc:sapphire"
+    },
+    {
+      "item": "minecraft:leather"
+    }
+  ],
+  "result": {
+    "item": "coc:exotic_leather",
+    "count": 3
+  }
+}

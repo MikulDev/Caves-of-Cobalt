@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "gemforge",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Amethyst"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Amethyst"
+      },
+      {
+        "value": "CUSTOM:ExoticLeather"
+      },
+      {
+        "value": "CUSTOM:RadientTopaz"
+      },
+      {
+        "value": "CUSTOM:ExoticLeather"
+      },
+      {
+        "value": "Blocks.PLANKS"
+      },
+      {
+        "value": "CUSTOM:RunicBookshelf"
+      },
+      {
+        "value": "Blocks.PLANKS"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:InfusionTable"
+    },
+    "name": "gemforgerec",
+    "namespace": "mod"
+  }
+}

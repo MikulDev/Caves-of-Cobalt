@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "coc:blocks/mirewood_planks",
+    "particle": "coc:blocks/mirewood_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/frozen_plant_bottom",
+    "particle": "coc:blocks/frozen_plant_bottom"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 5.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "lumpsmelt2",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:LumpOfIron"
+    },
+    "blastingReturnStack": {
+      "value": "Items.IRON_INGOT"
+    },
+    "name": "ironlumpblast",
+    "namespace": "mod"
+  }
+}

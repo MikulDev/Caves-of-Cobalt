@@ -1,0 +1,12 @@
+{
+  "_fv": 15,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Helmet Ability (CoC)",
+    "keyBindingCategoryKey": "caves_of_cobalt",
+    "onKeyPressed": {
+      "name": "RadiantLightningTrigger"
+    }
+  }
+}

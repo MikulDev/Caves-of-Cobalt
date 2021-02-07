@@ -1,0 +1,30 @@
+{
+  "group": "refinedgems",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "coc:ruby"
+    },
+    "3": {
+      "item": "coc:ruby"
+    },
+    "4": {
+      "item": "minecraft:ender_pearl"
+    },
+    "5": {
+      "item": "coc:ruby"
+    },
+    "7": {
+      "item": "coc:ruby"
+    }
+  },
+  "result": {
+    "item": "coc:refined_ruby",
+    "count": 1
+  }
+}

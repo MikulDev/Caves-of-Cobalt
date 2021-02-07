@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/crumbler"
+    },
+    "facing=east": {
+      "model": "coc:block/crumbler",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/crumbler",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/crumbler",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "coc:block/crumbler",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "coc:block/crumbler",
+      "x": 90
+    }
+  }
+}

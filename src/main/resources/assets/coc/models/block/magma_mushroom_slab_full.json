@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "coc:blocks/giant_mushroom_under",
+    "top": "coc:blocks/magma_mushroom_skin",
+    "side": "coc:blocks/magma_mushroom_skin"
+  }
+}

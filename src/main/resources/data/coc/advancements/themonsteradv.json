@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:dragon_yolk"
+    },
+    "title": {
+      "translate": "advancements.themonsteradv.title"
+    },
+    "description": {
+      "translate": "advancements.themonsteradv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "themonsteradv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "parent": "minecraft:end/dragon_egg"
+}

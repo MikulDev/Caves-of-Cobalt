@@ -1,0 +1,13 @@
+{
+  "group": "uncraftblock",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:cobalt_block"
+    }
+  ],
+  "result": {
+    "item": "coc:cobalt",
+    "count": 9
+  }
+}

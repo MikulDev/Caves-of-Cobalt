@@ -1,0 +1,19 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "Potion of Magma Sense",
+    "effectName": "Magma Sense",
+    "icon": "lava_vision.png",
+    "color": {
+      "value": -39322,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/ancient_observer_top",
+    "up": "coc:blocks/ancient_observer_top",
+    "north": "coc:blocks/ancient_observer_front",
+    "east": "coc:blocks/ancient_observer_side",
+    "south": "coc:blocks/ancient_observer_back",
+    "west": "coc:blocks/ancient_observer_side",
+    "particle": "coc:blocks/ancient_observer_top"
+  }
+}

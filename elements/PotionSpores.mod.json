@@ -1,0 +1,25 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "",
+    "effectName": "Spores",
+    "icon": "spores.png",
+    "color": {
+      "value": -1450035,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SporesStart"
+    },
+    "onActiveTick": {
+      "name": "SporesDamage"
+    }
+  }
+}

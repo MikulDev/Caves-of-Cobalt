@@ -1,0 +1,26 @@
+{
+  "_fv": 15,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cooked_magmaw_meat",
+    "customModelName": "Normal",
+    "name": "Fried Magmaw Steak",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 10,
+    "saturation": 5.0,
+    "eatingSpeed": 40,
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onRightClicked": {
+      "name": "MineAndDineGive"
+    }
+  }
+}

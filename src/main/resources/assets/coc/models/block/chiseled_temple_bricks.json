@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/temple_bricks_chisled",
+    "up": "coc:blocks/temple_bricks_chisled",
+    "north": "coc:blocks/temple_bricks_chisled",
+    "east": "coc:blocks/temple_bricks_chisled",
+    "south": "coc:blocks/temple_bricks_chisled",
+    "west": "coc:blocks/temple_bricks_chisled",
+    "particle": "coc:blocks/temple_bricks_chisled"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "watcher_stone": "watcher_stone"
+      },
+      "name": "default"
+    }
+  }
+}

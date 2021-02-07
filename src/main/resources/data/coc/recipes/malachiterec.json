@@ -1,0 +1,32 @@
+{
+  "group": "malachiteshards",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:malachite_shard"
+    },
+    "1": {
+      "item": "coc:malachite_shard"
+    },
+    "2": {
+      "item": "coc:malachite_shard"
+    },
+    "3": {
+      "item": "coc:malachite_shard"
+    },
+    "4": {
+      "item": "coc:malachite_shard"
+    },
+    "5": {
+      "item": "coc:malachite_shard"
+    }
+  },
+  "result": {
+    "item": "coc:malachite",
+    "count": 1
+  }
+}

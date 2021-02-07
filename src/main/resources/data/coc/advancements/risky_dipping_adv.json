@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:malachitearmor_chestplate"
+    },
+    "title": {
+      "translate": "advancements.risky_dipping_adv.title"
+    },
+    "description": {
+      "translate": "advancements.risky_dipping_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "risky_dipping_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "coc:goinggreenadv"
+}

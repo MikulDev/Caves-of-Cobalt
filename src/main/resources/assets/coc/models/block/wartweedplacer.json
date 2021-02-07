@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/wartweed",
+    "up": "coc:blocks/wartweed",
+    "north": "coc:blocks/wartweed",
+    "east": "coc:blocks/wartweed",
+    "south": "coc:blocks/wartweed",
+    "west": "coc:blocks/wartweed",
+    "particle": "coc:blocks/wartweed"
+  }
+}

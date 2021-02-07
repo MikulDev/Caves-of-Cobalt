@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "coc:block/magma_mushroom_slab"
+    },
+    "type=top": {
+      "model": "coc:block/magma_mushroom_slab_top"
+    },
+    "type=double": {
+      "model": "coc:block/magma_mushroom_slab_full"
+    }
+  }
+}

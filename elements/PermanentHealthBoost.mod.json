@@ -1,0 +1,22 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "Lifeforce Potion",
+    "effectName": "Permanent Health Boost",
+    "icon": "arrow_a.png",
+    "color": {
+      "value": -3394561,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "PermHealthDrink"
+    }
+  }
+}

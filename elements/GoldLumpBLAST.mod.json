@@ -1,0 +1,20 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 10.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "lumpsmelt2",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:LumpOfGold"
+    },
+    "blastingReturnStack": {
+      "value": "Items.GOLD_INGOT"
+    },
+    "name": "goldlumpblast",
+    "namespace": "mod"
+  }
+}

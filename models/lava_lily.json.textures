@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "lava_lily_bud": "null",
+        "lava_lily_0": "lava_lily_0"
+      },
+      "name": "default"
+    },
+    "sprouted": {
+      "map": {
+        "lava_lily_bud": "lava_lily_bud",
+        "lava_lily_0": "lava_lily_0"
+      },
+      "name": "sprouted"
+    },
+    "alternate": {
+      "map": {
+        "lava_lily_bud": "null",
+        "lava_lily_0": "lava_lily_1"
+      },
+      "name": "alternate"
+    }
+  }
+}

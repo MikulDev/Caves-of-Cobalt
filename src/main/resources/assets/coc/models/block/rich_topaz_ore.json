@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/rich_topaz_sandstone",
+    "up": "coc:blocks/rich_topaz_sandstone",
+    "north": "coc:blocks/rich_topaz_sandstone",
+    "east": "coc:blocks/rich_topaz_sandstone",
+    "south": "coc:blocks/rich_topaz_sandstone",
+    "west": "coc:blocks/rich_topaz_sandstone",
+    "particle": "coc:blocks/rich_topaz_sandstone"
+  }
+}

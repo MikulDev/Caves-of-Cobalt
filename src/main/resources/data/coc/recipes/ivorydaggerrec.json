@@ -1,0 +1,24 @@
+{
+  "group": "dagger",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:wormtusk"
+    },
+    "1": {
+      "item": "coc:wormtusk"
+    },
+    "2": {
+      "item": "coc:stone_rod"
+    }
+  },
+  "result": {
+    "item": "coc:ivory_dagger",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/silver_ore",
+    "up": "coc:blocks/silver_ore",
+    "north": "coc:blocks/silver_ore",
+    "east": "coc:blocks/silver_ore",
+    "south": "coc:blocks/silver_ore",
+    "west": "coc:blocks/silver_ore",
+    "particle": "coc:blocks/silver_ore"
+  }
+}

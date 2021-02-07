@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:radiant_gold_chestplate"
+    },
+    "title": {
+      "translate": "advancements.hisradiancy.title"
+    },
+    "description": {
+      "translate": "advancements.hisradiancy.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hisradiancy": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "parent": "coc:thekingadv"
+}

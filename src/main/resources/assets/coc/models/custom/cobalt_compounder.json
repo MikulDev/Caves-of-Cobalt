@@ -1,0 +1,1352 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        -1.5,
+        0
+      ],
+      "scale": [
+        0.425,
+        0.425,
+        0.425
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -4,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        97,
+        0
+      ],
+      "translation": [
+        1,
+        1.5,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        53,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        1.5,
+        -1
+      ],
+      "scale": [
+        0.275,
+        0.275,
+        0.275
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "bottom",
+      "from": [
+        1,
+        3,
+        1
+      ],
+      "to": [
+        15,
+        5,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            1,
+            13,
+            15,
+            15
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            1,
+            13,
+            15,
+            15
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            1,
+            13,
+            15,
+            15
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            1,
+            13,
+            15,
+            15
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_bottom",
+          "uv": [
+            1,
+            1,
+            15,
+            15
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_bottom",
+          "uv": [
+            1,
+            1,
+            15,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "name": "leg_1",
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        4,
+        3,
+        4
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            3,
+            4,
+            0,
+            7
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            4,
+            3,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_bottom",
+          "uv": [
+            0,
+            13,
+            3,
+            16
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "leg_2",
+      "from": [
+        12,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        3,
+        4
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            4,
+            3,
+            7
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            3,
+            4,
+            0,
+            7
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_bottom",
+          "uv": [
+            0,
+            13,
+            3,
+            16
+          ],
+          "rotation": 90
+        }
+      }
+    },
+    {
+      "name": "leg_3",
+      "from": [
+        12,
+        0,
+        12
+      ],
+      "to": [
+        15,
+        3,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            3,
+            4,
+            0,
+            7
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_bottom",
+          "uv": [
+            0,
+            13,
+            3,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "leg_4",
+      "from": [
+        1,
+        0,
+        12
+      ],
+      "to": [
+        4,
+        3,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            8,
+            3,
+            11
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            4,
+            3,
+            7
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            3,
+            4,
+            0,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_bottom",
+          "uv": [
+            0,
+            13,
+            3,
+            16
+          ],
+          "rotation": 270
+        }
+      }
+    },
+    {
+      "name": "side_north",
+      "from": [
+        1,
+        5,
+        1
+      ],
+      "to": [
+        15,
+        18,
+        3
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            1,
+            0,
+            15,
+            13
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            13,
+            0,
+            15,
+            13
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_inside_2",
+          "uv": [
+            1,
+            0,
+            15,
+            13
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            1,
+            0,
+            3,
+            13
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            4,
+            0,
+            6,
+            14
+          ],
+          "rotation": 90
+        }
+      }
+    },
+    {
+      "name": "side_south",
+      "from": [
+        1,
+        5,
+        13
+      ],
+      "to": [
+        15,
+        18,
+        15
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_inside_2",
+          "uv": [
+            1,
+            0,
+            15,
+            13
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            1,
+            0,
+            3,
+            13
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            1,
+            0,
+            15,
+            13
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_side",
+          "uv": [
+            13,
+            0,
+            15,
+            13
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            4,
+            0,
+            6,
+            14
+          ],
+          "rotation": 270
+        }
+      }
+    },
+    {
+      "name": "side_east",
+      "from": [
+        13,
+        5,
+        3
+      ],
+      "to": [
+        15,
+        18,
+        13
+      ],
+      "faces": {
+        "east": {
+          "texture": "#cobalt_compounder_side_blank",
+          "uv": [
+            3,
+            0,
+            13,
+            13
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            0,
+            0,
+            10,
+            13
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            4,
+            2,
+            6,
+            12
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "side_west",
+      "from": [
+        1,
+        5,
+        3
+      ],
+      "to": [
+        3,
+        18,
+        13
+      ],
+      "faces": {
+        "east": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            0,
+            0,
+            10,
+            13
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_side_blank",
+          "uv": [
+            3,
+            0,
+            13,
+            13
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            4,
+            2,
+            6,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "name": "gem_1",
+      "from": [
+        6.5,
+        10.5,
+        15
+      ],
+      "to": [
+        9.5,
+        13.5,
+        16
+      ],
+      "faces": {
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            2,
+            0,
+            3,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            0,
+            1,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            0,
+            3,
+            1
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            2,
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "gem_2",
+      "from": [
+        6.5,
+        10.5,
+        0
+      ],
+      "to": [
+        9.5,
+        13.5,
+        1
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            0,
+            2,
+            3
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            2,
+            0,
+            3,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            0,
+            3,
+            1
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            2,
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "holder_1",
+      "from": [
+        12,
+        15,
+        6
+      ],
+      "to": [
+        16,
+        19,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            3,
+            12,
+            4,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            12,
+            4,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            4,
+            12,
+            0,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            3,
+            12,
+            4,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            3,
+            12,
+            4,
+            13
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            8,
+            15,
+            12,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "holder_2",
+      "from": [
+        0,
+        15,
+        6
+      ],
+      "to": [
+        4,
+        19,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            4,
+            12,
+            0,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            3,
+            12,
+            4,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            4,
+            12,
+            3,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            0,
+            12,
+            4,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            4,
+            15,
+            8,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            8,
+            15,
+            12,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "support_1",
+      "from": [
+        1,
+        19,
+        7
+      ],
+      "to": [
+        3,
+        26,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            7,
+            7,
+            9,
+            14
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            9,
+            7,
+            7,
+            14
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            7,
+            7,
+            9,
+            14
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            9,
+            7,
+            7,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "name": "support_2",
+      "from": [
+        13,
+        19,
+        7
+      ],
+      "to": [
+        15,
+        26,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            7,
+            7,
+            9,
+            14
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            9,
+            7,
+            7,
+            14
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            7,
+            7,
+            9,
+            14
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            9,
+            7,
+            7,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "name": "holder_west",
+      "from": [
+        0,
+        26,
+        6
+      ],
+      "to": [
+        5,
+        27,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            12,
+            1,
+            13,
+            6
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            12,
+            1,
+            13,
+            6
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            14,
+            1,
+            15,
+            6
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            7,
+            1,
+            11,
+            6
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            14,
+            1,
+            15,
+            6
+          ]
+        }
+      }
+    },
+    {
+      "name": "holder_east",
+      "from": [
+        11,
+        26,
+        6
+      ],
+      "to": [
+        16,
+        27,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            12,
+            1,
+            13,
+            6
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            14,
+            1,
+            15,
+            6
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            12,
+            1,
+            13,
+            6
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            7,
+            1,
+            11,
+            6
+          ],
+          "rotation": 270
+        },
+        "down": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            14,
+            1,
+            15,
+            6
+          ]
+        }
+      }
+    },
+    {
+      "name": "holder_middle",
+      "from": [
+        5,
+        26,
+        5
+      ],
+      "to": [
+        11,
+        27,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            10,
+            7,
+            16,
+            8
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            10,
+            7,
+            16,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            10,
+            7,
+            16,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            10,
+            7,
+            16,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            10,
+            7,
+            16,
+            13
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_other",
+          "uv": [
+            10,
+            7,
+            16,
+            13
+          ]
+        }
+      }
+    },
+    {
+      "name": "shell_base",
+      "from": [
+        6,
+        25,
+        6
+      ],
+      "to": [
+        10,
+        28,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            3,
+            16,
+            6
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            4,
+            16,
+            7
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            4,
+            16,
+            7
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            4,
+            16,
+            7
+          ]
+        },
+        "up": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            0,
+            16,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            0,
+            16,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "name": "shell_middle",
+      "from": [
+        6.5,
+        23,
+        6.5
+      ],
+      "to": [
+        9.5,
+        25,
+        9.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            7,
+            15,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            8,
+            15,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            9,
+            15,
+            11
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            8,
+            15,
+            10
+          ],
+          "rotation": 180
+        },
+        "down": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            8,
+            15,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "name": "shell_tip",
+      "from": [
+        7,
+        22,
+        7
+      ],
+      "to": [
+        9,
+        23,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            11,
+            14,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            11,
+            14,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            13,
+            10,
+            15,
+            11
+          ]
+        },
+        "west": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            11,
+            14,
+            12
+          ]
+        },
+        "down": {
+          "texture": "#cobalt_compounder_inside",
+          "uv": [
+            12,
+            12,
+            14,
+            14
+          ]
+        }
+      }
+    }
+  ]
+}

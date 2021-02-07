@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/lava_sponge_obsidian",
+    "up": "coc:blocks/lava_sponge_obsidian",
+    "north": "coc:blocks/lava_sponge_obsidian",
+    "east": "coc:blocks/lava_sponge_obsidian",
+    "south": "coc:blocks/lava_sponge_obsidian",
+    "west": "coc:blocks/lava_sponge_obsidian",
+    "particle": "coc:blocks/lava_sponge_obsidian"
+  }
+}

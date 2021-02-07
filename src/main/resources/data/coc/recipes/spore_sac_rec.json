@@ -1,0 +1,24 @@
+{
+  "group": "sporesac",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "1": {
+      "item": "coc:ruptured_spore_sac"
+    },
+    "2": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "coc:mended_spore_sac",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/mushroom_lamp",
+    "up": "coc:blocks/mushroom_lamp",
+    "north": "coc:blocks/mushroom_lamp",
+    "east": "coc:blocks/mushroom_lamp",
+    "south": "coc:blocks/mushroom_lamp",
+    "west": "coc:blocks/mushroom_lamp",
+    "particle": "coc:blocks/mushroom_lamp"
+  }
+}

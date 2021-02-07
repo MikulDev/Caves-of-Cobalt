@@ -1,0 +1,1073 @@
+{
+  "item.malachite_skippers.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.malachite_skippers.use",
+    "sounds": [
+      {
+        "name": "coc:malachite_skippers",
+        "stream": false
+      }
+    ]
+  },
+  "item.projection_tome.arrow": {
+    "category": "player",
+    "subtitle": "subtitles.item.projection_tome.arrow",
+    "sounds": [
+      {
+        "name": "coc:projection_arrow",
+        "stream": false
+      }
+    ]
+  },
+  "item.projection_tome.cast": {
+    "category": "player",
+    "subtitle": "subtitles.item.projection_tome.cast",
+    "sounds": [
+      {
+        "name": "coc:projection_cast",
+        "stream": false
+      }
+    ]
+  },
+  "item.projection_tome.explode": {
+    "category": "player",
+    "subtitle": "subtitles.item.projection_tome.explode",
+    "sounds": [
+      {
+        "name": "coc:projection_explode",
+        "stream": false
+      }
+    ]
+  },
+  "ambient.wind": {
+    "category": "ambient",
+    "subtitle": "subtitles.ambient.wind",
+    "sounds": [
+      {
+        "name": "coc:wind_0",
+        "stream": false
+      },
+      {
+        "name": "coc:wind_1",
+        "stream": false
+      },
+      {
+        "name": "coc:wind_2",
+        "stream": false
+      }
+    ]
+  },
+  "item.ancient_horn.respond": {
+    "category": "player",
+    "subtitle": "subtitles.item.ancient_horn.respond",
+    "sounds": [
+      {
+        "name": "coc:ancient_horn_respond",
+        "stream": false
+      }
+    ]
+  },
+  "item.ancient_horn.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.ancient_horn.use",
+    "sounds": [
+      {
+        "name": "coc:ancient_horn_use",
+        "stream": false
+      }
+    ]
+  },
+  "block.ancient_chest.land": {
+    "category": "block",
+    "subtitle": "subtitles.block.ancient_chest.land",
+    "sounds": [
+      {
+        "name": "coc:ancient_chest_land",
+        "stream": false
+      }
+    ]
+  },
+  "block.ancient_chest.ambient": {
+    "category": "block",
+    "subtitle": "subtitles.block.ancient_chest.ambient",
+    "sounds": [
+      {
+        "name": "coc:underground_chest",
+        "stream": false
+      }
+    ]
+  },
+  "block.crate.break": {
+    "category": "block",
+    "subtitle": "subtitles.block.crate.break",
+    "sounds": [
+      {
+        "name": "coc:crate_break",
+        "stream": false
+      }
+    ]
+  },
+  "block.geyser_normal.power": {
+    "category": "block",
+    "subtitle": "subtitles.block.geyser_normal.power",
+    "sounds": [
+      {
+        "name": "coc:geyser_power",
+        "stream": false
+      }
+    ]
+  },
+  "block.geyser_underwater.gush": {
+    "category": "block",
+    "subtitle": "subtitles.block.geyser_underwater.gush",
+    "sounds": [
+      {
+        "name": "coc:geyser_underwater",
+        "stream": false
+      }
+    ]
+  },
+  "entity.blueshroom.hurt": {
+    "category": "neutral",
+    "subtitle": "subtitles.entity.blueshroom.hurt",
+    "sounds": [
+      {
+        "name": "coc:blueshroom_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "coc:blueshroom_hurt_2",
+        "stream": false
+      },
+      {
+        "name": "coc:blueshroom_hurt_3",
+        "stream": false
+      }
+    ]
+  },
+  "entity.blueshroom.idle": {
+    "category": "neutral",
+    "subtitle": "subtitles.entity.blueshroom.idle",
+    "sounds": [
+      {
+        "name": "coc:blueshroom_idle",
+        "stream": false
+      }
+    ]
+  },
+  "item.chipper.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.chipper.use",
+    "sounds": [
+      {
+        "name": "coc:chipper_use_1",
+        "stream": false
+      },
+      {
+        "name": "coc:chipper_use_2",
+        "stream": false
+      }
+    ]
+  },
+  "item.chipper.break": {
+    "category": "player",
+    "subtitle": "subtitles.item.chipper.break",
+    "sounds": [
+      {
+        "name": "coc:chipper_break",
+        "stream": false
+      }
+    ]
+  },
+  "block.crystal.chime": {
+    "category": "block",
+    "subtitle": "subtitles.block.crystal.chime",
+    "sounds": [
+      {
+        "name": "coc:crystal_1",
+        "stream": false
+      },
+      {
+        "name": "coc:crystal_2",
+        "stream": false
+      },
+      {
+        "name": "coc:crystal_3",
+        "stream": false
+      },
+      {
+        "name": "coc:crystal_4",
+        "stream": false
+      },
+      {
+        "name": "coc:crystal_5",
+        "stream": false
+      }
+    ]
+  },
+  "item.soul_dagger.leech": {
+    "category": "player",
+    "subtitle": "subtitles.item.soul_dagger.leech",
+    "sounds": [
+      {
+        "name": "coc:leeching_0",
+        "stream": false
+      },
+      {
+        "name": "coc:leeching_1",
+        "stream": false
+      }
+    ]
+  },
+  "item.soul_dagger.whirlwind": {
+    "category": "player",
+    "subtitle": "subtitles.item.soul_dagger.whirlwind",
+    "sounds": [
+      {
+        "name": "coc:whirlwind",
+        "stream": false
+      }
+    ]
+  },
+  "block.ice_chest.open": {
+    "category": "block",
+    "subtitle": "subtitles.block.ice_chest.open",
+    "sounds": [
+      {
+        "name": "coc:ice_chest_open",
+        "stream": false
+      }
+    ]
+  },
+  "entity.magmaw.death": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.magmaw.death",
+    "sounds": [
+      {
+        "name": "coc:magmaw_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.magmaw.bite": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.magmaw.bite",
+    "sounds": [
+      {
+        "name": "coc:magmaw_bite",
+        "stream": false
+      }
+    ]
+  },
+  "entity.magmaw.hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.magmaw.hurt",
+    "sounds": [
+      {
+        "name": "coc:magmaw_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "coc:magmaw_hurt_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.magmaw.idle": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.magmaw.idle",
+    "sounds": [
+      {
+        "name": "coc:magmaw_idle_0",
+        "stream": false
+      },
+      {
+        "name": "coc:magmaw_idle_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.magmaw.shoot": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.magmaw.shoot",
+    "sounds": [
+      {
+        "name": "coc:magmaw_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "block.melting_pot.radiant": {
+    "category": "block",
+    "subtitle": "subtitles.block.melting_pot.radiant",
+    "sounds": [
+      {
+        "name": "coc:break_radiant",
+        "stream": false
+      }
+    ]
+  },
+  "block.melting_pot.dragon_yolk": {
+    "category": "block",
+    "subtitle": "subtitles.block.melting_pot.dragon_yolk",
+    "sounds": [
+      {
+        "name": "coc:craft_dragon_yolk",
+        "stream": false
+      }
+    ]
+  },
+  "block.melting_pot.hot_plate": {
+    "category": "block",
+    "subtitle": "subtitles.block.melting_pot.hot_plate",
+    "sounds": [
+      {
+        "name": "coc:craft_hot_plate",
+        "stream": false
+      }
+    ]
+  },
+  "block.infusion_table.dagger": {
+    "category": "block",
+    "subtitle": "subtitles.block.infusion_table.dagger",
+    "sounds": [
+      {
+        "name": "coc:enchant_souls",
+        "stream": false
+      }
+    ]
+  },
+  "block.infusion_table.tome": {
+    "category": "block",
+    "subtitle": "subtitles.block.infusion_table.tome",
+    "sounds": [
+      {
+        "name": "coc:enchant_tome",
+        "stream": false
+      }
+    ]
+  },
+  "music.molten": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "coc:molten",
+        "stream": true
+      }
+    ]
+  },
+  "music.mushrooms": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "coc:shrooms",
+        "stream": true
+      }
+    ]
+  },
+  "effect.spores.damage": {
+    "category": "neutral",
+    "subtitle": "subtitles.effect.spores.damage",
+    "sounds": [
+      {
+        "name": "coc:spores_damage",
+        "stream": false
+      }
+    ]
+  },
+  "effect.spores.apply": {
+    "category": "neutral",
+    "subtitle": "subtitles.effect.spores.apply",
+    "sounds": [
+      {
+        "name": "coc:spores_start",
+        "stream": false
+      }
+    ]
+  },
+  "entity.monarch.attack": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.monarch.attack",
+    "sounds": [
+      {
+        "name": "coc:monarch_attack_0",
+        "stream": false
+      },
+      {
+        "name": "coc:monarch_attack_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.monarch.death": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.monarch.death",
+    "sounds": [
+      {
+        "name": "coc:monarch_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.monarch.hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.monarch.hurt",
+    "sounds": [
+      {
+        "name": "coc:monarch_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "coc:monarch_hurt_2",
+        "stream": false
+      },
+      {
+        "name": "coc:monarch_hurt_3",
+        "stream": false
+      }
+    ]
+  },
+  "entity.monarch.idle": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.monarch.idle",
+    "sounds": [
+      {
+        "name": "coc:monarch_idle_0",
+        "stream": false
+      },
+      {
+        "name": "coc:monarch_idle_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.monarch.summon": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.monarch.summon",
+    "sounds": [
+      {
+        "name": "coc:monarch_summon",
+        "stream": false
+      }
+    ]
+  },
+  "entity.rotted_zombie.death": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.rotted_zombie.death",
+    "sounds": [
+      {
+        "name": "coc:rotted_zombie_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.rotted_zombie.hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.rotted_zombie.hurt",
+    "sounds": [
+      {
+        "name": "coc:rotted_zombie_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "coc:rotted_zombie_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "coc:rotted_zombie_hurt_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.rotted_zombie.idle": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.rotted_zombie.idle",
+    "sounds": [
+      {
+        "name": "coc:rotted_zombie_idle_0",
+        "stream": false
+      },
+      {
+        "name": "coc:rotted_zombie_idle_1",
+        "stream": false
+      },
+      {
+        "name": "coc:rotted_zombie_idle_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.scoria.appear": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.scoria.appear",
+    "sounds": [
+      {
+        "name": "coc:scoria_appear",
+        "stream": false
+      }
+    ]
+  },
+  "entity.scoria.death": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.scoria.death",
+    "sounds": [
+      {
+        "name": "coc:scoria_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.scoria.hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.scoria.hurt",
+    "sounds": [
+      {
+        "name": "coc:scoria_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "coc:scoria_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "coc:scoria_hurt_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.stalagmite.appear": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.stalagmite.appear",
+    "sounds": [
+      {
+        "name": "coc:stalag-mite_appear",
+        "stream": false
+      }
+    ]
+  },
+  "entity.stalagmite.death": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.stalagmite.death",
+    "sounds": [
+      {
+        "name": "coc:stalag-mite_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.stalagmite.disappear": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.stalagmite.disappear",
+    "sounds": [
+      {
+        "name": "coc:stalag-mite_disappear",
+        "stream": false
+      }
+    ]
+  },
+  "entity.stalagmite.hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.stalagmite.hurt",
+    "sounds": [
+      {
+        "name": "coc:stalag-mite_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "entity.tunnelbug.dig": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.tunnelbug.dig",
+    "sounds": [
+      {
+        "name": "coc:tunnelbug_dig_0",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnelbug_dig_1",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnelbug_dig_2",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnelbug_dig_3",
+        "stream": false
+      }
+    ]
+  },
+  "entity.tunnelbug.rocks": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "coc:tunnelbug_rocks_0",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnelbug_rocks_1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.tunnelbug.death": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.tunnelbug.death",
+    "sounds": [
+      {
+        "name": "coc:tunnlebug_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.tunnelbug.hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.tunnelbug.hurt",
+    "sounds": [
+      {
+        "name": "coc:tunnlebug_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnlebug_hurt_2",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnlebug_hurt_3",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnlebug_hurt_4",
+        "stream": false
+      }
+    ]
+  },
+  "entity.watcher.death": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.watcher.death",
+    "sounds": [
+      {
+        "name": "coc:watcher_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.watcher.hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.watcher.hurt",
+    "sounds": [
+      {
+        "name": "coc:watcher_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "coc:watcher_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "coc:watcher_hurt_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.watcher.idle": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.watcher.idle",
+    "sounds": [
+      {
+        "name": "coc:watcher_idle_0",
+        "stream": false
+      },
+      {
+        "name": "coc:watcher_idle_1",
+        "stream": false
+      },
+      {
+        "name": "coc:watcher_idle_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.watcher.snort": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.watcher.snort",
+    "sounds": [
+      {
+        "name": "coc:watcher_snort",
+        "stream": false
+      }
+    ]
+  },
+  "entity.watcher.spit": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.watcher.spit",
+    "sounds": [
+      {
+        "name": "coc:watcher_spit",
+        "stream": false
+      }
+    ]
+  },
+  "item.dagger.grab": {
+    "category": "player",
+    "subtitle": "subtitles.item.dagger.grab",
+    "sounds": [
+      {
+        "name": "coc:dagger_return",
+        "stream": false
+      }
+    ]
+  },
+  "item.dagger.return": {
+    "category": "player",
+    "subtitle": "subtitles.item.dagger.return",
+    "sounds": [
+      {
+        "name": "coc:dagger_reverse",
+        "stream": false
+      }
+    ]
+  },
+  "item.dagger.slap": {
+    "category": "player",
+    "subtitle": "subtitles.item.dagger.slap",
+    "sounds": [
+      {
+        "name": "coc:grab",
+        "stream": false
+      }
+    ]
+  },
+  "item.malachite_sword.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.malachite_sword.use",
+    "sounds": [
+      {
+        "name": "coc:malachite_bolt",
+        "stream": false
+      }
+    ]
+  },
+  "item.malachite_leggings.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.malachite_leggings.use",
+    "sounds": [
+      {
+        "name": "coc:malachite_leggings",
+        "stream": false
+      }
+    ]
+  },
+  "item.radiant_sword.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.radiant_sword.use",
+    "sounds": [
+      {
+        "name": "coc:radiant_sword",
+        "stream": false
+      }
+    ]
+  },
+  "item.radaint_leggings.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.radaint_leggings.use",
+    "sounds": [
+      {
+        "name": "coc:radiant_teleport",
+        "stream": false
+      }
+    ]
+  },
+  "item.soul_dagger.throw": {
+    "category": "player",
+    "subtitle": "subtitles.item.soul_dagger.throw",
+    "sounds": [
+      {
+        "name": "coc:soul_dagger_throw",
+        "stream": false
+      }
+    ]
+  },
+  "item.dagger.throw": {
+    "category": "player",
+    "subtitle": "subtitles.item.dagger.throw",
+    "sounds": [
+      {
+        "name": "coc:throw",
+        "stream": false
+      }
+    ]
+  },
+  "item.phoenix_wings.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.phoenix_wings.use",
+    "sounds": [
+      {
+        "name": "coc:wings",
+        "stream": false
+      }
+    ]
+  },
+  "item.mitigator.deplete": {
+    "category": "player",
+    "subtitle": "subtitles.item.mitigator.deplete",
+    "sounds": [
+      {
+        "name": "coc:mushroom_midigator_die",
+        "stream": false
+      }
+    ]
+  },
+  "item.mitigator.recharge": {
+    "category": "player",
+    "subtitle": "subtitles.item.mitigator.recharge",
+    "sounds": [
+      {
+        "name": "coc:mushroom_midigator_recharge",
+        "stream": false
+      }
+    ]
+  },
+  "block.pivoter.turn": {
+    "category": "block",
+    "subtitle": "subtitles.block.pivoter.turn",
+    "sounds": [
+      {
+        "name": "coc:pivoter_turn",
+        "stream": false
+      }
+    ]
+  },
+  "block.ancient_chest.open": {
+    "category": "block",
+    "subtitle": "subtitles.block.ancient_chest.open",
+    "sounds": [
+      {
+        "name": "coc:buried_chest_open",
+        "stream": false
+      }
+    ]
+  },
+  "block.geyser_normal.gush": {
+    "category": "block",
+    "subtitle": "subtitles.block.geyser_normal.gush",
+    "sounds": [
+      {
+        "name": "coc:geyser",
+        "stream": false
+      }
+    ]
+  },
+  "block.geyser_lava.gush": {
+    "category": "block",
+    "subtitle": "subtitles.block.geyser_lava.gush",
+    "sounds": [
+      {
+        "name": "coc:geyser_lava",
+        "stream": false
+      }
+    ]
+  },
+  "entity.stalagmite.idle": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.stalagmite.idle",
+    "sounds": [
+      {
+        "name": "coc:stalag-mite_ambient_1",
+        "stream": false
+      },
+      {
+        "name": "coc:stalag-mite_ambient_2",
+        "stream": false
+      },
+      {
+        "name": "coc:stalag-mite_ambient_3",
+        "stream": false
+      }
+    ]
+  },
+  "entity.tunnelbug.flop": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.tunnelbug.flop",
+    "sounds": [
+      {
+        "name": "coc:tunnelbug_flop_0",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnelbug_flop_1",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnelbug_flop_2",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnelbug_flop_3",
+        "stream": false
+      },
+      {
+        "name": "coc:tunnelbug_flop_4",
+        "stream": false
+      }
+    ]
+  },
+  "item.malachite_axe.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.malachite_axe.use",
+    "sounds": [
+      {
+        "name": "coc:malachite_axe_use",
+        "stream": false
+      }
+    ]
+  },
+  "enchantment.soulrift": {
+    "category": "player",
+    "subtitle": "subtitles.enchantment.soulrift",
+    "sounds": [
+      {
+        "name": "coc:soulrift",
+        "stream": false
+      }
+    ]
+  },
+  "crafting.socket_gem": {
+    "category": "player",
+    "subtitle": "subtitles.crafting.socket_gem",
+    "sounds": [
+      {
+        "name": "coc:socket_gem",
+        "stream": false
+      }
+    ]
+  },
+  "item.malachite_axe.use_stereo": {
+    "category": "player",
+    "subtitle": "subtitles.item.malachite_axe.use_stereo",
+    "sounds": [
+      {
+        "name": "coc:malachite_axe_use_stereo",
+        "stream": false
+      }
+    ]
+  },
+  "item.malachite_axe.slam": {
+    "category": "player",
+    "subtitle": "subtitles.item.malachite_axe.slam",
+    "sounds": [
+      {
+        "name": "coc:malachite_axe_slam",
+        "stream": false
+      }
+    ]
+  },
+  "entity.wanderwart.hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.wanderwart.hurt",
+    "sounds": [
+      {
+        "name": "coc:corruptor_hurt_0",
+        "stream": false
+      },
+      {
+        "name": "coc:corruptor_hurt_1",
+        "stream": false
+      },
+      {
+        "name": "coc:corruptor_hurt_2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.wanderwart.death": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.wanderwart.death",
+    "sounds": [
+      {
+        "name": "coc:corruptor_death",
+        "stream": false
+      }
+    ]
+  },
+  "entity.wanderwart.idle": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.wanderwart.idle",
+    "sounds": [
+      {
+        "name": "coc:corruptor_idle",
+        "stream": false
+      }
+    ]
+  },
+  "entity.wanderwart.burst": {
+    "category": "hostile",
+    "subtitle": "subtitles.entity.wanderwart.burst",
+    "sounds": [
+      {
+        "name": "coc:corruptor_deflate",
+        "stream": false
+      }
+    ]
+  },
+  "item.radiant_helmet.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.radiant_helmet.use",
+    "sounds": [
+      {
+        "name": "coc:radiant_lightning",
+        "stream": false
+      }
+    ]
+  },
+  "item.radiant_axe.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.radiant_axe.use",
+    "sounds": [
+      {
+        "name": "coc:radiant_crystal",
+        "stream": false
+      }
+    ]
+  },
+  "item.raidant_chestplate.recharge": {
+    "category": "player",
+    "subtitle": "subtitles.item.raidant_chestplate.recharge",
+    "sounds": [
+      {
+        "name": "coc:radiant_shield_recharge",
+        "stream": false
+      }
+    ]
+  },
+  "item.radiant_chestplate.use": {
+    "category": "player",
+    "subtitle": "subtitles.item.radiant_chestplate.use",
+    "sounds": [
+      {
+        "name": "coc:radiant_shield",
+        "stream": false
+      }
+    ]
+  },
+  "items.radiant_chestplate.use": {
+    "category": "player",
+    "subtitle": "subtitles.items.radiant_chestplate.use",
+    "sounds": [
+      {
+        "name": "coc:radiant_shield",
+        "stream": false
+      }
+    ]
+  },
+  "item.spore_sac.land": {
+    "category": "player",
+    "subtitle": "subtitles.item.spore_sac.land",
+    "sounds": [
+      {
+        "name": "coc:spore_sac_impact",
+        "stream": false
+      }
+    ]
+  }
+}

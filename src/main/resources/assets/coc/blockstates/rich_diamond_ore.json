@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coc:block/rich_diamond_ore"
+    }
+  }
+}

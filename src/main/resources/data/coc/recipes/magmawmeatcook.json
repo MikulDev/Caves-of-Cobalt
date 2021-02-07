@@ -1,0 +1,12 @@
+{
+  "group": "magmaw",
+  "type": "minecraft:smelting",
+  "experience": 0,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "coc:raw_magmaw"
+  },
+  "result": {
+    "item": "coc:fried_magmaw"
+  }
+}

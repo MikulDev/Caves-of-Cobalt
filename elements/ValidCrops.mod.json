@@ -1,0 +1,56 @@
+{
+  "_fv": 15,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.POTATOES"
+      },
+      {
+        "value": "Blocks.CARROTS"
+      },
+      {
+        "value": "Blocks.BEETROOTS"
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      }
+    ],
+    "blocks": [
+      {
+        "value": "Blocks.POTATOES"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.CARROTS"
+      },
+      {
+        "value": "Blocks.BEETROOTS"
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      },
+      {
+        "value": "CUSTOM:SoulStalk"
+      },
+      {
+        "value": "CUSTOM:HellberryBush"
+      },
+      {
+        "value": "CUSTOM:AshrootStage2"
+      },
+      {
+        "value": "CUSTOM:SoulstalkSapling"
+      }
+    ],
+    "functions": [],
+    "name": "valid_crops",
+    "namespace": "forge"
+  }
+}

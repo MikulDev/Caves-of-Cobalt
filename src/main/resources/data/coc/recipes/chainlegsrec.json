@@ -1,0 +1,36 @@
+{
+  "group": "chainlegs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:chains"
+    },
+    "1": {
+      "item": "coc:chains"
+    },
+    "2": {
+      "item": "coc:chains"
+    },
+    "3": {
+      "item": "coc:chains"
+    },
+    "5": {
+      "item": "coc:chains"
+    },
+    "6": {
+      "item": "coc:chains"
+    },
+    "8": {
+      "item": "coc:chains"
+    }
+  },
+  "result": {
+    "item": "minecraft:chainmail_leggings",
+    "count": 1
+  }
+}

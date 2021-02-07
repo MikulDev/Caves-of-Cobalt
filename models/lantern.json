@@ -1,0 +1,76 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "lantern": "minecraft:blocks/lantern"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 3.5, 0 ],
+            "scale": [ 1.2, 1.2, 1.2 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.6, 0.6, 0.6 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 1.3, 1.3, 1.3 ]
+        },
+        "head": {
+            "rotation": [ 337, 180, 0 ],
+            "translation": [ 0, -6, 5 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ -2, 4.5, 1 ],
+            "scale": [ 0.6, 0.6, 0.6 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 40, 315, 0 ],
+            "translation": [ 0, 1.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "light",
+            "from": [ 5, 0, 5 ], 
+            "to": [ 11, 7, 11 ], 
+            "faces": {
+                "north": { "texture": "#lantern", "uv": [ 0, 2, 6, 9 ] },
+                "east": { "texture": "#lantern", "uv": [ 0, 2, 6, 9 ] },
+                "south": { "texture": "#lantern", "uv": [ 0, 2, 6, 9 ] },
+                "west": { "texture": "#lantern", "uv": [ 0, 2, 6, 9 ] },
+                "up": { "texture": "#lantern", "uv": [ 0, 9, 6, 15 ] },
+                "down": { "texture": "#lantern", "uv": [ 0, 9, 6, 15 ] }
+            }
+        },
+        {
+            "name": "top",
+            "from": [ 6, 7, 6 ], 
+            "to": [ 10, 9, 10 ], 
+            "faces": {
+                "north": { "texture": "#lantern", "uv": [ 1, 0, 5, 2 ] },
+                "east": { "texture": "#lantern", "uv": [ 1, 0, 5, 2 ] },
+                "south": { "texture": "#lantern", "uv": [ 1, 0, 5, 2 ] },
+                "west": { "texture": "#lantern", "uv": [ 1, 0, 5, 2 ] },
+                "up": { "texture": "#lantern", "uv": [ 1, 10, 5, 14 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6.5, 9, 8 ], 
+            "to": [ 9.5, 11, 8 ], 
+            "faces": {
+                "north": { "texture": "#lantern", "uv": [ 11, 10, 14, 12 ] },
+                "east": { "texture": "#lantern", "uv": [ 11, 10, 11, 12 ] },
+                "south": { "texture": "#lantern", "uv": [ 11, 10, 14, 12 ] },
+                "west": { "texture": "#lantern", "uv": [ 11, 10, 11, 12 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+  "group": "mitigator",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:shroomium_bar"
+    },
+    "1": {
+      "item": "coc:ruptured_spore_sac"
+    },
+    "2": {
+      "item": "coc:shroomium_bar"
+    },
+    "3": {
+      "item": "coc:shroomium_bar"
+    },
+    "4": {
+      "item": "coc:bottled_shroomilk"
+    },
+    "5": {
+      "item": "coc:shroomium_bar"
+    },
+    "6": {
+      "item": "coc:shroomium_bar"
+    },
+    "7": {
+      "item": "coc:ruptured_spore_sac"
+    },
+    "8": {
+      "item": "coc:shroomium_bar"
+    }
+  },
+  "result": {
+    "item": "coc:disabled_mushroom_mitigator",
+    "count": 1
+  }
+}

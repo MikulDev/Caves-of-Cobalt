@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "coc:block/blackquartzpillar"
+    },
+    "facing=north": {
+      "model": "coc:block/blackquartzpillar"
+    },
+    "facing=east": {
+      "model": "coc:block/blackquartzpillar",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "coc:block/blackquartzpillar",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "coc:block/blackquartzpillar",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "coc:block/blackquartzpillar",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

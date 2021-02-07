@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/hotblock",
+    "up": "coc:blocks/hotblock",
+    "north": "coc:blocks/hotblock",
+    "east": "coc:blocks/hotblock",
+    "south": "coc:blocks/hotblock",
+    "west": "coc:blocks/hotblock",
+    "particle": "coc:blocks/hotblock"
+  }
+}

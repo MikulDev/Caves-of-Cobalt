@@ -1,0 +1,12 @@
+{
+  "group": "oresmelt2",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "coc:silver_ore"
+  },
+  "result": {
+    "item": "coc:silver_ingot"
+  }
+}

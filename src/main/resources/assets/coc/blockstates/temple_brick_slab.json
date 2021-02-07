@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "coc:block/temple_brick_slab"
+    },
+    "type=top": {
+      "model": "coc:block/temple_brick_slab_top"
+    },
+    "type=double": {
+      "model": "coc:block/temple_brick_slab_full"
+    }
+  }
+}

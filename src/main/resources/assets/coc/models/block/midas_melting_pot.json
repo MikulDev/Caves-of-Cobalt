@@ -1,0 +1,13 @@
+{
+  "parent": "coc:custom/cobalt_compounder",
+  "textures": {
+    "all": "coc:blocks/cobalt_compounder_side",
+    "particle": "coc:blocks/cobalt_compounder_side",
+    "cobalt_compounder_side_blank": "coc:blocks/cobalt_compounder_side_blank",
+    "cobalt_compounder_inside": "coc:blocks/cobalt_compounder_inside",
+    "cobalt_compounder_other": "coc:blocks/cobalt_compounder_other",
+    "cobalt_compounder_bottom": "coc:blocks/cobalt_compounder_bottom",
+    "cobalt_compounder_side": "coc:blocks/cobalt_compounder_side",
+    "cobalt_compounder_inside_2": "coc:blocks/cobalt_compounder_inside_2"
+  }
+}

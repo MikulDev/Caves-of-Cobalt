@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coc:block/nether_malachite_ore"
+    }
+  }
+}

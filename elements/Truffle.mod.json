@@ -1,0 +1,29 @@
+{
+  "_fv": 15,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "truffle",
+    "customModelName": "Normal",
+    "name": "Truffle",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 5,
+    "saturation": 1.0,
+    "eatingSpeed": 16,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onRightClicked": {
+      "name": "TrufflePlace"
+    },
+    "onEaten": {
+      "name": "TruffleEat"
+    }
+  }
+}

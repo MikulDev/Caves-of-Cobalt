@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "coc:items/gold_axe_amethyst"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "coc:blocks/mirewood_planks",
+    "top": "coc:blocks/mirewood_planks",
+    "side": "coc:blocks/mirewood_planks"
+  }
+}

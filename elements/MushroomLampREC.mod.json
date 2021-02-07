@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "mushlamp",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GlowingMushroomItem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GlowingMushroomItem"
+      },
+      {
+        "value": "Blocks.TORCH"
+      },
+      {
+        "value": "CUSTOM:GlowingMushroomItem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GlowingMushroomItem"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MushroomLamp"
+    },
+    "name": "mushroomlamprec",
+    "namespace": "mod"
+  }
+}

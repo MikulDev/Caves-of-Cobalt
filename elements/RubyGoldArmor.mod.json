@@ -1,0 +1,54 @@
+{
+  "_fv": 15,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "gold_helmet_ruby",
+    "enableBody": true,
+    "textureBody": "gold_chestplate_ruby",
+    "enableLeggings": true,
+    "textureLeggings": "gold_leggings_ruby",
+    "enableBoots": true,
+    "textureBoots": "gold_boots_ruby",
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "armorTextureFile": "gold__ruby",
+    "helmetName": "Gold Helmet",
+    "bodyName": "Gold Chestplate",
+    "leggingsName": "Gold Leggings",
+    "bootsName": "Gold Boots",
+    "helmetSpecialInfo": [
+      "§4Ruby§r"
+    ],
+    "bodySpecialInfo": [
+      "§4Ruby§r"
+    ],
+    "leggingsSpecialInfo": [
+      "§4Ruby§r"
+    ],
+    "bootsSpecialInfo": [
+      "§4Ruby§r"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 50,
+    "damageValueHelmet": 2,
+    "damageValueBody": 7,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 2,
+    "enchantability": 22,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

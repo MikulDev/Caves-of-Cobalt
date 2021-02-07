@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/hellberry_bush_stage_3",
+    "particle": "coc:blocks/hellberry_bush_stage_3"
+  }
+}

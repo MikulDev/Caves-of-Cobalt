@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/glowing_ice",
+    "up": "coc:blocks/glowing_ice",
+    "north": "coc:blocks/glowing_ice",
+    "east": "coc:blocks/glowing_ice",
+    "south": "coc:blocks/glowing_ice",
+    "west": "coc:blocks/glowing_ice",
+    "particle": "coc:blocks/glowing_ice"
+  }
+}

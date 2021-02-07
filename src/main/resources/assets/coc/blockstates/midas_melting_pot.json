@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/midas_melting_pot"
+    },
+    "facing=east": {
+      "model": "coc:block/midas_melting_pot",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/midas_melting_pot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/midas_melting_pot",
+      "y": 270
+    }
+  }
+}

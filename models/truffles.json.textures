@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "truffle_block_2": "truffle_block_2",
+        "truffle_block": "truffle_block"
+      },
+      "name": "default"
+    }
+  }
+}

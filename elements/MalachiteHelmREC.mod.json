@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ObsidianShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Malachite"
+      },
+      {
+        "value": "CUSTOM:ObsidianShard"
+      },
+      {
+        "value": "CUSTOM:Malachite"
+      },
+      {
+        "value": "CUSTOM:Malachite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Malachite"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MalachiteArmor.helmet"
+    },
+    "name": "malachitehelmrec",
+    "namespace": "mod"
+  }
+}

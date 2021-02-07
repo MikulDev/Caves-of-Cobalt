@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/topaz_block",
+    "up": "coc:blocks/topaz_block",
+    "north": "coc:blocks/topaz_block",
+    "east": "coc:blocks/topaz_block",
+    "south": "coc:blocks/topaz_block",
+    "west": "coc:blocks/topaz_block",
+    "particle": "coc:blocks/topaz_block"
+  }
+}

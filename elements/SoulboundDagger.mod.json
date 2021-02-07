@@ -1,0 +1,39 @@
+{
+  "_fv": 15,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "soul_dagger",
+    "customModelName": "Tool",
+    "name": "Soulbound Dagger",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "enchantability": 15,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 200,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 5.0,
+    "specialInfo": [],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "IvoryDaggerThrow"
+    },
+    "onItemInInventoryTick": {
+      "name": "IvoryDaggerInit"
+    }
+  }
+}

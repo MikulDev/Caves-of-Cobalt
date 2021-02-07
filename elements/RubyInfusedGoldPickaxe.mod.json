@@ -1,0 +1,29 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gold_pickaxe_ruby",
+    "customModelName": "Normal",
+    "name": "Golden Pickaxe",
+    "specialInfo": [
+      "§4Ruby§r"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Jeweling"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 14.0,
+    "attackSpeed": 1.8,
+    "enchantability": 22,
+    "damageVsEntity": 5.0,
+    "usageCount": 300,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

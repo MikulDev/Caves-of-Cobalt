@@ -1,0 +1,13 @@
+{
+  "group": "uncraftblock",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:silver_block"
+    }
+  ],
+  "result": {
+    "item": "coc:silver_ingot",
+    "count": 9
+  }
+}

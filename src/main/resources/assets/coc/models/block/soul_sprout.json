@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/soulstalk_sapling",
+    "particle": "coc:blocks/soulstalk_sapling"
+  }
+}

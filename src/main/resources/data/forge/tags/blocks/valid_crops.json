@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:potatoes",
+    "minecraft:wheat",
+    "minecraft:carrots",
+    "minecraft:beetroots",
+    "minecraft:nether_wart",
+    "coc:soul_stalk",
+    "coc:hellberries_stage_3",
+    "coc:ashroot_stage_2",
+    "coc:soul_sprout"
+  ]
+}

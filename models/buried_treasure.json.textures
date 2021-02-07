@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "right_side": "buried_treasure_right_side",
+        "lock_latch": "buried_treasure_lock_latch",
+        "top": "buried_treasure_top",
+        "bottom": "buried_treasure_bottom",
+        "back": "buried_treasure_back",
+        "front": "buried_treasure_front",
+        "left_side": "buried_treasure_left_side"
+      },
+      "name": "default"
+    }
+  }
+}

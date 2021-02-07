@@ -1,0 +1,36 @@
+{
+  "group": "mlachitelegs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:obsidian_scales"
+    },
+    "1": {
+      "item": "coc:obsidian_scales"
+    },
+    "2": {
+      "item": "coc:obsidian_scales"
+    },
+    "3": {
+      "item": "coc:malachite"
+    },
+    "5": {
+      "item": "coc:malachite"
+    },
+    "6": {
+      "item": "coc:malachite"
+    },
+    "8": {
+      "item": "coc:malachite"
+    }
+  },
+  "result": {
+    "item": "coc:malachite_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "crystals",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "coc:ruby"
+    },
+    "3": {
+      "item": "coc:ruby"
+    },
+    "4": {
+      "item": "coc:crystal"
+    },
+    "5": {
+      "item": "coc:ruby"
+    },
+    "7": {
+      "item": "coc:ruby"
+    }
+  },
+  "result": {
+    "item": "coc:crystal_of_power",
+    "count": 1
+  }
+}

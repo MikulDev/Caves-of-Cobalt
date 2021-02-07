@@ -1,0 +1,13 @@
+{
+  "group": "logtoplanks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:mirewood_log"
+    }
+  ],
+  "result": {
+    "item": "coc:mirewood_planks",
+    "count": 4
+  }
+}

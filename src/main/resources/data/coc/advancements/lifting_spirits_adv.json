@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:phoenixwings"
+    },
+    "title": {
+      "translate": "advancements.lifting_spirits_adv.title"
+    },
+    "description": {
+      "translate": "advancements.lifting_spirits_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lifting_spirits_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "coc:phoenixwings",
+            "count": {
+              "min": 1,
+              "max": 37
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "coc:cocbaseadv"
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "coc:block/mirewood_slab"
+    },
+    "type=top": {
+      "model": "coc:block/mirewood_slab_top"
+    },
+    "type=double": {
+      "model": "coc:block/mirewood_slab_full"
+    }
+  }
+}

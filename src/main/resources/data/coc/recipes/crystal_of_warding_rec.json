@@ -1,0 +1,30 @@
+{
+  "group": "crystals",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "coc:amethyst"
+    },
+    "3": {
+      "item": "coc:amethyst"
+    },
+    "4": {
+      "item": "coc:crystal"
+    },
+    "5": {
+      "item": "coc:amethyst"
+    },
+    "7": {
+      "item": "coc:amethyst"
+    }
+  },
+  "result": {
+    "item": "coc:crystal_of_warding",
+    "count": 1
+  }
+}

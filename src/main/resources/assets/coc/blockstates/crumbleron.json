@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/crumbleron"
+    },
+    "facing=east": {
+      "model": "coc:block/crumbleron",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/crumbleron",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/crumbleron",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "coc:block/crumbleron",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "coc:block/crumbleron",
+      "x": 90
+    }
+  }
+}

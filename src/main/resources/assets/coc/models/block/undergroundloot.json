@@ -1,0 +1,14 @@
+{
+  "parent": "coc:custom/buried_treasure",
+  "textures": {
+    "all": "coc:blocks/buried_treasure_front",
+    "particle": "coc:blocks/buried_treasure_front",
+    "right_side": "coc:blocks/buried_treasure_right_side",
+    "lock_latch": "coc:blocks/buried_treasure_lock_latch",
+    "top": "coc:blocks/buried_treasure_top",
+    "bottom": "coc:blocks/buried_treasure_bottom",
+    "back": "coc:blocks/buried_treasure_back",
+    "front": "coc:blocks/buried_treasure_front",
+    "left_side": "coc:blocks/buried_treasure_left_side"
+  }
+}

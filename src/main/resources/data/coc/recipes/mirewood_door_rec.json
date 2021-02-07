@@ -1,0 +1,33 @@
+{
+  "group": "miredoor",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:mirewood_planks"
+    },
+    "1": {
+      "item": "coc:mirewood_planks"
+    },
+    "2": {
+      "item": "coc:mirewood_planks"
+    },
+    "3": {
+      "item": "coc:mirewood_planks"
+    },
+    "4": {
+      "item": "coc:mirewood_planks"
+    },
+    "5": {
+      "item": "coc:mirewood_planks"
+    }
+  },
+  "result": {
+    "item": "coc:mirewood_door",
+    "count": 1
+  }
+}

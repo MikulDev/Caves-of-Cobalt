@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/crystal_spike_1",
+    "particle": "coc:blocks/crystal_spike_1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/drooping_hyphae_bottom",
+    "particle": "coc:blocks/drooping_hyphae_bottom"
+  }
+}

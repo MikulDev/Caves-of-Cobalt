@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "coc:blocks/mirewood_door_bottom",
+    "top": "coc:blocks/mirewood_door_top"
+  }
+}

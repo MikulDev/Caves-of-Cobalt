@@ -1,0 +1,13 @@
+{
+  "group": "uncraftblock",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:malachiteblock"
+    }
+  ],
+  "result": {
+    "item": "coc:malachite",
+    "count": 9
+  }
+}

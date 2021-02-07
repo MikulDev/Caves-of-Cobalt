@@ -1,0 +1,131 @@
+{
+  "_fv": 15,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 177,
+          "y": 57
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 177,
+          "y": 93
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 240,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "connector_b.png",
+          "use1Xscale": false,
+          "name": "connector_b.png",
+          "x": 182,
+          "y": 74
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-->",
+          "onClick": {
+            "name": "GemForgeCombine"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "-->",
+          "x": 201,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Infusion Table",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Infusion Table",
+          "x": 222,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "infusion_table.png",
+          "use1Xscale": false,
+          "name": "infusion_table.png",
+          "x": 138,
+          "y": 58
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sword.png",
+          "use1Xscale": false,
+          "name": "sword.png",
+          "x": 178,
+          "y": 58
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gem.png",
+          "use1Xscale": false,
+          "name": "gem.png",
+          "x": 178,
+          "y": 94
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "infusion_output.png",
+          "use1Xscale": false,
+          "name": "infusion_output.png",
+          "x": 237,
+          "y": 72
+        }
+      }
+    ]
+  }
+}

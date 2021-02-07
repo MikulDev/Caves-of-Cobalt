@@ -1,0 +1,131 @@
+{
+  "_fv": 15,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "MeltingPotProcess"
+          },
+          "width": 18,
+          "height": 20,
+          "name": ">",
+          "x": 174,
+          "y": 72
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 201,
+          "y": 54
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 201,
+          "y": 94
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 233,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_merge_long.png",
+          "use1Xscale": false,
+          "name": "arrow_merge_long.png",
+          "x": 205,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "melting_pot_icon2.png",
+          "use1Xscale": false,
+          "name": "melting_pot_icon2.png",
+          "x": 141,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Midas's Melting Pot",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Midas's Melting Pot",
+          "x": 210,
+          "y": 43
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "melting_output.png",
+          "use1Xscale": false,
+          "name": "melting_output.png",
+          "x": 230,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ingot_icon.png",
+          "use1Xscale": false,
+          "name": "ingot_icon.png",
+          "x": 200,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mushroom_icon.png",
+          "use1Xscale": false,
+          "name": "mushroom_icon.png",
+          "x": 202,
+          "y": 95
+        }
+      }
+    ]
+  }
+}

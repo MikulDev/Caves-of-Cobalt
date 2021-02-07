@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "coc:singed_grass",
+    "coc:lava_lily_block",
+    "coc:lava_lily_alt",
+    "coc:sprouted_lava_lily",
+    "coc:hellberries_stage_3",
+    "coc:molten_cactus",
+    "coc:wartweed",
+    "minecraft:cave_air",
+    "minecraft:air"
+  ]
+}

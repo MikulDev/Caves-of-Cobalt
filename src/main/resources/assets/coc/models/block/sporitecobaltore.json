@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/sporite_cobalt",
+    "up": "coc:blocks/sporite_cobalt",
+    "north": "coc:blocks/sporite_cobalt",
+    "east": "coc:blocks/sporite_cobalt",
+    "south": "coc:blocks/sporite_cobalt",
+    "west": "coc:blocks/sporite_cobalt",
+    "particle": "coc:blocks/sporite_cobalt"
+  }
+}

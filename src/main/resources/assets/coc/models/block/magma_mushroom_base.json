@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coc:blocks/molten_stone",
+    "up": "coc:blocks/magma_mushroom_stem_top",
+    "north": "coc:blocks/magma_mushroom_base",
+    "east": "coc:blocks/magma_mushroom_base",
+    "south": "coc:blocks/magma_mushroom_base",
+    "west": "coc:blocks/magma_mushroom_base",
+    "particle": "coc:blocks/molten_stone"
+  }
+}

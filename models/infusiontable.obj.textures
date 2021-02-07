@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "Material": "gem_forge"
+      },
+      "name": "default"
+    }
+  }
+}
