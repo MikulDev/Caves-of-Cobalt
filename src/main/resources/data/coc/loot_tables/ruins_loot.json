@@ -265,7 +265,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "coc:sulphur_ore",
+          "name": "coc:sulphur_powder",
           "weight": 8,
           "functions": [
             {

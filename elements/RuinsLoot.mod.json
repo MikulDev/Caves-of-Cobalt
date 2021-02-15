@@ -191,7 +191,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:SulphurOre"
+              "value": "CUSTOM:SulphurPowder"
             },
             "weight": 8,
             "minCount": 1,
