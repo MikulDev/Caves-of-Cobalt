@@ -102,7 +102,7 @@ public class TikiTorchPlaceProcedure extends CocModElements.ModElement {
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
 														entity.getLook(1f).z * 5),
 												RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())))
-						.isSolidSide(world, new BlockPos(x, y, z), direction)))) {
+						.isSolid()))) {
 			if ((direction == Direction.UP)) {
 				if (!world.getWorld().isRemote) {
 					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),

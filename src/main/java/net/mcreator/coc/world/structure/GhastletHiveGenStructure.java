@@ -79,6 +79,10 @@ public class GhastletHiveGenStructure extends CocModElements.ModElement {
 								.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false));
 						{
 							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("x", x);
+							$_dependencies.put("y", y);
+							$_dependencies.put("z", z);
+							$_dependencies.put("world", world);
 							MushroomBiomeUpdateProcedure.executeProcedure($_dependencies);
 						}
 					}

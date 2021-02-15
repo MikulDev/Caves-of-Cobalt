@@ -14,9 +14,6 @@
     "isBenefitical": false,
     "registerPotionType": false,
     "renderStatusInInventory": false,
-    "renderStatusInHUD": false,
-    "onExpired": {
-      "name": "SporeMistReset"
-    }
+    "renderStatusInHUD": false
   }
 }

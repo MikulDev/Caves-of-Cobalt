@@ -85,7 +85,14 @@ public class BiomeBlockHandlerProcedure extends CocModElements.ModElement {
 			} 
 			if (world.isAirBlock(new BlockPos(x, y - 1, z)) && world.isAirBlock(new BlockPos(x, y - 2, z)) && Math.random() < 0.007)
 			{
-				world.setBlockState(new BlockPos(x, y, z), GlowingStoneBlock.block.getDefaultState(), 2);
+				if (y > 27)
+				{
+					world.setBlockState(new BlockPos(x, y, z), GlowingStoneBlock.block.getDefaultState(), 2);
+				}
+				else
+				{
+					world.setBlockState(new BlockPos(x, y, z), GlowingStoneBlock.block.getDefaultState(), 2);
+				}
 				world.setBlockState(new BlockPos(x, y - 1, z), DroopingHyphaeTopBlock.block.getDefaultState(), 2);
 				int length = 2;
 				for (int i = 0; i < Math.random() * 8; i++)
@@ -102,10 +109,10 @@ public class BiomeBlockHandlerProcedure extends CocModElements.ModElement {
 			}
 			else if ((world.isAirBlock(new BlockPos(x, (y + 1), z)))) 
 			{
-				if (y > 25)
+				if (y > 27)
 				{
 					world.setBlockState(new BlockPos(x, y, z), StrangeGrassBlock.block.getDefaultState(), 2);
-					if ((Math.random() < 0.45)) 
+					if ((Math.random() < 0.25)) 
 					{
 						if ((Math.random() < 0.5)) 
 						{
@@ -116,11 +123,11 @@ public class BiomeBlockHandlerProcedure extends CocModElements.ModElement {
 							world.setBlockState(new BlockPos(x, (y + 1), z), StrangeSproutsAltBlock.block.getDefaultState(), 2);
 						}
 					} 
-					else if ((Math.random() < 0.03)) 
+					else if ((Math.random() < 0.02)) 
 					{
 						world.setBlockState(new BlockPos(x, (y + 1), z), StrangeBudsBlock.block.getDefaultState(), 2);
 					} 
-					else if ((Math.random() < 0.1))
+					else if ((Math.random() < 0.05))
 					{
 						if ((Math.random() < 0.5)) 
 						{
@@ -130,8 +137,8 @@ public class BiomeBlockHandlerProcedure extends CocModElements.ModElement {
 						{
 							world.setBlockState(new BlockPos(x, (y + 1), z), GlowingMushroomAltBlock.block.getDefaultState(), 2);
 						}
-					} 
-					else if ((Math.random() < 0.05)) 
+					}
+					else if ((Math.random() < 0.01)) 
 					{
 						world.setBlockState(new BlockPos(x, (y + 1), z), FakeShroomBlock.block.getDefaultState(), 2);
 					}
@@ -147,7 +154,7 @@ public class BiomeBlockHandlerProcedure extends CocModElements.ModElement {
 			}
 			else
 			{
-				if ((Math.random() < 0.7)) 
+				if (y > 27)
 				{
 					if ((Math.random() < 0.7)) 
 					{
@@ -155,12 +162,12 @@ public class BiomeBlockHandlerProcedure extends CocModElements.ModElement {
 					}
 					else
 					{
-						world.setBlockState(new BlockPos(x, y, z), GlowingStoneBlock.block.getDefaultState(), 2);
+						world.setBlockState(new BlockPos(x, y, z), DarkStoneBlock.block.getDefaultState(), 2);
 					}
 				}
 				else
 				{
-					world.setBlockState(new BlockPos(x, y, z), DarkStoneBlock.block.getDefaultState(), 2);
+					world.setBlockState(new BlockPos(x, y, z), MoltenStoneBlock.block.getDefaultState(), 2);
 				}
 			}
 		}

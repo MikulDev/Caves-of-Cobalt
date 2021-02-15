@@ -174,7 +174,7 @@ public class LavaBubbleEntity extends CocModElements.ModElement {
 		public void render(MatrixStack ms, IVertexBuilder vb, int i1, int i2, float f1, float f2, float f3, float f4) {
 			GlStateManager.enableBlend();
 			GlStateManager.blendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
-			GlStateManager.color4f(1.0F, 1.0F, 1.0F, 0.3F);
+			//GlStateManager.color(1.0F, 1.0F, 1.0F, 0.3F);
 			this.shape1.render(ms, vb, i1, i2, f1, f2, f3, f4);
 			GlStateManager.disableBlend();
 		}

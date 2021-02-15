@@ -44,7 +44,7 @@ public class OblUpdate2Procedure extends CocModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		double spawnchecks = 0;
 		if ((CocModVariables.MapVariables.get(world).doBiomes)) {
-			if ((!((y < 10) || (y > 50)))) {
+			if (((y > 12) && (y < 50))) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("world", world);
@@ -53,6 +53,7 @@ public class OblUpdate2Procedure extends CocModElements.ModElement {
 					$_dependencies.put("z", z);
 					OBLMushProcedure.executeProcedure($_dependencies);
 				}
+				System.out.println("place mush biome");
 			}
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 		}

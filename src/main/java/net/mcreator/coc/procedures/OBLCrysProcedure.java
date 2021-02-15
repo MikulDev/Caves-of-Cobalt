@@ -57,6 +57,31 @@ public class OBLCrysProcedure extends CocModElements.ModElement {
 		}
 	}
 
+	public static void placeCrystalSide(World world, BlockPos pos, Direction direction)
+	{
+		int crystalSize = (int) (Math.random() * 4) + 4;
+		int crystalLength = 1;
+
+		BlockPos placepos = pos;
+		world.setBlockState(placepos, CaveCrystalBlock.block.getDefaultState());
+		
+		for (int c = 0; c < crystalSize; c++)
+		{
+			world.setBlockState(placepos, CaveCrystalBlock.block.getDefaultState());
+			for (int r = 0; r < (Math.random() * (crystalSize * 10) + crystalSize) / (crystalLength * 2); r++)
+			{
+				world.setBlockState(placepos.add(new Vec3i((Math.random() - 0.5) * (4 / crystalLength), (Math.random() - 0.5) * (4 / crystalLength), (Math.random() - 0.5) * (4 / crystalLength))), CaveCrystalBlock.block.getDefaultState());
+			}
+			if (direction == Direction.NORTH) placepos = placepos.south(1);
+			if (direction == Direction.SOUTH) placepos = placepos.north(1);
+			if (direction == Direction.EAST) placepos = placepos.west(1);
+			if (direction == Direction.WEST) placepos = placepos.east(1);
+			if (direction == Direction.UP) placepos = placepos.down(1);
+			if (direction == Direction.DOWN) placepos = placepos.up(1);
+			crystalLength++;
+		}
+	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) 
 	{
 		if (dependencies.get("x") == null) {
@@ -176,6 +201,8 @@ public class OBLCrysProcedure extends CocModElements.ModElement {
 			placeAngle += 0.05;
 		}
 
+
+		PlaceHelper placehelper = new PlaceHelper(null);
 		//Place crystals
 		if (!crystalPos.isEmpty())
 		{
@@ -184,11 +211,16 @@ public class OBLCrysProcedure extends CocModElements.ModElement {
 			while (iter.hasNext())
 			{
 				placepos = (BlockPos) iter.next();
-				while (!world.getBlockState(placepos.down(1)).isSolid())
+				for (int c = 0; c < 20; c++)
 				{
-					placepos = placepos.add(0, -1, 0);
+					BlockPos testpos = placepos.add(Math.random() * 10 - 5, Math.random() * 10 - 5, Math.random() * 10 - 5);
+					Direction direc = placehelper.touchingSolid(world.getWorld(), testpos);
+					if (direc != null && world.isAirBlock(testpos))
+					{
+						OBLCrysProcedure.placeCrystalSide(world.getWorld(), testpos, direc);
+						break;
+					}
 				}
-				OBLCrysProcedure.placeCrystal(world.getWorld(), placepos);
 			}
 		}
 		if (!airLocations.isEmpty())

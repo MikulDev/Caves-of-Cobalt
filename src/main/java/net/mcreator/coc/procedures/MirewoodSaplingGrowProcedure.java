@@ -58,8 +58,8 @@ public class MirewoodSaplingGrowProcedure extends CocModElements.ModElement {
 		double offsetZ = 0;
 		treeLeanX = (double) (((new java.util.Random()).nextInt((int) 2 + 1)) - 1);
 		treeLeanZ = (double) (((new java.util.Random()).nextInt((int) 2 + 1)) - 1);
-		treeLeanX = (double) ((treeLeanX) / (((new java.util.Random()).nextInt((int) 1 + 1)) + 1.5));
-		treeLeanZ = (double) ((treeLeanZ) / (((new java.util.Random()).nextInt((int) 1 + 1)) + 1.5));
+		treeLeanX = (double) ((treeLeanX) / (((new java.util.Random()).nextInt((int) 1 + 1)) + 2));
+		treeLeanZ = (double) ((treeLeanZ) / (((new java.util.Random()).nextInt((int) 1 + 1)) + 2));
 		for (int index0 = 0; index0 < (int) ((((new java.util.Random()).nextInt((int) 3 + 1)) + 1)); index0++) {
 			world.setBlockState(new BlockPos((int) (x + (((new java.util.Random()).nextInt((int) 2 + 1)) - 1)), (int) y,
 					(int) (z + (((new java.util.Random()).nextInt((int) 2 + 1)) - 1))), MirewoodLogBlock.block.getDefaultState(), 3);

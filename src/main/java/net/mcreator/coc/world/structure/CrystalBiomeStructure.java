@@ -50,7 +50,7 @@ public class CrystalBiomeStructure extends CocModElements.ModElement {
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 8000) {
+				if ((random.nextInt(1000000) + 1) <= 1500) {
 					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
@@ -71,6 +71,10 @@ public class CrystalBiomeStructure extends CocModElements.ModElement {
 								.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false));
 						{
 							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("x", x);
+							$_dependencies.put("y", y);
+							$_dependencies.put("z", z);
+							$_dependencies.put("world", world);
 							CrystalBiomePlaceProcedure.executeProcedure($_dependencies);
 						}
 					}

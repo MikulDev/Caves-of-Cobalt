@@ -123,6 +123,10 @@ public class ObliteratorCrystalBlock extends CocModElements.ModElement {
 			int z = pos.getZ();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				OblUpdate3Procedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));

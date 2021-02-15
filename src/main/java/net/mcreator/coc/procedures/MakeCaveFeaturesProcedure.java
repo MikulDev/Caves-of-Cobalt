@@ -102,17 +102,7 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 							successY = pos.getY();
 							successZ = pos.getZ();
 
-							/*if (Math.random() < 0.001 && pos.getY() > 15)
-							{
-								Map<String, Object> $_dependencies = new HashMap<>();
-								$_dependencies.put("x", pos.getX());
-								$_dependencies.put("y", pos.getY());
-								$_dependencies.put("z", pos.getZ());
-								$_dependencies.put("world", world);
-								GenerateRuinsProcedure.executeProcedure($_dependencies);
-
-							}*/
-							if (Math.random() < 0.15)
+							if (Math.random() < 0.05)
 							{
 								if (world.getBlockState(pos.add(0, -1, 0)).getMaterial() == Material.ROCK && world.getBlockState(pos.add(0, -1, 0)).isSolid())
 								{
@@ -149,7 +139,7 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 									world.setBlockState(pos, GlowingMushroomSideBlock.block.getDefaultState().with(GlowingMushroomSideBlock.CustomBlock.FACING, Direction.SOUTH));
 								}
 							}
-							if (Math.random() < 0.001)
+							if (Math.random() < 0.0005)
 							{
 								if (world.getBlockState(pos.add(1, 0, 0)) == Blocks.STONE.getDefaultState())
 								{
@@ -169,6 +159,18 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 								}
 								
 							}
+
+							if (Math.random() < 0.0005 && world.isAirBlock(pos))
+							{
+								Map<String, Object> $_dependencies = new HashMap<>();
+								$_dependencies.put("x", (double) (pos.getX()));
+								$_dependencies.put("y", (double) (pos.getY()));
+								$_dependencies.put("z", (double) (pos.getZ()));
+								$_dependencies.put("world", iworld);
+								GenerateRuinsProcedure.executeProcedure($_dependencies);
+
+							}
+							
 							else if (world.getBlockState(pos.down(1)) == Blocks.STONE.getDefaultState()) 
 							{
 								if (Math.random() < 0.55) 

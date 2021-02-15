@@ -42,7 +42,7 @@
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 1,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "frequencyOnChunks": 20,
     "spawnWorldTypes": [],

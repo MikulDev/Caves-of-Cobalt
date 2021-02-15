@@ -25,11 +25,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
 import net.mcreator.coc.procedures.MoltenBiomePlaceProcedure;
+import net.mcreator.coc.procedures.MoltenBiomeConditionProcedure;
 import net.mcreator.coc.CocModElements;
 
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.google.common.collect.ImmutableMap;
 
 @CocModElements.ModElement.Tag
 public class MoltenBiomeStructure extends CocModElements.ModElement {
@@ -50,12 +53,12 @@ public class MoltenBiomeStructure extends CocModElements.ModElement {
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 8000) {
+				if ((random.nextInt(1000000) + 1) <= 3000) {
 					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
 						int k = ck + random.nextInt(16);
-						int j = world.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
+						int j = world.getHeight(Heightmap.Type.WORLD_SURFACE_WG, i, k);
 						j = Math.abs(random.nextInt(Math.max(1, j)) - 24);
 						Rotation rotation = Rotation.NONE;
 						Mirror mirror = Mirror.NONE;
@@ -63,14 +66,20 @@ public class MoltenBiomeStructure extends CocModElements.ModElement {
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
+						if (!MoltenBiomeConditionProcedure.executeProcedure(ImmutableMap.of("y", y)))
+							continue;
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "molten_biome"));
+								.getTemplateDefaulted(new ResourceLocation("coc", "multibiome"));
 						if (template == null)
 							return false;
 						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
 								.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false));
 						{
 							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("x", x);
+							$_dependencies.put("y", y);
+							$_dependencies.put("z", z);
+							$_dependencies.put("world", world);
 							MoltenBiomePlaceProcedure.executeProcedure($_dependencies);
 						}
 					}

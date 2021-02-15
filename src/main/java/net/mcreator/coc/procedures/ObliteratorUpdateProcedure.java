@@ -1,10 +1,7 @@
 package net.mcreator.coc.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -50,28 +47,22 @@ public class ObliteratorUpdateProcedure extends CocModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		double spawnchecks = 0;
 		if ((CocModVariables.MapVariables.get(world).doBiomes)) {
-			if ((!(((ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))).equals(new ResourceLocation("ocean")))
-					|| (ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-							.equals(new ResourceLocation("frozen_ocean"))))
-					|| (y >= 25)))) {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("world", world);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					OBLMoltenProcedure.executeProcedure($_dependencies);
-				}
-				world.setBlockState(new BlockPos((int) x, (int) (y + 25), (int) z), ThingSpawnerBlock.block.getDefaultState(), 3);
-				if (!world.getWorld().isRemote) {
-					BlockPos _bp = new BlockPos((int) x, (int) (y + 25), (int) z);
-					TileEntity _tileEntity = world.getTileEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_tileEntity != null)
-						_tileEntity.getTileData().putDouble("biomeID", 2);
-					world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
-				}
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				OBLMoltenProcedure.executeProcedure($_dependencies);
+			}
+			world.setBlockState(new BlockPos((int) x, (int) (y + 25), (int) z), ThingSpawnerBlock.block.getDefaultState(), 3);
+			if (!world.getWorld().isRemote) {
+				BlockPos _bp = new BlockPos((int) x, (int) (y + 25), (int) z);
+				TileEntity _tileEntity = world.getTileEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_tileEntity != null)
+					_tileEntity.getTileData().putDouble("biomeID", 2);
+				world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 		}

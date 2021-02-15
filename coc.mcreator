@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "GUI": 5,
-    "ENTITY": 77
+    "ENTITY": 77,
+    "GUI": 5
   },
   "mod_elements": [
     {
@@ -7668,14 +7668,6 @@
       "ids": {}
     },
     {
-      "name": "Multibiome",
-      "type": "structure",
-      "sortid": 608,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "GeyserUpdate",
       "type": "procedure",
       "sortid": 609,
@@ -13986,7 +13978,24 @@
       "ids": {},
       "registry_name": "obl_update_3",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -14016,7 +14025,24 @@
       "ids": {},
       "registry_name": "crystal_biome_place",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -14028,7 +14054,24 @@
       "ids": {},
       "registry_name": "molten_biome_place",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -14108,18 +14151,19 @@
       }
     },
     {
-      "name": "SporeMistReset",
+      "name": "MoltenBiomeCondition",
       "type": "procedure",
       "sortid": 942,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spore_mist_reset",
+      "registry_name": "molten_biome_condition",
       "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "y",
+            "type": "number"
           }
         ]
       }

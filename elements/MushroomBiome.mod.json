@@ -5,7 +5,7 @@
     "structure": "mushroom_biome",
     "randomlyRotateStructure": false,
     "surfaceDetectionType": "First block",
-    "spawnProbability": 8000,
+    "spawnProbability": 1500,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Underground",

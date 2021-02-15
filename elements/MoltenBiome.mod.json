@@ -2,10 +2,10 @@
   "_fv": 15,
   "_type": "structure",
   "definition": {
-    "structure": "molten_biome",
+    "structure": "multibiome",
     "randomlyRotateStructure": false,
-    "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 8000,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 3000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Underground",
@@ -18,6 +18,9 @@
     "restrictionBlocks": [],
     "restrictionBiomes": [],
     "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "MoltenBiomeCondition"
+    },
     "onStructureGenerated": {
       "name": "MoltenBiomePlace"
     }

@@ -2,7 +2,6 @@ package net.mcreator.coc.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.coc.CocModElements;
 import net.mcreator.coc.CocMod;
@@ -46,11 +45,7 @@ public class MushroomBiomeUpdateProcedure extends CocModElements.ModElement {
 		double prevX = 0;
 		double prevY = 0;
 		double prevZ = 0;
-		if ((y > 12)) {
-			world.getPendingBlockTicks().scheduleTick(new BlockPos((int) x, (int) y, (int) z),
-					world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlock(), (int) 20);
-		} else {
-			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
-		}
+		world.getPendingBlockTicks().scheduleTick(new BlockPos((int) x, (int) y, (int) z),
+				world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlock(), (int) 20);
 	}
 }

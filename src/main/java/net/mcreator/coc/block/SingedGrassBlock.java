@@ -11,7 +11,6 @@ import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
 import net.minecraft.potion.Effects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -65,11 +64,6 @@ public class SingedGrassBlock extends CocModElements.ModElement {
 		@Override
 		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
 			return useContext.getItem().getItem() != this.asItem();
-		}
-
-		@Override
-		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 1;
 		}
 
 		@Override

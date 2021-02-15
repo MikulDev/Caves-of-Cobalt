@@ -6,19 +6,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
-import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.potion.EffectType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effect;
-import net.minecraft.entity.ai.attributes.AbstractAttributeMap;
-import net.minecraft.entity.LivingEntity;
 
-import net.mcreator.coc.procedures.SporeMistResetProcedure;
 import net.mcreator.coc.CocModElements;
-
-import java.util.Map;
-import java.util.HashMap;
 
 @CocModElements.ModElement.Tag
 public class SporeMistPotion extends CocModElements.ModElement {
@@ -69,20 +62,6 @@ public class SporeMistPotion extends CocModElements.ModElement {
 		@Override
 		public boolean shouldRenderHUD(EffectInstance effect) {
 			return false;
-		}
-
-		@Override
-		public void removeAttributesModifiersFromEntity(LivingEntity entity, AbstractAttributeMap attributeMapIn, int amplifier) {
-			super.removeAttributesModifiersFromEntity(entity, attributeMapIn, amplifier);
-			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				SporeMistResetProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

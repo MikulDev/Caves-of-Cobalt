@@ -100,7 +100,7 @@ public class UpdateLavaFog extends CocModElements.ModElement {
 	@SubscribeEvent
 	public void onRenderFogColor(EntityViewRenderEvent.FogColors event) {
 		ActiveRenderInfo player = event.getInfo();
-		if (player.getRenderViewEntity() instanceof LivingEntity && ((LivingEntity) player.getRenderViewEntity()).isPotionActive(SporeMistPotion.potion)) 
+		if (player.getRenderViewEntity() instanceof LivingEntity && ((LivingEntity) player.getRenderViewEntity()).isPotionActive(SporeMistPotion.potion) && !player.getFluidState().isTagged(FluidTags.WATER)) 
 		{
 			LivingEntity renderPlayer = ((LivingEntity) player.getRenderViewEntity());
 			if (renderPlayer.getPosY() >= 30)

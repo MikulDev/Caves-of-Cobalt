@@ -77,20 +77,6 @@ public class FillLiquidProcedure extends CocModElements.ModElement {
 		double lilyPlaceX = 0;
 		double lilyPlaceY = 0;
 		double lilyPlaceZ = 0;
-		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-			world.getWorld().getServer().getCommandManager()
-					.handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"fill ~3 5 ~3 ~-3 ~20 ~-3 air replace gravel");
-		}
-		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-			world.getWorld().getServer().getCommandManager()
-					.handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							"kill @e[type=falling_block,distance=0..25]");
-		}
 		if ((!(world.canBlockSeeSky(new BlockPos((int) x, (int) y, (int) z))))) {
 			if ((y > 23)) {
 				if (((world.getBiome(new BlockPos((int) x, (int) y, (int) z)).getTemperature(new BlockPos((int) x, (int) y, (int) z))

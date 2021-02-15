@@ -40,6 +40,9 @@ import net.mcreator.coc.block.StrangeGrassBlock;
 import net.mcreator.coc.PlaceHelper;
 import net.mcreator.coc.block.LiquidFillerBlock;
 import java.util.Iterator;
+import net.minecraft.block.Block;
+import net.mcreator.coc.procedures.MirewoodSaplingGrowProcedure;
+import java.util.HashMap;
 
 @CocModElements.ModElement.Tag
 public class OBLMushProcedure extends CocModElements.ModElement {
@@ -79,28 +82,57 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 		double lengthZ;
 		double placeY;
 		int placeAngle;
+		int liquidY = (int) (y) - 9;
 		PlaceHelper placeHelper = new PlaceHelper(null);
 		List<Vec3d> foggers = new ArrayList<Vec3d>();
+		//System.out.println("initialized variables");
 		Template tree = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager().getTemplateDefaulted(new ResourceLocation("coc", "mushroom_tree"));
 		{
-			BlockPos treePos = new BlockPos(x - 5, 55, z - 5);
+			BlockPos treePos = new BlockPos(x - 5, 45, z - 5);
 			for (int t = 0; t < 100; ++t)
+			{
 				if (!(!world.getBlockState(treePos).isSolid() && world.getBlockState(treePos.down(1)).isSolid() && world.canBlockSeeSky(treePos))) 
 				{
 					treePos = treePos.add(0, 1, 0);
 				}
 				else 
 				{
-					tree.addBlocksToWorldChunk(world, new BlockPos(treePos.down((int) Math.random() * 3)), new PlacementSettings());
+					tree.addBlocksToWorldChunk(world, new BlockPos(treePos.down(5)), new PlacementSettings());
+					for (int f = 0; f < 250; ++f)
+					{
+						BlockPos smallpos = new BlockPos(treePos.add(Math.random() * 60 - 30, Math.random() * 10 - 5, Math.random() * 60 - 30));
+						if (world.getBlockState(smallpos).isSolid() && !world.getBlockState(smallpos.up(1)).isSolid())
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("world", world);
+							$_dependencies.put("x", (double) smallpos.up(1).getX());
+							$_dependencies.put("y", (double) smallpos.up(1).getY());
+							$_dependencies.put("z", (double) smallpos.up(1).getZ());
+							MirewoodSaplingGrowProcedure.executeProcedure($_dependencies);
+						}
+						if (world.getBlockState(smallpos.down(1)).isSolid() && !world.getBlockState(smallpos).isSolid())
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("world", world);
+							$_dependencies.put("x", (double) smallpos.getX());
+							$_dependencies.put("y", (double) smallpos.getY());
+							$_dependencies.put("z", (double) smallpos.getZ());
+							MirewoodSaplingGrowProcedure.executeProcedure($_dependencies);
+
+							placeHelper.fillArea(world, Blocks.AIR.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.TALL_GRASS);
+							placeHelper.fillArea(world, BiomeBlockBlock.block.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.GRASS_BLOCK);
+						}
+					}
 					break;
 				}
+			}
 		}
-		for (int c = 0; c < Math.random() + 1; ++c)
+		for (int c = 0; c < Math.random() + 2; ++c)
 		{
 			if (!world.isRemote) 
 			{
 				// Carve Area
-				for (int j = 0; j < Math.random() * 5 + 3; ++j) 
+				for (int j = 0; j < Math.random() * 10 + 8; ++j) 
 				{
 					for (int i = 0; i < scalefactor * 2; ++i) 
 					{
@@ -116,11 +148,14 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 						int sizeX = (int) (Math.random() * 3 + 6);
 						int sizeY = (int) (Math.random() * 3 + 6);
 						int sizeZ = (int) (Math.random() * 3 + 6);
+						//System.out.println("initialized variables 2");
 						
 						placeHelper.carveArea(world, new BlockPos(placepos), sizeX, sizeY, sizeZ);
-						placeHelper.fillArea(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, Blocks.STONE);
+						//System.out.println("carve area");
+						Block[] replaces = new Block[]{Blocks.STONE, Blocks.ANDESITE, Blocks.DIORITE, Blocks.GRANITE, Blocks.DIRT, Blocks.GRAVEL};
+						placeHelper.fillAreaList(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, replaces);
 
-						world.setBlockState(new BlockPos(placepos.getX(), y - 8, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
+						world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
 
 						//Paint Walls/Floor
 						
@@ -161,11 +196,13 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 						foggers.add(placepos.add(0.0, -2.0, 0.0));
 					}
 					scalefactor = scalefactor + 4;
+					//System.out.println("completed clearance at " + scalefactor + "x");
 				}
 			}
 			x += Math.random() * 50 - 25;
-			y += Math.random() * 8 - 4;
 			z += Math.random() * 50 - 25;
+			//System.out.println("set coordinates for second chunk: " + x + " " + y + " " + z);
+			scalefactor = 3;
 		}
 		
 		// Decorate Large Mushrooms
@@ -177,7 +214,8 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 				world.setBlockState(mushpos, MushroomSpawnerBlock.block.getDefaultState(), 2);
 			}
 		}
-
+		//System.out.println("placed large mushrooms");
+		
 		if (!foggers.isEmpty())
 		{
 			Iterator iter = foggers.iterator();
@@ -188,5 +226,6 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 				world.setBlockState(fogpos, MushFoggerBlock.block.getDefaultState(), 2);
 			}
 		}
+		//System.out.println("placed fog emitters");
 	}
 }

@@ -35,8 +35,6 @@ public class GenerateRuinsProcedure extends CocModElements.ModElement {
 		IWorld iworld = (IWorld) dependencies.get("world");
 		World world = iworld.getWorld();
 		
-		PlaceHelper placeHelper = new PlaceHelper(null);
-
 		for (int i = 0; i < Math.random() * 10 + 30; i++)
 		{
 			int px = (int) x + (int) (Math.random() * 18) - 9;
@@ -46,8 +44,10 @@ public class GenerateRuinsProcedure extends CocModElements.ModElement {
 			int sizeX = (int) (Math.random() * 4) + 3;
 			int sizeY = 6;
 			int sizeZ = (int) (Math.random() * 4) + 3;
-			
-			placeHelper.carveArea(world, new BlockPos(px, py, pz), sizeX, sizeY, (int) sizeZ);
+			//System.out.println(sizeX + " " + sizeY + " " + sizeZ);
+
+			PlaceHelper placeHelper = new PlaceHelper(null);
+			placeHelper.carveArea(world, new BlockPos(px, py, pz), sizeX, sizeY, sizeZ);
 			int sx = px - (sizeX / 2 + 2);
 			for (int k = 0; k < sizeX + 4; k++)
 			{
@@ -81,7 +81,7 @@ public class GenerateRuinsProcedure extends CocModElements.ModElement {
 							$_dependencies.put("x", x);
 							$_dependencies.put("y", y);
 							$_dependencies.put("z", z);
-							$_dependencies.put("world", world);
+							$_dependencies.put("world", iworld);
 							GenRuins2Procedure.executeProcedure($_dependencies);
 	}
 }
