@@ -184,7 +184,7 @@ public class OBLMoltenProcedure extends CocModElements.ModElement {
 									break;
 								}
 							}
-							if (Math.random() < 0.15)
+							if (Math.random() < 0.1)
 							{
 								world.setBlockState(lavapos.down(vineLength), GhastletHiveBlock.block.getDefaultState(), 2);
 								world.setBlockState(lavapos.down(vineLength - 1), TendrilsBlock.block.getDefaultState(), 3);
