@@ -8,11 +8,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.coc.block.MushroomLampBlock;
-import net.mcreator.coc.block.MagmaMushroomStemBlock;
-import net.mcreator.coc.block.MagmaMushroomBaseBlock;
 import net.mcreator.coc.block.BigMushroomStemBlock;
 import net.mcreator.coc.CocModElements;
 import net.mcreator.coc.CocMod;
@@ -52,236 +49,104 @@ public class PlaceMushroomHeadProcedure extends CocModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		double stemHeight = 0;
 		boolean magma = false;
-		if ((!((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock()))) {
-			if ((y > 25)) {
-				stemHeight = (double) 0;
-				for (int index0 = 0; index0 < (int) (((Math.random() * 2) + 3)); index0++) {
-					world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z), BigMushroomStemBlock.block.getDefaultState(), 3);
-					stemHeight = (double) ((stemHeight) + 1);
-				}
-				if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_top_1"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 3), (int) ((y + (stemHeight)) + 1), (int) (z - 3)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_top_2"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_top_3"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_top_4"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "giant_mushroom_5"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "giant_mushroom_6"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				}
-				if ((Math.random() < 0.2)) {
-					if ((world.isAirBlock(new BlockPos((int) (x + 1), (int) ((y + (stemHeight)) + 1), (int) z)))) {
-						world.setBlockState(new BlockPos((int) (x + 1), (int) ((y + (stemHeight)) + 1), (int) z),
-								MushroomLampBlock.block.getDefaultState(), 3);
-					} else {
-						world.setBlockState(new BlockPos((int) (x + 1), (int) (y + (stemHeight)), (int) z), MushroomLampBlock.block.getDefaultState(),
-								3);
-					}
-				}
-				if ((Math.random() < 0.2)) {
-					if ((world.isAirBlock(new BlockPos((int) (x - 1), (int) ((y + (stemHeight)) + 1), (int) z)))) {
-						world.setBlockState(new BlockPos((int) (x - 1), (int) ((y + (stemHeight)) + 1), (int) z),
-								MushroomLampBlock.block.getDefaultState(), 3);
-					} else {
-						world.setBlockState(new BlockPos((int) (x - 1), (int) (y + (stemHeight)), (int) z), MushroomLampBlock.block.getDefaultState(),
-								3);
-					}
-				}
-				if ((Math.random() < 0.2)) {
-					if ((world.isAirBlock(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) (z + 1))))) {
-						world.setBlockState(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) (z + 1)),
-								MushroomLampBlock.block.getDefaultState(), 3);
-					} else {
-						world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) (z + 1)), MushroomLampBlock.block.getDefaultState(),
-								3);
-					}
-				}
-				if ((Math.random() < 0.2)) {
-					if ((world.isAirBlock(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) (z - 1))))) {
-						world.setBlockState(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) (z - 1)),
-								MushroomLampBlock.block.getDefaultState(), 3);
-					} else {
-						world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) (z - 1)), MushroomLampBlock.block.getDefaultState(),
-								3);
-					}
-				}
-				while ((world.isAirBlock(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z)))) {
-					world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z), BigMushroomStemBlock.block.getDefaultState(), 3);
-					stemHeight = (double) ((stemHeight) + 1);
-				}
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BigMushroomStemBlock.block.getDefaultState(), 3);
+		if ((!(world.isAirBlock(new BlockPos((int) x, (int) (y - 1), (int) z))))) {
+			stemHeight = (double) 0;
+			for (int index0 = 0; index0 < (int) (((Math.random() * 2) + 3)); index0++) {
+				world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z), BigMushroomStemBlock.block.getDefaultState(), 3);
+				stemHeight = (double) ((stemHeight) + 1);
 			}
-			if ((y <= 25)) {
-				stemHeight = (double) 0;
-				for (int index2 = 0; index2 < (int) (((Math.random() * 5) + 3)); index2++) {
-					if (((stemHeight) > 2)) {
-						if ((Math.random() < 0.1)) {
-							if (!world.getWorld().isRemote) {
-								Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-										.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_small_ne"));
-								if (template != null) {
-									template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y + (stemHeight)), (int) (z - 1)),
-											new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-													.setIgnoreEntities(false));
-								}
-							}
-						}
-						if ((Math.random() < 0.1)) {
-							if (!world.getWorld().isRemote) {
-								Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-										.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_small_nw"));
-								if (template != null) {
-									template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) (y + (stemHeight)), (int) (z - 1)),
-											new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-													.setIgnoreEntities(false));
-								}
-							}
-						}
-						if ((Math.random() < 0.1)) {
-							if (!world.getWorld().isRemote) {
-								Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-										.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_small_se"));
-								if (template != null) {
-									template.addBlocksToWorld(world, new BlockPos((int) x, (int) (y + (stemHeight)), (int) z), new PlacementSettings()
-											.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
-								}
-							}
-						}
-						if ((Math.random() < 0.1)) {
-							if (!world.getWorld().isRemote) {
-								Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-										.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_small_sw"));
-								if (template != null) {
-									template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) (y + (stemHeight)), (int) z),
-											new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-													.setIgnoreEntities(false));
-								}
-							}
-						}
-					}
-					world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z), MagmaMushroomStemBlock.block.getDefaultState(), 3);
-					stemHeight = (double) ((stemHeight) + 1);
-				}
-				if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_top_1"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 3), (int) ((y + (stemHeight)) + 1), (int) (z - 3)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_top_2"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_top_3"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-					world.setBlockState(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) z),
-							MagmaMushroomStemBlock.block.getDefaultState(), 3);
-				} else if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_top_4"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else if ((Math.random() < 0.167)) {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_top_5"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
-					}
-				} else {
-					if (!world.getWorld().isRemote) {
-						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("coc", "magma_mushroom_top_6"));
-						if (template != null) {
-							template.addBlocksToWorld(world, new BlockPos((int) (x - 1), (int) ((y + (stemHeight)) + 1), (int) (z - 1)),
-									new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null)
-											.setIgnoreEntities(false));
-						}
+			if ((Math.random() < 0.167)) {
+				if (!world.getWorld().isRemote) {
+					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+							.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_top_1"));
+					if (template != null) {
+						template.addBlocksToWorld(world, new BlockPos((int) (x - 3), (int) ((y + (stemHeight)) + 1), (int) (z - 3)),
+								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
 					}
 				}
-				while ((world.isAirBlock(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z)))) {
-					world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z), MagmaMushroomStemBlock.block.getDefaultState(), 3);
-					stemHeight = (double) ((stemHeight) + 1);
+			} else if ((Math.random() < 0.167)) {
+				if (!world.getWorld().isRemote) {
+					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+							.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_top_2"));
+					if (template != null) {
+						template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
+								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+					}
 				}
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), MagmaMushroomBaseBlock.block.getDefaultState(), 3);
+			} else if ((Math.random() < 0.167)) {
+				if (!world.getWorld().isRemote) {
+					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+							.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_top_3"));
+					if (template != null) {
+						template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
+								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+					}
+				}
+			} else if ((Math.random() < 0.167)) {
+				if (!world.getWorld().isRemote) {
+					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+							.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_top_4"));
+					if (template != null) {
+						template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
+								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+					}
+				}
+			} else if ((Math.random() < 0.167)) {
+				if (!world.getWorld().isRemote) {
+					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+							.getTemplateDefaulted(new ResourceLocation("coc", "giant_mushroom_5"));
+					if (template != null) {
+						template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
+								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+					}
+				}
+			} else {
+				if (!world.getWorld().isRemote) {
+					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+							.getTemplateDefaulted(new ResourceLocation("coc", "giant_mushroom_6"));
+					if (template != null) {
+						template.addBlocksToWorld(world, new BlockPos((int) (x - 2), (int) ((y + (stemHeight)) + 1), (int) (z - 2)),
+								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
+					}
+				}
 			}
+			if ((Math.random() < 0.2)) {
+				if ((world.isAirBlock(new BlockPos((int) (x + 1), (int) ((y + (stemHeight)) + 1), (int) z)))) {
+					world.setBlockState(new BlockPos((int) (x + 1), (int) ((y + (stemHeight)) + 1), (int) z),
+							MushroomLampBlock.block.getDefaultState(), 3);
+				} else {
+					world.setBlockState(new BlockPos((int) (x + 1), (int) (y + (stemHeight)), (int) z), MushroomLampBlock.block.getDefaultState(), 3);
+				}
+			}
+			if ((Math.random() < 0.2)) {
+				if ((world.isAirBlock(new BlockPos((int) (x - 1), (int) ((y + (stemHeight)) + 1), (int) z)))) {
+					world.setBlockState(new BlockPos((int) (x - 1), (int) ((y + (stemHeight)) + 1), (int) z),
+							MushroomLampBlock.block.getDefaultState(), 3);
+				} else {
+					world.setBlockState(new BlockPos((int) (x - 1), (int) (y + (stemHeight)), (int) z), MushroomLampBlock.block.getDefaultState(), 3);
+				}
+			}
+			if ((Math.random() < 0.2)) {
+				if ((world.isAirBlock(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) (z + 1))))) {
+					world.setBlockState(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) (z + 1)),
+							MushroomLampBlock.block.getDefaultState(), 3);
+				} else {
+					world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) (z + 1)), MushroomLampBlock.block.getDefaultState(), 3);
+				}
+			}
+			if ((Math.random() < 0.2)) {
+				if ((world.isAirBlock(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) (z - 1))))) {
+					world.setBlockState(new BlockPos((int) x, (int) ((y + (stemHeight)) + 1), (int) (z - 1)),
+							MushroomLampBlock.block.getDefaultState(), 3);
+				} else {
+					world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) (z - 1)), MushroomLampBlock.block.getDefaultState(), 3);
+				}
+			}
+			while ((world.isAirBlock(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z)))) {
+				world.setBlockState(new BlockPos((int) x, (int) (y + (stemHeight)), (int) z), BigMushroomStemBlock.block.getDefaultState(), 3);
+				stemHeight = (double) ((stemHeight) + 1);
+			}
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BigMushroomStemBlock.block.getDefaultState(), 3);
 		}
 	}
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coc:block/red_biome_block"
+    }
+  }
+}

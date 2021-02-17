@@ -66,11 +66,6 @@ public class PlaceHelper extends CocModElements.ModElement  {
 					{
 						world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 2);
 					}
-					/*else
-					{
-						world.setBlockState(new BlockPos(x, y, z), Blocks.GLASS.getDefaultState(), 2);
-					}*/
-					//System.out.println((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2)));
 					z++;
 				}
 				z = pos.getZ() - sizeZ;
@@ -81,7 +76,7 @@ public class PlaceHelper extends CocModElements.ModElement  {
 		}
 	}
 
-	public static void carveChunk (IWorld iworld, BlockPos pos, int sizeX, int sizeY, int sizeZ, int chunkX, int chunkZ)
+	public static void carveAreaHollow (World world, BlockState paint, BlockPos pos, int sizeX, int sizeY, int sizeZ, List replaceblocks)
 	{
 		int x = pos.getX() - sizeX;
 		int y = pos.getY() - sizeY;
@@ -95,23 +90,17 @@ public class PlaceHelper extends CocModElements.ModElement  {
 			for (int yr = 0; yr < lengthY * 2; ++yr)
 			{
 				for (int zr = 0; zr < lengthZ * 2; ++zr)
-				{
-					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1)
+				{	
+					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) > 0.9 &&
+					((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1.15D &&
+					replaceblocks.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock()))
 					{
-						System.out.println(x);
-						System.out.println(y);
-						System.out.println(z);
-						System.out.println(chunkX);
-						System.out.println(chunkZ);
-						System.out.println(iworld.getChunkProvider());
-						System.out.println(iworld.getChunkProvider().getChunk(chunkX, chunkZ, false));
-						iworld.getChunkProvider().getChunk(chunkX, chunkZ, false).setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), false);
+						world.setBlockState(new BlockPos(x, y, z), paint, 2);
 					}
-					/*else
+					else if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 0.9)
 					{
-						world.setBlockState(new BlockPos(x, y, z), Blocks.GLASS.getDefaultState(), 2);
-					}*/
-					//System.out.println((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2)));
+						world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 2);
+					}
 					z++;
 				}
 				z = pos.getZ() - sizeZ;
@@ -157,7 +146,7 @@ public class PlaceHelper extends CocModElements.ModElement  {
 		}
 	}
 
-	public static void fillAreaList (World world, BlockState block, BlockPos pos, int sizeX, int sizeY, int sizeZ, Block[] replace)
+	public static void fillAreaList (World world, BlockState block, BlockPos pos, int sizeX, int sizeY, int sizeZ, List replace)
 	{
 		int x = pos.getX() - sizeX;
 		int y = pos.getY() - sizeY;
@@ -172,9 +161,8 @@ public class PlaceHelper extends CocModElements.ModElement  {
 			{
 				for (int zr = 0; zr < lengthZ * 2; ++zr)
 				{
-					List replacelist = new ArrayList<>(Arrays.asList(replace));
 					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1 
-					&& replacelist.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock()))
+					&& replace.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock()))
 					{
 						world.setBlockState(new BlockPos(x, y, z), block, 2);
 					}

@@ -23,10 +23,19 @@ import net.mcreator.coc.block.SporiteInactiveBlock;
 import net.mcreator.coc.block.MoltenStoneBlock;
 import net.mcreator.coc.block.CactusBlock;
 import net.mcreator.coc.block.BiomeBlockBlock;
+import net.mcreator.coc.block.RedBiomeBlockBlock;
 import net.mcreator.coc.CocModElements;
+
 import net.mcreator.coc.block.DroopingHyphaeBlock;
 import net.mcreator.coc.block.DroopingHyphaeTopBlock;
 import net.mcreator.coc.block.DroopingHyphaeMidBlock;
+
+import net.mcreator.coc.block.DroopingMagphaeBBlock;
+import net.mcreator.coc.block.DroopingMagphaeTBlock;
+import net.mcreator.coc.block.DroopingMagphaeMBlock;
+import net.mcreator.coc.block.PrimalMushroomBlock;
+import net.mcreator.coc.block.PrimalMushroomAltBlock;
+
 import net.mcreator.coc.block.SingedGrassBlock;
 import net.mcreator.coc.block.BurningGrassBlock;
 import net.mcreator.coc.PlaceHelper;
@@ -85,14 +94,8 @@ public class BiomeBlockHandlerProcedure extends CocModElements.ModElement {
 			} 
 			if (world.isAirBlock(new BlockPos(x, y - 1, z)) && world.isAirBlock(new BlockPos(x, y - 2, z)) && Math.random() < 0.007)
 			{
-				if (y > 27)
-				{
-					world.setBlockState(new BlockPos(x, y, z), GlowingStoneBlock.block.getDefaultState(), 2);
-				}
-				else
-				{
-					world.setBlockState(new BlockPos(x, y, z), GlowingStoneBlock.block.getDefaultState(), 2);
-				}
+				world.setBlockState(new BlockPos(x, y, z), GlowingStoneBlock.block.getDefaultState(), 2);
+				
 				world.setBlockState(new BlockPos(x, y - 1, z), DroopingHyphaeTopBlock.block.getDefaultState(), 2);
 				int length = 2;
 				for (int i = 0; i < Math.random() * 8; i++)
@@ -109,68 +112,113 @@ public class BiomeBlockHandlerProcedure extends CocModElements.ModElement {
 			}
 			else if ((world.isAirBlock(new BlockPos(x, (y + 1), z)))) 
 			{
-				if (y > 27)
+				world.setBlockState(new BlockPos(x, y, z), StrangeGrassBlock.block.getDefaultState(), 2);
+				if ((Math.random() < 0.25)) 
 				{
-					world.setBlockState(new BlockPos(x, y, z), StrangeGrassBlock.block.getDefaultState(), 2);
+					if ((Math.random() < 0.5)) 
+					{
+						world.setBlockState(new BlockPos(x, (y + 1), z), StrangeSporoutsBlock.block.getDefaultState(), 2);
+					} 
+					else
+					{
+						world.setBlockState(new BlockPos(x, (y + 1), z), StrangeSproutsAltBlock.block.getDefaultState(), 2);
+					}
+				} 
+				else if ((Math.random() < 0.02)) 
+				{
+					world.setBlockState(new BlockPos(x, (y + 1), z), StrangeBudsBlock.block.getDefaultState(), 2);
+				} 
+				else if ((Math.random() < 0.05))
+				{
+					if ((Math.random() < 0.5)) 
+					{
+						world.setBlockState(new BlockPos(x, (y + 1), z), GlowingMushroomBlock.block.getDefaultState(), 2);
+					}
+					else
+					{
+						world.setBlockState(new BlockPos(x, (y + 1), z), GlowingMushroomAltBlock.block.getDefaultState(), 2);
+					}
+				}
+				else if ((Math.random() < 0.01)) 
+				{
+					world.setBlockState(new BlockPos(x, (y + 1), z), FakeShroomBlock.block.getDefaultState(), 2);
+				}
+			}
+			else
+			{
+				if ((Math.random() < 0.7)) 
+				{
+					world.setBlockState(new BlockPos(x, y, z), SporiteInactiveBlock.block.getDefaultState(), 2);
+				}
+				else
+				{
+					world.setBlockState(new BlockPos(x, y, z), DarkStoneBlock.block.getDefaultState(), 2);
+				}
+			}
+		}
+		
+		if (((world.getBlockState(new BlockPos(x, y, z))).getBlock() == RedBiomeBlockBlock.block.getDefaultState().getBlock()) && Math.random() < 0.4) 
+		{
+			if (world.isAirBlock(new BlockPos(x, y + 1, z)) 
+			&& world.isAirBlock(new BlockPos(x, y + 3, z))
+			&& world.isAirBlock(new BlockPos(x, y + 5, z))
+			&& world.isAirBlock(new BlockPos(x, y + 7, z))
+			&& Math.random() < 0.008)
+			{
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("world", world);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", (y + 1));
+					$_dependencies.put("z", z);
+					PlacePrimalMushHeadProcedure.executeProcedure($_dependencies);
+				}
+			} 
+			if (world.isAirBlock(new BlockPos(x, y - 1, z)) && world.isAirBlock(new BlockPos(x, y - 2, z)) && Math.random() < 0.007)
+			{
+				world.setBlockState(new BlockPos(x, y, z), MoltenStoneBlock.block.getDefaultState(), 2);
+				
+				world.setBlockState(new BlockPos(x, y - 1, z), DroopingMagphaeTBlock.block.getDefaultState(), 2);
+				int length = 2;
+				for (int i = 0; i < Math.random() * 8; i++)
+				{
+					if (world.isAirBlock(new BlockPos(x, y - length, z)))
+					{
+						world.setBlockState(new BlockPos(x, y - length, z), DroopingMagphaeMBlock.block.getDefaultState(), 2);
+						length++;
+					}
+					else break;
+				}
+				world.setBlockState(new BlockPos(x, y - length, z), DroopingMagphaeTBlock.block.getDefaultState(), 2);
+				world.setBlockState(new BlockPos(x, y - 1, z), DroopingMagphaeBBlock.block.getDefaultState(), 2);
+			}
+			else if ((world.isAirBlock(new BlockPos(x, (y + 1), z)))) 
+			{
+				{
+					world.setBlockState(new BlockPos(x, y, z), BurningGrassBlock.block.getDefaultState(), 2);
 					if ((Math.random() < 0.25)) 
 					{
-						if ((Math.random() < 0.5)) 
-						{
-							world.setBlockState(new BlockPos(x, (y + 1), z), StrangeSporoutsBlock.block.getDefaultState(), 2);
-						} 
-						else
-						{
-							world.setBlockState(new BlockPos(x, (y + 1), z), StrangeSproutsAltBlock.block.getDefaultState(), 2);
-						}
-					} 
-					else if ((Math.random() < 0.02)) 
-					{
-						world.setBlockState(new BlockPos(x, (y + 1), z), StrangeBudsBlock.block.getDefaultState(), 2);
+						world.setBlockState(new BlockPos(x, (y + 1), z), SingedGrassBlock.block.getDefaultState(), 2);
 					} 
 					else if ((Math.random() < 0.05))
 					{
 						if ((Math.random() < 0.5)) 
 						{
-							world.setBlockState(new BlockPos(x, (y + 1), z), GlowingMushroomBlock.block.getDefaultState(), 2);
+							world.setBlockState(new BlockPos(x, (y + 1), z), PrimalMushroomBlock.block.getDefaultState(), 2);
 						}
 						else
 						{
-							world.setBlockState(new BlockPos(x, (y + 1), z), GlowingMushroomAltBlock.block.getDefaultState(), 2);
+							world.setBlockState(new BlockPos(x, (y + 1), z), PrimalMushroomAltBlock.block.getDefaultState(), 2);
 						}
 					}
-					else if ((Math.random() < 0.01)) 
-					{
-						world.setBlockState(new BlockPos(x, (y + 1), z), FakeShroomBlock.block.getDefaultState(), 2);
-					}
-				}
-				else
-				{
-					world.setBlockState(new BlockPos(x, y, z), BurningGrassBlock.block.getDefaultState(), 2);
-					if ((Math.random() < 0.45)) 
-					{
-						world.setBlockState(new BlockPos(x, (y + 1), z), SingedGrassBlock.block.getDefaultState(), 2);
-					} 
 				}
 			}
 			else
 			{
-				if (y > 27)
-				{
-					if ((Math.random() < 0.7)) 
-					{
-						world.setBlockState(new BlockPos(x, y, z), SporiteInactiveBlock.block.getDefaultState(), 2);
-					}
-					else
-					{
-						world.setBlockState(new BlockPos(x, y, z), DarkStoneBlock.block.getDefaultState(), 2);
-					}
-				}
-				else
-				{
-					world.setBlockState(new BlockPos(x, y, z), MoltenStoneBlock.block.getDefaultState(), 2);
-				}
+				world.setBlockState(new BlockPos(x, y, z), MoltenStoneBlock.block.getDefaultState(), 2);
 			}
 		}
+
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == ColdBiomeBlockBlock.block.getDefaultState().getBlock())) 
 		{
 			if ((!(((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())

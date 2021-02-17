@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/drooping_magphae_top",
+    "particle": "coc:blocks/drooping_magphae_top"
+  }
+}

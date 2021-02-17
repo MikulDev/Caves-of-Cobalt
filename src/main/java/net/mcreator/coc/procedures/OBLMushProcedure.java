@@ -11,11 +11,13 @@ import net.minecraft.block.Blocks;
 
 import net.mcreator.coc.block.SporiteCobaltOreBlock;
 import net.mcreator.coc.block.MushroomSpawnerBlock;
+import net.mcreator.coc.block.PrimalMushSpawnerBlock;
 import net.mcreator.coc.block.MushFoggerBlock;
 import net.mcreator.coc.block.LiquidGeneratorBlock;
 import net.mcreator.coc.block.GlowingStoneBlock;
 import net.mcreator.coc.block.DarkStoneBlock;
 import net.mcreator.coc.block.BiomeBlockBlock;
+import net.mcreator.coc.block.RedBiomeBlockBlock;
 import net.mcreator.coc.PlaceHelper;
 import net.mcreator.coc.CocModElements;
 import net.mcreator.coc.block.StrangeSporoutsBlock;
@@ -39,10 +41,12 @@ import net.mcreator.coc.block.LiquidSlimeBlock;
 import net.mcreator.coc.block.StrangeGrassBlock;
 import net.mcreator.coc.PlaceHelper;
 import net.mcreator.coc.block.LiquidFillerBlock;
+import net.mcreator.coc.block.LavaFillerBlock;
 import java.util.Iterator;
 import net.minecraft.block.Block;
 import net.mcreator.coc.procedures.MirewoodSaplingGrowProcedure;
 import java.util.HashMap;
+import java.util.Arrays;
 
 @CocModElements.ModElement.Tag
 public class OBLMushProcedure extends CocModElements.ModElement {
@@ -72,6 +76,7 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld iworld = (IWorld) dependencies.get("world");
 		World world = iworld.getWorld();
+		double biomeSize = (Math.random() * 10 + 8);
 		double scalefactor = 3;
 		double prevY = y;
 		boolean placedLiquid = false;
@@ -82,9 +87,11 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 		double lengthZ;
 		double placeY;
 		int placeAngle;
-		int liquidY = (int) (y) - 9;
+		int liquidY = (int) (y) - 12;
 		PlaceHelper placeHelper = new PlaceHelper(null);
 		List<Vec3d> foggers = new ArrayList<Vec3d>();
+		boolean primalBiome = false;
+		if (y < 27) primalBiome = true;
 		//System.out.println("initialized variables");
 		Template tree = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager().getTemplateDefaulted(new ResourceLocation("coc", "mushroom_tree"));
 		{
@@ -119,8 +126,14 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 							$_dependencies.put("z", (double) smallpos.getZ());
 							MirewoodSaplingGrowProcedure.executeProcedure($_dependencies);
 
-							placeHelper.fillArea(world, Blocks.AIR.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.TALL_GRASS);
-							placeHelper.fillArea(world, BiomeBlockBlock.block.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.GRASS_BLOCK);
+							if (primalBiome)
+							{
+								placeHelper.fillArea(world, RedBiomeBlockBlock.block.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.GRASS_BLOCK);
+							}
+							else
+							{
+								placeHelper.fillArea(world, BiomeBlockBlock.block.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.GRASS_BLOCK);
+							}
 						}
 					}
 					break;
@@ -132,7 +145,7 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 			if (!world.isRemote) 
 			{
 				// Carve Area
-				for (int j = 0; j < Math.random() * 10 + 8; ++j) 
+				for (int j = 0; j < biomeSize; ++j) 
 				{
 					for (int i = 0; i < scalefactor * 2; ++i) 
 					{
@@ -150,52 +163,36 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 						int sizeZ = (int) (Math.random() * 3 + 6);
 						//System.out.println("initialized variables 2");
 						
-						placeHelper.carveArea(world, new BlockPos(placepos), sizeX, sizeY, sizeZ);
+						//placeHelper.carveArea(world, new BlockPos(placepos), sizeX, sizeY, sizeZ);
 						//System.out.println("carve area");
-						Block[] replaces = new Block[]{Blocks.STONE, Blocks.ANDESITE, Blocks.DIORITE, Blocks.GRANITE, Blocks.DIRT, Blocks.GRAVEL};
-						placeHelper.fillAreaList(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, replaces);
-
-						world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
-
-						//Paint Walls/Floor
-						
-						/*double px = sizeX - 1;
-						double py = sizeY - 1;
-						double pz = sizeZ - 1;
-						
-						for (int fx = 0; fx < sizeX + 2; fx++)
+						Block[] replaces = {Blocks.STONE, Blocks.ANDESITE, Blocks.DIORITE, Blocks.GRANITE, Blocks.DIRT, Blocks.GRAVEL};
+						List<Block> blocklist = Arrays.asList(replaces);
+						if (primalBiome)
 						{
-							py = placepos.getY() - 11.0D;
-							for (int fy = 0; fy < sizeY + 2; fy++)
+							placeHelper.carveAreaHollow(world, RedBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, blocklist);
+							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LavaFillerBlock.block.getDefaultState());
+						}
+						else
+						{
+							placeHelper.carveAreaHollow(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, blocklist);
+							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
+						}
+
+						if (!primalBiome)
+						{
+							// Place Cobalt
+							for (int b = 0; b < Math.random() * 20 + 20; ++b) 
 							{
-								pz = placepos.getZ() - 2.0D;
-								for (int fz = 0; fz < sizeZ + 2; fz++)
+								BlockPos cobpos = new BlockPos(placepos.add((Math.random() - 0.5) * 10, (Math.random() - 0.5) * 6 + 2, (Math.random() - 0.5) * 10));
+								if (world.getBlockState(cobpos).getBlock() == Blocks.STONE) 
 								{
-									BlockPos ppos = new BlockPos(px, py, pz);
-									if (world.getBlockState(ppos).getMaterial() == Material.ROCK && placeHelper.touchingAir(world, ppos))
-									{
-										world.setBlockState(ppos, BiomeBlockBlock.block.getDefaultState(), 2);
-									}
-									
-									pz += 1;
+									world.setBlockState(cobpos, SporiteCobaltOreBlock.block.getDefaultState(), 2);
 								}
-								py += 1;
-							}
-							px += 1;
-						}*/
-						
-						// Place Cobalt
-						for (int b = 0; b < Math.random() * 20 + 20; ++b) 
-						{
-							BlockPos cobpos = new BlockPos(placepos.add((Math.random() - 0.5) * 10, (Math.random() - 0.5) * 6 + 2, (Math.random() - 0.5) * 10));
-							if (world.getBlockState(cobpos).getBlock() == Blocks.STONE) 
-							{
-								world.setBlockState(cobpos, SporiteCobaltOreBlock.block.getDefaultState(), 2);
 							}
 						}
 						foggers.add(placepos.add(0.0, -2.0, 0.0));
 					}
-					scalefactor = scalefactor + 4;
+					scalefactor += 4;
 					//System.out.println("completed clearance at " + scalefactor + "x");
 				}
 			}
@@ -204,14 +201,21 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 			//System.out.println("set coordinates for second chunk: " + x + " " + y + " " + z);
 			scalefactor = 3;
 		}
-		
+
 		// Decorate Large Mushrooms
 		for (int k = 0; k < 100; ++k) 
 		{
 			BlockPos mushpos = new BlockPos(x + ((Math.random() - 0.5) * 50), y + ((Math.random() - 0.5) * 10), z + ((Math.random() - 0.5) * 50));
 			if (world.getBlockState(mushpos.down(1)).isSolid() && (world.isAirBlock(mushpos) || world.getBlockState(mushpos).getBlock() == StrangeSporoutsBlock.block || world.getBlockState(mushpos).getBlock() == StrangeSproutsAltBlock.block))
 			{
-				world.setBlockState(mushpos, MushroomSpawnerBlock.block.getDefaultState(), 2);
+				if (primalBiome)
+				{
+					world.setBlockState(mushpos, MushroomSpawnerBlock.block.getDefaultState(), 2);
+				}
+				else
+				{
+					world.setBlockState(mushpos, PrimalMushSpawnerBlock.block.getDefaultState(), 2);
+				}
 			}
 		}
 		//System.out.println("placed large mushrooms");

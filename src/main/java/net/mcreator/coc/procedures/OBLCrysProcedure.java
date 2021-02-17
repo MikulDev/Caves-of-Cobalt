@@ -59,23 +59,23 @@ public class OBLCrysProcedure extends CocModElements.ModElement {
 
 	public static void placeCrystalSide(World world, BlockPos pos, Direction direction)
 	{
-		int crystalSize = (int) (Math.random() * 4) + 4;
+		int crystalSize = (int) (Math.random() * 6) + 8;
 		int crystalLength = 1;
 
 		BlockPos placepos = pos;
 		world.setBlockState(placepos, CaveCrystalBlock.block.getDefaultState());
 		
-		for (int c = 0; c < crystalSize; c++)
+		for (int c = 0; c < crystalSize - (Math.random() * 2) - 2; c++)
 		{
 			world.setBlockState(placepos, CaveCrystalBlock.block.getDefaultState());
-			for (int r = 0; r < (Math.random() * (crystalSize * 10) + crystalSize) / (crystalLength * 2); r++)
+			for (int r = 0; r < (Math.random() * ((crystalSize - crystalLength) * 100)) + crystalSize; r++)
 			{
-				world.setBlockState(placepos.add(new Vec3i((Math.random() - 0.5) * (4 / crystalLength), (Math.random() - 0.5) * (4 / crystalLength), (Math.random() - 0.5) * (4 / crystalLength))), CaveCrystalBlock.block.getDefaultState());
+				world.setBlockState(placepos.add(new Vec3i((Math.random() - 0.5) * (int) (4.5 / (crystalLength + 1 / 3)), (Math.random() - 0.5) * (int) (4.5 / (crystalLength + 1 / 3)), (Math.random() - 0.5) * (int) (4.5 / (crystalLength + 1 / 3)))), CaveCrystalBlock.block.getDefaultState());
 			}
-			if (direction == Direction.NORTH) placepos = placepos.south(1);
-			if (direction == Direction.SOUTH) placepos = placepos.north(1);
-			if (direction == Direction.EAST) placepos = placepos.west(1);
-			if (direction == Direction.WEST) placepos = placepos.east(1);
+			if (direction == Direction.NORTH) placepos = placepos.add(0, 1, 1);
+			if (direction == Direction.SOUTH) placepos = placepos.add(0, 1, -1);
+			if (direction == Direction.EAST) placepos = placepos.add(-1, 1, 0);
+			if (direction == Direction.WEST) placepos = placepos.add(1, 1, 0);
 			if (direction == Direction.UP) placepos = placepos.down(1);
 			if (direction == Direction.DOWN) placepos = placepos.up(1);
 			crystalLength++;
@@ -130,47 +130,52 @@ public class OBLCrysProcedure extends CocModElements.ModElement {
 			for (int m = 0; m < Math.random() * 20 + 10; m++)
 			{
 				PlaceHelper placehelper = new PlaceHelper(null);
+				double fillSize = 0;
 				if (layer < 10)
 				{
-					placehelper.carveArea(world.getWorld(), pos, 5);
-					placehelper.carveArea(world.getWorld(), pos.add(slantCoef * thickness, 0, slantCoef * thickness), 5);
+					placehelper.carveArea(world.getWorld(), pos.add(Math.random() * 2, Math.random() * 2, Math.random() * 2), 5 + (int) (Math.random() * 3));
+					placehelper.carveArea(world.getWorld(), pos.add(slantCoef * thickness + Math.random() * 2, 0, slantCoef * thickness + Math.random() * 2), 5);
 					if (Math.random() < 0.13)
 					{
 						crystalPos.add(pos.add(new Vec3i(0, -4, 0)));
 					}
 					airLocations.add(pos);
+					fillSize = 8;
 				}
 				else if (layer < 15)
 				{
-					placehelper.carveArea(world.getWorld(), pos, 3);
+					placehelper.carveArea(world.getWorld(), pos.add(Math.random(), Math.random(), Math.random()), 3 + (int) (Math.random() * 2));
 					placehelper.carveArea(world.getWorld(), pos.add(slantCoef * thickness / 2, 0, slantCoef * thickness / 2), 3);
 					if (Math.random() < 0.13)
 					{
 						crystalPos.add(pos.add(new Vec3i(0, -3, 0)));
 					}
 					airLocations.add(pos);
+					fillSize = 5;
 				}
 				else if (layer < 18)
 				{
-					placehelper.carveArea(world.getWorld(), pos, 2);
+					placehelper.carveArea(world.getWorld(), pos, 2 + (int) Math.random());
 					airLocations.add(pos);
+					fillSize = 3;
 				}
 				else
 				{
-					placehelper.carveArea(world.getWorld(), pos, 1);
+					placehelper.carveArea(world.getWorld(), pos, 1 + (int) Math.random());
 					airLocations.add(pos);
+					fillSize = 2;
 				}
 
-				double px = pos.getX() - (5.0D + thickness);
-				double py = pos.getY() - 5.0D;
-				double pz = pos.getZ() - (5.0D + thickness);
+				double px = pos.getX() - (fillSize + (thickness / 4));
+				double py = pos.getY() - (fillSize - 3);
+				double pz = pos.getZ() - (fillSize + (thickness / 4));
 				
 				for (int fx = 0; fx < (5.0D + thickness) * 2 + 2.0D; fx++)
 				{
-					py = pos.getY() - 5.0D;
-					for (int fy = 0; fy < 11; fy++)
+					py = pos.getY() - (fillSize - 3);
+					for (int fy = 0; fy < (fillSize + 2); fy++)
 					{
-						pz = pos.getZ() - (5.0D + thickness);
+						pz = pos.getZ() - (fillSize + (thickness / 4));
 						for (int fz = 0; fz < (5.0D + thickness) * 2 + 2.0D; fz++)
 						{
 							BlockPos ppos = new BlockPos(px, py, pz);
@@ -211,7 +216,7 @@ public class OBLCrysProcedure extends CocModElements.ModElement {
 			while (iter.hasNext())
 			{
 				placepos = (BlockPos) iter.next();
-				for (int c = 0; c < 20; c++)
+				for (int c = 0; c < 10; c++)
 				{
 					BlockPos testpos = placepos.add(Math.random() * 10 - 5, Math.random() * 10 - 5, Math.random() * 10 - 5);
 					Direction direc = placehelper.touchingSolid(world.getWorld(), testpos);

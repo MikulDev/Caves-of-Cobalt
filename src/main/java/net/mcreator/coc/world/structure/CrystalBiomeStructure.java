@@ -25,11 +25,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
 import net.mcreator.coc.procedures.CrystalBiomePlaceProcedure;
+import net.mcreator.coc.procedures.BiomeNoOceanConditionProcedure;
 import net.mcreator.coc.CocModElements;
 
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.google.common.collect.ImmutableMap;
 
 @CocModElements.ModElement.Tag
 public class CrystalBiomeStructure extends CocModElements.ModElement {
@@ -50,7 +53,7 @@ public class CrystalBiomeStructure extends CocModElements.ModElement {
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 1500) {
+				if ((random.nextInt(1000000) + 1) <= 1000) {
 					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
@@ -63,6 +66,8 @@ public class CrystalBiomeStructure extends CocModElements.ModElement {
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
+						if (!BiomeNoOceanConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "z", z, "world", world)))
+							continue;
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("coc", "crystal_biome"));
 						if (template == null)

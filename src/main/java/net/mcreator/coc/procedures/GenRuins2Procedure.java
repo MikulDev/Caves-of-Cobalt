@@ -23,6 +23,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.mcreator.coc.block.MossyStoneBlock;
 import net.mcreator.coc.block.TikiTorchWallBlock;
 import net.mcreator.coc.block.TikiTorchBlock;
+import net.mcreator.coc.block.DormantWatcherBlock;
 
 @CocModElements.ModElement.Tag
 public class GenRuins2Procedure extends CocModElements.ModElement {
@@ -85,10 +86,17 @@ public class GenRuins2Procedure extends CocModElements.ModElement {
 								factor++;
 							}
 						}
+						else if (Math.random() < 0.03)
+						{
+							Random rand = new Random();
+							Direction direc = Direction.random(rand);
+							if (direc == Direction.UP || direc == Direction.DOWN) direc = Direction.NORTH;
+							world.setBlockState(vpos, DormantWatcherBlock.block.getDefaultState().with(DormantWatcherBlock.CustomBlock.FACING, direc), 2);
+						}
 						Direction direc = placeHelper.touchingSolid(world, vpos);
 						if (direc != null && world.isAirBlock(vpos))
 						{
-							if (Math.random() < 0.5)
+							if (Math.random() < 0.7)
 							{
 								if (direc != Direction.UP && direc != Direction.DOWN)
 								{

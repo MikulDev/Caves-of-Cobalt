@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "ENTITY": 77,
-    "GUI": 5
+    "GUI": 5,
+    "ENTITY": 77
   },
   "mod_elements": [
     {
@@ -13108,15 +13108,6 @@
       "registry_name": "lava_wake"
     },
     {
-      "name": "Testcrystal",
-      "type": "command",
-      "sortid": 883,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "testcrystal"
-    },
-    {
       "name": "Kyanite",
       "type": "block",
       "sortid": 60,
@@ -13961,15 +13952,6 @@
       "registry_name": "burning_grass"
     },
     {
-      "name": "Test",
-      "type": "command",
-      "sortid": 931,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test"
-    },
-    {
       "name": "OblUpdate3",
       "type": "procedure",
       "sortid": 933,
@@ -14162,8 +14144,281 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
             "name": "y",
             "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DragonheartedADV",
+      "type": "achievement",
+      "sortid": 943,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragonhearted_adv"
+    },
+    {
+      "name": "WaterRemoverUpdateTick",
+      "type": "procedure",
+      "sortid": 944,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water_remover_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WaterRemover",
+      "type": "block",
+      "sortid": 944,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water_remover"
+    },
+    {
+      "name": "RedBiomeBlock",
+      "type": "block",
+      "sortid": 945,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_biome_block"
+    },
+    {
+      "name": "PrimalMushroom",
+      "type": "block",
+      "sortid": 946,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "primal_mushroom"
+    },
+    {
+      "name": "PrimalMushroomAlt",
+      "type": "block",
+      "sortid": 947,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "primal_mushroom_alt"
+    },
+    {
+      "name": "DroopingMagphaeB",
+      "type": "block",
+      "sortid": 948,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drooping_magphae_b"
+    },
+    {
+      "name": "DroopingMagphaePlace",
+      "type": "procedure",
+      "sortid": 949,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drooping_magphae_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DroopingMagphaeTest",
+      "type": "procedure",
+      "sortid": 950,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drooping_magphae_test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DroopingMagphaeT",
+      "type": "block",
+      "sortid": 951,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drooping_magphae_t"
+    },
+    {
+      "name": "DroopingMagphaeM",
+      "type": "block",
+      "sortid": 952,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drooping_magphae_m"
+    },
+    {
+      "name": "PrimalMushSpawner",
+      "type": "block",
+      "sortid": 953,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "primal_mush_spawner"
+    },
+    {
+      "name": "PlacePrimalMushHead",
+      "type": "procedure",
+      "sortid": 954,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "place_primal_mush_head",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FillLava",
+      "type": "procedure",
+      "sortid": 955,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fill_lava",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LavaFiller",
+      "type": "block",
+      "sortid": 956,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lava_filler"
+    },
+    {
+      "name": "BiomeNoOceanCondition",
+      "type": "procedure",
+      "sortid": 957,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "biome_no_ocean_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -15136,6 +15391,7 @@
       "item.coc.lava_lily": "Lava Lily",
       "enchantment.coc.soulrift": "Soulrift",
       "subtitles.block.crate.break": "Crate breaks",
+      "block.coc.red_biome_block": "Biome Block",
       "item.coc.infusion_table_model_spawn_egg": "Infusion Table Model Spawn Egg",
       "item.coc.wanderwart_spawn_egg": "Wanderwart Spawn Egg",
       "block.coc.crystals": "Crystals",
@@ -15166,6 +15422,7 @@
       "block.coc.crystalator": "Crystalator",
       "block.coc.cavefeaturegenerator": "Cave Feature Generator",
       "item.minecraft.lingering_potion.effect.insulated": "Lingering Insulated",
+      "block.coc.lava_filler": "Liquid Filler",
       "item.coc.infernal_dye": "Infernal Dye",
       "item.coc.scoria": "Scoria Spawn Egg",
       "item.coc.tunneleather_legs": "Tunnelhide Trousers",
@@ -15310,6 +15567,7 @@
       "item.minecraft.splash_potion.effect.sporemist": "Splash Spore Mist",
       "key.mcreator.pwingskey": "Use Wings",
       "potion.effect.flight": "Flight",
+      "block.coc.drooping_magphae_b": "Drooping Hyphae",
       "subtitles.item.radiant_chestplate.use": "Radiant shield smashes",
       "block.coc.strange_plant": "Strange Plant",
       "item.minecraft.lingering_potion.effect.freezing": "Lingering Bottle of Ice",
@@ -15320,10 +15578,12 @@
       "item.coc.mended_spore_sac": "Mended Spore Sac",
       "item.runic_book.name": "Runic Book",
       "subtitles.entity.monarch.summon": "Permafrost Monarch awakens",
+      "block.coc.drooping_magphae_t": "Drooping Hyphae",
       "item.minecraft.lingering_potion.effect.lavavision": "Lingering Potion of Magma Sense",
       "subtitles.item.malachite_sword.use": "Malachite bolt fires",
       "block.coc.brimstone": "Brimstone",
       "item.stoneshell.name": "Stone Shell",
+      "block.coc.drooping_magphae_m": "Drooping Hyphae",
       "item.strange_stew.name": "Strange Stew",
       "block.coc.carved_temple_bricks": "Carved Temple Bricks",
       "item.raw_crab.name": "Raw Crab",
@@ -15353,6 +15613,7 @@
       "item.amethyst.name": "Amethyst",
       "item.infernal_topaz.name": "Molten Topaz",
       "item.minecraft.tipped_arrow.effect.shield": "Arrow of Shield",
+      "advancements.dragonhearted_adv.descr": "Drink the Vial of Essence",
       "item.coc.shroomium_pickaxe": "§eShroomium Spike§r",
       "item.coc.tunneleather_helmet": "Tunnelhide Cap",
       "item.minecraft.tipped_arrow.effect.radiance": "Arrow of Radiance",
@@ -15444,6 +15705,7 @@
       "item.sapphire_gold_armorboots.name": "Midas\u0027 Sapphire Boots",
       "subtitles.entity.magmaw.shoot": "Magmaw shoots",
       "block.coc.dead_radiant_ore": "Radiant Topaz Ore",
+      "advancements.dragonhearted_adv.title": "Dragonhearted",
       "item.coc.amethyst_gold_body": "Midas\u0027 Amethyst Body",
       "item.minecraft.potion.effect.insulated": "Insulated",
       "entity.coc.rotted_zombie": "Rotted Zombie",
@@ -15514,6 +15776,7 @@
       "item.coc.malachite": "Malachite",
       "item.coc.dwarf_miner": "Dwarf Miner Spawn Egg",
       "subtitles.enchantment.soulrift": "Player Soulrifts",
+      "block.coc.primal_mushroom": "Glowing Mushroom",
       "entity.projectedzombie.name": "Projected Zombie",
       "lingering_potion.effect.flight": "Lingering Flight",
       "item.infernalarmorlegs.name": "Infernal Greaves",
@@ -15524,6 +15787,7 @@
       "block.coc.jigsaw_rotatable": "Jigsaw Rotatable",
       "block.coc.molten_stone": "Molten Stone Placer",
       "item.silver_pickaxe.name": "Silver Pickaxe",
+      "block.coc.primal_mushroom_alt": "Glowing Mushroom",
       "item.coc.silver_axe": "Silver Axe",
       "subtitles.item.soul_dagger.whirlwind": "Whirlwind wooshes",
       "block.coc.tendrils": "Tendrils",
@@ -15541,7 +15805,7 @@
       "subtitles.entity.watcher.": "Watcher dies",
       "block.coc.truffles": "Truffles",
       "advancements.thekingadv.title": "The King",
-      "item.coc.dragon_yolk": "§dDragon Yolk§r",
+      "item.coc.dragon_yolk": "Dragon Yolk",
       "death.attack.bite.player": "%1$s was bitten by %2$s",
       "item.minecraft.splash_potion.effect.stunned": "Splash Potion of Stunning",
       "block.coc.burning_grass": "Burning Grass",
@@ -15591,6 +15855,7 @@
       "tipped_arrow.effect.freezing": "Arrow of Bottle of Ice",
       "item.coc.malachite_shard": "Malachite Shard",
       "block.coc.sapphire_block": "Sapphire Block",
+      "block.coc.water_remover": "Water Remover",
       "subtitles.block.melting_pot.hot_plate": "Hot plate clangs",
       "item.coc.radiant_spike": "Radiant Spike",
       "item.coc.ice_crystal": "Living Ice Spawn Egg",
@@ -15605,6 +15870,7 @@
       "advancements.shroom_time.descr": "Make some Shroomium",
       "block.coc.sapphire_ore": "Sapphire Ore",
       "block.coc.midas_melting_pot": "Midas\u0027 Melting Pot",
+      "block.coc.primal_mush_spawner": "block.mushroom_grower.name",
       "item.minecraft.lingering_potion.effect.permanenthealthboost": "Lingering Lifeforce Potion",
       "item.coc.shroomium_body": "§eShroomium Plating§r",
       "item.coc.music_disc_underworld.desc": "rmsandegs - underworld",

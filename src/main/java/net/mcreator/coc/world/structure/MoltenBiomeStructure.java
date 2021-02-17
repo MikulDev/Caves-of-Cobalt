@@ -66,7 +66,7 @@ public class MoltenBiomeStructure extends CocModElements.ModElement {
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
-						if (!MoltenBiomeConditionProcedure.executeProcedure(ImmutableMap.of("y", y)))
+						if (!MoltenBiomeConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
 							continue;
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("coc", "multibiome"));

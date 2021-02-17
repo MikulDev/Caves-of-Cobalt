@@ -15,7 +15,7 @@ import net.minecraft.block.Blocks;
 import net.mcreator.coc.block.TendrilsBottomBlock;
 import net.mcreator.coc.block.TendrilsBlock;
 import net.mcreator.coc.block.MoltenStoneBlock;
-import net.mcreator.coc.block.LiquidGeneratorBlock;
+import net.mcreator.coc.block.LavaFillerBlock;
 import net.mcreator.coc.block.LavaGeneratorBlock;
 import net.mcreator.coc.block.GeyserBlock;
 import net.mcreator.coc.block.HellBiomeBlockBlock;
@@ -23,6 +23,7 @@ import net.mcreator.coc.CocModElements;
 import net.mcreator.coc.PlaceHelper;
 import net.mcreator.coc.block.CharstoneBlock;
 import net.mcreator.coc.block.LiquidFillerBlock;
+import net.mcreator.coc.block.WaterRemoverBlock;
 import java.util.Map;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.registries.ClearableRegistry;
@@ -30,6 +31,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
 import net.mcreator.coc.block.GhastletHiveBlock;
+import net.minecraft.block.Block;
+import java.util.Arrays;
 
 @CocModElements.ModElement.Tag
 public class OBLMoltenProcedure extends CocModElements.ModElement {
@@ -96,8 +99,24 @@ public class OBLMoltenProcedure extends CocModElements.ModElement {
 							if (placeY < y - 3) placeY = y - 3.0D;
 								
 							placepos = new Vec3d(x + lengthX, placeY, z + lengthZ);
-							placeHelper.carveArea(world, new BlockPos(placepos), (int) (Math.random() * 3 + 6), (int) (Math.random() * 3 + 4), (int) (Math.random() * 3 + 6));
+							
+							for (int k = 0; k < 150; ++k) 
+							{
+								
+								BlockPos waterpos = new BlockPos(placepos.x + (Math.random() * 16) - 8, placepos.y + (Math.random() * 16) - 8, placepos.z + (Math.random() * 16) - 8);
+
+								if (world.getBlockState(waterpos).getMaterial() == Material.WATER)
+								{
+									world.setBlockState(waterpos, WaterRemoverBlock.block.getDefaultState(), 3);
+								}
+							}
+
+							Block[] replaces = {Blocks.STONE, Blocks.ANDESITE, Blocks.DIORITE, Blocks.GRANITE, Blocks.DIRT, Blocks.GRAVEL};
+							List<Block> blocklist = Arrays.asList(replaces);
+							placeHelper.carveAreaHollow(world, HellBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos), (int) (Math.random() * 3 + 6), (int) (Math.random() * 3 + 4), (int) (Math.random() * 3 + 6), blocklist);
+							//placeHelper.carveAreaHollow(world, new BlockPos(placepos), (int) (Math.random() * 3 + 6), (int) (Math.random() * 3 + 4), (int) (Math.random() * 3 + 6));
 							//world.setBlockState(new BlockPos(placepos.getX(), yo - 10, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
+
 	
 	
 							//Paint Walls/Floor
@@ -164,9 +183,9 @@ public class OBLMoltenProcedure extends CocModElements.ModElement {
 				// Decorate Molten features
 				for (int k = 0; k < scalefactor * 40; ++k) 
 				{
-					BlockPos lavapos = new BlockPos(x + ((Math.random() - 0.5) * (scalefactor * 1.5)), y + ((Math.random() - 0.5) * 40),
-							z + ((Math.random() - 0.5) * (scalefactor * 1.5)));
-					if (world.getBlockState(lavapos).isSolid() && world.isAirBlock(lavapos.down(1))) {
+					BlockPos lavapos = new BlockPos(x + ((Math.random() - 0.5) * (scalefactor * 1.5)), y + ((Math.random() - 0.5) * 40), z + ((Math.random() - 0.5) * (scalefactor * 1.5)));
+					if (world.getBlockState(lavapos).isSolid() && world.isAirBlock(lavapos.down(1))) 
+					{
 						if (Math.random() < 0.8) 
 						{
 							world.setBlockState(lavapos.down(1), TendrilsBlock.block.getDefaultState());
@@ -212,10 +231,10 @@ public class OBLMoltenProcedure extends CocModElements.ModElement {
 					
 					if (checks < 150 && checks >= 25)
 					{
-						world.setBlockState(liquidpos.up(2), LiquidGeneratorBlock.block.getDefaultState(), 2);
+						world.setBlockState(liquidpos, LavaFillerBlock.block.getDefaultState(), 2);
 						placedLiquid = true;
-						System.out.println("passed air checks");
-						System.out.println("" + liquidpos.getX() + " " + (liquidpos.getY() + 2) + " " + liquidpos.getZ() + "");
+						//System.out.println("passed air checks");
+						//System.out.println("" + liquidpos.getX() + " " + (liquidpos.getY() + 2) + " " + liquidpos.getZ() + "");
 						clearances.add(liquidpos.up(2));
 						break;
 					} 
@@ -223,7 +242,7 @@ public class OBLMoltenProcedure extends CocModElements.ModElement {
 					{
 						testY += 1;
 						liquidpos = new BlockPos(x, testY, z);
-						System.out.println("failed air checks " + checks);
+						//System.out.println("failed air checks " + checks);
 					}
 				}
 				
@@ -246,7 +265,7 @@ public class OBLMoltenProcedure extends CocModElements.ModElement {
 						lowestValue = (int) ((BlockPos) clearances.get(testnum)).getY();
 					}
 				}
-				world.setBlockState(((BlockPos) clearances.get(lowestnum)).up(1), LiquidGeneratorBlock.block.getDefaultState(), 2);
+				world.setBlockState(((BlockPos) clearances.get(lowestnum)).down(1), LavaFillerBlock.block.getDefaultState(), 2);
 				//System.out.println(((y - 15) + lowestnum) + 6);
 			}
 		}

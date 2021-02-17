@@ -25,11 +25,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
 import net.mcreator.coc.procedures.MushroomBiomeUpdateProcedure;
+import net.mcreator.coc.procedures.BiomeNoOceanConditionProcedure;
 import net.mcreator.coc.CocModElements;
 
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.google.common.collect.ImmutableMap;
 
 @CocModElements.ModElement.Tag
 public class MushroomBiomeStructure extends CocModElements.ModElement {
@@ -63,6 +66,8 @@ public class MushroomBiomeStructure extends CocModElements.ModElement {
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
+						if (!BiomeNoOceanConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "z", z, "world", world)))
+							continue;
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("coc", "mushroom_biome"));
 						if (template == null)

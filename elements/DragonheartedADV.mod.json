@@ -1,0 +1,25 @@
+{
+  "_fv": 15,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Dragonhearted",
+    "achievementDescription": "Drink the Vial of Essence",
+    "achievementIcon": {
+      "value": "CUSTOM:VialOfEssence"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:TheMonsterADV"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"70\" y=\"96\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:VialOfEssence</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

@@ -11,7 +11,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.coc.entity.WatcherEntity;
-import net.mcreator.coc.CocModVariables;
 import net.mcreator.coc.CocModElements;
 import net.mcreator.coc.CocMod;
 
@@ -49,12 +48,7 @@ public class DormantWatcherTestProcedure extends CocModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((Math.random() < 0.65)) {
-			if ((((x > ((CocModVariables.WorldVariables.get(world).takeOrbX) - 20))
-					&& (x < ((CocModVariables.WorldVariables.get(world).takeOrbX) + 20)))
-					&& (((y > ((CocModVariables.WorldVariables.get(world).takeOrbY) - 20))
-							&& (y < ((CocModVariables.WorldVariables.get(world).takeOrbY) + 20)))
-							&& ((z > ((CocModVariables.WorldVariables.get(world).takeOrbZ) - 20))
-									&& (z < ((CocModVariables.WorldVariables.get(world).takeOrbZ) + 20)))))) {
+			if (((world.getLight(new BlockPos((int) x, (int) y, (int) z))) > 3)) {
 				if (world instanceof World && !world.getWorld().isRemote) {
 					Entity entityToSpawn = new WatcherEntity.CustomEntity(WatcherEntity.entity, world.getWorld());
 					entityToSpawn.setLocationAndAngles((x + 0.5), y, (z + 0.5), world.getRandom().nextFloat() * 360F, 0);

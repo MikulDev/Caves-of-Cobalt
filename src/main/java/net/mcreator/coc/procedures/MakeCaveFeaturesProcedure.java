@@ -160,7 +160,7 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 								
 							}
 
-							if (Math.random() < 0.0005 && world.isAirBlock(pos))
+							if (Math.random() < 0.0001 && world.isAirBlock(pos))
 							{
 								Map<String, Object> $_dependencies = new HashMap<>();
 								$_dependencies.put("x", (double) (pos.getX()));
@@ -203,7 +203,7 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 									world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
 								}
 							}
-							for (int k = 0; k < Math.random() * 12 + 12; k++) 
+							for (int k = 0; k < Math.random() * 12 + 5; k++) 
 							{
 								if (world.getBlockState(pos.down(1)) == Blocks.STONE.getDefaultState() && world.getBlockState(pos) == Blocks.CAVE_AIR.getDefaultState())
 								{

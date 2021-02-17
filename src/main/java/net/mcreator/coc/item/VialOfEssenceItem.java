@@ -34,7 +34,7 @@ public class VialOfEssenceItem extends CocModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.BREWING).maxStackSize(1).rarity(Rarity.COMMON)
+			super(new Item.Properties().group(ItemGroup.BREWING).maxStackSize(1).rarity(Rarity.EPIC)
 					.food((new Food.Builder()).hunger(6).saturation(0.300000011920929f).setAlwaysEdible().build()));
 			setRegistryName("vial_of_essence");
 		}
