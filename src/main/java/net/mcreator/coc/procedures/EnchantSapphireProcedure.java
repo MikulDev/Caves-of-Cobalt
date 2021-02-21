@@ -7,7 +7,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class EnchantSapphireProcedure extends CocModElements.ModElement {
 	public EnchantSapphireProcedure(CocModElements instance) {
-		super(instance, 748);
+		super(instance, 757);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

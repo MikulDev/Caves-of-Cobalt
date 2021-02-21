@@ -23,7 +23,7 @@ public class GoldHoeRubyItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_hoe_ruby")
 	public static final Item block = null;
 	public GoldHoeRubyItem(CocModElements instance) {
-		super(instance, 228);
+		super(instance, 238);
 	}
 
 	@Override

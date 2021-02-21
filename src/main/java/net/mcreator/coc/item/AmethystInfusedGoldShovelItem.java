@@ -23,7 +23,7 @@ public class AmethystInfusedGoldShovelItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_shovel_amethyst")
 	public static final Item block = null;
 	public AmethystInfusedGoldShovelItem(CocModElements instance) {
-		super(instance, 239);
+		super(instance, 249);
 	}
 
 	@Override

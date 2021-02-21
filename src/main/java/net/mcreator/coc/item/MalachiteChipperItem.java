@@ -31,7 +31,7 @@ public class MalachiteChipperItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:malachite_chipper")
 	public static final Item block = null;
 	public MalachiteChipperItem(CocModElements instance) {
-		super(instance, 262);
+		super(instance, 273);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class SpawnBiomeParamsProcedure extends CocModElements.ModElement {
 	public SpawnBiomeParamsProcedure(CocModElements instance) {
-		super(instance, 511);
+		super(instance, 521);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

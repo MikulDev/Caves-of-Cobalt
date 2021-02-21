@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TendrilsBlockTestProcedure extends CocModElements.ModElement {
 	public TendrilsBlockTestProcedure(CocModElements instance) {
-		super(instance, 409);
+		super(instance, 423);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

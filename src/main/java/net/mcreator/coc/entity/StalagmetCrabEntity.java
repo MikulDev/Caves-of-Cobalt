@@ -51,7 +51,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class StalagmetCrabEntity extends CocModElements.ModElement {
 	public static EntityType entity = null;
 	public StalagmetCrabEntity(CocModElements instance) {
-		super(instance, 113);
+		super(instance, 123);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

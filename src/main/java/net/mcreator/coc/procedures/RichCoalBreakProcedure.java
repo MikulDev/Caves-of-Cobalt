@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RichCoalBreakProcedure extends CocModElements.ModElement {
 	public RichCoalBreakProcedure(CocModElements instance) {
-		super(instance, 699);
+		super(instance, 708);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

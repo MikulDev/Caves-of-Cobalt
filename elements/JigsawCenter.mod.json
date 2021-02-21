@@ -14,6 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -94,6 +95,9 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "JigsawStructurePlace"
+    },
+    "onBlockAdded": {
+      "name": "DwarfDenClearVar"
     },
     "onTickUpdate": {
       "name": "JigsawStructurePlace"

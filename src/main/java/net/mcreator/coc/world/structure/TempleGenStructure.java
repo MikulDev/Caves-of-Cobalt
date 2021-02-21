@@ -33,7 +33,7 @@ import java.util.Random;
 @CocModElements.ModElement.Tag
 public class TempleGenStructure extends CocModElements.ModElement {
 	public TempleGenStructure(CocModElements instance) {
-		super(instance, 441);
+		super(instance, 451);
 	}
 
 	@Override

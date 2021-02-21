@@ -33,7 +33,7 @@ public class MushMitigatorSuperItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:soul_mush_mitigator")
 	public static final Item block = null;
 	public MushMitigatorSuperItem(CocModElements instance) {
-		super(instance, 269);
+		super(instance, 280);
 	}
 
 	@Override

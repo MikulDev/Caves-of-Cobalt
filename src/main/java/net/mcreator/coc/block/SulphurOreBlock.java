@@ -46,7 +46,7 @@ public class SulphurOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:sulphur_ore")
 	public static final Block block = null;
 	public SulphurOreBlock(CocModElements instance) {
-		super(instance, 19);
+		super(instance, 27);
 	}
 
 	@Override

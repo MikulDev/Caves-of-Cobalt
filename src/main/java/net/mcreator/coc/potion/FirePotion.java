@@ -24,7 +24,7 @@ public class FirePotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:fire")
 	public static final Effect potion = null;
 	public FirePotion(CocModElements instance) {
-		super(instance, 638);
+		super(instance, 647);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

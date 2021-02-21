@@ -18,7 +18,7 @@ public class ToadstoolTreatmentPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:truffle_treatment")
 	public static final Effect potion = null;
 	public ToadstoolTreatmentPotion(CocModElements instance) {
-		super(instance, 343);
+		super(instance, 355);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

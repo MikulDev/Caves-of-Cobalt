@@ -30,7 +30,7 @@ public class BigMushroomSkinBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:bigmushroomskin")
 	public static final Block block = null;
 	public BigMushroomSkinBlock(CocModElements instance) {
-		super(instance, 37);
+		super(instance, 45);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class RubyItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:ruby")
 	public static final Item block = null;
 	public RubyItem(CocModElements instance) {
-		super(instance, 153);
+		super(instance, 163);
 	}
 
 	@Override

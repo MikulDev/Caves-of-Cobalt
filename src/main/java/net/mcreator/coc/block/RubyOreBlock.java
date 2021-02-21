@@ -39,7 +39,7 @@ public class RubyOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:ruby_ore")
 	public static final Block block = null;
 	public RubyOreBlock(CocModElements instance) {
-		super(instance, 4);
+		super(instance, 12);
 	}
 
 	@Override

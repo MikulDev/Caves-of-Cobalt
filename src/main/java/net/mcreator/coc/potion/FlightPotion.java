@@ -25,7 +25,7 @@ public class FlightPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:flight")
 	public static final Effect potion = null;
 	public FlightPotion(CocModElements instance) {
-		super(instance, 491);
+		super(instance, 501);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

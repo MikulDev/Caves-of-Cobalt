@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class DormantWatcherTestProcedure extends CocModElements.ModElement {
 	public DormantWatcherTestProcedure(CocModElements instance) {
-		super(instance, 466);
+		super(instance, 476);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

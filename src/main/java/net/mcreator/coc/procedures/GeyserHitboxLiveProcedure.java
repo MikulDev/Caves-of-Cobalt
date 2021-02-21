@@ -12,7 +12,7 @@ import java.util.Collections;
 @CocModElements.ModElement.Tag
 public class GeyserHitboxLiveProcedure extends CocModElements.ModElement {
 	public GeyserHitboxLiveProcedure(CocModElements instance) {
-		super(instance, 610);
+		super(instance, 619);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

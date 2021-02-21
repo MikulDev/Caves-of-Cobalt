@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MalaDash2DisplayProcedure extends CocModElements.ModElement {
 	public MalaDash2DisplayProcedure(CocModElements instance) {
-		super(instance, 813);
+		super(instance, 822);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

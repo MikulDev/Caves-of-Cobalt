@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MushMitiToggleProcedure extends CocModElements.ModElement {
 	public MushMitiToggleProcedure(CocModElements instance) {
-		super(instance, 774);
+		super(instance, 783);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

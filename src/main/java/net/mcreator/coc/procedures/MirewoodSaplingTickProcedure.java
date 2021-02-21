@@ -11,7 +11,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class MirewoodSaplingTickProcedure extends CocModElements.ModElement {
 	public MirewoodSaplingTickProcedure(CocModElements instance) {
-		super(instance, 861);
+		super(instance, 870);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

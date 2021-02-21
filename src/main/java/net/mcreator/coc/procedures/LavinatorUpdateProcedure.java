@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LavinatorUpdateProcedure extends CocModElements.ModElement {
 	public LavinatorUpdateProcedure(CocModElements instance) {
-		super(instance, 605);
+		super(instance, 615);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

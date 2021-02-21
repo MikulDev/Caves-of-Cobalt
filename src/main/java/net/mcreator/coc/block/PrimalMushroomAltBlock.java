@@ -42,7 +42,7 @@ public class PrimalMushroomAltBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:primal_mushroom_alt")
 	public static final Block block = null;
 	public PrimalMushroomAltBlock(CocModElements instance) {
-		super(instance, 947);
+		super(instance, 950);
 	}
 
 	@Override

@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LavaSpongeSolidProcedure extends CocModElements.ModElement {
 	public LavaSpongeSolidProcedure(CocModElements instance) {
-		super(instance, 916);
+		super(instance, 924);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

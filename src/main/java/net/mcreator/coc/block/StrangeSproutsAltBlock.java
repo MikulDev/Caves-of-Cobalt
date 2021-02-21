@@ -40,7 +40,7 @@ public class StrangeSproutsAltBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:strangesproutsalt")
 	public static final Block block = null;
 	public StrangeSproutsAltBlock(CocModElements instance) {
-		super(instance, 728);
+		super(instance, 737);
 	}
 
 	@Override

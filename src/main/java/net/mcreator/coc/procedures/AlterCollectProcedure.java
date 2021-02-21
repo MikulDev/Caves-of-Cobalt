@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class AlterCollectProcedure extends CocModElements.ModElement {
 	public AlterCollectProcedure(CocModElements instance) {
-		super(instance, 439);
+		super(instance, 449);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

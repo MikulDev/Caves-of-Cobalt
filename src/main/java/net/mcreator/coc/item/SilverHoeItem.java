@@ -17,7 +17,7 @@ public class SilverHoeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:silver_hoe")
 	public static final Item block = null;
 	public SilverHoeItem(CocModElements instance) {
-		super(instance, 920);
+		super(instance, 282);
 	}
 
 	@Override

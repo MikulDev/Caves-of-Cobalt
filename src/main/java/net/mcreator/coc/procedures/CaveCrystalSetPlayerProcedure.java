@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CaveCrystalSetPlayerProcedure extends CocModElements.ModElement {
 	public CaveCrystalSetPlayerProcedure(CocModElements instance) {
-		super(instance, 508);
+		super(instance, 518);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

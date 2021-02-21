@@ -24,7 +24,7 @@ public class CharstoneBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:charred_stone")
 	public static final Block block = null;
 	public CharstoneBlock(CocModElements instance) {
-		super(instance, 1);
+		super(instance, 9);
 	}
 
 	@Override

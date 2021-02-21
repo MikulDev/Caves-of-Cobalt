@@ -21,7 +21,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SporeSacThrowProcedure extends CocModElements.ModElement {
 	public SporeSacThrowProcedure(CocModElements instance) {
-		super(instance, 907);
+		super(instance, 915);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

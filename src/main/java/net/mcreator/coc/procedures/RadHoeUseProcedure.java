@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadHoeUseProcedure extends CocModElements.ModElement {
 	public RadHoeUseProcedure(CocModElements instance) {
-		super(instance, 574);
+		super(instance, 584);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

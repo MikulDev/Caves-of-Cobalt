@@ -23,7 +23,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MirewoodSaplingGrowProcedure extends CocModElements.ModElement {
 	public MirewoodSaplingGrowProcedure(CocModElements instance) {
-		super(instance, 858);
+		super(instance, 867);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

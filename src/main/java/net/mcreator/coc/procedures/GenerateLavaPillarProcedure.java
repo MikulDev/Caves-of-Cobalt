@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GenerateLavaPillarProcedure extends CocModElements.ModElement {
 	public GenerateLavaPillarProcedure(CocModElements instance) {
-		super(instance, 392);
+		super(instance, 406);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

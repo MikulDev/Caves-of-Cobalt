@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemforgeUpdateTickProcedure extends CocModElements.ModElement {
 	public GemforgeUpdateTickProcedure(CocModElements instance) {
-		super(instance, 298);
+		super(instance, 310);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -16,7 +16,7 @@ public class BrokenChipperItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:broken_chipper")
 	public static final Item block = null;
 	public BrokenChipperItem(CocModElements instance) {
-		super(instance, 146);
+		super(instance, 156);
 	}
 
 	@Override

@@ -38,7 +38,7 @@ public class MirewoodFenceBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewoodfence")
 	public static final Block block = null;
 	public MirewoodFenceBlock(CocModElements instance) {
-		super(instance, 89);
+		super(instance, 99);
 	}
 
 	@Override

@@ -25,7 +25,7 @@ public class FruitOfEvilItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:eden_apple")
 	public static final Item block = null;
 	public FruitOfEvilItem(CocModElements instance) {
-		super(instance, 250);
+		super(instance, 261);
 	}
 
 	@Override

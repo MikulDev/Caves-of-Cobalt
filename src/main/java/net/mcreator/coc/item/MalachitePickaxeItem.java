@@ -17,7 +17,7 @@ public class MalachitePickaxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:malachite_pickaxe")
 	public static final Item block = null;
 	public MalachitePickaxeItem(CocModElements instance) {
-		super(instance, 258);
+		super(instance, 269);
 	}
 
 	@Override

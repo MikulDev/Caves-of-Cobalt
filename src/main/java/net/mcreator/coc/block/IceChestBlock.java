@@ -73,7 +73,7 @@ public class IceChestBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:ice_chest")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public IceChestBlock(CocModElements instance) {
-		super(instance, 98);
+		super(instance, 106);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

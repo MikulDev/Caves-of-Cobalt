@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class EnchantAmethystProcedure extends CocModElements.ModElement {
 	public EnchantAmethystProcedure(CocModElements instance) {
-		super(instance, 749);
+		super(instance, 758);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

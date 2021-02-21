@@ -24,7 +24,7 @@ public class KyaniteClusterBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:kyanite_cluster")
 	public static final Block block = null;
 	public KyaniteClusterBlock(CocModElements instance) {
-		super(instance, 61);
+		super(instance, 70);
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class FreezingEffectPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:freezing")
 	public static final Potion potionType = null;
 	public FreezingEffectPotion(CocModElements instance) {
-		super(instance, 416);
+		super(instance, 430);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

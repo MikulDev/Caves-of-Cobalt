@@ -33,7 +33,7 @@ import java.util.Random;
 @CocModElements.ModElement.Tag
 public class HiddenLootCaveStructure extends CocModElements.ModElement {
 	public HiddenLootCaveStructure(CocModElements instance) {
-		super(instance, 707);
+		super(instance, 716);
 	}
 
 	@Override

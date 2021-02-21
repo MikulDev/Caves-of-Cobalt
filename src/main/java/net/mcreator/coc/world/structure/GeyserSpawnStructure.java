@@ -31,7 +31,7 @@ import java.util.Random;
 @CocModElements.ModElement.Tag
 public class GeyserSpawnStructure extends CocModElements.ModElement {
 	public GeyserSpawnStructure(CocModElements instance) {
-		super(instance, 611);
+		super(instance, 620);
 	}
 
 	@Override

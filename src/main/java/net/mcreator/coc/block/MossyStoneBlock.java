@@ -23,7 +23,7 @@ public class MossyStoneBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mossy_stone")
 	public static final Block block = null;
 	public MossyStoneBlock(CocModElements instance) {
-		super(instance, 925);
+		super(instance, 8);
 	}
 
 	@Override

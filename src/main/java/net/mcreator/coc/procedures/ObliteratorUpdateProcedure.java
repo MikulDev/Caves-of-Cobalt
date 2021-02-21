@@ -17,7 +17,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class ObliteratorUpdateProcedure extends CocModElements.ModElement {
 	public ObliteratorUpdateProcedure(CocModElements instance) {
-		super(instance, 479);
+		super(instance, 489);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

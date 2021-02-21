@@ -23,7 +23,7 @@ public class DarkMirewoodPlanksBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:dark_mirewood_planks")
 	public static final Block block = null;
 	public DarkMirewoodPlanksBlock(CocModElements instance) {
-		super(instance, 33);
+		super(instance, 41);
 	}
 
 	@Override

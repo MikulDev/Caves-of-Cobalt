@@ -16,7 +16,7 @@ public class AmethystItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:amethyst")
 	public static final Item block = null;
 	public AmethystItem(CocModElements instance) {
-		super(instance, 159);
+		super(instance, 169);
 	}
 
 	@Override

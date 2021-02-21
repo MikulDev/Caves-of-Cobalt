@@ -83,7 +83,7 @@ public class TrufflesBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:truffles")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public TrufflesBlock(CocModElements instance) {
-		super(instance, 683);
+		super(instance, 692);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

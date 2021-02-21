@@ -26,7 +26,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class SpawnBedrockSpireProcedure extends CocModElements.ModElement {
 	public SpawnBedrockSpireProcedure(CocModElements instance) {
-		super(instance, 655);
+		super(instance, 664);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

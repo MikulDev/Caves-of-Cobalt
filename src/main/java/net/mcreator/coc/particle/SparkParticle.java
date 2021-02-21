@@ -25,7 +25,7 @@ import net.mcreator.coc.CocModElements;
 public class SparkParticle extends CocModElements.ModElement {
 	public static final BasicParticleType particle = new BasicParticleType(false);
 	public SparkParticle(CocModElements instance) {
-		super(instance, 897);
+		super(instance, 905);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

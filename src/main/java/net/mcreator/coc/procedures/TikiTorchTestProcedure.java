@@ -12,7 +12,7 @@ import com.google.common.collect.ImmutableMap;
 @CocModElements.ModElement.Tag
 public class TikiTorchTestProcedure extends CocModElements.ModElement {
 	public TikiTorchTestProcedure(CocModElements instance) {
-		super(instance, 941);
+		super(instance, 943);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

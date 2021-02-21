@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SporeParticlesProcedure extends CocModElements.ModElement {
 	public SporeParticlesProcedure(CocModElements instance) {
-		super(instance, 391);
+		super(instance, 405);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

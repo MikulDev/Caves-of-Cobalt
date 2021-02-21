@@ -24,7 +24,7 @@ public class RubyBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:ruby_block")
 	public static final Block block = null;
 	public RubyBlockBlock(CocModElements instance) {
-		super(instance, 5);
+		super(instance, 13);
 	}
 
 	@Override

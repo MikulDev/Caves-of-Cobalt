@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class JunTempleSouthProcedure extends CocModElements.ModElement {
 	public JunTempleSouthProcedure(CocModElements instance) {
-		super(instance, 433);
+		super(instance, 443);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

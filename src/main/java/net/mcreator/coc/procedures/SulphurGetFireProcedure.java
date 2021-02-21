@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SulphurGetFireProcedure extends CocModElements.ModElement {
 	public SulphurGetFireProcedure(CocModElements instance) {
-		super(instance, 797);
+		super(instance, 806);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

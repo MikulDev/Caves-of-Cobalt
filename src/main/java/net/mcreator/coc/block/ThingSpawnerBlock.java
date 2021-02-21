@@ -62,7 +62,7 @@ public class ThingSpawnerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:thing_spawner")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public ThingSpawnerBlock(CocModElements instance) {
-		super(instance, 484);
+		super(instance, 494);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

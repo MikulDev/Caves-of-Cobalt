@@ -25,7 +25,7 @@ public class PermanentHealthBoostPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:permanenthealthboost")
 	public static final Effect potion = null;
 	public PermanentHealthBoostPotion(CocModElements instance) {
-		super(instance, 533);
+		super(instance, 543);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

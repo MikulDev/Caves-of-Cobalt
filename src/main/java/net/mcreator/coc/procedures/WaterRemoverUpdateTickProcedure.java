@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class WaterRemoverUpdateTickProcedure extends CocModElements.ModElement {
 	public WaterRemoverUpdateTickProcedure(CocModElements instance) {
-		super(instance, 944);
+		super(instance, 946);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

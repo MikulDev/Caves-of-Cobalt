@@ -12,7 +12,7 @@ import com.google.common.collect.ImmutableMap;
 @CocModElements.ModElement.Tag
 public class MoltenBiomeConditionProcedure extends CocModElements.ModElement {
 	public MoltenBiomeConditionProcedure(CocModElements instance) {
-		super(instance, 942);
+		super(instance, 944);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

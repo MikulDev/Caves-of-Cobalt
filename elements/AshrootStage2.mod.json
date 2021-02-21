@@ -99,9 +99,7 @@
     "onDestroyedByPlayer": {
       "name": "AshrootDrop"
     },
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

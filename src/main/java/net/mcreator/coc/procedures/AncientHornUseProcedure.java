@@ -28,7 +28,7 @@ import java.util.Comparator;
 @CocModElements.ModElement.Tag
 public class AncientHornUseProcedure extends CocModElements.ModElement {
 	public AncientHornUseProcedure(CocModElements instance) {
-		super(instance, 715);
+		super(instance, 724);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

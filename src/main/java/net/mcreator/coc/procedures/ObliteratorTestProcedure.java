@@ -7,7 +7,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ObliteratorTestProcedure extends CocModElements.ModElement {
 	public ObliteratorTestProcedure(CocModElements instance) {
-		super(instance, 334);
+		super(instance, 346);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

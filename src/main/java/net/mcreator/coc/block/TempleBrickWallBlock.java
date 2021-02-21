@@ -39,7 +39,7 @@ public class TempleBrickWallBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:templebrickwall")
 	public static final Block block = null;
 	public TempleBrickWallBlock(CocModElements instance) {
-		super(instance, 68);
+		super(instance, 77);
 	}
 
 	@Override

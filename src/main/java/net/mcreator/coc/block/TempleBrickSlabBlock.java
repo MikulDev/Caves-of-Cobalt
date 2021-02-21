@@ -25,7 +25,7 @@ public class TempleBrickSlabBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:temple_brick_slab")
 	public static final Block block = null;
 	public TempleBrickSlabBlock(CocModElements instance) {
-		super(instance, 67);
+		super(instance, 76);
 	}
 
 	@Override

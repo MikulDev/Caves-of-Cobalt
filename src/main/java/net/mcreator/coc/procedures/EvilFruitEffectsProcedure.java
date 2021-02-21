@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class EvilFruitEffectsProcedure extends CocModElements.ModElement {
 	public EvilFruitEffectsProcedure(CocModElements instance) {
-		super(instance, 437);
+		super(instance, 447);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

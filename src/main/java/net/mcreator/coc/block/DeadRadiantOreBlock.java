@@ -24,7 +24,7 @@ public class DeadRadiantOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:dead_radiant_ore")
 	public static final Block block = null;
 	public DeadRadiantOreBlock(CocModElements instance) {
-		super(instance, 363);
+		super(instance, 377);
 	}
 
 	@Override

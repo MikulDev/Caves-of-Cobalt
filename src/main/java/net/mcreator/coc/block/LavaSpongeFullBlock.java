@@ -34,7 +34,7 @@ public class LavaSpongeFullBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:lava_sponge_full")
 	public static final Block block = null;
 	public LavaSpongeFullBlock(CocModElements instance) {
-		super(instance, 42);
+		super(instance, 50);
 	}
 
 	@Override

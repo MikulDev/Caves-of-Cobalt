@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TopazSpreadProcedure extends CocModElements.ModElement {
 	public TopazSpreadProcedure(CocModElements instance) {
-		super(instance, 316);
+		super(instance, 328);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

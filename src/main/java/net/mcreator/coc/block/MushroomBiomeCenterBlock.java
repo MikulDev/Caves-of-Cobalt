@@ -67,7 +67,7 @@ public class MushroomBiomeCenterBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mushroombiomecenter")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public MushroomBiomeCenterBlock(CocModElements instance) {
-		super(instance, 665);
+		super(instance, 674);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

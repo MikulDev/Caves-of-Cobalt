@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SoulStalkGrowProcedure extends CocModElements.ModElement {
 	public SoulStalkGrowProcedure(CocModElements instance) {
-		super(instance, 770);
+		super(instance, 779);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

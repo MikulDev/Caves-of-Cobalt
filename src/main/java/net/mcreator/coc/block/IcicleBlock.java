@@ -42,7 +42,7 @@ public class IcicleBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:icicle")
 	public static final Block block = null;
 	public IcicleBlock(CocModElements instance) {
-		super(instance, 96);
+		super(instance, 105);
 	}
 
 	@Override

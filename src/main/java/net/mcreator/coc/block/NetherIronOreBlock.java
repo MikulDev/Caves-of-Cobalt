@@ -37,7 +37,7 @@ public class NetherIronOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:nether_iron_ore")
 	public static final Block block = null;
 	public NetherIronOreBlock(CocModElements instance) {
-		super(instance, 52);
+		super(instance, 61);
 	}
 
 	@Override

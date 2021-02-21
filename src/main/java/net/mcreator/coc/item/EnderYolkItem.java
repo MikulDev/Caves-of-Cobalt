@@ -16,7 +16,7 @@ public class EnderYolkItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:dragon_yolk")
 	public static final Item block = null;
 	public EnderYolkItem(CocModElements instance) {
-		super(instance, 187);
+		super(instance, 197);
 	}
 
 	@Override

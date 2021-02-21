@@ -61,7 +61,7 @@ public class FakeStalagmiteBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:fakestalagmite")
 	public static final Block block = null;
 	public FakeStalagmiteBlock(CocModElements instance) {
-		super(instance, 78);
+		super(instance, 89);
 	}
 
 	@Override

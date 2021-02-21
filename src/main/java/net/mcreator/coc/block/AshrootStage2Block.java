@@ -2,23 +2,12 @@
 package net.mcreator.coc.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.CountRangeConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
-import net.minecraft.world.gen.feature.OreFeature;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.ChunkGenerator;
-import net.minecraft.world.dimension.DimensionType;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -38,7 +27,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -47,7 +35,6 @@ import net.mcreator.coc.procedures.AshrootDropProcedure;
 import net.mcreator.coc.item.AshrootSeedItem;
 import net.mcreator.coc.CocModElements;
 
-import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -58,7 +45,7 @@ public class AshrootStage2Block extends CocModElements.ModElement {
 	@ObjectHolder("coc:ashroot_stage_2")
 	public static final Block block = null;
 	public AshrootStage2Block(CocModElements instance) {
-		super(instance, 753);
+		super(instance, 762);
 	}
 
 	@Override
@@ -157,28 +144,6 @@ public class AshrootStage2Block extends CocModElements.ModElement {
 				AshrootDropProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
-		}
-	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, new OreFeature(OreFeatureConfig::deserialize) {
-				@Override
-				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
-					DimensionType dimensionType = world.getDimension().getType();
-					boolean dimensionCriteria = false;
-					if (dimensionType == DimensionType.OVERWORLD)
-						dimensionCriteria = true;
-					if (!dimensionCriteria)
-						return false;
-					return super.place(world, generator, rand, pos, config);
-				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("ashroot_stage_2", "ashroot_stage_2", blockAt -> {
-				boolean blockCriteria = false;
-				if (blockAt.getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
-					blockCriteria = true;
-				return blockCriteria;
-			}), block.getDefaultState(), 3)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 0, 0, 40))));
 		}
 	}
 }

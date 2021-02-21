@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class HotblockApplyFireProcedure extends CocModElements.ModElement {
 	public HotblockApplyFireProcedure(CocModElements instance) {
-		super(instance, 636);
+		super(instance, 645);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

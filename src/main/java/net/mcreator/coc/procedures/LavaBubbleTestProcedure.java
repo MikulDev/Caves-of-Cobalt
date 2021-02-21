@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LavaBubbleTestProcedure extends CocModElements.ModElement {
 	public LavaBubbleTestProcedure(CocModElements instance) {
-		super(instance, 820);
+		super(instance, 829);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

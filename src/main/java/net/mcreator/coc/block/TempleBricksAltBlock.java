@@ -29,7 +29,7 @@ public class TempleBricksAltBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:carved_temple_bricks")
 	public static final Block block = null;
 	public TempleBricksAltBlock(CocModElements instance) {
-		super(instance, 65);
+		super(instance, 74);
 	}
 
 	@Override

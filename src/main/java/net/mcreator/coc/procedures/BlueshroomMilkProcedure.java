@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class BlueshroomMilkProcedure extends CocModElements.ModElement {
 	public BlueshroomMilkProcedure(CocModElements instance) {
-		super(instance, 344);
+		super(instance, 356);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

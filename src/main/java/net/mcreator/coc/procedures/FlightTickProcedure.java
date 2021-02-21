@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FlightTickProcedure extends CocModElements.ModElement {
 	public FlightTickProcedure(CocModElements instance) {
-		super(instance, 490);
+		super(instance, 500);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

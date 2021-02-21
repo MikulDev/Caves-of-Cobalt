@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class PhoenixWingsUseProcedure extends CocModElements.ModElement {
 	public PhoenixWingsUseProcedure(CocModElements instance) {
-		super(instance, 405);
+		super(instance, 419);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

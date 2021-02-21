@@ -37,7 +37,7 @@ import com.google.common.collect.ImmutableMap;
 @CocModElements.ModElement.Tag
 public class MoltenBiomeStructure extends CocModElements.ModElement {
 	public MoltenBiomeStructure(CocModElements instance) {
-		super(instance, 929);
+		super(instance, 934);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class AncientChestMarkerTickProcedure extends CocModElements.ModElement {
 	public AncientChestMarkerTickProcedure(CocModElements instance) {
-		super(instance, 716);
+		super(instance, 725);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

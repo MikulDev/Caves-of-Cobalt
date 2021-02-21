@@ -31,7 +31,7 @@ public class ShroomiumChipperItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:shroomium_chipper")
 	public static final Item block = null;
 	public ShroomiumChipperItem(CocModElements instance) {
-		super(instance, 257);
+		super(instance, 268);
 	}
 
 	@Override

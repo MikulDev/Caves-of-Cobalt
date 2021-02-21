@@ -16,7 +16,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class RadRightClickProcedure extends CocModElements.ModElement {
 	public RadRightClickProcedure(CocModElements instance) {
-		super(instance, 818);
+		super(instance, 827);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

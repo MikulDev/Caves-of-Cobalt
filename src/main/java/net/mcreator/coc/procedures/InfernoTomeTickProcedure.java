@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class InfernoTomeTickProcedure extends CocModElements.ModElement {
 	public InfernoTomeTickProcedure(CocModElements instance) {
-		super(instance, 600);
+		super(instance, 610);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -30,7 +30,7 @@ public class NetherBedrockSpawnerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:netherbedrockspawner")
 	public static final Block block = null;
 	public NetherBedrockSpawnerBlock(CocModElements instance) {
-		super(instance, 654);
+		super(instance, 663);
 	}
 
 	@Override

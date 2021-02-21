@@ -38,7 +38,7 @@ public class RichTopazOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:rich_topaz_ore")
 	public static final Block block = null;
 	public RichTopazOreBlock(CocModElements instance) {
-		super(instance, 16);
+		super(instance, 24);
 	}
 
 	@Override

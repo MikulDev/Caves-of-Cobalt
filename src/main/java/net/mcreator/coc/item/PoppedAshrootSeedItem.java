@@ -23,7 +23,7 @@ public class PoppedAshrootSeedItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:popped_ashroot_seed")
 	public static final Item block = null;
 	public PoppedAshrootSeedItem(CocModElements instance) {
-		super(instance, 247);
+		super(instance, 258);
 	}
 
 	@Override

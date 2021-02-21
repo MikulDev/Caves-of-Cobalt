@@ -1,0 +1,32 @@
+{
+  "group": "walls",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:polished_shale"
+    },
+    "1": {
+      "item": "coc:polished_shale"
+    },
+    "2": {
+      "item": "coc:polished_shale"
+    },
+    "3": {
+      "item": "coc:polished_shale"
+    },
+    "4": {
+      "item": "coc:polished_shale"
+    },
+    "5": {
+      "item": "coc:polished_shale"
+    }
+  },
+  "result": {
+    "item": "coc:shale_wall",
+    "count": 6
+  }
+}

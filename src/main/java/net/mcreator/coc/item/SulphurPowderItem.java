@@ -16,7 +16,7 @@ public class SulphurPowderItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:sulphur_powder")
 	public static final Item block = null;
 	public SulphurPowderItem(CocModElements instance) {
-		super(instance, 148);
+		super(instance, 158);
 	}
 
 	@Override

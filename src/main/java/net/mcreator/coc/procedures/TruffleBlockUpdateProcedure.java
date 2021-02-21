@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TruffleBlockUpdateProcedure extends CocModElements.ModElement {
 	public TruffleBlockUpdateProcedure(CocModElements instance) {
-		super(instance, 681);
+		super(instance, 690);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

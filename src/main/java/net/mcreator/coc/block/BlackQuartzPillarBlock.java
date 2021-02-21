@@ -32,7 +32,7 @@ public class BlackQuartzPillarBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:blackquartzpillar")
 	public static final Block block = null;
 	public BlackQuartzPillarBlock(CocModElements instance) {
-		super(instance, 70);
+		super(instance, 79);
 	}
 
 	@Override

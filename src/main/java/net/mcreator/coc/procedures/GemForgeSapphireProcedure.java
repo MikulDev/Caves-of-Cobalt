@@ -33,7 +33,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemForgeSapphireProcedure extends CocModElements.ModElement {
 	public GemForgeSapphireProcedure(CocModElements instance) {
-		super(instance, 346);
+		super(instance, 358);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

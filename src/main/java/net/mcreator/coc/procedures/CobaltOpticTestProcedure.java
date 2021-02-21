@@ -24,7 +24,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CobaltOpticTestProcedure extends CocModElements.ModElement {
 	public CobaltOpticTestProcedure(CocModElements instance) {
-		super(instance, 913);
+		super(instance, 921);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

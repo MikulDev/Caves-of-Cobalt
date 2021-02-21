@@ -24,7 +24,7 @@ public class RefinedAmethystItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:refined_amethyst")
 	public static final Item block = null;
 	public RefinedAmethystItem(CocModElements instance) {
-		super(instance, 160);
+		super(instance, 170);
 	}
 
 	@Override

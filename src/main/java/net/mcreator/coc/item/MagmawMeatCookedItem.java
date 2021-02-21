@@ -25,7 +25,7 @@ public class MagmawMeatCookedItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:fried_magmaw")
 	public static final Item block = null;
 	public MagmawMeatCookedItem(CocModElements instance) {
-		super(instance, 245);
+		super(instance, 256);
 	}
 
 	@Override

@@ -33,7 +33,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemForgeRadiantProcedure extends CocModElements.ModElement {
 	public GemForgeRadiantProcedure(CocModElements instance) {
-		super(instance, 348);
+		super(instance, 360);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

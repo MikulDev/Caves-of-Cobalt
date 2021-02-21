@@ -22,7 +22,7 @@ public class PhoenixWingsItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:phoenixwings")
 	public static final Item block = null;
 	public PhoenixWingsItem(CocModElements instance) {
-		super(instance, 272);
+		super(instance, 285);
 	}
 
 	@Override

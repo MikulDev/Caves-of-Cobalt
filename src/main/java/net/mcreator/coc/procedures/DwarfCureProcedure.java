@@ -28,7 +28,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class DwarfCureProcedure extends CocModElements.ModElement {
 	public DwarfCureProcedure(CocModElements instance) {
-		super(instance, 776);
+		super(instance, 785);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

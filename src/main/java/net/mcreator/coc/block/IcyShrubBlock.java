@@ -41,7 +41,7 @@ public class IcyShrubBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:icy_shrub")
 	public static final Block block = null;
 	public IcyShrubBlock(CocModElements instance) {
-		super(instance, 97);
+		super(instance, 369);
 	}
 
 	@Override

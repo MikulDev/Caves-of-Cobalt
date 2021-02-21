@@ -36,7 +36,7 @@ public class CrumblerOffBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:crumbler")
 	public static final Block block = null;
 	public CrumblerOffBlock(CocModElements instance) {
-		super(instance, 274);
+		super(instance, 287);
 	}
 
 	@Override

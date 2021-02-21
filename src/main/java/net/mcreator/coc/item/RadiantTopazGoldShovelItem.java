@@ -23,7 +23,7 @@ public class RadiantTopazGoldShovelItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_shovel_radiant")
 	public static final Item block = null;
 	public RadiantTopazGoldShovelItem(CocModElements instance) {
-		super(instance, 215);
+		super(instance, 225);
 	}
 
 	@Override

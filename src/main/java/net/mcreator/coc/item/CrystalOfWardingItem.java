@@ -16,7 +16,7 @@ public class CrystalOfWardingItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:crystal_of_warding")
 	public static final Item block = null;
 	public CrystalOfWardingItem(CocModElements instance) {
-		super(instance, 161);
+		super(instance, 171);
 	}
 
 	@Override

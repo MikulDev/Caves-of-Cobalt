@@ -38,7 +38,7 @@ public class ShaleBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:shale")
 	public static final Block block = null;
 	public ShaleBlock(CocModElements instance) {
-		super(instance, 962);
+		super(instance, 1);
 	}
 
 	@Override
@@ -85,7 +85,7 @@ public class ShaleBlock extends CocModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 28)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(12, 0, 0, 64))));
+			}), block.getDefaultState(), 32)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 0, 0, 64))));
 		}
 	}
 }

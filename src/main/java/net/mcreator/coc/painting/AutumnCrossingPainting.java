@@ -12,7 +12,7 @@ import net.mcreator.coc.CocModElements;
 @CocModElements.ModElement.Tag
 public class AutumnCrossingPainting extends CocModElements.ModElement {
 	public AutumnCrossingPainting(CocModElements instance) {
-		super(instance, 844);
+		super(instance, 853);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

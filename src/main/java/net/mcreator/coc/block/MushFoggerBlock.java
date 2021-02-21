@@ -39,7 +39,7 @@ public class MushFoggerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mushfogger")
 	public static final Block block = null;
 	public MushFoggerBlock(CocModElements instance) {
-		super(instance, 731);
+		super(instance, 740);
 	}
 
 	@Override

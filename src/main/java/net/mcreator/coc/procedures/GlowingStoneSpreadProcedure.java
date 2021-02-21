@@ -31,7 +31,7 @@ import java.util.ArrayList;
 @CocModElements.ModElement.Tag
 public class GlowingStoneSpreadProcedure extends CocModElements.ModElement {
 	public GlowingStoneSpreadProcedure(CocModElements instance) {
-		super(instance, 330);
+		super(instance, 342);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "coc:blocks/shale_polished",
+    "top": "coc:blocks/shale_polished",
+    "side": "coc:blocks/shale_slab_polished"
+  }
+}

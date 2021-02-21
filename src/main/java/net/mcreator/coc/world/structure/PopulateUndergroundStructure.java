@@ -34,7 +34,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class PopulateUndergroundStructure extends CocModElements.ModElement {
 	public PopulateUndergroundStructure(CocModElements instance) {
-		super(instance, 687);
+		super(instance, 696);
 	}
 
 	@Override

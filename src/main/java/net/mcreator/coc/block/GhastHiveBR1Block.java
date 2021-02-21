@@ -69,7 +69,7 @@ public class GhastHiveBR1Block extends CocModElements.ModElement {
 	@ObjectHolder("coc:ghast_hive_br_1")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GhastHiveBR1Block(CocModElements instance) {
-		super(instance, 885);
+		super(instance, 893);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

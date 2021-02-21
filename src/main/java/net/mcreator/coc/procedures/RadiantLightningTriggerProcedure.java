@@ -10,7 +10,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadiantLightningTriggerProcedure extends CocModElements.ModElement {
 	public RadiantLightningTriggerProcedure(CocModElements instance) {
-		super(instance, 566);
+		super(instance, 576);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

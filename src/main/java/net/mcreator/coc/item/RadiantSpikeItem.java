@@ -58,7 +58,7 @@ public class RadiantSpikeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:entitybulletradiant_spike")
 	public static final EntityType arrow = null;
 	public RadiantSpikeItem(CocModElements instance) {
-		super(instance, 902);
+		super(instance, 910);
 	}
 
 	@Override

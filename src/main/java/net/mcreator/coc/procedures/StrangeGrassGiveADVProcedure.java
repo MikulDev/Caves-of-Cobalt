@@ -17,7 +17,7 @@ import java.util.Iterator;
 @CocModElements.ModElement.Tag
 public class StrangeGrassGiveADVProcedure extends CocModElements.ModElement {
 	public StrangeGrassGiveADVProcedure(CocModElements instance) {
-		super(instance, 332);
+		super(instance, 344);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

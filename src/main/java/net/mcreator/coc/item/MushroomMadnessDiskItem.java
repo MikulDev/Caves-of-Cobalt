@@ -16,7 +16,7 @@ public class MushroomMadnessDiskItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:music_disc_mire")
 	public static final Item block = null;
 	public MushroomMadnessDiskItem(CocModElements instance) {
-		super(instance, 192);
+		super(instance, 202);
 	}
 
 	@Override

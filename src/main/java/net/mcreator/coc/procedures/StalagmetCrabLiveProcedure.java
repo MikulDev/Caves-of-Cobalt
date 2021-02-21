@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StalagmetCrabLiveProcedure extends CocModElements.ModElement {
 	public StalagmetCrabLiveProcedure(CocModElements instance) {
-		super(instance, 310);
+		super(instance, 322);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

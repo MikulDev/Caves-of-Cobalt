@@ -23,7 +23,7 @@ public class CookedCrabItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:cooked_crab")
 	public static final Item block = null;
 	public CookedCrabItem(CocModElements instance) {
-		super(instance, 243);
+		super(instance, 254);
 	}
 
 	@Override

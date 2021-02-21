@@ -29,7 +29,7 @@ public class BedrockMalAxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:bedrock_malachite_axe")
 	public static final Item block = null;
 	public BedrockMalAxeItem(CocModElements instance) {
-		super(instance, 261);
+		super(instance, 272);
 	}
 
 	@Override

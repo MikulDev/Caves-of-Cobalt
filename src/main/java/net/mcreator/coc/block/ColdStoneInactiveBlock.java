@@ -30,7 +30,7 @@ public class ColdStoneInactiveBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:coldstoneinactive")
 	public static final Block block = null;
 	public ColdStoneInactiveBlock(CocModElements instance) {
-		super(instance, 488);
+		super(instance, 498);
 	}
 
 	@Override

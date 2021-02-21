@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadiantPickaxeAbilityProcedure extends CocModElements.ModElement {
 	public RadiantPickaxeAbilityProcedure(CocModElements instance) {
-		super(instance, 570);
+		super(instance, 580);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

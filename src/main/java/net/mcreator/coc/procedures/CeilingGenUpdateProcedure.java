@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CeilingGenUpdateProcedure extends CocModElements.ModElement {
 	public CeilingGenUpdateProcedure(CocModElements instance) {
-		super(instance, 402);
+		super(instance, 416);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

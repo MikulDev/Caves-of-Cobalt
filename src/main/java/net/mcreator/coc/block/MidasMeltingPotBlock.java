@@ -81,7 +81,7 @@ public class MidasMeltingPotBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:midas_melting_pot")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public MidasMeltingPotBlock(CocModElements instance) {
-		super(instance, 80);
+		super(instance, 91);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

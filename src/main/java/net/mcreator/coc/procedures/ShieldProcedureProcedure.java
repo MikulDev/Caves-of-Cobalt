@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ShieldProcedureProcedure extends CocModElements.ModElement {
 	public ShieldProcedureProcedure(CocModElements instance) {
-		super(instance, 572);
+		super(instance, 582);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

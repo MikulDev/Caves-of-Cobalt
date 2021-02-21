@@ -33,7 +33,7 @@ public class TempleBrickStairsBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:templebrickstairs")
 	public static final Block block = null;
 	public TempleBrickStairsBlock(CocModElements instance) {
-		super(instance, 66);
+		super(instance, 75);
 	}
 
 	@Override

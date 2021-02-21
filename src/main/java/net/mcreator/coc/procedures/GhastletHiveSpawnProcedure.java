@@ -39,7 +39,7 @@ import java.util.Comparator;
 @CocModElements.ModElement.Tag
 public class GhastletHiveSpawnProcedure extends CocModElements.ModElement {
 	public GhastletHiveSpawnProcedure(CocModElements instance) {
-		super(instance, 401);
+		super(instance, 415);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

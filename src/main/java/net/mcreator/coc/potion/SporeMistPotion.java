@@ -18,7 +18,7 @@ public class SporeMistPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:sporemist")
 	public static final Effect potion = null;
 	public SporeMistPotion(CocModElements instance) {
-		super(instance, 672);
+		super(instance, 681);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

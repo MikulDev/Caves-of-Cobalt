@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MonarchSummonProcedure extends CocModElements.ModElement {
 	public MonarchSummonProcedure(CocModElements instance) {
-		super(instance, 477);
+		super(instance, 487);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

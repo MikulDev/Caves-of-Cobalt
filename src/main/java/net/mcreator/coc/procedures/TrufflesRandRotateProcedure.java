@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TrufflesRandRotateProcedure extends CocModElements.ModElement {
 	public TrufflesRandRotateProcedure(CocModElements instance) {
-		super(instance, 684);
+		super(instance, 693);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

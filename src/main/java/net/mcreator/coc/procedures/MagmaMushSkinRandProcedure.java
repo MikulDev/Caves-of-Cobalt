@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MagmaMushSkinRandProcedure extends CocModElements.ModElement {
 	public MagmaMushSkinRandProcedure(CocModElements instance) {
-		super(instance, 782);
+		super(instance, 791);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

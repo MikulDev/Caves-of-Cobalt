@@ -23,7 +23,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class StrBudsSporesProcedure extends CocModElements.ModElement {
 	public StrBudsSporesProcedure(CocModElements instance) {
-		super(instance, 855);
+		super(instance, 864);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

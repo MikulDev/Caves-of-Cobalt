@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LavaLilyTestProcedure extends CocModElements.ModElement {
 	public LavaLilyTestProcedure(CocModElements instance) {
-		super(instance, 889);
+		super(instance, 897);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class DroopingHyphaePlaceProcedure extends CocModElements.ModElement {
 	public DroopingHyphaePlaceProcedure(CocModElements instance) {
-		super(instance, 879);
+		super(instance, 888);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

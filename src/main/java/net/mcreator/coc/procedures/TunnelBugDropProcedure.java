@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TunnelBugDropProcedure extends CocModElements.ModElement {
 	public TunnelBugDropProcedure(CocModElements instance) {
-		super(instance, 448);
+		super(instance, 458);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

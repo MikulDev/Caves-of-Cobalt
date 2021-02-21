@@ -29,7 +29,7 @@ public class RadiancePotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:radiance")
 	public static final Potion potionType = null;
 	public RadiancePotion(CocModElements instance) {
-		super(instance, 817);
+		super(instance, 826);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

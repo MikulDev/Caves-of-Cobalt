@@ -29,7 +29,7 @@ public class TempleBricksMossyBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mossy_temple_bricks")
 	public static final Block block = null;
 	public TempleBricksMossyBlock(CocModElements instance) {
-		super(instance, 63);
+		super(instance, 72);
 	}
 
 	@Override

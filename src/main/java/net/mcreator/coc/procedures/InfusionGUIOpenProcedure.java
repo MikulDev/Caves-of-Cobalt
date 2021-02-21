@@ -25,7 +25,7 @@ import io.netty.buffer.Unpooled;
 @CocModElements.ModElement.Tag
 public class InfusionGUIOpenProcedure extends CocModElements.ModElement {
 	public InfusionGUIOpenProcedure(CocModElements instance) {
-		super(instance, 727);
+		super(instance, 736);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

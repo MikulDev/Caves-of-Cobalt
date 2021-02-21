@@ -29,7 +29,7 @@ public class EdenLogBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:edenlog")
 	public static final Block block = null;
 	public EdenLogBlock(CocModElements instance) {
-		super(instance, 50);
+		super(instance, 59);
 	}
 
 	@Override

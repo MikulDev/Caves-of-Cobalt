@@ -18,7 +18,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class JunTemplePlaceProcedure extends CocModElements.ModElement {
 	public JunTemplePlaceProcedure(CocModElements instance) {
-		super(instance, 431);
+		super(instance, 441);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

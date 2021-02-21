@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class PivoterPowerProcedure extends CocModElements.ModElement {
 	public PivoterPowerProcedure(CocModElements instance) {
-		super(instance, 563);
+		super(instance, 573);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

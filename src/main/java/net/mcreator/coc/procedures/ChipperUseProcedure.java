@@ -48,7 +48,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ChipperUseProcedure extends CocModElements.ModElement {
 	public ChipperUseProcedure(CocModElements instance) {
-		super(instance, 650);
+		super(instance, 659);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -41,7 +41,7 @@ public class StrangeSporoutsBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:strange_sprouts")
 	public static final Block block = null;
 	public StrangeSporoutsBlock(CocModElements instance) {
-		super(instance, 94);
+		super(instance, 104);
 	}
 
 	@Override

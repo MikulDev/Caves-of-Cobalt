@@ -31,7 +31,7 @@ public class RadiantDashKeyBinding extends CocModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public RadiantDashKeyBinding(CocModElements instance) {
-		super(instance, 552);
+		super(instance, 562);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -32,7 +32,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class PlaceMushroomProcedure extends CocModElements.ModElement {
 	public PlaceMushroomProcedure(CocModElements instance) {
-		super(instance, 598);
+		super(instance, 608);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

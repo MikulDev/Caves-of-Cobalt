@@ -24,7 +24,7 @@ public class MalachiteBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:malachiteblock")
 	public static final Block block = null;
 	public MalachiteBlockBlock(CocModElements instance) {
-		super(instance, 14);
+		super(instance, 22);
 	}
 
 	@Override

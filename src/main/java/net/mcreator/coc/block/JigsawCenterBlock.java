@@ -23,6 +23,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.coc.procedures.JigsawStructurePlaceProcedure;
+import net.mcreator.coc.procedures.DwarfDenClearVarProcedure;
 import net.mcreator.coc.CocModElements;
 
 import java.util.Random;
@@ -36,7 +37,7 @@ public class JigsawCenterBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:jigsaw_block_center")
 	public static final Block block = null;
 	public JigsawCenterBlock(CocModElements instance) {
-		super(instance, 318);
+		super(instance, 330);
 	}
 
 	@Override
@@ -71,6 +72,11 @@ public class JigsawCenterBlock extends CocModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				DwarfDenClearVarProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

@@ -38,7 +38,7 @@ public class RadiantTopazNetherBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:nether_topaz_ore")
 	public static final Block block = null;
 	public RadiantTopazNetherBlock(CocModElements instance) {
-		super(instance, 57);
+		super(instance, 66);
 	}
 
 	@Override

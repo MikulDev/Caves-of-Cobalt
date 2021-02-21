@@ -33,7 +33,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemForgeRubyProcedure extends CocModElements.ModElement {
 	public GemForgeRubyProcedure(CocModElements instance) {
-		super(instance, 345);
+		super(instance, 357);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

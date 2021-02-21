@@ -16,7 +16,7 @@ public class InfernalBarkItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:molten_bark")
 	public static final Item block = null;
 	public InfernalBarkItem(CocModElements instance) {
-		super(instance, 180);
+		super(instance, 190);
 	}
 
 	@Override

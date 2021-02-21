@@ -35,7 +35,7 @@ public class SapphireGoldArmorItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:sapphire_gold_armor_boots")
 	public static final Item boots = null;
 	public SapphireGoldArmorItem(CocModElements instance) {
-		super(instance, 229);
+		super(instance, 239);
 	}
 
 	@Override

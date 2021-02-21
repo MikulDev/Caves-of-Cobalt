@@ -16,7 +16,7 @@ public class LumpOfIronItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:lump_of_iron")
 	public static final Item block = null;
 	public LumpOfIronItem(CocModElements instance) {
-		super(instance, 149);
+		super(instance, 159);
 	}
 
 	@Override

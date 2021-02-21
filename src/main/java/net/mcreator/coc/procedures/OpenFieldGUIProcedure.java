@@ -25,7 +25,7 @@ import io.netty.buffer.Unpooled;
 @CocModElements.ModElement.Tag
 public class OpenFieldGUIProcedure extends CocModElements.ModElement {
 	public OpenFieldGUIProcedure(CocModElements instance) {
-		super(instance, 368);
+		super(instance, 382);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

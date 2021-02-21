@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TunnelhideGiveInsulatedProcedure extends CocModElements.ModElement {
 	public TunnelhideGiveInsulatedProcedure(CocModElements instance) {
-		super(instance, 634);
+		super(instance, 643);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

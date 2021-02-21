@@ -39,7 +39,7 @@ public class CrydiamondBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:rich_diamond_ore")
 	public static final Block block = null;
 	public CrydiamondBlock(CocModElements instance) {
-		super(instance, 24);
+		super(instance, 32);
 	}
 
 	@Override

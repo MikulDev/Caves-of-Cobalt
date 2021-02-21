@@ -37,7 +37,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class StalagmiteUpdateTickProcedure extends CocModElements.ModElement {
 	public StalagmiteUpdateTickProcedure(CocModElements instance) {
-		super(instance, 287);
+		super(instance, 300);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

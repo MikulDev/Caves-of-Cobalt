@@ -16,7 +16,7 @@ public class ShellArrowItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:stonehead_arrow")
 	public static final Item block = null;
 	public ShellArrowItem(CocModElements instance) {
-		super(instance, 205);
+		super(instance, 215);
 	}
 
 	@Override

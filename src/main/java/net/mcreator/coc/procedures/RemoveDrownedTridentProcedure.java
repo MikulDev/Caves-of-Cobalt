@@ -23,7 +23,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class RemoveDrownedTridentProcedure extends CocModElements.ModElement {
 	public RemoveDrownedTridentProcedure(CocModElements instance) {
-		super(instance, 783);
+		super(instance, 792);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

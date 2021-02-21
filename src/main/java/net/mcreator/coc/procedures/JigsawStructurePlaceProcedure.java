@@ -69,9 +69,17 @@ public class JigsawStructurePlaceProcedure extends CocModElements.ModElement {
 		SpawnReason reason = null;
 		ILivingEntityData livingdata = null;
 		CompoundNBT tag = null;
-		
-		if ((CocModVariables.MapVariables.get(world).activestructures)) 
+
+		if (world.getBlockState(new BlockPos(x, y, z)).getBlock() == JigsawCenterBlock.block.getDefaultState().getBlock()) 
 		{
+			Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager().getTemplateDefaulted(new ResourceLocation("coc", "dwarf_center_bell"));
+			template.addBlocksToWorldChunk(world, new BlockPos(x, y, z), new PlacementSettings());
+			world.setBlockState(new BlockPos(x, y, z), Blocks.STONE.getDefaultState());
+			CocModVariables.WorldVariables.get(world).genNum = 0;
+		} 
+		else if (CocModVariables.WorldVariables.get(world).genNum < 40) 
+		{
+			CocModVariables.WorldVariables.get(world).genNum += 1;
 			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) 
 			{
 				world.getWorld().getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
@@ -97,13 +105,7 @@ public class JigsawStructurePlaceProcedure extends CocModElements.ModElement {
 				world.getWorld().getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z - 15), Vec2f.ZERO, (ServerWorld) world, 4, "",
 				new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(), "fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air replace lava");
 			}
-			if (world.getBlockState(new BlockPos(x, y, z)).getBlock() == JigsawCenterBlock.block.getDefaultState().getBlock()) 
-			{
-				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager().getTemplateDefaulted(new ResourceLocation("coc", "dwarf_center_bell"));
-				template.addBlocksToWorldChunk(world, new BlockPos(x, y, z), new PlacementSettings());
-				world.setBlockState(new BlockPos(x, y, z), Blocks.STONE.getDefaultState());
-			} 
-			else if (((new Object() 
+			if (((new Object() 
 			{
 				public Direction getDirection(BlockPos pos) {
 					try {
@@ -1001,7 +1003,7 @@ public class JigsawStructurePlaceProcedure extends CocModElements.ModElement {
 					else if (Math.random() < 0.05 && placeHelper.noAir(world, new BlockPos(x + 1, y - 10, z + 2), -1, -1, -1, Rotation.COUNTERCLOCKWISE_90, "dwarf_mine"))
 					{
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager().getTemplateDefaulted(new ResourceLocation("coc", "dwarf_mine"));
-						template.addBlocksToWorldChunk(world, new BlockPos(x + 1, y - 10, z - 2), new PlacementSettings().setRotation(Rotation.COUNTERCLOCKWISE_90));
+						template.addBlocksToWorldChunk(world, new BlockPos(x + 1, y - 10, z + 2), new PlacementSettings().setRotation(Rotation.COUNTERCLOCKWISE_90));
 					}
 					
 					else if (Math.random() < 0.05 && placeHelper.noAir(world, new BlockPos(x, y - 2, z + 3), -1, -1, -1, Rotation.COUNTERCLOCKWISE_90, "strange_dwarf_house"))
@@ -1381,5 +1383,6 @@ public class JigsawStructurePlaceProcedure extends CocModElements.ModElement {
 				world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
 			}
 		}
+		world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
 	}
 }

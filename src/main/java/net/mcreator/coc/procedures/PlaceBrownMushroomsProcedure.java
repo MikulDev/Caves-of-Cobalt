@@ -25,7 +25,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class PlaceBrownMushroomsProcedure extends CocModElements.ModElement {
 	public PlaceBrownMushroomsProcedure(CocModElements instance) {
-		super(instance, 961);
+		super(instance, 962);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

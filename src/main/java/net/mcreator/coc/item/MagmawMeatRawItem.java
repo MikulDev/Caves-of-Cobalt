@@ -23,7 +23,7 @@ public class MagmawMeatRawItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:raw_magmaw")
 	public static final Item block = null;
 	public MagmawMeatRawItem(CocModElements instance) {
-		super(instance, 244);
+		super(instance, 255);
 	}
 
 	@Override

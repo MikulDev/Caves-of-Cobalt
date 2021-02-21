@@ -31,7 +31,7 @@ public class LavaGeneratorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:lavagenerator")
 	public static final Block block = null;
 	public LavaGeneratorBlock(CocModElements instance) {
-		super(instance, 393);
+		super(instance, 407);
 	}
 
 	@Override

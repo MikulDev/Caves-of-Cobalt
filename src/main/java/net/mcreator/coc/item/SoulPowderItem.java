@@ -16,7 +16,7 @@ public class SoulPowderItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:soul_powder")
 	public static final Item block = null;
 	public SoulPowderItem(CocModElements instance) {
-		super(instance, 184);
+		super(instance, 194);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ import java.util.Iterator;
 @CocModElements.ModElement.Tag
 public class MineAndDineGiveProcedure extends CocModElements.ModElement {
 	public MineAndDineGiveProcedure(CocModElements instance) {
-		super(instance, 734);
+		super(instance, 743);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

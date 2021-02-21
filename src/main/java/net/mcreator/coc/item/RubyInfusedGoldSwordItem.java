@@ -23,7 +23,7 @@ public class RubyInfusedGoldSwordItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_sword_ruby")
 	public static final Item block = null;
 	public RubyInfusedGoldSwordItem(CocModElements instance) {
-		super(instance, 224);
+		super(instance, 234);
 	}
 
 	@Override

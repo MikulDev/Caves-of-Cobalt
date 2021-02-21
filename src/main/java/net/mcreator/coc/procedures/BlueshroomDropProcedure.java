@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class BlueshroomDropProcedure extends CocModElements.ModElement {
 	public BlueshroomDropProcedure(CocModElements instance) {
-		super(instance, 335);
+		super(instance, 347);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

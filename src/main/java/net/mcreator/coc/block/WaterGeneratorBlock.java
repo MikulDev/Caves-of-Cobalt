@@ -31,7 +31,7 @@ public class WaterGeneratorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:watergenerator")
 	public static final Block block = null;
 	public WaterGeneratorBlock(CocModElements instance) {
-		super(instance, 501);
+		super(instance, 511);
 	}
 
 	@Override

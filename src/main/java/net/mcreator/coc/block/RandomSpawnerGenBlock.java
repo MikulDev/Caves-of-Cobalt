@@ -32,7 +32,7 @@ public class RandomSpawnerGenBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:randomspawnergen")
 	public static final Block block = null;
 	public RandomSpawnerGenBlock(CocModElements instance) {
-		super(instance, 394);
+		super(instance, 408);
 	}
 
 	@Override

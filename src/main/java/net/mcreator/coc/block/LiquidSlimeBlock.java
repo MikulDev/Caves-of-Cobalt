@@ -44,7 +44,7 @@ public class LiquidSlimeBlock extends CocModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public LiquidSlimeBlock(CocModElements instance) {
-		super(instance, 191);
+		super(instance, 201);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

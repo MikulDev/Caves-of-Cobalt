@@ -25,7 +25,7 @@ public class VialOfEssenceItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:vial_of_essence")
 	public static final Item block = null;
 	public VialOfEssenceItem(CocModElements instance) {
-		super(instance, 271);
+		super(instance, 284);
 	}
 
 	@Override

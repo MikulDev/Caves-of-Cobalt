@@ -40,7 +40,7 @@ public class SingedGrassBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:singed_grass")
 	public static final Block block = null;
 	public SingedGrassBlock(CocModElements instance) {
-		super(instance, 102);
+		super(instance, 110);
 	}
 
 	@Override

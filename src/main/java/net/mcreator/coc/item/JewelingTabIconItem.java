@@ -21,7 +21,7 @@ public class JewelingTabIconItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:jeweling_tab_icon")
 	public static final Item block = null;
 	public JewelingTabIconItem(CocModElements instance) {
-		super(instance, 834);
+		super(instance, 843);
 	}
 
 	@Override

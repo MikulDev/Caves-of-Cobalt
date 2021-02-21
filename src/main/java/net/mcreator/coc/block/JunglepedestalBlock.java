@@ -76,7 +76,7 @@ public class JunglepedestalBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:jungle_altar")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public JunglepedestalBlock(CocModElements instance) {
-		super(instance, 83);
+		super(instance, 94);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

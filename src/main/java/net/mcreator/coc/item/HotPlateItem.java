@@ -16,7 +16,7 @@ public class HotPlateItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:hotplate")
 	public static final Item block = null;
 	public HotPlateItem(CocModElements instance) {
-		super(instance, 179);
+		super(instance, 189);
 	}
 
 	@Override

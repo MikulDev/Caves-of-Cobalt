@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class WallBlockValidFaceProcedure extends CocModElements.ModElement {
 	public WallBlockValidFaceProcedure(CocModElements instance) {
-		super(instance, 960);
+		super(instance, 954);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
@@ -50,31 +50,17 @@ public class WallBlockValidFaceProcedure extends CocModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		BlockPos pos = new BlockPos(x, y, z);
 		BlockState state = world.getBlockState(pos);
-		DirectionProperty property = (DirectionProperty) state.getBlock().getStateContainer().getProperty("facing");
-		if (property != null)
+		try 
 		{
+			DirectionProperty property = (DirectionProperty) state.getBlock().getStateContainer().getProperty("facing");
 			Direction direction = state.get(property);
 			BlockPos blockpos = pos.offset(direction.getOpposite());
 			BlockState blockstate = world.getBlockState(blockpos);
-			{
-				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-				if (_ent != null) {
-					final int _sltid = (int) (0);
-					final int _amount = (int) 1;
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						if (capability instanceof IItemHandlerModifiable) {
-							ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-							if (_stk.attemptDamageItem(_amount, new Random(), null)) {
-								_stk.shrink(1);
-								_stk.setDamage(0);
-							}
-							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
-						}
-					});
-				}
-			}
 			return blockstate.isSolidSide(world, blockpos, direction);
 		}
-		return false;
+		catch (Exception e)
+		{
+			return false;
+		}
 	}
 }

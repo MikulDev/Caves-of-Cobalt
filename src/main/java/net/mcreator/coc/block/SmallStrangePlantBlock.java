@@ -39,7 +39,7 @@ public class SmallStrangePlantBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:small_strange_plant")
 	public static final Block block = null;
 	public SmallStrangePlantBlock(CocModElements instance) {
-		super(instance, 86);
+		super(instance, 96);
 	}
 
 	@Override

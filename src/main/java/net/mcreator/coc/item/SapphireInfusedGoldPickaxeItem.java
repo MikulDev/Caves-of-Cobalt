@@ -23,7 +23,7 @@ public class SapphireInfusedGoldPickaxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_pickaxe_sapphire")
 	public static final Item block = null;
 	public SapphireInfusedGoldPickaxeItem(CocModElements instance) {
-		super(instance, 231);
+		super(instance, 241);
 	}
 
 	@Override

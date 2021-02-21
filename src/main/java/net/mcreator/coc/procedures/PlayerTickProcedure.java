@@ -54,7 +54,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class PlayerTickProcedure extends CocModElements.ModElement {
 	public PlayerTickProcedure(CocModElements instance) {
-		super(instance, 451);
+		super(instance, 461);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

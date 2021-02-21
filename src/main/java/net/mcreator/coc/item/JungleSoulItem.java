@@ -16,7 +16,7 @@ public class JungleSoulItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:jungle_heart")
 	public static final Item block = null;
 	public JungleSoulItem(CocModElements instance) {
-		super(instance, 190);
+		super(instance, 200);
 	}
 
 	@Override

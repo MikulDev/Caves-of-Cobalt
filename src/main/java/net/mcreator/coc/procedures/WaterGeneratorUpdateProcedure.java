@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class WaterGeneratorUpdateProcedure extends CocModElements.ModElement {
 	public WaterGeneratorUpdateProcedure(CocModElements instance) {
-		super(instance, 500);
+		super(instance, 510);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

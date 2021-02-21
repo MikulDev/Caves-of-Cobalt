@@ -23,7 +23,7 @@ public class EmptyGoldSwordItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:emptygoldsword")
 	public static final Item block = null;
 	public EmptyGoldSwordItem(CocModElements instance) {
-		super(instance, 218);
+		super(instance, 228);
 	}
 
 	@Override

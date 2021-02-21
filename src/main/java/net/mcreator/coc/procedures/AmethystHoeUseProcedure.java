@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class AmethystHoeUseProcedure extends CocModElements.ModElement {
 	public AmethystHoeUseProcedure(CocModElements instance) {
-		super(instance, 875);
+		super(instance, 884);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -39,7 +39,7 @@ public class MirewoodSaplingBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewood_sapling")
 	public static final Block block = null;
 	public MirewoodSaplingBlock(CocModElements instance) {
-		super(instance, 88);
+		super(instance, 98);
 	}
 
 	@Override

@@ -49,7 +49,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class SkeletalGuardEntity extends CocModElements.ModElement {
 	public static EntityType entity = null;
 	public SkeletalGuardEntity(CocModElements instance) {
-		super(instance, 121);
+		super(instance, 131);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -26,7 +26,7 @@ public class TomeOfProjectionItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:tomeofprojection")
 	public static final Item block = null;
 	public TomeOfProjectionItem(CocModElements instance) {
-		super(instance, 203);
+		super(instance, 213);
 	}
 
 	@Override

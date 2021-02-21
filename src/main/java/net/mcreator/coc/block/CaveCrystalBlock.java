@@ -42,7 +42,7 @@ public class CaveCrystalBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cavecrystal")
 	public static final Block block = null;
 	public CaveCrystalBlock(CocModElements instance) {
-		super(instance, 59);
+		super(instance, 68);
 	}
 
 	@Override

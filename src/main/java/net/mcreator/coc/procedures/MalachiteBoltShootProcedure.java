@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MalachiteBoltShootProcedure extends CocModElements.ModElement {
 	public MalachiteBoltShootProcedure(CocModElements instance) {
-		super(instance, 726);
+		super(instance, 735);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

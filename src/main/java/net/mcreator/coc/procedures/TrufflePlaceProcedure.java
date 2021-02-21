@@ -24,7 +24,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TrufflePlaceProcedure extends CocModElements.ModElement {
 	public TrufflePlaceProcedure(CocModElements instance) {
-		super(instance, 685);
+		super(instance, 694);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

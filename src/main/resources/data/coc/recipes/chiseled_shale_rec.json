@@ -1,0 +1,20 @@
+{
+  "group": "coc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:shale_slab"
+    },
+    "1": {
+      "item": "coc:shale_slab"
+    }
+  },
+  "result": {
+    "item": "coc:chiseled_shale",
+    "count": 1
+  }
+}

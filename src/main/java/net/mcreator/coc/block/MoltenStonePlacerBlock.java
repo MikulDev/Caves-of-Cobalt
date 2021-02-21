@@ -29,7 +29,7 @@ public class MoltenStonePlacerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:molten_stone")
 	public static final Block block = null;
 	public MoltenStonePlacerBlock(CocModElements instance) {
-		super(instance, 531);
+		super(instance, 541);
 	}
 
 	@Override

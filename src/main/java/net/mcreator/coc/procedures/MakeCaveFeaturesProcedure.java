@@ -106,22 +106,24 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 							successX = pos.getX();
 							successY = pos.getY();
 							successZ = pos.getZ();
-
-							for (int m = 0; m < Math.random() * 8 + 8; m++)
+							if (Math.random() < 0.01)
 							{
-								PlaceHelper placeHelper = new PlaceHelper(null);
-								BlockPos mushpos = new BlockPos(pos.add(Math.random() * 6 - 3, Math.random() * 6 - 3, Math.random() * 6 - 3));
-								if (Math.random() < 0.001 && !placeHelper.getSolidSides(world, mushpos).isEmpty() && world.isAirBlock(mushpos))
+								for (int m = 0; m < Math.random() * 8 + 8; m++)
 								{
-									List dirlist = placeHelper.getSolidSides(world, mushpos);
-									Direction placedir = (Direction) dirlist.get((int) (Math.random() * dirlist.size()));
-									if (placedir == Direction.DOWN)
+									PlaceHelper placeHelper = new PlaceHelper(null);
+									BlockPos mushpos = new BlockPos(pos.add(Math.random() * 6 - 3, Math.random() * 6 - 3, Math.random() * 6 - 3));
+									if (!placeHelper.getSolidSides(world, mushpos).isEmpty() && world.isAirBlock(mushpos))
 									{
-										world.setBlockState(mushpos, Blocks.BROWN_MUSHROOM.getDefaultState());
-									}
-									else if (placedir != Direction.UP)
-									{
-										world.setBlockState(mushpos, BrownMushroomShelvesBlock.block.getDefaultState().with(BrownMushroomShelvesBlock.CustomBlock.FACING, placedir.getOpposite()));
+										List dirlist = placeHelper.getSolidSides(world, mushpos);
+										Direction placedir = (Direction) dirlist.get((int) (Math.random() * dirlist.size()));
+										if (placedir == Direction.DOWN)
+										{
+											world.setBlockState(mushpos, Blocks.BROWN_MUSHROOM.getDefaultState());
+										}
+										else if (placedir != Direction.UP)
+										{
+											world.setBlockState(mushpos, BrownMushroomShelvesBlock.block.getDefaultState().with(BrownMushroomShelvesBlock.CustomBlock.FACING, placedir.getOpposite()));
+										}
 									}
 								}
 							}

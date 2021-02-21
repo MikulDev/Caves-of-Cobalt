@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GhastHurtSoundProcedure extends CocModElements.ModElement {
 	public GhastHurtSoundProcedure(CocModElements instance) {
-		super(instance, 388);
+		super(instance, 402);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

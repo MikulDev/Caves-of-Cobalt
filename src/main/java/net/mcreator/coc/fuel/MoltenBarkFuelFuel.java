@@ -13,7 +13,7 @@ import net.mcreator.coc.CocModElements;
 @CocModElements.ModElement.Tag
 public class MoltenBarkFuelFuel extends CocModElements.ModElement {
 	public MoltenBarkFuelFuel(CocModElements instance) {
-		super(instance, 540);
+		super(instance, 550);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

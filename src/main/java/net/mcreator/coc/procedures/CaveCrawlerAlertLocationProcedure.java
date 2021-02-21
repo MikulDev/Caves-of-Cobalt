@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CaveCrawlerAlertLocationProcedure extends CocModElements.ModElement {
 	public CaveCrawlerAlertLocationProcedure(CocModElements instance) {
-		super(instance, 454);
+		super(instance, 464);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

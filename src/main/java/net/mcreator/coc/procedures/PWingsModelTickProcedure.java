@@ -12,7 +12,7 @@ import java.util.Collections;
 @CocModElements.ModElement.Tag
 public class PWingsModelTickProcedure extends CocModElements.ModElement {
 	public PWingsModelTickProcedure(CocModElements instance) {
-		super(instance, 573);
+		super(instance, 583);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

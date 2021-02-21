@@ -41,7 +41,7 @@ public class SoulstalkSaplingBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:soul_sprout")
 	public static final Block block = null;
 	public SoulstalkSaplingBlock(CocModElements instance) {
-		super(instance, 147);
+		super(instance, 157);
 	}
 
 	@Override

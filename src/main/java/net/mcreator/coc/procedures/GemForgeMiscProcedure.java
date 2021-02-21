@@ -40,7 +40,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemForgeMiscProcedure extends CocModElements.ModElement {
 	public GemForgeMiscProcedure(CocModElements instance) {
-		super(instance, 582);
+		super(instance, 592);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

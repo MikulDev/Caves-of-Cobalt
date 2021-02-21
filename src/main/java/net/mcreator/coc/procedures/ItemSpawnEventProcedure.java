@@ -15,7 +15,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class ItemSpawnEventProcedure extends CocModElements.ModElement {
 	public ItemSpawnEventProcedure(CocModElements instance) {
-		super(instance, 651);
+		super(instance, 660);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

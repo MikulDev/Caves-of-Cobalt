@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMap;
 @CocModElements.ModElement.Tag
 public class RadShield1Overlay extends CocModElements.ModElement {
 	public RadShield1Overlay(CocModElements instance) {
-		super(instance, 802);
+		super(instance, 811);
 	}
 
 	@Override

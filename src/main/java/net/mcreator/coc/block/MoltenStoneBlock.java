@@ -27,7 +27,7 @@ public class MoltenStoneBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:brimstone")
 	public static final Block block = null;
 	public MoltenStoneBlock(CocModElements instance) {
-		super(instance, 43);
+		super(instance, 51);
 	}
 
 	@Override

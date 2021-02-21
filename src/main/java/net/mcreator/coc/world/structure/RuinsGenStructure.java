@@ -36,7 +36,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class RuinsGenStructure extends CocModElements.ModElement {
 	public RuinsGenStructure(CocModElements instance) {
-		super(instance, 923);
+		super(instance, 929);
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class InfernalWoolBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:infernal_wool")
 	public static final Block block = null;
 	public InfernalWoolBlock(CocModElements instance) {
-		super(instance, 44);
+		super(instance, 53);
 	}
 
 	@Override

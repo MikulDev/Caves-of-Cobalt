@@ -26,7 +26,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LavaCakeEatProcedure extends CocModElements.ModElement {
 	public LavaCakeEatProcedure(CocModElements instance) {
-		super(instance, 543);
+		super(instance, 553);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

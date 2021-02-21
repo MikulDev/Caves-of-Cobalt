@@ -36,7 +36,7 @@ public class CrabSpawnerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:crabspawner")
 	public static final Block block = null;
 	public CrabSpawnerBlock(CocModElements instance) {
-		super(instance, 455);
+		super(instance, 465);
 	}
 
 	@Override

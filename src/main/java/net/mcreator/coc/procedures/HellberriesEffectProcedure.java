@@ -19,7 +19,7 @@ import java.util.Iterator;
 @CocModElements.ModElement.Tag
 public class HellberriesEffectProcedure extends CocModElements.ModElement {
 	public HellberriesEffectProcedure(CocModElements instance) {
-		super(instance, 385);
+		super(instance, 399);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

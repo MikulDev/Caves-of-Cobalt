@@ -37,7 +37,7 @@ import com.google.common.collect.ImmutableMap;
 @CocModElements.ModElement.Tag
 public class MushroomBiomeStructure extends CocModElements.ModElement {
 	public MushroomBiomeStructure(CocModElements instance) {
-		super(instance, 333);
+		super(instance, 345);
 	}
 
 	@Override

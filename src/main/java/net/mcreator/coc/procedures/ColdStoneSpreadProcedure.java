@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ColdStoneSpreadProcedure extends CocModElements.ModElement {
 	public ColdStoneSpreadProcedure(CocModElements instance) {
-		super(instance, 487);
+		super(instance, 497);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

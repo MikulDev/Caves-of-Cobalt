@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @CocModElements.ModElement.Tag
 public class WorldRuleCMDCommand extends CocModElements.ModElement {
 	public WorldRuleCMDCommand(CocModElements instance) {
-		super(instance, 529);
+		super(instance, 539);
 	}
 
 	@Override

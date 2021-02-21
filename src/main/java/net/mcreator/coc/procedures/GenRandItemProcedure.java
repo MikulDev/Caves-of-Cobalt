@@ -31,7 +31,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GenRandItemProcedure extends CocModElements.ModElement {
 	public GenRandItemProcedure(CocModElements instance) {
-		super(instance, 361);
+		super(instance, 375);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class IcicleTetsProcedure extends CocModElements.ModElement {
 	public IcicleTetsProcedure(CocModElements instance) {
-		super(instance, 355);
+		super(instance, 368);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

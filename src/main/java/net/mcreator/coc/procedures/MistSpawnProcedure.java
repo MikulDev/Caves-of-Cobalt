@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MistSpawnProcedure extends CocModElements.ModElement {
 	public MistSpawnProcedure(CocModElements instance) {
-		super(instance, 474);
+		super(instance, 484);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

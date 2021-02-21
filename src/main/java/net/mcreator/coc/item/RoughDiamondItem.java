@@ -16,7 +16,7 @@ public class RoughDiamondItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:rough_diamond")
 	public static final Item block = null;
 	public RoughDiamondItem(CocModElements instance) {
-		super(instance, 152);
+		super(instance, 162);
 	}
 
 	@Override

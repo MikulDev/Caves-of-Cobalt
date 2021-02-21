@@ -31,7 +31,7 @@ public class HellBiomeBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:hellbiomeblock")
 	public static final Block block = null;
 	public HellBiomeBlockBlock(CocModElements instance) {
-		super(instance, 383);
+		super(instance, 397);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class ShroomiumStabberItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:shroomium_sword")
 	public static final Item block = null;
 	public ShroomiumStabberItem(CocModElements instance) {
-		super(instance, 197);
+		super(instance, 207);
 	}
 
 	@Override

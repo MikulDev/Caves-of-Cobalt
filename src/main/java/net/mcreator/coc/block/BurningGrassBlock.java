@@ -24,7 +24,7 @@ public class BurningGrassBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:burning_grass")
 	public static final Block block = null;
 	public BurningGrassBlock(CocModElements instance) {
-		super(instance, 930);
+		super(instance, 52);
 	}
 
 	@Override

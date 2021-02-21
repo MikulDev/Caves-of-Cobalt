@@ -27,7 +27,7 @@ public class RunicBookshelfBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:runic_bookshelf")
 	public static final Block block = null;
 	public RunicBookshelfBlock(CocModElements instance) {
-		super(instance, 25);
+		super(instance, 33);
 	}
 
 	@Override

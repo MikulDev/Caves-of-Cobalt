@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class AltarPlacePlayerProcedure extends CocModElements.ModElement {
 	public AltarPlacePlayerProcedure(CocModElements instance) {
-		super(instance, 469);
+		super(instance, 479);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

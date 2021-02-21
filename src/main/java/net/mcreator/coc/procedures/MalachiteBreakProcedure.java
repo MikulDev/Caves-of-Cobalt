@@ -31,7 +31,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MalachiteBreakProcedure extends CocModElements.ModElement {
 	public MalachiteBreakProcedure(CocModElements instance) {
-		super(instance, 625);
+		super(instance, 634);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -16,7 +16,7 @@ public class StrangePetalItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:strange_petal")
 	public static final Item block = null;
 	public StrangePetalItem(CocModElements instance) {
-		super(instance, 169);
+		super(instance, 179);
 	}
 
 	@Override

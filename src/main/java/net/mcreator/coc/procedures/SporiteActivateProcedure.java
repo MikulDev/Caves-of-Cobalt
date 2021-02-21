@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SporiteActivateProcedure extends CocModElements.ModElement {
 	public SporiteActivateProcedure(CocModElements instance) {
-		super(instance, 460);
+		super(instance, 470);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

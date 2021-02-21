@@ -31,7 +31,7 @@ public class CrystalOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:crystal_ore")
 	public static final Block block = null;
 	public CrystalOreBlock(CocModElements instance) {
-		super(instance, 58);
+		super(instance, 67);
 	}
 
 	@Override

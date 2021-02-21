@@ -31,7 +31,7 @@ public class PWingsKeyKeyBinding extends CocModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public PWingsKeyKeyBinding(CocModElements instance) {
-		super(instance, 407);
+		super(instance, 421);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

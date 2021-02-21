@@ -24,7 +24,7 @@ public class GlowingIceBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:glowing_ice")
 	public static final Block block = null;
 	public GlowingIceBlock(CocModElements instance) {
-		super(instance, 40);
+		super(instance, 48);
 	}
 
 	@Override

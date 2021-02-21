@@ -17,7 +17,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class OblUpdate3Procedure extends CocModElements.ModElement {
 	public OblUpdate3Procedure(CocModElements instance) {
-		super(instance, 933);
+		super(instance, 935);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

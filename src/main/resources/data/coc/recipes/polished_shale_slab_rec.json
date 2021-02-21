@@ -1,0 +1,22 @@
+{
+  "group": "slabs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:polished_shale"
+    },
+    "1": {
+      "item": "coc:polished_shale"
+    },
+    "2": {
+      "item": "coc:polished_shale"
+    }
+  },
+  "result": {
+    "item": "coc:polished_shale_slab",
+    "count": 6
+  }
+}

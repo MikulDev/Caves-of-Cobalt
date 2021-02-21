@@ -23,7 +23,7 @@ public class AmethystInfusedGoldAxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_axe_amethyst")
 	public static final Item block = null;
 	public AmethystInfusedGoldAxeItem(CocModElements instance) {
-		super(instance, 238);
+		super(instance, 248);
 	}
 
 	@Override

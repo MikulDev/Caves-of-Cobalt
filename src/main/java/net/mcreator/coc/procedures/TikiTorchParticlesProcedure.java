@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TikiTorchParticlesProcedure extends CocModElements.ModElement {
 	public TikiTorchParticlesProcedure(CocModElements instance) {
-		super(instance, 939);
+		super(instance, 941);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
