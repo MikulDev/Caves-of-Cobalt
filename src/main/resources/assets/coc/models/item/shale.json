@@ -1,5 +1,5 @@
 {
-  "parent": "coc:block/stonecolumn",
+  "parent": "coc:block/shale",
   "display": {
     "thirdperson": {
       "rotation": [

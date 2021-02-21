@@ -74,7 +74,7 @@ public class AshrootStage2Block extends CocModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.CROP).hardnessAndResistance(0f, 1f).lightValue(0).doesNotBlockMovement()
+			super(Block.Properties.create(Material.PLANTS).sound(SoundType.CROP).hardnessAndResistance(0f, 1f).lightValue(3).doesNotBlockMovement()
 					.notSolid().tickRandomly());
 			setRegistryName("ashroot_stage_2");
 		}

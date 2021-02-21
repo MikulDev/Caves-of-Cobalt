@@ -1,0 +1,109 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "particle": "minecraft:blocks/brown_mushroom_shelves_caps",
+        "brown_mushroom_shelves_stems": "minecraft:blocks/brown_mushroom_shelves_stems",
+        "brown_mushroom_shelves_caps": "minecraft:blocks/brown_mushroom_shelves_caps"
+    },
+    "elements": [
+        {
+            "name": "stems_1",
+            "from": [ 4, 0, 11 ], 
+            "to": [ 4, 16, 16 ], 
+            "faces": {
+                "east": { "texture": "#brown_mushroom_shelves_stems", "uv": [ 16, 0, 11, 16 ], "cullface": "east" },
+                "west": { "texture": "#brown_mushroom_shelves_stems", "uv": [ 11, 0, 16, 16 ], "cullface": "west" }
+            }
+        },
+        {
+            "name": "stems_2",
+            "from": [ 12, 0, 11 ], 
+            "to": [ 12, 16, 16 ], 
+            "faces": {
+                "east": { "texture": "#brown_mushroom_shelves_stems", "uv": [ 5, 0, 0, 16 ], "cullface": "east" },
+                "west": { "texture": "#brown_mushroom_shelves_stems", "uv": [ 0, 0, 5, 16 ], "cullface": "west" }
+            }
+        },
+        {
+            "name": "stems_3",
+            "from": [ 8, 0, 11 ], 
+            "to": [ 8, 16, 16 ], 
+            "faces": {
+                "east": { "texture": "#brown_mushroom_shelves_stems", "uv": [ 10, 0, 5, 16 ], "cullface": "east" },
+                "west": { "texture": "#brown_mushroom_shelves_stems", "uv": [ 5, 0, 10, 16 ], "cullface": "west" }
+            }
+        },
+        {
+            "name": "cap_1",
+            "from": [ 10, 10, 11 ], 
+            "to": [ 14, 11, 15 ], 
+            "shade": false,
+            "rotation": { "origin": [ 12, 11, 13 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 5, 9, 6 ] },
+                "east": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 7, 9, 8 ] },
+                "south": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 5, 9, 6 ] },
+                "west": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 7, 9, 8 ] },
+                "up": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 0, 4, 4 ], "rotation": 180 },
+                "down": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 0, 9, 4 ], "rotation": 180 }
+            }
+        },
+        {
+            "name": "cap_2",
+            "from": [ 2, 5, 11 ], 
+            "to": [ 6, 6, 15 ], 
+            "shade": false,
+            "rotation": { "origin": [ 4, 6, 15 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 5, 9, 6 ] },
+                "east": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 0, 4, 1 ] },
+                "south": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 13, 4, 14 ] },
+                "west": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 0, 4, 1 ], "rotation": 180 },
+                "up": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 0, 4, 4 ], "rotation": 270 },
+                "down": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 0, 9, 4 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "cap_3",
+            "from": [ 2, 12, 12 ], 
+            "to": [ 6, 13, 16 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 0, 4, 1 ] },
+                "east": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 9, 9, 10 ] },
+                "south": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 13, 4, 14 ] },
+                "west": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 5, 9, 6 ] },
+                "up": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 10, 4, 14 ] },
+                "down": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 0, 9, 4 ], "rotation": 270 }
+            }
+        },
+        {
+            "name": "cap_4",
+            "from": [ 6, 8, 12 ], 
+            "to": [ 10, 9, 16 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 5, 9, 6 ] },
+                "east": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 7, 9, 8 ] },
+                "south": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 0, 4, 1 ] },
+                "west": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 5, 4, 6 ] },
+                "up": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 10, 4, 14 ], "rotation": 90 },
+                "down": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 0, 9, 4 ] }
+            }
+        },
+        {
+            "name": "cap_5",
+            "from": [ 10, 3, 12 ], 
+            "to": [ 14, 4, 16 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 5, 9, 6 ] },
+                "east": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 9, 9, 10 ] },
+                "south": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 0, 0, 4, 1 ] },
+                "west": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 5, 9, 6 ] },
+                "up": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 4, 0, 0, 4 ] },
+                "down": { "texture": "#brown_mushroom_shelves_caps", "uv": [ 5, 0, 9, 4 ], "rotation": 180 }
+            }
+        }
+    ]
+}

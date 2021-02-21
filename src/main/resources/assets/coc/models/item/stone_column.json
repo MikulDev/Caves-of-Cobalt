@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "coc:blocks/stone_column_1"
+  }
+}

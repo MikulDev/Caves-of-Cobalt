@@ -13,7 +13,6 @@ import net.mcreator.coc.block.RichLapisBlock;
 import net.mcreator.coc.block.RichIronBlock;
 import net.mcreator.coc.block.RichCoalBlock;
 import net.mcreator.coc.block.RadiantTopazNetherBlock;
-import net.mcreator.coc.block.PlantspawnerBlock;
 import net.mcreator.coc.block.GlowingMushroomBlock;
 import net.mcreator.coc.block.GlowingMushroomSideBlock;
 import net.mcreator.coc.block.GlowingMushroomAltBlock;
@@ -30,6 +29,12 @@ import net.minecraft.util.Direction;
 import net.mcreator.coc.block.SmallStrangePlantBlock;
 import java.util.HashMap;
 import net.mcreator.coc.procedures.GenerateRuinsProcedure;
+import net.mcreator.coc.PlaceHelper;
+import net.mcreator.coc.block.AshrootGrowthBlock;
+import net.minecraft.block.Block;
+import net.mcreator.coc.PlaceHelper;
+import net.mcreator.coc.block.BrownMushroomShelvesBlock;
+import java.util.List;
 
 @CocModElements.ModElement.Tag
 public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
@@ -102,6 +107,25 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 							successY = pos.getY();
 							successZ = pos.getZ();
 
+							for (int m = 0; m < Math.random() * 8 + 8; m++)
+							{
+								PlaceHelper placeHelper = new PlaceHelper(null);
+								BlockPos mushpos = new BlockPos(pos.add(Math.random() * 6 - 3, Math.random() * 6 - 3, Math.random() * 6 - 3));
+								if (Math.random() < 0.001 && !placeHelper.getSolidSides(world, mushpos).isEmpty() && world.isAirBlock(mushpos))
+								{
+									List dirlist = placeHelper.getSolidSides(world, mushpos);
+									Direction placedir = (Direction) dirlist.get((int) (Math.random() * dirlist.size()));
+									if (placedir == Direction.DOWN)
+									{
+										world.setBlockState(mushpos, Blocks.BROWN_MUSHROOM.getDefaultState());
+									}
+									else if (placedir != Direction.UP)
+									{
+										world.setBlockState(mushpos, BrownMushroomShelvesBlock.block.getDefaultState().with(BrownMushroomShelvesBlock.CustomBlock.FACING, placedir.getOpposite()));
+									}
+								}
+							}
+							
 							if (Math.random() < 0.05)
 							{
 								if (world.getBlockState(pos.add(0, -1, 0)).getMaterial() == Material.ROCK && world.getBlockState(pos.add(0, -1, 0)).isSolid())
@@ -191,11 +215,35 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 									world.setBlockState(pos, FakeStalagmiteBlock.block.getDefaultState(), 3);
 								}
 							} 
+							
 							else if (world.getBlockState(pos.up(1)) == Blocks.STONE.getDefaultState()) 
 							{
-								if (Math.random() < 0.2)
+								if (Math.random() < 0.02)
 								{
+									PlaceHelper placeHelper = new PlaceHelper(null);
 									world.setBlockState(pos, AshrootStage2Block.block.getDefaultState(), 3);
+									for (int r = 0; r < 2; ++r)
+									{
+										int distance = 3;
+										for (int a = 0; a < Math.random() * (10 - distance) * 10 + (10 - distance) * 10; a++)
+										{
+											BlockPos vinepos = pos.add(Math.random() * (distance * 2) - distance, Math.random() * (distance * 2) - distance, Math.random() * (distance * 2) - distance);
+											if (Math.random() < 0.3 && world.isAirBlock(vinepos) && world.getBlockState(vinepos.up(1)).isSolid())
+											{
+												world.setBlockState(vinepos, AshrootStage2Block.block.getDefaultState(), 2);
+											}
+											if (world.isAirBlock(vinepos) && placeHelper.touchingSolid(world, vinepos) != null)
+											{
+												List dir = placeHelper.getSolidSides(world, vinepos);
+												
+												world.setBlockState(vinepos, AshrootGrowthBlock.block.getDefaultState()
+												.with(AshrootGrowthBlock.CustomBlock.UP, Boolean.valueOf(dir.contains(Direction.UP))).with(AshrootGrowthBlock.CustomBlock.DOWN, Boolean.valueOf(dir.contains(Direction.DOWN)))
+												.with(AshrootGrowthBlock.CustomBlock.NORTH, Boolean.valueOf(dir.contains(Direction.NORTH))).with(AshrootGrowthBlock.CustomBlock.EAST, Boolean.valueOf(dir.contains(Direction.EAST)))
+												.with(AshrootGrowthBlock.CustomBlock.SOUTH, Boolean.valueOf(dir.contains(Direction.SOUTH))).with(AshrootGrowthBlock.CustomBlock.WEST, Boolean.valueOf(dir.contains(Direction.WEST))));
+											}
+										}
+										distance = 7;
+									}
 								} 
 								else if (Math.random() < 0.55) 
 								{
@@ -203,6 +251,7 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 									world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
 								}
 							}
+							
 							for (int k = 0; k < Math.random() * 12 + 5; k++) 
 							{
 								if (world.getBlockState(pos.down(1)) == Blocks.STONE.getDefaultState() && world.getBlockState(pos) == Blocks.CAVE_AIR.getDefaultState())

@@ -13,6 +13,8 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -31,7 +33,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "No creative tab entry"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -75,6 +77,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": false,
+    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -89,6 +92,7 @@
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
+    "fluidRestrictions": [],
     "onTickUpdate": {
       "name": "ColdPlantBTest"
     },

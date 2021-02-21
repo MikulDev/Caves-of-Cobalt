@@ -169,12 +169,12 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 						List<Block> blocklist = Arrays.asList(replaces);
 						if (primalBiome)
 						{
-							placeHelper.carveAreaHollow(world, RedBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, blocklist);
+							placeHelper.carveAreaHollow(world, RedBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, Material.ROCK);
 							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LavaFillerBlock.block.getDefaultState());
 						}
 						else
 						{
-							placeHelper.carveAreaHollow(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, blocklist);
+							placeHelper.carveAreaHollow(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, Material.ROCK);
 							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
 						}
 

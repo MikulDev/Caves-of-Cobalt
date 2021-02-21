@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "coc:block/brown_mushroom_shelves"
+    },
+    "facing=east": {
+      "model": "coc:block/brown_mushroom_shelves",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coc:block/brown_mushroom_shelves",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coc:block/brown_mushroom_shelves",
+      "y": 270
+    }
+  }
+}

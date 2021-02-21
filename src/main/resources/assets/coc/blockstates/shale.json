@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "coc:block/stonecolumn"
+      "model": "coc:block/shale"
     }
   }
 }

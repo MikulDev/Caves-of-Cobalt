@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "brown_mushroom_shelves_stems": "",
+        "brown_mushroom_shelves_caps": ""
+      },
+      "name": "default"
+    }
+  }
+}

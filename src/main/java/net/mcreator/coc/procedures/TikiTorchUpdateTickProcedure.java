@@ -2,16 +2,14 @@ package net.mcreator.coc.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
-import net.minecraft.state.EnumProperty;
-import net.minecraft.state.DirectionProperty;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.coc.CocModElements;
 import net.mcreator.coc.CocMod;
 
 import java.util.Map;
+
+import com.google.common.collect.ImmutableMap;
 
 @CocModElements.ModElement.Tag
 public class TikiTorchUpdateTickProcedure extends CocModElements.ModElement {
@@ -44,49 +42,7 @@ public class TikiTorchUpdateTickProcedure extends CocModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((!(world.getBlockState(new BlockPos((int) (x + ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				try {
-					BlockState _bs = world.getBlockState(pos);
-					DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-					if (property != null)
-						return _bs.get(property);
-					return Direction.getFacingFromAxisDirection(
-							_bs.get((EnumProperty<Direction.Axis>) _bs.getBlock().getStateContainer().getProperty("axis")),
-							Direction.AxisDirection.POSITIVE);
-				} catch (Exception e) {
-					return Direction.NORTH;
-				}
-			}
-		}.getDirection(new BlockPos((int) x, (int) y, (int) z))).getXOffset())), (int) (y + ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				try {
-					BlockState _bs = world.getBlockState(pos);
-					DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-					if (property != null)
-						return _bs.get(property);
-					return Direction.getFacingFromAxisDirection(
-							_bs.get((EnumProperty<Direction.Axis>) _bs.getBlock().getStateContainer().getProperty("axis")),
-							Direction.AxisDirection.POSITIVE);
-				} catch (Exception e) {
-					return Direction.NORTH;
-				}
-			}
-		}.getDirection(new BlockPos((int) x, (int) y, (int) z))).getYOffset())), (int) (z + ((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				try {
-					BlockState _bs = world.getBlockState(pos);
-					DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-					if (property != null)
-						return _bs.get(property);
-					return Direction.getFacingFromAxisDirection(
-							_bs.get((EnumProperty<Direction.Axis>) _bs.getBlock().getStateContainer().getProperty("axis")),
-							Direction.AxisDirection.POSITIVE);
-				} catch (Exception e) {
-					return Direction.NORTH;
-				}
-			}
-		}.getDirection(new BlockPos((int) x, (int) y, (int) z))).getZOffset())))).isSolid()))) {
+		if ((!WallBlockValidFaceProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))) {
 			Block.spawnDrops(world.getBlockState(new BlockPos((int) x, (int) y, (int) z)), world.getWorld(), new BlockPos((int) x, (int) y, (int) z));
 			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 		}

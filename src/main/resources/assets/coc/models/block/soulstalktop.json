@@ -1,7 +1,6 @@
 {
-  "parent": "block/cross",
+  "parent": "item/generated",
   "textures": {
-    "cross": "coc:blocks/soul_stalk_top",
-    "particle": "coc:blocks/soul_stalk_top"
+    "layer0": "coc:blocks/soul_stalk_top"
   }
 }

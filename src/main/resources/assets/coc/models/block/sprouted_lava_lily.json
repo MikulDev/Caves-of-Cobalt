@@ -1,9 +1,6 @@
 {
-  "parent": "coc:custom/lava_lily",
+  "parent": "item/generated",
   "textures": {
-    "all": "coc:blocks/lava_lily_bud",
-    "particle": "coc:blocks/lava_lily_bud",
-    "lava_lily_bud": "coc:blocks/lava_lily_bud",
-    "lava_lily_0": "coc:blocks/lava_lily_0"
+    "layer0": "coc:items/lava_lily_sprouted"
   }
 }

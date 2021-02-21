@@ -3,7 +3,6 @@ package net.mcreator.coc.procedures;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.IWorld;
-import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -73,109 +72,47 @@ public class TikiTorchPlaceProcedure extends CocModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.isAirBlock(new BlockPos(
-				(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-						entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-						RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (direction.getXOffset())),
-				(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-						entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-						RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (direction.getYOffset())),
-				(int) ((entity.world
-						.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity))
-						.getPos().getZ()) + (direction.getZOffset())))))
-				&& (world
-						.getBlockState(
-								new BlockPos(
-										(int) (entity.world
-												.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-														entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-																entity.getLook(1f).z * 5),
-														RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity))
-												.getPos().getX()),
-										(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-														entity.getLook(1f).z * 5),
-												RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()),
-										(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-														entity.getLook(1f).z * 5),
-												RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())))
-						.isSolid()))) {
+		double px = 0;
+		double py = 0;
+		double pz = 0;
+		px = (double) (x + (direction.getXOffset()));
+		py = (double) (y + (direction.getYOffset()));
+		pz = (double) (z + (direction.getZOffset()));
+		BlockPos pos = new BlockPos(x, y, z);
+		BlockState state = world.getBlockState(pos);
+		if ((state.isSolidSide(world, pos, direction) && (world.isAirBlock(new BlockPos((int) (px), (int) (py), (int) (pz)))))) {
 			if ((direction == Direction.UP)) {
-				if (!world.getWorld().isRemote) {
-					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1);
-				} else {
-					world.getWorld().playSound(x, y, z,
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+				if ((!(world.getWorld().isRemote))) {
+					if (!world.getWorld().isRemote) {
+						world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					} else {
+						world.getWorld().playSound(x, y, z,
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+					}
 				}
-				world.setBlockState(new BlockPos(
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getX())
-								+ (direction.getXOffset())),
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getY())
-								+ (direction.getYOffset())),
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())
-								+ (direction.getZOffset()))),
-						TikiTorchBlock.block.getDefaultState(), 3);
+				world.setBlockState(new BlockPos((int) (px), (int) (py), (int) (pz)), TikiTorchBlock.block.getDefaultState(), 3);
 				if ((!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false))) {
 					((itemstack)).shrink((int) 1);
 				}
 				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
 				}
-			} else if (((direction == Direction.DOWN)
-					&& (world.getBlockState(
-							new BlockPos(
-									(int) (entity.world.rayTraceBlocks(new RayTraceContext(
-											entity.getEyePosition(1f),
-											entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-													entity.getLook(1f).z * 5),
-											RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos()
-											.getX()),
-									(int) ((entity.world
-											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-													entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-															entity.getLook(1f).z * 5),
-													RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity))
-											.getPos().getY()) - 2),
-									(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-											entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-													entity.getLook(1f).z * 5),
-											RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())))
-							.isSolid()))) {
-				if (!world.getWorld().isRemote) {
-					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1);
-				} else {
-					world.getWorld().playSound(x, y, z,
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			} else if (((direction == Direction.DOWN) && state.isSolidSide(world, new BlockPos(px, py - 1, pz), Direction.UP))) {
+				if ((!(world.getWorld().isRemote))) {
+					if (!world.getWorld().isRemote) {
+						world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					} else {
+						world.getWorld().playSound(x, y, z,
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+					}
 				}
-				world.setBlockState(new BlockPos(
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getX())
-								+ (direction.getXOffset())),
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getY())
-								+ (direction.getYOffset())),
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())
-								+ (direction.getZOffset()))),
-						TikiTorchBlock.block.getDefaultState(), 3);
+				world.setBlockState(new BlockPos((int) (px), (int) (py), (int) (pz)), TikiTorchBlock.block.getDefaultState(), 3);
 				if ((!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false))) {
 					((itemstack)).shrink((int) 1);
 				}
@@ -183,90 +120,25 @@ public class TikiTorchPlaceProcedure extends CocModElements.ModElement {
 					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
 				}
 			} else {
-				if (!world.getWorld().isRemote) {
-					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1);
-				} else {
-					world.getWorld().playSound(x, y, z,
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+				if ((!(world.getWorld().isRemote))) {
+					if (!world.getWorld().isRemote) {
+						world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					} else {
+						world.getWorld().playSound(x, y, z,
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+					}
 				}
-				world.setBlockState(new BlockPos(
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getX())
-								+ (direction.getXOffset())),
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getY())
-								+ (direction.getYOffset())),
-						(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-								entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-								RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())
-								+ (direction.getZOffset()))),
-						TikiTorchWallBlock.block.getDefaultState(), 3);
+				world.setBlockState(new BlockPos((int) (px), (int) (py), (int) (pz)), TikiTorchWallBlock.block.getDefaultState(), 3);
 				try {
-					BlockState _bs = world.getBlockState(
-							new BlockPos(
-									(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-											entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-													entity.getLook(1f).z * 5),
-											RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getX())
-											+ (direction.getXOffset())),
-									(int) ((entity.world
-											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-													entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-															entity.getLook(1f).z * 5),
-													RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity))
-											.getPos().getY()) + (direction.getYOffset())),
-									(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-											entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-													entity.getLook(1f).z * 5),
-											RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())
-											+ (direction.getZOffset()))));
+					BlockState _bs = world.getBlockState(new BlockPos((int) (px), (int) (py), (int) (pz)));
 					DirectionProperty _property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
 					if (_property != null) {
-						world.setBlockState(
-								new BlockPos(
-										(int) ((entity.world.rayTraceBlocks(
-												new RayTraceContext(entity.getEyePosition(1f),
-														entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-																entity.getLook(1f).z * 5),
-														RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity))
-												.getPos().getX()) + (direction.getXOffset())),
-										(int) ((entity.world
-												.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-														entity.getEyePosition(1f)
-																.add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-														RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity))
-												.getPos().getY()) + (direction.getYOffset())),
-										(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-														entity.getLook(1f).z * 5),
-												RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())
-												+ (direction.getZOffset()))),
-								_bs.with(_property, (direction.getOpposite())), 3);
+						world.setBlockState(new BlockPos((int) (px), (int) (py), (int) (pz)), _bs.with(_property, (direction.getOpposite())), 3);
 					} else {
-						world.setBlockState(
-								new BlockPos(
-										(int) ((entity.world.rayTraceBlocks(
-												new RayTraceContext(entity.getEyePosition(1f),
-														entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-																entity.getLook(1f).z * 5),
-														RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity))
-												.getPos().getX()) + (direction.getXOffset())),
-										(int) ((entity.world
-												.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-														entity.getEyePosition(1f)
-																.add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-														RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity))
-												.getPos().getY()) + (direction.getYOffset())),
-										(int) ((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5,
-														entity.getLook(1f).z * 5),
-												RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())
-												+ (direction.getZOffset()))),
+						world.setBlockState(new BlockPos((int) (px), (int) (py), (int) (pz)),
 								_bs.with((EnumProperty<Direction.Axis>) _bs.getBlock().getStateContainer().getProperty("axis"),
 										(direction.getOpposite()).getAxis()),
 								3);

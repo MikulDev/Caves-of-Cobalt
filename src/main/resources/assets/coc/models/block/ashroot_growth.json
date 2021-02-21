@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coc:blocks/ashroot_growth",
+    "particle": "coc:blocks/ashroot_growth"
+  }
+}

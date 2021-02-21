@@ -38,7 +38,7 @@ import java.util.Collections;
 
 @CocModElements.ModElement.Tag
 public class StonecolumnBlock extends CocModElements.ModElement {
-	@ObjectHolder("coc:stonecolumn")
+	@ObjectHolder("coc:stone_column")
 	public static final Block block = null;
 	public StonecolumnBlock(CocModElements instance) {
 		super(instance, 75);
@@ -59,7 +59,7 @@ public class StonecolumnBlock extends CocModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(2f, 10f).lightValue(0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE).notSolid());
-			setRegistryName("stonecolumn");
+			setRegistryName("stone_column");
 		}
 
 		@Override

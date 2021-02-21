@@ -111,6 +111,41 @@ public class PlaceHelper extends CocModElements.ModElement  {
 		}
 	}
 
+	public static void carveAreaHollow (World world, BlockState paint, BlockPos pos, int sizeX, int sizeY, int sizeZ, Material material)
+	{
+		int x = pos.getX() - sizeX;
+		int y = pos.getY() - sizeY;
+		int z = pos.getZ() - sizeZ;
+		int lengthX = sizeX;
+		int lengthY = sizeY;
+		int lengthZ = sizeZ;
+
+		for (int xr = 0; xr < lengthX * 2; ++xr)
+		{
+			for (int yr = 0; yr < lengthY * 2; ++yr)
+			{
+				for (int zr = 0; zr < lengthZ * 2; ++zr)
+				{	
+					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) > 0.9 &&
+					((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1.15D &&
+					world.getBlockState(new BlockPos(x, y, z)).getMaterial() == material)
+					{
+						world.setBlockState(new BlockPos(x, y, z), paint, 2);
+					}
+					else if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 0.9)
+					{
+						world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 2);
+					}
+					z++;
+				}
+				z = pos.getZ() - sizeZ;
+				y++;
+			}
+			y = pos.getY() - sizeY;
+			x++;
+		}
+	}
+
 	public static void fillArea (World world, BlockState block, BlockPos pos, int sizeX, int sizeY, int sizeZ, Block replace)
 	{
 		int x = pos.getX() - sizeX;
@@ -382,6 +417,18 @@ public class PlaceHelper extends CocModElements.ModElement  {
 		else if (!world.isAirBlock(testPos.add(0, 0, 1))) return Direction.SOUTH;
 		else if (!world.isAirBlock(testPos.add(0, 0, -1))) return Direction.NORTH;
 		return null;
+	}
+
+	public List getSolidSides(World world, BlockPos testPos)
+	{
+		List<Direction> directions = new ArrayList<Direction>();
+		if	(world.getBlockState(testPos.add(1, 0, 0)).isSolid())  	directions.add(Direction.EAST);
+		if 	(world.getBlockState(testPos.add(-1, 0, 0)).isSolid()) 	directions.add(Direction.WEST);
+		if 	(world.getBlockState(testPos.add(0, 1, 0)).isSolid()) 	directions.add(Direction.UP);
+		if 	(world.getBlockState(testPos.add(0, -1, 0)).isSolid())	directions.add(Direction.DOWN);
+		if 	(world.getBlockState(testPos.add(0, 0, 1)).isSolid()) 	directions.add(Direction.SOUTH);
+		if 	(world.getBlockState(testPos.add(0, 0, -1)).isSolid()) 	directions.add(Direction.NORTH);
+		return directions;
 	}
 
 	public boolean getClearance(World world, BlockPos bpos, int clearance)

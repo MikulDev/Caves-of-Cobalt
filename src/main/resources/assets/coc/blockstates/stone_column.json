@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coc:block/stone_column"
+    }
+  }
+}

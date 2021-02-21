@@ -2,38 +2,40 @@
   "_fv": 15,
   "_type": "block",
   "definition": {
-    "texture": "strange_seed",
+    "texture": "shale",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 12,
-    "customModelName": "Cross model",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Strange Seed",
+    "name": "Shale",
     "specialInfo": [],
-    "hardness": 999.0,
-    "resistance": 999.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -44,9 +46,9 @@
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "PLANTS"
+      "value": "ROCK"
     },
-    "tickRate": 20,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -60,16 +62,16 @@
     "isLadder": false,
     "slipperiness": 0.6,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": -1,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:MushroomSpore"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -90,15 +92,19 @@
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
-    "onTickUpdate": {
-      "name": "PlantSpawnerPlace"
-    },
-    "spawnWorldTypes": [],
+    "fluidRestrictions": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
-    "frequencyPerChunks": 1,
-    "frequencyOnChunk": 1,
-    "minGenerateHeight": 10,
-    "maxGenerateHeight": 70
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 12,
+    "frequencyOnChunk": 28,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
