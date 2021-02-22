@@ -16,7 +16,7 @@ public class ExoticLeatherItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:exotic_leather")
 	public static final Item block = null;
 	public ExoticLeatherItem(CocModElements instance) {
-		super(instance, 180);
+		super(instance, 191);
 	}
 
 	@Override

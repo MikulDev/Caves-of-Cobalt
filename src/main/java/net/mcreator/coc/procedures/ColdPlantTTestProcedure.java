@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ColdPlantTTestProcedure extends CocModElements.ModElement {
 	public ColdPlantTTestProcedure(CocModElements instance) {
-		super(instance, 367);
+		super(instance, 378);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

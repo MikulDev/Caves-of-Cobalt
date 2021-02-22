@@ -16,7 +16,7 @@ public class ObsidianShardItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:obsidian_scales")
 	public static final Item block = null;
 	public ObsidianShardItem(CocModElements instance) {
-		super(instance, 184);
+		super(instance, 195);
 	}
 
 	@Override

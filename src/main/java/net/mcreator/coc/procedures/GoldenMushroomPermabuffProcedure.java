@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GoldenMushroomPermabuffProcedure extends CocModElements.ModElement {
 	public GoldenMushroomPermabuffProcedure(CocModElements instance) {
-		super(instance, 770);
+		super(instance, 781);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

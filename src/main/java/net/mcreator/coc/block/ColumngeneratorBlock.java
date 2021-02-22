@@ -42,7 +42,7 @@ public class ColumngeneratorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:columngenerator")
 	public static final Block block = null;
 	public ColumngeneratorBlock(CocModElements instance) {
-		super(instance, 308);
+		super(instance, 319);
 	}
 
 	@Override

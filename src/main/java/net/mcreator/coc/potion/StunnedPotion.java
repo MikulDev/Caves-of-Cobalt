@@ -30,7 +30,7 @@ public class StunnedPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:stunned")
 	public static final Potion potionType = null;
 	public StunnedPotion(CocModElements instance) {
-		super(instance, 872);
+		super(instance, 883);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

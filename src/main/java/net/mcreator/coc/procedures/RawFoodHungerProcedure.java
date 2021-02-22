@@ -19,7 +19,7 @@ import java.util.Iterator;
 @CocModElements.ModElement.Tag
 public class RawFoodHungerProcedure extends CocModElements.ModElement {
 	public RawFoodHungerProcedure(CocModElements instance) {
-		super(instance, 325);
+		super(instance, 336);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

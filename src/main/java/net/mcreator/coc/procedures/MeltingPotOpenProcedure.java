@@ -25,7 +25,7 @@ import io.netty.buffer.Unpooled;
 @CocModElements.ModElement.Tag
 public class MeltingPotOpenProcedure extends CocModElements.ModElement {
 	public MeltingPotOpenProcedure(CocModElements instance) {
-		super(instance, 386);
+		super(instance, 397);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

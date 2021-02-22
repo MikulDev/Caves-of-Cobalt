@@ -16,7 +16,7 @@ public class RunicBookItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:runic_book")
 	public static final Item block = null;
 	public RunicBookItem(CocModElements instance) {
-		super(instance, 181);
+		super(instance, 192);
 	}
 
 	@Override

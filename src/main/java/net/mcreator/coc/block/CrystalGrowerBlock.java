@@ -31,7 +31,7 @@ public class CrystalGrowerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:crystalgrower")
 	public static final Block block = null;
 	public CrystalGrowerBlock(CocModElements instance) {
-		super(instance, 505);
+		super(instance, 516);
 	}
 
 	@Override

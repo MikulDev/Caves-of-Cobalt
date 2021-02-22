@@ -27,7 +27,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class IceChestOpeningProcedure extends CocModElements.ModElement {
 	public IceChestOpeningProcedure(CocModElements instance) {
-		super(instance, 373);
+		super(instance, 384);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

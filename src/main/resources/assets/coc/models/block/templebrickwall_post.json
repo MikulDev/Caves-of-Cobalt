@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_wall_post",
-  "textures": {
-    "wall": "coc:blocks/temple_bricks",
-    "particle": "coc:blocks/temple_bricks"
-  }
-}

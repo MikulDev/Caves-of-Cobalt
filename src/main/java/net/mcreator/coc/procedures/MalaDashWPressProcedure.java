@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MalaDashWPressProcedure extends CocModElements.ModElement {
 	public MalaDashWPressProcedure(CocModElements instance) {
-		super(instance, 803);
+		super(instance, 814);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

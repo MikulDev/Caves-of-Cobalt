@@ -16,7 +16,7 @@ public class DeadMushroomMidigatorItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:disabled_mushroom_mitigator")
 	public static final Item block = null;
 	public DeadMushroomMidigatorItem(CocModElements instance) {
-		super(instance, 278);
+		super(instance, 289);
 	}
 
 	@Override

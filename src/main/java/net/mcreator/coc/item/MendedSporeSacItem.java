@@ -24,7 +24,7 @@ public class MendedSporeSacItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:mended_spore_sac")
 	public static final Item block = null;
 	public MendedSporeSacItem(CocModElements instance) {
-		super(instance, 204);
+		super(instance, 215);
 	}
 
 	@Override

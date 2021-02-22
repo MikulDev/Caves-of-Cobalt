@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class PlaceCrystalProcedure extends CocModElements.ModElement {
 	public PlaceCrystalProcedure(CocModElements instance) {
-		super(instance, 506);
+		super(instance, 517);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

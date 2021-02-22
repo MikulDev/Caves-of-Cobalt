@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LavaSpongeUpdateProcedure extends CocModElements.ModElement {
 	public LavaSpongeUpdateProcedure(CocModElements instance) {
-		super(instance, 922);
+		super(instance, 933);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

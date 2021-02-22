@@ -21,7 +21,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class SporesStartProcedure extends CocModElements.ModElement {
 	public SporesStartProcedure(CocModElements instance) {
-		super(instance, 353);
+		super(instance, 364);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

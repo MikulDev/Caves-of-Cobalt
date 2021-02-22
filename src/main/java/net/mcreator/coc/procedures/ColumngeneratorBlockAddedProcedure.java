@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ColumngeneratorBlockAddedProcedure extends CocModElements.ModElement {
 	public ColumngeneratorBlockAddedProcedure(CocModElements instance) {
-		super(instance, 307);
+		super(instance, 318);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

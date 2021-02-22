@@ -23,7 +23,7 @@ public class MalachiteSwordItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:malachite_sword")
 	public static final Item block = null;
 	public MalachiteSwordItem(CocModElements instance) {
-		super(instance, 208);
+		super(instance, 219);
 	}
 
 	@Override

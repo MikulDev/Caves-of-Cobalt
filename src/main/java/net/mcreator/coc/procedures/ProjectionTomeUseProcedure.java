@@ -31,7 +31,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ProjectionTomeUseProcedure extends CocModElements.ModElement {
 	public ProjectionTomeUseProcedure(CocModElements instance) {
-		super(instance, 623);
+		super(instance, 634);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

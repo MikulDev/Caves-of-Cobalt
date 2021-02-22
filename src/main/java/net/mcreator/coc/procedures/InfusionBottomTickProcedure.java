@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class InfusionBottomTickProcedure extends CocModElements.ModElement {
 	public InfusionBottomTickProcedure(CocModElements instance) {
-		super(instance, 732);
+		super(instance, 743);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

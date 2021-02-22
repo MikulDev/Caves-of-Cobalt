@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MoltStonePlaceProcedure extends CocModElements.ModElement {
 	public MoltStonePlaceProcedure(CocModElements instance) {
-		super(instance, 540);
+		super(instance, 551);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

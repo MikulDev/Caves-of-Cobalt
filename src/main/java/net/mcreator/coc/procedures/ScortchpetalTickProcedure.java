@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ScortchpetalTickProcedure extends CocModElements.ModElement {
 	public ScortchpetalTickProcedure(CocModElements instance) {
-		super(instance, 578);
+		super(instance, 589);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

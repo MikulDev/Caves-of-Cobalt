@@ -26,7 +26,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadiantDashSetProcedure extends CocModElements.ModElement {
 	public RadiantDashSetProcedure(CocModElements instance) {
-		super(instance, 561);
+		super(instance, 572);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

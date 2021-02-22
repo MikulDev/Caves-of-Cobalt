@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadaintSwordFireProcedure extends CocModElements.ModElement {
 	public RadaintSwordFireProcedure(CocModElements instance) {
-		super(instance, 840);
+		super(instance, 851);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

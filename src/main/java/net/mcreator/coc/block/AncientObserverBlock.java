@@ -34,7 +34,7 @@ public class AncientObserverBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:ancientobserver")
 	public static final Block block = null;
 	public AncientObserverBlock(CocModElements instance) {
-		super(instance, 720);
+		super(instance, 731);
 	}
 
 	@Override

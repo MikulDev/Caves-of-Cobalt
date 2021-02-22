@@ -31,7 +31,7 @@ public class InfectedPlanksBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewood_planks")
 	public static final Block block = null;
 	public InfectedPlanksBlock(CocModElements instance) {
-		super(instance, 40);
+		super(instance, 50);
 	}
 
 	@Override

@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SoulStalkUpdateTickProcedure extends CocModElements.ModElement {
 	public SoulStalkUpdateTickProcedure(CocModElements instance) {
-		super(instance, 675);
+		super(instance, 686);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

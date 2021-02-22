@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "coc:blocks/temple_bricks",
-    "top": "coc:blocks/temple_bricks",
-    "side": "coc:blocks/temple_bricks"
-  }
-}

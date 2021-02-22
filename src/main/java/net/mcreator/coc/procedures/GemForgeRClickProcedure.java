@@ -25,7 +25,7 @@ import io.netty.buffer.Unpooled;
 @CocModElements.ModElement.Tag
 public class GemForgeRClickProcedure extends CocModElements.ModElement {
 	public GemForgeRClickProcedure(CocModElements instance) {
-		super(instance, 312);
+		super(instance, 323);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

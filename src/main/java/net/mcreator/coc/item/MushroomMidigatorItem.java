@@ -28,7 +28,7 @@ public class MushroomMidigatorItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:mushroom_mitigator")
 	public static final Item block = null;
 	public MushroomMidigatorItem(CocModElements instance) {
-		super(instance, 279);
+		super(instance, 290);
 	}
 
 	@Override

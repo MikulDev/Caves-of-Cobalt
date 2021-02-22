@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "coc:blocks/blasted_shale",
+    "top": "coc:blocks/blasted_shale",
+    "side": "coc:blocks/blasted_shale"
+  }
+}

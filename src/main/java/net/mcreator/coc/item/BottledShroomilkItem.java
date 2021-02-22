@@ -23,7 +23,7 @@ public class BottledShroomilkItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:bottled_shroomilk")
 	public static final Item block = null;
 	public BottledShroomilkItem(CocModElements instance) {
-		super(instance, 283);
+		super(instance, 294);
 	}
 
 	@Override

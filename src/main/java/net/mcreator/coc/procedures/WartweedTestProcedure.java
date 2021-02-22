@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class WartweedTestProcedure extends CocModElements.ModElement {
 	public WartweedTestProcedure(CocModElements instance) {
-		super(instance, 668);
+		super(instance, 679);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

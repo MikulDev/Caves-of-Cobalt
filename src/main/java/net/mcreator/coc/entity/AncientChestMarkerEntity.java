@@ -45,7 +45,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class AncientChestMarkerEntity extends CocModElements.ModElement {
 	public static EntityType entity = null;
 	public AncientChestMarkerEntity(CocModElements instance) {
-		super(instance, 146);
+		super(instance, 157);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

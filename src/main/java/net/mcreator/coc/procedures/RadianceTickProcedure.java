@@ -22,7 +22,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class RadianceTickProcedure extends CocModElements.ModElement {
 	public RadianceTickProcedure(CocModElements instance) {
-		super(instance, 825);
+		super(instance, 836);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -24,7 +24,7 @@ public class MagmaMushroomStemBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:magma_mushroom_stem")
 	public static final Block block = null;
 	public MagmaMushroomStemBlock(CocModElements instance) {
-		super(instance, 57);
+		super(instance, 67);
 	}
 
 	@Override

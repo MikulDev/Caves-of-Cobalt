@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CrystalBlockDestroyedProcedure extends CocModElements.ModElement {
 	public CrystalBlockDestroyedProcedure(CocModElements instance) {
-		super(instance, 486);
+		super(instance, 497);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

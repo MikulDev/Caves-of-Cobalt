@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coc:blocks/shale_bricks",
+    "particle": "coc:blocks/shale_bricks"
+  }
+}

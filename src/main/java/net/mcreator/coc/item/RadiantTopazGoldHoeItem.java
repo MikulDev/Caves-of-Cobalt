@@ -29,7 +29,7 @@ public class RadiantTopazGoldHoeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_hoe_radiant")
 	public static final Item block = null;
 	public RadiantTopazGoldHoeItem(CocModElements instance) {
-		super(instance, 226);
+		super(instance, 237);
 	}
 
 	@Override

@@ -33,7 +33,7 @@ public class ShaleWallBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:shale_wall")
 	public static final Block block = null;
 	public ShaleWallBlock(CocModElements instance) {
-		super(instance, 84);
+		super(instance, 94);
 	}
 
 	@Override

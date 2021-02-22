@@ -24,7 +24,7 @@ public class SilverBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:silver_block")
 	public static final Block block = null;
 	public SilverBlockBlock(CocModElements instance) {
-		super(instance, 11);
+		super(instance, 21);
 	}
 
 	@Override

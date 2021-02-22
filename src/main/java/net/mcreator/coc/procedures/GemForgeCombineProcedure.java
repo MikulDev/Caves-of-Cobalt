@@ -17,7 +17,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class GemForgeCombineProcedure extends CocModElements.ModElement {
 	public GemForgeCombineProcedure(CocModElements instance) {
-		super(instance, 329);
+		super(instance, 340);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

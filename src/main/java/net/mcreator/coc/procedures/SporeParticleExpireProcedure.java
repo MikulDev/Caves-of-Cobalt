@@ -8,7 +8,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SporeParticleExpireProcedure extends CocModElements.ModElement {
 	public SporeParticleExpireProcedure(CocModElements instance) {
-		super(instance, 860);
+		super(instance, 871);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

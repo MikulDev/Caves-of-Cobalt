@@ -1,0 +1,22 @@
+{
+  "group": "coc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:blasted_shale"
+    },
+    "1": {
+      "item": "coc:blasted_shale"
+    },
+    "2": {
+      "item": "coc:blasted_shale"
+    }
+  },
+  "result": {
+    "item": "coc:blasted_shale_slab",
+    "count": 6
+  }
+}

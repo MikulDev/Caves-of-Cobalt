@@ -7,7 +7,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SilverBowLockArrowProcedure extends CocModElements.ModElement {
 	public SilverBowLockArrowProcedure(CocModElements instance) {
-		super(instance, 466);
+		super(instance, 477);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

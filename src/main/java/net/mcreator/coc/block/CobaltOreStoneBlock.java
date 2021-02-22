@@ -46,7 +46,7 @@ public class CobaltOreStoneBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cobalt_ore")
 	public static final Block block = null;
 	public CobaltOreStoneBlock(CocModElements instance) {
-		super(instance, 18);
+		super(instance, 28);
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class BlackQuartzCarvedBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:black_quartz_carved")
 	public static final Block block = null;
 	public BlackQuartzCarvedBlock(CocModElements instance) {
-		super(instance, 81);
+		super(instance, 91);
 	}
 
 	@Override

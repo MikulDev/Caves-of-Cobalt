@@ -25,7 +25,7 @@ import java.util.Comparator;
 @CocModElements.ModElement.Tag
 public class CorruptorParticlesProcedure extends CocModElements.ModElement {
 	public CorruptorParticlesProcedure(CocModElements instance) {
-		super(instance, 859);
+		super(instance, 870);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

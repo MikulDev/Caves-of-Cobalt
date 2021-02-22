@@ -25,7 +25,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class AshrootSeedPlantProcedure extends CocModElements.ModElement {
 	public AshrootSeedPlantProcedure(CocModElements instance) {
-		super(instance, 709);
+		super(instance, 720);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

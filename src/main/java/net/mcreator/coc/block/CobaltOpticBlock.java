@@ -31,7 +31,7 @@ public class CobaltOpticBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cobalt_optic")
 	public static final Block block = null;
 	public CobaltOpticBlock(CocModElements instance) {
-		super(instance, 919);
+		super(instance, 930);
 	}
 
 	@Override

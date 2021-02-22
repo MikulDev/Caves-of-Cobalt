@@ -45,7 +45,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class MushroomMidigatorDrainProcedure extends CocModElements.ModElement {
 	public MushroomMidigatorDrainProcedure(CocModElements instance) {
-		super(instance, 685);
+		super(instance, 696);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

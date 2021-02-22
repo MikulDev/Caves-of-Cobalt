@@ -33,7 +33,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MonumentPutPiecesProcedure extends CocModElements.ModElement {
 	public MonumentPutPiecesProcedure(CocModElements instance) {
-		super(instance, 799);
+		super(instance, 810);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

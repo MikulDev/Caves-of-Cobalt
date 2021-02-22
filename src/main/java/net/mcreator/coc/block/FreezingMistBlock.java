@@ -74,7 +74,7 @@ public class FreezingMistBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:freezing_mist")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public FreezingMistBlock(CocModElements instance) {
-		super(instance, 425);
+		super(instance, 436);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

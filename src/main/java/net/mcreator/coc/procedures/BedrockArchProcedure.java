@@ -25,7 +25,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class BedrockArchProcedure extends CocModElements.ModElement {
 	public BedrockArchProcedure(CocModElements instance) {
-		super(instance, 666);
+		super(instance, 677);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

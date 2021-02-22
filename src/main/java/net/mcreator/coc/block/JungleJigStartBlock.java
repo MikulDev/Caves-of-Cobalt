@@ -44,7 +44,7 @@ public class JungleJigStartBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:junglejigstart")
 	public static final Block block = null;
 	public JungleJigStartBlock(CocModElements instance) {
-		super(instance, 435);
+		super(instance, 446);
 	}
 
 	@Override

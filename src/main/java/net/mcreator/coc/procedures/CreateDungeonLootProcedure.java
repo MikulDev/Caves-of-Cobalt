@@ -39,7 +39,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CreateDungeonLootProcedure extends CocModElements.ModElement {
 	public CreateDungeonLootProcedure(CocModElements instance) {
-		super(instance, 410);
+		super(instance, 421);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "coc:blocks/blasted_shale_polished",
+    "particle": "coc:blocks/blasted_shale_polished"
+  }
+}

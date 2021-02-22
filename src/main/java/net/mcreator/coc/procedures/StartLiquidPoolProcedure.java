@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StartLiquidPoolProcedure extends CocModElements.ModElement {
 	public StartLiquidPoolProcedure(CocModElements instance) {
-		super(instance, 340);
+		super(instance, 351);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

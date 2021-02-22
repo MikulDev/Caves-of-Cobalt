@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MushroomLampTurnOnProcedure extends CocModElements.ModElement {
 	public MushroomLampTurnOnProcedure(CocModElements instance) {
-		super(instance, 715);
+		super(instance, 726);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

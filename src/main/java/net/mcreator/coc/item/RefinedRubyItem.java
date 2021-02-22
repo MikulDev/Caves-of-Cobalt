@@ -24,7 +24,7 @@ public class RefinedRubyItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:refined_ruby")
 	public static final Item block = null;
 	public RefinedRubyItem(CocModElements instance) {
-		super(instance, 164);
+		super(instance, 175);
 	}
 
 	@Override

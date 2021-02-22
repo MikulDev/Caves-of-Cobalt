@@ -27,7 +27,7 @@ public class CrystalBiomeBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:crystalbiomeblock")
 	public static final Block block = null;
 	public CrystalBiomeBlockBlock(CocModElements instance) {
-		super(instance, 508);
+		super(instance, 519);
 	}
 
 	@Override

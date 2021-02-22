@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadPickBreakAnimProcedure extends CocModElements.ModElement {
 	public RadPickBreakAnimProcedure(CocModElements instance) {
-		super(instance, 831);
+		super(instance, 842);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -37,7 +37,7 @@ public class ObliteratorMushBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:obliterator_mush")
 	public static final Block block = null;
 	public ObliteratorMushBlock(CocModElements instance) {
-		super(instance, 932);
+		super(instance, 943);
 	}
 
 	@Override

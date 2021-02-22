@@ -26,7 +26,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class InfernoTomeUseProcedure extends CocModElements.ModElement {
 	public InfernoTomeUseProcedure(CocModElements instance) {
-		super(instance, 591);
+		super(instance, 602);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

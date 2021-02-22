@@ -36,7 +36,7 @@ public class DroopingMagphaeBBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:drooping_magphae_b")
 	public static final Block block = null;
 	public DroopingMagphaeBBlock(CocModElements instance) {
-		super(instance, 951);
+		super(instance, 962);
 	}
 
 	@Override

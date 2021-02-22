@@ -16,7 +16,7 @@ public class ShroomiumBarItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:shroomium_bar")
 	public static final Item block = null;
 	public ShroomiumBarItem(CocModElements instance) {
-		super(instance, 185);
+		super(instance, 196);
 	}
 
 	@Override

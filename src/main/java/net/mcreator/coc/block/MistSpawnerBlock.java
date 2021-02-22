@@ -31,7 +31,7 @@ public class MistSpawnerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mistspawner")
 	public static final Block block = null;
 	public MistSpawnerBlock(CocModElements instance) {
-		super(instance, 485);
+		super(instance, 496);
 	}
 
 	@Override

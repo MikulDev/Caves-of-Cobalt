@@ -16,7 +16,7 @@ public class LumpOfGoldItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:lump_of_gold")
 	public static final Item block = null;
 	public LumpOfGoldItem(CocModElements instance) {
-		super(instance, 161);
+		super(instance, 172);
 	}
 
 	@Override

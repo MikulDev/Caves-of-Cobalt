@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MushroomTestProcedure extends CocModElements.ModElement {
 	public MushroomTestProcedure(CocModElements instance) {
-		super(instance, 319);
+		super(instance, 330);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

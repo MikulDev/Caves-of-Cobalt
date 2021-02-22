@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StrangeFlowerGrowProcedure extends CocModElements.ModElement {
 	public StrangeFlowerGrowProcedure(CocModElements instance) {
-		super(instance, 883);
+		super(instance, 894);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

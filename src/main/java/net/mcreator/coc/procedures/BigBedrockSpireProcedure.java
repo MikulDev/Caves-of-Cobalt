@@ -25,7 +25,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class BigBedrockSpireProcedure extends CocModElements.ModElement {
 	public BigBedrockSpireProcedure(CocModElements instance) {
-		super(instance, 670);
+		super(instance, 681);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

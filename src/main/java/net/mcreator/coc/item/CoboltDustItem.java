@@ -16,7 +16,7 @@ public class CoboltDustItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:cobalt")
 	public static final Item block = null;
 	public CoboltDustItem(CocModElements instance) {
-		super(instance, 175);
+		super(instance, 186);
 	}
 
 	@Override

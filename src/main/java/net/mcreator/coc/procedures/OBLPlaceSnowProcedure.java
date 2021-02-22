@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class OBLPlaceSnowProcedure extends CocModElements.ModElement {
 	public OBLPlaceSnowProcedure(CocModElements instance) {
-		super(instance, 586);
+		super(instance, 597);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

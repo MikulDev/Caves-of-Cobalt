@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MalSwordRegisterProcedure extends CocModElements.ModElement {
 	public MalSwordRegisterProcedure(CocModElements instance) {
-		super(instance, 607);
+		super(instance, 618);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

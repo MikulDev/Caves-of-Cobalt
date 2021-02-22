@@ -27,7 +27,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SpawnSnowProcedure extends CocModElements.ModElement {
 	public SpawnSnowProcedure(CocModElements instance) {
-		super(instance, 523);
+		super(instance, 534);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

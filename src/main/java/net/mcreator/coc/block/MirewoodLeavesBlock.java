@@ -34,7 +34,7 @@ public class MirewoodLeavesBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewood_leaves")
 	public static final Block block = null;
 	public MirewoodLeavesBlock(CocModElements instance) {
-		super(instance, 97);
+		super(instance, 108);
 	}
 
 	@Override

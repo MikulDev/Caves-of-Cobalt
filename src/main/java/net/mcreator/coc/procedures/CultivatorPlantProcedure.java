@@ -39,7 +39,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CultivatorPlantProcedure extends CocModElements.ModElement {
 	public CultivatorPlantProcedure(CocModElements instance) {
-		super(instance, 777);
+		super(instance, 788);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

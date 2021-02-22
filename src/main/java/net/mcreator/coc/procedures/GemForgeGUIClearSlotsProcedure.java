@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemForgeGUIClearSlotsProcedure extends CocModElements.ModElement {
 	public GemForgeGUIClearSlotsProcedure(CocModElements instance) {
-		super(instance, 439);
+		super(instance, 450);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

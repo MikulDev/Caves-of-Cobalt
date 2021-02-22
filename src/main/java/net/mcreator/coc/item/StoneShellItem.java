@@ -16,7 +16,7 @@ public class StoneShellItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:stone_shell")
 	public static final Item block = null;
 	public StoneShellItem(CocModElements instance) {
-		super(instance, 152);
+		super(instance, 163);
 	}
 
 	@Override

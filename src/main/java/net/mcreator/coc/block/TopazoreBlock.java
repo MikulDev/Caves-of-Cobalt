@@ -33,7 +33,7 @@ public class TopazoreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:radiant_topaz_ore")
 	public static final Block block = null;
 	public TopazoreBlock(CocModElements instance) {
-		super(instance, 25);
+		super(instance, 35);
 	}
 
 	@Override

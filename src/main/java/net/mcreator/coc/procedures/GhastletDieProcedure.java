@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GhastletDieProcedure extends CocModElements.ModElement {
 	public GhastletDieProcedure(CocModElements instance) {
-		super(instance, 414);
+		super(instance, 425);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

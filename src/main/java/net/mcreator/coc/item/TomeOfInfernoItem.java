@@ -26,7 +26,7 @@ public class TomeOfInfernoItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:tome_of_inferno")
 	public static final Item block = null;
 	public TomeOfInfernoItem(CocModElements instance) {
-		super(instance, 212);
+		super(instance, 223);
 	}
 
 	@Override

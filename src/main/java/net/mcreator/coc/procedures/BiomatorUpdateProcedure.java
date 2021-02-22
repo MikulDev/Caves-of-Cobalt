@@ -31,7 +31,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class BiomatorUpdateProcedure extends CocModElements.ModElement {
 	public BiomatorUpdateProcedure(CocModElements instance) {
-		super(instance, 482);
+		super(instance, 493);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -47,7 +47,7 @@ public class GlowingMushroomAltBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:glowing_mushroom_block_2")
 	public static final Block block = null;
 	public GlowingMushroomAltBlock(CocModElements instance) {
-		super(instance, 483);
+		super(instance, 494);
 	}
 
 	@Override

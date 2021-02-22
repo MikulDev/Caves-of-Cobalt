@@ -37,7 +37,7 @@ public class JigsawCenterBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:jigsaw_block_center")
 	public static final Block block = null;
 	public JigsawCenterBlock(CocModElements instance) {
-		super(instance, 330);
+		super(instance, 341);
 	}
 
 	@Override

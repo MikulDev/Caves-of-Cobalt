@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "coc:block/blasted_shale_slab"
+    },
+    "type=top": {
+      "model": "coc:block/blasted_shale_slab_top"
+    },
+    "type=double": {
+      "model": "coc:block/blasted_shale_slab_full"
+    }
+  }
+}

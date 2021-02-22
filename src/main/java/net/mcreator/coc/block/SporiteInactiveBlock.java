@@ -30,7 +30,7 @@ public class SporiteInactiveBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:inactive_sporite")
 	public static final Block block = null;
 	public SporiteInactiveBlock(CocModElements instance) {
-		super(instance, 471);
+		super(instance, 482);
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class DroopingHyphaeTopBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:drooping_hyphae")
 	public static final Block block = null;
 	public DroopingHyphaeTopBlock(CocModElements instance) {
-		super(instance, 102);
+		super(instance, 113);
 	}
 
 	@Override

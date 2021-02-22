@@ -38,7 +38,7 @@ import java.util.HashMap;
 public class SporeCloudBBEntity extends CocModElements.ModElement {
 	public static EntityType entity = null;
 	public SporeCloudBBEntity(CocModElements instance) {
-		super(instance, 150);
+		super(instance, 161);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

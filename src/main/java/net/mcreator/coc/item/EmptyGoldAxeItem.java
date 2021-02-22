@@ -23,7 +23,7 @@ public class EmptyGoldAxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:emptygoldaxe")
 	public static final Item block = null;
 	public EmptyGoldAxeItem(CocModElements instance) {
-		super(instance, 230);
+		super(instance, 241);
 	}
 
 	@Override

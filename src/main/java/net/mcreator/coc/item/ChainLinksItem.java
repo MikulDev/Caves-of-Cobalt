@@ -16,7 +16,7 @@ public class ChainLinksItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:chains")
 	public static final Item block = null;
 	public ChainLinksItem(CocModElements instance) {
-		super(instance, 192);
+		super(instance, 203);
 	}
 
 	@Override

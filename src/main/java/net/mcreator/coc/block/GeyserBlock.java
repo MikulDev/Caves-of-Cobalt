@@ -63,7 +63,7 @@ public class GeyserBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:geyser")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public GeyserBlock(CocModElements instance) {
-		super(instance, 112);
+		super(instance, 123);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

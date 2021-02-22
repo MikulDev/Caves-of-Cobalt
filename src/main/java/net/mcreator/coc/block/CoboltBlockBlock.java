@@ -24,7 +24,7 @@ public class CoboltBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cobalt_block")
 	public static final Block block = null;
 	public CoboltBlockBlock(CocModElements instance) {
-		super(instance, 20);
+		super(instance, 30);
 	}
 
 	@Override

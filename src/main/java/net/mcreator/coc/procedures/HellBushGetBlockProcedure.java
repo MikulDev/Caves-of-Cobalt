@@ -15,7 +15,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class HellBushGetBlockProcedure extends CocModElements.ModElement {
 	public HellBushGetBlockProcedure(CocModElements instance) {
-		super(instance, 738);
+		super(instance, 749);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

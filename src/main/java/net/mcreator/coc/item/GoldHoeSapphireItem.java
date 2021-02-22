@@ -31,7 +31,7 @@ public class GoldHoeSapphireItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_hoe_sapphire")
 	public static final Item block = null;
 	public GoldHoeSapphireItem(CocModElements instance) {
-		super(instance, 244);
+		super(instance, 255);
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class TruffleItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:truffle")
 	public static final Item block = null;
 	public TruffleItem(CocModElements instance) {
-		super(instance, 257);
+		super(instance, 268);
 	}
 
 	@Override

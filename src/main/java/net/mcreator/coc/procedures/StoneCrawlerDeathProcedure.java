@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StoneCrawlerDeathProcedure extends CocModElements.ModElement {
 	public StoneCrawlerDeathProcedure(CocModElements instance) {
-		super(instance, 324);
+		super(instance, 335);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

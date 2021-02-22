@@ -23,7 +23,7 @@ public class SapphireInfusedGoldAxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_axe_sapphire")
 	public static final Item block = null;
 	public SapphireInfusedGoldAxeItem(CocModElements instance) {
-		super(instance, 242);
+		super(instance, 253);
 	}
 
 	@Override

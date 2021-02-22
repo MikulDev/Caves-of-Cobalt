@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class HellBushDropProcedure extends CocModElements.ModElement {
 	public HellBushDropProcedure(CocModElements instance) {
-		super(instance, 400);
+		super(instance, 411);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

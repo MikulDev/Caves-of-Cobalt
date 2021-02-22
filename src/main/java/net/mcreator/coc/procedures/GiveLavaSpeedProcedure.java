@@ -21,7 +21,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GiveLavaSpeedProcedure extends CocModElements.ModElement {
 	public GiveLavaSpeedProcedure(CocModElements instance) {
-		super(instance, 657);
+		super(instance, 668);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

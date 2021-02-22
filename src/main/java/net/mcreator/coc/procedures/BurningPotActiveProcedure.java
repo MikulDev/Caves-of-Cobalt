@@ -15,7 +15,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class BurningPotActiveProcedure extends CocModElements.ModElement {
 	public BurningPotActiveProcedure(CocModElements instance) {
-		super(instance, 646);
+		super(instance, 657);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

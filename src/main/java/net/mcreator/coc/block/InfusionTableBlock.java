@@ -80,7 +80,7 @@ public class InfusionTableBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:infusion_table")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public InfusionTableBlock(CocModElements instance) {
-		super(instance, 90);
+		super(instance, 101);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

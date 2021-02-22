@@ -30,7 +30,7 @@ public class IceberginatorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:iceberginator")
 	public static final Block block = null;
 	public IceberginatorBlock(CocModElements instance) {
-		super(instance, 587);
+		super(instance, 598);
 	}
 
 	@Override

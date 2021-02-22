@@ -33,7 +33,7 @@ public class EmptyPedestalBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:altar")
 	public static final Block block = null;
 	public EmptyPedestalBlock(CocModElements instance) {
-		super(instance, 93);
+		super(instance, 104);
 	}
 
 	@Override

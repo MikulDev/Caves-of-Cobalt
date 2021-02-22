@@ -52,7 +52,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class HermitShroomEntity extends CocModElements.ModElement {
 	public static EntityType entity = null;
 	public HermitShroomEntity(CocModElements instance) {
-		super(instance, 127);
+		super(instance, 138);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

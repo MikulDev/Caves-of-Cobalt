@@ -25,7 +25,7 @@ public class PolishedShaleBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:polished_shale")
 	public static final Block block = null;
 	public PolishedShaleBlock(CocModElements instance) {
-		super(instance, 2);
+		super(instance, 3);
 	}
 
 	@Override

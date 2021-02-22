@@ -1,0 +1,33 @@
+{
+  "group": "stairs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coc:blasted_shale_bricks"
+    },
+    "3": {
+      "item": "coc:blasted_shale_bricks"
+    },
+    "4": {
+      "item": "coc:blasted_shale_bricks"
+    },
+    "6": {
+      "item": "coc:blasted_shale_bricks"
+    },
+    "7": {
+      "item": "coc:blasted_shale_bricks"
+    },
+    "8": {
+      "item": "coc:blasted_shale_bricks"
+    }
+  },
+  "result": {
+    "item": "coc:blasted_shale_brick_stairs",
+    "count": 4
+  }
+}

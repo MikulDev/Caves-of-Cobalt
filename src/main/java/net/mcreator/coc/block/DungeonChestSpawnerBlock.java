@@ -62,7 +62,7 @@ public class DungeonChestSpawnerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:dungeonchestspawner")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public DungeonChestSpawnerBlock(CocModElements instance) {
-		super(instance, 411);
+		super(instance, 422);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

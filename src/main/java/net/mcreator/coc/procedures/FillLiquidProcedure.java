@@ -34,7 +34,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FillLiquidProcedure extends CocModElements.ModElement {
 	public FillLiquidProcedure(CocModElements instance) {
-		super(instance, 341);
+		super(instance, 352);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

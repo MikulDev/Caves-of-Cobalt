@@ -14,7 +14,7 @@ import com.google.common.collect.ImmutableMap;
 @CocModElements.ModElement.Tag
 public class TikiTorchUpdateTickProcedure extends CocModElements.ModElement {
 	public TikiTorchUpdateTickProcedure(CocModElements instance) {
-		super(instance, 437);
+		super(instance, 448);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

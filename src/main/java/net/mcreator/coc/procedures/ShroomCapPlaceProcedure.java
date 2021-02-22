@@ -23,7 +23,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ShroomCapPlaceProcedure extends CocModElements.ModElement {
 	public ShroomCapPlaceProcedure(CocModElements instance) {
-		super(instance, 533);
+		super(instance, 544);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

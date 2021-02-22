@@ -16,7 +16,7 @@ public class TridentFragmentItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:trident_fragment")
 	public static final Item block = null;
 	public TridentFragmentItem(CocModElements instance) {
-		super(instance, 195);
+		super(instance, 206);
 	}
 
 	@Override

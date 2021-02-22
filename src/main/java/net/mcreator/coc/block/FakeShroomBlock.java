@@ -76,7 +76,7 @@ public class FakeShroomBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:fake_mushroom")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public FakeShroomBlock(CocModElements instance) {
-		super(instance, 101);
+		super(instance, 112);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -33,7 +33,7 @@ import java.util.Collections;
 @CocModElements.ModElement.Tag
 public class PermafrostMonarchAttackProcedure extends CocModElements.ModElement {
 	public PermafrostMonarchAttackProcedure(CocModElements instance) {
-		super(instance, 378);
+		super(instance, 389);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

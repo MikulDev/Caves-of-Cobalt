@@ -96,6 +96,9 @@
     "onBlockAdded": {
       "name": "JigsawStructurePlace"
     },
+    "onTickUpdate": {
+      "name": "JigsawStructurePlace"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

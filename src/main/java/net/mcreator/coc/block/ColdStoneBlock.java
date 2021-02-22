@@ -31,7 +31,7 @@ public class ColdStoneBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cold_stone")
 	public static final Block block = null;
 	public ColdStoneBlock(CocModElements instance) {
-		super(instance, 47);
+		super(instance, 57);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FakeStalaMineProcedure extends CocModElements.ModElement {
 	public FakeStalaMineProcedure(CocModElements instance) {
-		super(instance, 640);
+		super(instance, 651);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

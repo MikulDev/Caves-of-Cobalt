@@ -41,7 +41,7 @@ public class ColdPlantTopBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:coldplanttop")
 	public static final Block block = null;
 	public ColdPlantTopBlock(CocModElements instance) {
-		super(instance, 362);
+		super(instance, 373);
 	}
 
 	@Override

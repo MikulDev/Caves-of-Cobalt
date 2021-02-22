@@ -31,7 +31,7 @@ public class IcenatorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:icenator")
 	public static final Block block = null;
 	public IcenatorBlock(CocModElements instance) {
-		super(instance, 585);
+		super(instance, 596);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class BrimstoneActivateProcedure extends CocModElements.ModElement {
 	public BrimstoneActivateProcedure(CocModElements instance) {
-		super(instance, 473);
+		super(instance, 484);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

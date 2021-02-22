@@ -31,7 +31,7 @@ public class HellberryItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:hellberry")
 	public static final Item block = null;
 	public HellberryItem(CocModElements instance) {
-		super(instance, 263);
+		super(instance, 274);
 	}
 
 	@Override

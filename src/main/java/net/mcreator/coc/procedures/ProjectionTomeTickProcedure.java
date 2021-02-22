@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ProjectionTomeTickProcedure extends CocModElements.ModElement {
 	public ProjectionTomeTickProcedure(CocModElements instance) {
-		super(instance, 626);
+		super(instance, 637);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

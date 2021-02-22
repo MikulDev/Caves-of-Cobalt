@@ -16,7 +16,7 @@ public class CrystalItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:crystal")
 	public static final Item block = null;
 	public CrystalItem(CocModElements instance) {
-		super(instance, 193);
+		super(instance, 204);
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class RedBiomeBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:red_biome_block")
 	public static final Block block = null;
 	public RedBiomeBlockBlock(CocModElements instance) {
-		super(instance, 948);
+		super(instance, 959);
 	}
 
 	@Override

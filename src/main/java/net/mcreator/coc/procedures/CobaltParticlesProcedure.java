@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CobaltParticlesProcedure extends CocModElements.ModElement {
 	public CobaltParticlesProcedure(CocModElements instance) {
-		super(instance, 751);
+		super(instance, 762);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

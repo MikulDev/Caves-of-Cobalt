@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class BiomeNoOceanConditionProcedure extends CocModElements.ModElement {
 	public BiomeNoOceanConditionProcedure(CocModElements instance) {
-		super(instance, 959);
+		super(instance, 970);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

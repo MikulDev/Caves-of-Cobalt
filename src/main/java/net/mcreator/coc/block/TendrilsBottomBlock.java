@@ -41,7 +41,7 @@ public class TendrilsBottomBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:tendrilsbottom")
 	public static final Block block = null;
 	public TendrilsBottomBlock(CocModElements instance) {
-		super(instance, 424);
+		super(instance, 435);
 	}
 
 	@Override

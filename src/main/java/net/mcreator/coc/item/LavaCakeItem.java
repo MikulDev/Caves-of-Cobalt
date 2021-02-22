@@ -26,7 +26,7 @@ public class LavaCakeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:lava_cake")
 	public static final Item block = null;
 	public LavaCakeItem(CocModElements instance) {
-		super(instance, 260);
+		super(instance, 271);
 	}
 
 	@Override

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coc:blocks/blasted_shale_chisled",
+    "particle": "coc:blocks/blasted_shale_chisled"
+  }
+}

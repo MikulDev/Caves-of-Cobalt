@@ -69,7 +69,7 @@ public class LootCrateBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:loot_crate")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public LootCrateBlock(CocModElements instance) {
-		super(instance, 332);
+		super(instance, 343);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

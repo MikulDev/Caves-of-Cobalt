@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GhastletSpawnInitProcedure extends CocModElements.ModElement {
 	public GhastletSpawnInitProcedure(CocModElements instance) {
-		super(instance, 413);
+		super(instance, 424);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

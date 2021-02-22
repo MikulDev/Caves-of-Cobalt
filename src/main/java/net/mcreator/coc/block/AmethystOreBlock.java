@@ -40,7 +40,7 @@ public class AmethystOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:amethyst_ore")
 	public static final Block block = null;
 	public AmethystOreBlock(CocModElements instance) {
-		super(instance, 14);
+		super(instance, 24);
 	}
 
 	@Override

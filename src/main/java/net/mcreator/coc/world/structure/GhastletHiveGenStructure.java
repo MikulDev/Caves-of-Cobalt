@@ -36,7 +36,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class GhastletHiveGenStructure extends CocModElements.ModElement {
 	public GhastletHiveGenStructure(CocModElements instance) {
-		super(instance, 429);
+		super(instance, 440);
 	}
 
 	@Override

@@ -24,7 +24,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class HellberryPlaceProcedure extends CocModElements.ModElement {
 	public HellberryPlaceProcedure(CocModElements instance) {
-		super(instance, 903);
+		super(instance, 914);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

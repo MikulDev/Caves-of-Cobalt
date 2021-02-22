@@ -16,7 +16,7 @@ public class BorealKeyItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:boreal_key")
 	public static final Item block = null;
 	public BorealKeyItem(CocModElements instance) {
-		super(instance, 198);
+		super(instance, 209);
 	}
 
 	@Override

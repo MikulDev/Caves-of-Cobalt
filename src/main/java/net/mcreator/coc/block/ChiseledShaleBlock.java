@@ -25,7 +25,7 @@ public class ChiseledShaleBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:chiseled_shale")
 	public static final Block block = null;
 	public ChiseledShaleBlock(CocModElements instance) {
-		super(instance, 3);
+		super(instance, 5);
 	}
 
 	@Override

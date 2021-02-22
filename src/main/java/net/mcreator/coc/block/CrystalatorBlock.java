@@ -61,7 +61,7 @@ public class CrystalatorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:crystalator")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CrystalatorBlock(CocModElements instance) {
-		super(instance, 503);
+		super(instance, 514);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

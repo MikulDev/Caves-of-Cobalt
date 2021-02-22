@@ -62,7 +62,7 @@ public class JungleJigNorthBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:junglejignorth")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public JungleJigNorthBlock(CocModElements instance) {
-		super(instance, 431);
+		super(instance, 442);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

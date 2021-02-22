@@ -28,7 +28,7 @@ import java.util.Iterator;
 @CocModElements.ModElement.Tag
 public class ProjTntUpdateProcedure extends CocModElements.ModElement {
 	public ProjTntUpdateProcedure(CocModElements instance) {
-		super(instance, 624);
+		super(instance, 635);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

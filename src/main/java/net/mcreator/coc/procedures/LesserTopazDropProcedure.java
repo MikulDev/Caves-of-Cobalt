@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LesserTopazDropProcedure extends CocModElements.ModElement {
 	public LesserTopazDropProcedure(CocModElements instance) {
-		super(instance, 313);
+		super(instance, 324);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

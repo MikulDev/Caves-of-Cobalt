@@ -7,7 +7,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class EnchantRubyProcedure extends CocModElements.ModElement {
 	public EnchantRubyProcedure(CocModElements instance) {
-		super(instance, 756);
+		super(instance, 767);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

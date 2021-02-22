@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MakeShroomBlockProcedure extends CocModElements.ModElement {
 	public MakeShroomBlockProcedure(CocModElements instance) {
-		super(instance, 438);
+		super(instance, 449);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

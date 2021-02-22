@@ -16,7 +16,7 @@ public class BedrockShardItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:bedrock_shard")
 	public static final Item block = null;
 	public BedrockShardItem(CocModElements instance) {
-		super(instance, 199);
+		super(instance, 210);
 	}
 
 	@Override

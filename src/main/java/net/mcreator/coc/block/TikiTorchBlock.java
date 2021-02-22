@@ -45,7 +45,7 @@ public class TikiTorchBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:tiki_torch_down")
 	public static final Block block = null;
 	public TikiTorchBlock(CocModElements instance) {
-		super(instance, 436);
+		super(instance, 447);
 	}
 
 	@Override

@@ -33,7 +33,7 @@ public class MirewoodDoorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewood_door")
 	public static final Block block = null;
 	public MirewoodDoorBlock(CocModElements instance) {
-		super(instance, 290);
+		super(instance, 301);
 	}
 
 	@Override

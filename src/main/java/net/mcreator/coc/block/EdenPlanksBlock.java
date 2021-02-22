@@ -24,7 +24,7 @@ public class EdenPlanksBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:edenplanks")
 	public static final Block block = null;
 	public EdenPlanksBlock(CocModElements instance) {
-		super(instance, 60);
+		super(instance, 70);
 	}
 
 	@Override

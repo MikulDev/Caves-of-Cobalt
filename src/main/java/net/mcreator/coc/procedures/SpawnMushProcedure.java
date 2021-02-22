@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SpawnMushProcedure extends CocModElements.ModElement {
 	public SpawnMushProcedure(CocModElements instance) {
-		super(instance, 522);
+		super(instance, 533);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

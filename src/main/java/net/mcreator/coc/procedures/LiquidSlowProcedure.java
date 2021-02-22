@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LiquidSlowProcedure extends CocModElements.ModElement {
 	public LiquidSlowProcedure(CocModElements instance) {
-		super(instance, 371);
+		super(instance, 382);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

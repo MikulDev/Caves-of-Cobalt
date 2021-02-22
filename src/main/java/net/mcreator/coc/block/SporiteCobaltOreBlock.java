@@ -39,7 +39,7 @@ public class SporiteCobaltOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:sporitecobaltore")
 	public static final Block block = null;
 	public SporiteCobaltOreBlock(CocModElements instance) {
-		super(instance, 35);
+		super(instance, 45);
 	}
 
 	@Override

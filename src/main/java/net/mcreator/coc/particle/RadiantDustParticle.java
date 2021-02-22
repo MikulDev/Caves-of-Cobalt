@@ -25,7 +25,7 @@ import net.mcreator.coc.CocModElements;
 public class RadiantDustParticle extends CocModElements.ModElement {
 	public static final BasicParticleType particle = new BasicParticleType(false);
 	public RadiantDustParticle(CocModElements instance) {
-		super(instance, 861);
+		super(instance, 872);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

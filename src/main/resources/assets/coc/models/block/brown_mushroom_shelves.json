@@ -3,7 +3,7 @@
   "textures": {
     "all": "coc:blocks/brown_mushroom_shelves_caps",
     "particle": "coc:blocks/brown_mushroom_shelves_caps",
-    "brown_mushroom_shelves_stems": "coc:blocks/brown_mushroom_shelves_stems",
-    "brown_mushroom_shelves_caps": "coc:blocks/brown_mushroom_shelves_caps"
+    "brown_mushroom_shelves_stems": "coc:blocks/",
+    "brown_mushroom_shelves_caps": "coc:blocks/"
   }
 }

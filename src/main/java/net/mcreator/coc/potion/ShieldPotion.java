@@ -25,7 +25,7 @@ public class ShieldPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:shield")
 	public static final Effect potion = null;
 	public ShieldPotion(CocModElements instance) {
-		super(instance, 563);
+		super(instance, 574);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

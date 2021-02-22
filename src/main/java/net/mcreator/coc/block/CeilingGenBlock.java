@@ -43,7 +43,7 @@ public class CeilingGenBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:ceilinggen")
 	public static final Block block = null;
 	public CeilingGenBlock(CocModElements instance) {
-		super(instance, 417);
+		super(instance, 428);
 	}
 
 	@Override

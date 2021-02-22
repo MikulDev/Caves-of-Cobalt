@@ -18,7 +18,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class SpreadSpeedParamsProcedure extends CocModElements.ModElement {
 	public SpreadSpeedParamsProcedure(CocModElements instance) {
-		super(instance, 520);
+		super(instance, 531);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

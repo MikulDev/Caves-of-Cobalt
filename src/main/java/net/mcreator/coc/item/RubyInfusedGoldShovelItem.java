@@ -23,7 +23,7 @@ public class RubyInfusedGoldShovelItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_shovel_ruby")
 	public static final Item block = null;
 	public RubyInfusedGoldShovelItem(CocModElements instance) {
-		super(instance, 237);
+		super(instance, 248);
 	}
 
 	@Override

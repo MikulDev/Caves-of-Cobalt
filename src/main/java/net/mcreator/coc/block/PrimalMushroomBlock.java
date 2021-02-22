@@ -55,7 +55,7 @@ public class PrimalMushroomBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:primal_mushroom")
 	public static final Block block = null;
 	public PrimalMushroomBlock(CocModElements instance) {
-		super(instance, 949);
+		super(instance, 960);
 	}
 
 	@Override

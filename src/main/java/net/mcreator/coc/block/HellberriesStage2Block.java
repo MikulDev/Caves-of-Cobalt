@@ -44,7 +44,7 @@ public class HellberriesStage2Block extends CocModElements.ModElement {
 	@ObjectHolder("coc:hellberries_stage_1")
 	public static final Block block = null;
 	public HellberriesStage2Block(CocModElements instance) {
-		super(instance, 545);
+		super(instance, 556);
 	}
 
 	@Override

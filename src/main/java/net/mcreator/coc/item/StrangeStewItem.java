@@ -23,7 +23,7 @@ public class StrangeStewItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:strange_stew")
 	public static final Item block = null;
 	public StrangeStewItem(CocModElements instance) {
-		super(instance, 259);
+		super(instance, 270);
 	}
 
 	@Override

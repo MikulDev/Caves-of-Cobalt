@@ -36,7 +36,7 @@ public class PivoterOffBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:pivoter")
 	public static final Block block = null;
 	public PivoterOffBlock(CocModElements instance) {
-		super(instance, 286);
+		super(instance, 297);
 	}
 
 	@Override

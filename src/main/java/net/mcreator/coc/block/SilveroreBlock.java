@@ -39,7 +39,7 @@ public class SilveroreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:silver_ore")
 	public static final Block block = null;
 	public SilveroreBlock(CocModElements instance) {
-		super(instance, 10);
+		super(instance, 20);
 	}
 
 	@Override

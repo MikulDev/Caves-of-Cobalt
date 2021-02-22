@@ -26,7 +26,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GeyserUpdateProcedure extends CocModElements.ModElement {
 	public GeyserUpdateProcedure(CocModElements instance) {
-		super(instance, 618);
+		super(instance, 629);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

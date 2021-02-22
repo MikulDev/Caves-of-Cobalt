@@ -24,7 +24,7 @@ public class GhastletLootDropperBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:ghastlet_loot_dropper")
 	public static final Block block = null;
 	public GhastletLootDropperBlock(CocModElements instance) {
-		super(instance, 896);
+		super(instance, 907);
 	}
 
 	@Override

@@ -24,7 +24,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class IceWaterFillProcedure extends CocModElements.ModElement {
 	public IceWaterFillProcedure(CocModElements instance) {
-		super(instance, 589);
+		super(instance, 600);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

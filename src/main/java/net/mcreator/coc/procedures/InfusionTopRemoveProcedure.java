@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class InfusionTopRemoveProcedure extends CocModElements.ModElement {
 	public InfusionTopRemoveProcedure(CocModElements instance) {
-		super(instance, 730);
+		super(instance, 741);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

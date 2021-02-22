@@ -68,7 +68,7 @@ public class CobaltOpticOnBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cobalt_optic_on")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CobaltOpticOnBlock(CocModElements instance) {
-		super(instance, 920);
+		super(instance, 931);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

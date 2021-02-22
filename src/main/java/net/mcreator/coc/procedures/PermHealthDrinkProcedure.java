@@ -25,7 +25,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class PermHealthDrinkProcedure extends CocModElements.ModElement {
 	public PermHealthDrinkProcedure(CocModElements instance) {
-		super(instance, 547);
+		super(instance, 558);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

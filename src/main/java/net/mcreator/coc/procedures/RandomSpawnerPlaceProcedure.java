@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RandomSpawnerPlaceProcedure extends CocModElements.ModElement {
 	public RandomSpawnerPlaceProcedure(CocModElements instance) {
-		super(instance, 409);
+		super(instance, 420);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StrangeStewSporesProcedure extends CocModElements.ModElement {
 	public StrangeStewSporesProcedure(CocModElements instance) {
-		super(instance, 616);
+		super(instance, 627);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

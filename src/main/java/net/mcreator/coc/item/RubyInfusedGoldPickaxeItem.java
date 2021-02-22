@@ -23,7 +23,7 @@ public class RubyInfusedGoldPickaxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_pickaxe_ruby")
 	public static final Item block = null;
 	public RubyInfusedGoldPickaxeItem(CocModElements instance) {
-		super(instance, 235);
+		super(instance, 246);
 	}
 
 	@Override

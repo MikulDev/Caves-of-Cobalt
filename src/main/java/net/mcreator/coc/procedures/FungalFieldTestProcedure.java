@@ -37,7 +37,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FungalFieldTestProcedure extends CocModElements.ModElement {
 	public FungalFieldTestProcedure(CocModElements instance) {
-		super(instance, 379);
+		super(instance, 390);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

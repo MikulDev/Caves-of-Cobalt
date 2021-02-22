@@ -16,7 +16,7 @@ import java.util.Iterator;
 @CocModElements.ModElement.Tag
 public class MidigationADVGiveProcedure extends CocModElements.ModElement {
 	public MidigationADVGiveProcedure(CocModElements instance) {
-		super(instance, 396);
+		super(instance, 407);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

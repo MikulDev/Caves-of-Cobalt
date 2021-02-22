@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ProjZombieUpdateProcedure extends CocModElements.ModElement {
 	public ProjZombieUpdateProcedure(CocModElements instance) {
-		super(instance, 625);
+		super(instance, 636);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

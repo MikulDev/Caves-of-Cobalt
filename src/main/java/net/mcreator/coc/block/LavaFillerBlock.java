@@ -31,7 +31,7 @@ public class LavaFillerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:lava_filler")
 	public static final Block block = null;
 	public LavaFillerBlock(CocModElements instance) {
-		super(instance, 958);
+		super(instance, 969);
 	}
 
 	@Override

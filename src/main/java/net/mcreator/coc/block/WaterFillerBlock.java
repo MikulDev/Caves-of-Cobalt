@@ -30,7 +30,7 @@ public class WaterFillerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:waterfiller")
 	public static final Block block = null;
 	public WaterFillerBlock(CocModElements instance) {
-		super(instance, 513);
+		super(instance, 524);
 	}
 
 	@Override

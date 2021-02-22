@@ -17,7 +17,7 @@ public class SilverShovelItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:silver_shovel")
 	public static final Item block = null;
 	public SilverShovelItem(CocModElements instance) {
-		super(instance, 281);
+		super(instance, 292);
 	}
 
 	@Override

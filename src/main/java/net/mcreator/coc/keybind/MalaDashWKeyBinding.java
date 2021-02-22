@@ -32,7 +32,7 @@ public class MalaDashWKeyBinding extends CocModElements.ModElement {
 	private KeyBinding keys;
 	private long lastpress = 0;
 	public MalaDashWKeyBinding(CocModElements instance) {
-		super(instance, 804);
+		super(instance, 815);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

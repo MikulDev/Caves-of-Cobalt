@@ -42,7 +42,7 @@ public class StonecolumnbottomBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:stonecolumnbottom")
 	public static final Block block = null;
 	public StonecolumnbottomBlock(CocModElements instance) {
-		super(instance, 302);
+		super(instance, 313);
 	}
 
 	@Override

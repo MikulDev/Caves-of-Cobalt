@@ -18,7 +18,7 @@ public class InsulatedPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:insulated")
 	public static final Effect potion = null;
 	public InsulatedPotion(CocModElements instance) {
-		super(instance, 642);
+		super(instance, 653);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

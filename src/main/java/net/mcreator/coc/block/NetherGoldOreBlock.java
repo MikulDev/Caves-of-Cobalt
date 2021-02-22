@@ -37,7 +37,7 @@ public class NetherGoldOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:nether_gold_ore")
 	public static final Block block = null;
 	public NetherGoldOreBlock(CocModElements instance) {
-		super(instance, 62);
+		super(instance, 72);
 	}
 
 	@Override

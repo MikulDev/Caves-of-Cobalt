@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TrufflesSpreadProcedure extends CocModElements.ModElement {
 	public TrufflesSpreadProcedure(CocModElements instance) {
-		super(instance, 691);
+		super(instance, 702);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

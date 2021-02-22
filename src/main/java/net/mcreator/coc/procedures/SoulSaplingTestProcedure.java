@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SoulSaplingTestProcedure extends CocModElements.ModElement {
 	public SoulSaplingTestProcedure(CocModElements instance) {
-		super(instance, 780);
+		super(instance, 791);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

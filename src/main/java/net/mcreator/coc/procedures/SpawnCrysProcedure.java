@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SpawnCrysProcedure extends CocModElements.ModElement {
 	public SpawnCrysProcedure(CocModElements instance) {
-		super(instance, 525);
+		super(instance, 536);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

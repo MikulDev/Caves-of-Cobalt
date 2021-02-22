@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class IceberginatorUpdateProcedure extends CocModElements.ModElement {
 	public IceberginatorUpdateProcedure(CocModElements instance) {
-		super(instance, 588);
+		super(instance, 599);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

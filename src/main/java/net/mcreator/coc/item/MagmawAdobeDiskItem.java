@@ -16,7 +16,7 @@ public class MagmawAdobeDiskItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:music_disc_underworld")
 	public static final Item block = null;
 	public MagmawAdobeDiskItem(CocModElements instance) {
-		super(instance, 203);
+		super(instance, 214);
 	}
 
 	@Override

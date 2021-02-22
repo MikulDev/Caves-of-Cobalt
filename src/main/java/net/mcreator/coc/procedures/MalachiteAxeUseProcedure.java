@@ -21,7 +21,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MalachiteAxeUseProcedure extends CocModElements.ModElement {
 	public MalachiteAxeUseProcedure(CocModElements instance) {
-		super(instance, 846);
+		super(instance, 857);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

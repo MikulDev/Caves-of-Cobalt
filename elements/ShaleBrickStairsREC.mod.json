@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "stairs",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ShaleBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ShaleBricks"
+      },
+      {
+        "value": "CUSTOM:ShaleBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ShaleBricks"
+      },
+      {
+        "value": "CUSTOM:ShaleBricks"
+      },
+      {
+        "value": "CUSTOM:ShaleBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ShaleBrickSlab"
+    },
+    "name": "shale_brick_stairs_rec",
+    "namespace": "mod"
+  }
+}

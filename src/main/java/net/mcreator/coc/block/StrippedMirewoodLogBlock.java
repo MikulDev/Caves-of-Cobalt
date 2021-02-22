@@ -29,7 +29,7 @@ public class StrippedMirewoodLogBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:stripped_mirewood_log")
 	public static final Block block = null;
 	public StrippedMirewoodLogBlock(CocModElements instance) {
-		super(instance, 39);
+		super(instance, 49);
 	}
 
 	@Override

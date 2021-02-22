@@ -12,7 +12,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class RadiantPickaxeTickINVProcedure extends CocModElements.ModElement {
 	public RadiantPickaxeTickINVProcedure(CocModElements instance) {
-		super(instance, 581);
+		super(instance, 592);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

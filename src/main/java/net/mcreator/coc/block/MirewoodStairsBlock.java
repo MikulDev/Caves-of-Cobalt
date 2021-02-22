@@ -31,7 +31,7 @@ public class MirewoodStairsBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewood_stairs")
 	public static final Block block = null;
 	public MirewoodStairsBlock(CocModElements instance) {
-		super(instance, 43);
+		super(instance, 53);
 	}
 
 	@Override
