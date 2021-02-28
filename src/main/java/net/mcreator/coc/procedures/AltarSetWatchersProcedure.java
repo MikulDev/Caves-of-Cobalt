@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class AltarSetWatchersProcedure extends CocModElements.ModElement {
 	public AltarSetWatchersProcedure(CocModElements instance) {
-		super(instance, 489);
+		super(instance, 496);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

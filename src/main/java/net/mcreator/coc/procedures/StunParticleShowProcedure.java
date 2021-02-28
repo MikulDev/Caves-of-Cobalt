@@ -7,7 +7,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StunParticleShowProcedure extends CocModElements.ModElement {
 	public StunParticleShowProcedure(CocModElements instance) {
-		super(instance, 884);
+		super(instance, 891);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

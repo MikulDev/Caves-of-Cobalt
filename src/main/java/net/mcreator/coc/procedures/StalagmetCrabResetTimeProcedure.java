@@ -10,7 +10,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StalagmetCrabResetTimeProcedure extends CocModElements.ModElement {
 	public StalagmetCrabResetTimeProcedure(CocModElements instance) {
-		super(instance, 474);
+		super(instance, 481);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

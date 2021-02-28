@@ -38,7 +38,7 @@ public class GlowingStoneBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:sporite")
 	public static final Block block = null;
 	public GlowingStoneBlock(CocModElements instance) {
-		super(instance, 44);
+		super(instance, 46);
 	}
 
 	@Override

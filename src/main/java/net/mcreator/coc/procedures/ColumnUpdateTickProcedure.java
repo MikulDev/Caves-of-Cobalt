@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ColumnUpdateTickProcedure extends CocModElements.ModElement {
 	public ColumnUpdateTickProcedure(CocModElements instance) {
-		super(instance, 317);
+		super(instance, 324);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

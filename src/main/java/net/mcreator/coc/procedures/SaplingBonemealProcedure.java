@@ -24,7 +24,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class SaplingBonemealProcedure extends CocModElements.ModElement {
 	public SaplingBonemealProcedure(CocModElements instance) {
-		super(instance, 880);
+		super(instance, 887);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

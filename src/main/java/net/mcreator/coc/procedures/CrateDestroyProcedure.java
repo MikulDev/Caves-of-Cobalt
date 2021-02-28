@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CrateDestroyProcedure extends CocModElements.ModElement {
 	public CrateDestroyProcedure(CocModElements instance) {
-		super(instance, 342);
+		super(instance, 349);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

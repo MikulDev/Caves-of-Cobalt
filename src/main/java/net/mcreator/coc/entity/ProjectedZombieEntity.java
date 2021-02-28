@@ -52,7 +52,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class ProjectedZombieEntity extends CocModElements.ModElement {
 	public static EntityType entity = null;
 	public ProjectedZombieEntity(CocModElements instance) {
-		super(instance, 155);
+		super(instance, 154);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

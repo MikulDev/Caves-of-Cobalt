@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FakeStalaPlaceProcedure extends CocModElements.ModElement {
 	public FakeStalaPlaceProcedure(CocModElements instance) {
-		super(instance, 473);
+		super(instance, 480);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

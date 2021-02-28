@@ -29,7 +29,7 @@ public class MagmaMushroomTopBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:magma_mushroom_top")
 	public static final Block block = null;
 	public MagmaMushroomTopBlock(CocModElements instance) {
-		super(instance, 64);
+		super(instance, 67);
 	}
 
 	@Override

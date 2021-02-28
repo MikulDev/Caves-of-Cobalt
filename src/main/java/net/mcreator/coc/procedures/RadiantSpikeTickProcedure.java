@@ -7,7 +7,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadiantSpikeTickProcedure extends CocModElements.ModElement {
 	public RadiantSpikeTickProcedure(CocModElements instance) {
-		super(instance, 919);
+		super(instance, 926);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

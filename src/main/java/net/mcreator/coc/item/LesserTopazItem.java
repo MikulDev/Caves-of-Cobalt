@@ -16,7 +16,7 @@ public class LesserTopazItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:flawed_topaz")
 	public static final Item block = null;
 	public LesserTopazItem(CocModElements instance) {
-		super(instance, 183);
+		super(instance, 182);
 	}
 
 	@Override

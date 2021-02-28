@@ -167,12 +167,12 @@ public class OBLCrysProcedure extends CocModElements.ModElement {
 				}
 
 				double px = pos.getX() - (fillSize + (thickness / 4));
-				double py = pos.getY() - (fillSize - 3);
+				double py = pos.getY() - (fillSize - 3) - 2;
 				double pz = pos.getZ() - (fillSize + (thickness / 4));
 				
-				for (int fx = 0; fx < (5.0D + thickness) * 2 + 2.0D; fx++)
+				for (int fx = 0; fx < (5.0D + thickness) * 2 + 3.0D; fx++)
 				{
-					py = pos.getY() - (fillSize - 3);
+					py = pos.getY() - (fillSize - 3) - 2;
 					for (int fy = 0; fy < (fillSize + 2); fy++)
 					{
 						pz = pos.getZ() - (fillSize + (thickness / 4));

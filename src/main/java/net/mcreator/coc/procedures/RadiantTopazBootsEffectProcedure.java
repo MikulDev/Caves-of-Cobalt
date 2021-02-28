@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadiantTopazBootsEffectProcedure extends CocModElements.ModElement {
 	public RadiantTopazBootsEffectProcedure(CocModElements instance) {
-		super(instance, 917);
+		super(instance, 924);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -48,7 +48,7 @@ public class CactusBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:molten_cactus")
 	public static final Block block = null;
 	public CactusBlock(CocModElements instance) {
-		super(instance, 122);
+		super(instance, 119);
 	}
 
 	@Override

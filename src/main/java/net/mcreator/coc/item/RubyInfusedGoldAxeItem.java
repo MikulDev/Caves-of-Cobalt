@@ -23,7 +23,7 @@ public class RubyInfusedGoldAxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_axe_ruby")
 	public static final Item block = null;
 	public RubyInfusedGoldAxeItem(CocModElements instance) {
-		super(instance, 247);
+		super(instance, 246);
 	}
 
 	@Override

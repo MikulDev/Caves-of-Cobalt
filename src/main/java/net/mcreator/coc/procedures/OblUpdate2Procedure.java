@@ -14,7 +14,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class OblUpdate2Procedure extends CocModElements.ModElement {
 	public OblUpdate2Procedure(CocModElements instance) {
-		super(instance, 944);
+		super(instance, 951);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -44,7 +44,7 @@ public class OblUpdate2Procedure extends CocModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		double spawnchecks = 0;
 		if ((CocModVariables.MapVariables.get(world).doBiomes)) {
-			if (((y > 12) && (y < 50))) {
+			if (((y > 15) && (y < 50))) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("world", world);

@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ColdPlantSpawnerPlaceProcedure extends CocModElements.ModElement {
 	public ColdPlantSpawnerPlaceProcedure(CocModElements instance) {
-		super(instance, 376);
+		super(instance, 383);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

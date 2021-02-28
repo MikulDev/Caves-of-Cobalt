@@ -24,7 +24,7 @@ public class CrackedObsidianBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cracked_obsidian")
 	public static final Block block = null;
 	public CrackedObsidianBlock(CocModElements instance) {
-		super(instance, 92);
+		super(instance, 88);
 	}
 
 	@Override

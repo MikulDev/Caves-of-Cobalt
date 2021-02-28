@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class LavaLilyPlaceProcedure extends CocModElements.ModElement {
 	public LavaLilyPlaceProcedure(CocModElements instance) {
-		super(instance, 912);
+		super(instance, 919);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

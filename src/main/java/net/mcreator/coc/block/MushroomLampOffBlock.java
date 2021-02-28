@@ -30,7 +30,7 @@ public class MushroomLampOffBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mushroomlampoff")
 	public static final Block block = null;
 	public MushroomLampOffBlock(CocModElements instance) {
-		super(instance, 724);
+		super(instance, 731);
 	}
 
 	@Override

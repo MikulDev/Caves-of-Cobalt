@@ -61,7 +61,7 @@ public class BiomatorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:biomator")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BiomatorBlock(CocModElements instance) {
-		super(instance, 492);
+		super(instance, 499);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

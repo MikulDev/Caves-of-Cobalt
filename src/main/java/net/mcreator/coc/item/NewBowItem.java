@@ -55,7 +55,7 @@ public class NewBowItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:entitybulletblaze_bow")
 	public static final EntityType arrow = null;
 	public NewBowItem(CocModElements instance) {
-		super(instance, 225);
+		super(instance, 224);
 	}
 
 	@Override

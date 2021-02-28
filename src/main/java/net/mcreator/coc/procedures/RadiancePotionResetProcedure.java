@@ -10,7 +10,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadiancePotionResetProcedure extends CocModElements.ModElement {
 	public RadiancePotionResetProcedure(CocModElements instance) {
-		super(instance, 839);
+		super(instance, 846);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

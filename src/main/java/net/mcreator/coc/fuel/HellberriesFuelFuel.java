@@ -13,7 +13,7 @@ import net.mcreator.coc.CocModElements;
 @CocModElements.ModElement.Tag
 public class HellberriesFuelFuel extends CocModElements.ModElement {
 	public HellberriesFuelFuel(CocModElements instance) {
-		super(instance, 562);
+		super(instance, 569);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

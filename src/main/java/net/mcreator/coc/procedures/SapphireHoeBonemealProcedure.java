@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SapphireHoeBonemealProcedure extends CocModElements.ModElement {
 	public SapphireHoeBonemealProcedure(CocModElements instance) {
-		super(instance, 893);
+		super(instance, 900);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

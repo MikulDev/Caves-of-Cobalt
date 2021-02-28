@@ -25,7 +25,7 @@ public class NetherBedrockOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:nether_bedrock_ore")
 	public static final Block block = null;
 	public NetherBedrockOreBlock(CocModElements instance) {
-		super(instance, 75);
+		super(instance, 78);
 	}
 
 	@Override

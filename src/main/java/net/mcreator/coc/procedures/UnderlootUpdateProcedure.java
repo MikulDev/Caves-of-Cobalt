@@ -30,7 +30,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class UnderlootUpdateProcedure extends CocModElements.ModElement {
 	public UnderlootUpdateProcedure(CocModElements instance) {
-		super(instance, 613);
+		super(instance, 620);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -27,7 +27,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class MirewoodLogRClickProcedure extends CocModElements.ModElement {
 	public MirewoodLogRClickProcedure(CocModElements instance) {
-		super(instance, 879);
+		super(instance, 886);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

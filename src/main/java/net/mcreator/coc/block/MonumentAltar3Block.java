@@ -43,7 +43,7 @@ public class MonumentAltar3Block extends CocModElements.ModElement {
 	@ObjectHolder("coc:monument_altar_3")
 	public static final Block block = null;
 	public MonumentAltar3Block(CocModElements instance) {
-		super(instance, 808);
+		super(instance, 815);
 	}
 
 	@Override

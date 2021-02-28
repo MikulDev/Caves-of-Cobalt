@@ -34,7 +34,7 @@ public class CrySpikeSetterBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cryspikesetter")
 	public static final Block block = null;
 	public CrySpikeSetterBlock(CocModElements instance) {
-		super(instance, 526);
+		super(instance, 533);
 	}
 
 	@Override

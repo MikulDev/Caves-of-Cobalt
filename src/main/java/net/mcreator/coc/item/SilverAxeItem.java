@@ -17,7 +17,7 @@ public class SilverAxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:silver_axe")
 	public static final Item block = null;
 	public SilverAxeItem(CocModElements instance) {
-		super(instance, 276);
+		super(instance, 275);
 	}
 
 	@Override

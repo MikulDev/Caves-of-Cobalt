@@ -33,7 +33,7 @@ public class MushroomSpawnerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mushroomspawner")
 	public static final Block block = null;
 	public MushroomSpawnerBlock(CocModElements instance) {
-		super(instance, 346);
+		super(instance, 353);
 	}
 
 	@Override

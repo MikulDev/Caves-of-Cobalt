@@ -79,7 +79,7 @@ public class UndergroundLootBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:undergroundloot")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public UndergroundLootBlock(CocModElements instance) {
-		super(instance, 611);
+		super(instance, 618);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -16,7 +16,7 @@ public class InfernoFeatherItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:infernofeather")
 	public static final Item block = null;
 	public InfernoFeatherItem(CocModElements instance) {
-		super(instance, 198);
+		super(instance, 197);
 	}
 
 	@Override

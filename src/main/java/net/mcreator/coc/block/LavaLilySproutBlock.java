@@ -30,6 +30,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
+import net.mcreator.coc.item.LavaLilySproutedItem;
 
 import net.mcreator.coc.procedures.LavaLilyTestProcedure;
 import net.mcreator.coc.CocModElements;
@@ -137,7 +138,7 @@ public class LavaLilySproutBlock extends CocModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(LavaLilySproutedItem.block, 1));
 		}
 
 		@Override

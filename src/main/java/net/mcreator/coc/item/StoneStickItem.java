@@ -16,7 +16,7 @@ public class StoneStickItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:stone_rod")
 	public static final Item block = null;
 	public StoneStickItem(CocModElements instance) {
-		super(instance, 162);
+		super(instance, 161);
 	}
 
 	@Override

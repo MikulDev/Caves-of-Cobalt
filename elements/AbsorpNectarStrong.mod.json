@@ -1,0 +1,31 @@
+{
+  "_fv": 15,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "absorption_nectar",
+    "customModelName": "Normal",
+    "name": "Nectar of Absorption",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "§9Absorption II (3:00)"
+    ],
+    "creativeTab": {
+      "value": "BREWING"
+    },
+    "stackSize": 4,
+    "nutritionalValue": 0,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "CUSTOM:GlassVial"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "AbsorpStrongEffect"
+    }
+  }
+}

@@ -39,7 +39,7 @@ public class RichLapisBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:rich_lapis_ore")
 	public static final Block block = null;
 	public RichLapisBlock(CocModElements instance) {
-		super(instance, 40);
+		super(instance, 42);
 	}
 
 	@Override

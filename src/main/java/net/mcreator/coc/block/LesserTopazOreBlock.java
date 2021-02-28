@@ -45,7 +45,7 @@ public class LesserTopazOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:flawed_topaz_ore")
 	public static final Block block = null;
 	public LesserTopazOreBlock(CocModElements instance) {
-		super(instance, 33);
+		super(instance, 35);
 	}
 
 	@Override

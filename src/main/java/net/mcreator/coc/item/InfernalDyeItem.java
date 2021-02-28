@@ -16,7 +16,7 @@ public class InfernalDyeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:infernal_dye")
 	public static final Item block = null;
 	public InfernalDyeItem(CocModElements instance) {
-		super(instance, 197);
+		super(instance, 196);
 	}
 
 	@Override

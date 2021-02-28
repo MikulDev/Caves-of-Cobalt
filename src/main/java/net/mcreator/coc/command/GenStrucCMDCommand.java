@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @CocModElements.ModElement.Tag
 public class GenStrucCMDCommand extends CocModElements.ModElement {
 	public GenStrucCMDCommand(CocModElements instance) {
-		super(instance, 549);
+		super(instance, 556);
 	}
 
 	@Override

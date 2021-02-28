@@ -70,7 +70,7 @@ public class HotblockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:hotblock")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public HotblockBlock(CocModElements instance) {
-		super(instance, 655);
+		super(instance, 662);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

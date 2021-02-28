@@ -23,7 +23,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class RubyHoeBreakProcedure extends CocModElements.ModElement {
 	public RubyHoeBreakProcedure(CocModElements instance) {
-		super(instance, 892);
+		super(instance, 899);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

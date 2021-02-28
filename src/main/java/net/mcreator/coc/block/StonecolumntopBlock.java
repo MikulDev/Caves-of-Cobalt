@@ -42,7 +42,7 @@ public class StonecolumntopBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:stonecolumntop")
 	public static final Block block = null;
 	public StonecolumntopBlock(CocModElements instance) {
-		super(instance, 312);
+		super(instance, 319);
 	}
 
 	@Override

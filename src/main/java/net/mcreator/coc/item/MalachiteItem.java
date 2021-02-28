@@ -16,7 +16,7 @@ public class MalachiteItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:malachite")
 	public static final Item block = null;
 	public MalachiteItem(CocModElements instance) {
-		super(instance, 187);
+		super(instance, 186);
 	}
 
 	@Override

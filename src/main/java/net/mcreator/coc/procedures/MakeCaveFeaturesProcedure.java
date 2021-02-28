@@ -35,6 +35,7 @@ import net.minecraft.block.Block;
 import net.mcreator.coc.PlaceHelper;
 import net.mcreator.coc.block.BrownMushroomShelvesBlock;
 import java.util.List;
+import net.mcreator.coc.procedures.ShaleCavernGenProcedure;
 
 @CocModElements.ModElement.Tag
 public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
@@ -106,9 +107,31 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 							successX = pos.getX();
 							successY = pos.getY();
 							successZ = pos.getZ();
-							if (Math.random() < 0.01)
+							if (Math.random() < 0.0002 && world.isAirBlock(pos))
 							{
-								for (int m = 0; m < Math.random() * 8 + 8; m++)
+								Map<String, Object> $_dependencies = new HashMap<>();
+								$_dependencies.put("x", (double) (pos.getX()));
+								$_dependencies.put("y", (double) (pos.getY()));
+								$_dependencies.put("z", (double) (pos.getZ()));
+								$_dependencies.put("world", iworld);
+								GenerateRuinsProcedure.executeProcedure($_dependencies);
+
+							}
+
+							else if (Math.random() < 0.0002 && world.isAirBlock(pos))
+							{
+								Map<String, Object> $_dependencies = new HashMap<>();
+								$_dependencies.put("x", (double) (pos.getX()));
+								$_dependencies.put("y", (double) (pos.getY()));
+								$_dependencies.put("z", (double) (pos.getZ()));
+								$_dependencies.put("world", iworld);
+								ShaleCavernGenProcedure.executeProcedure($_dependencies);
+
+							}
+							
+							if (Math.random() < 0.004)
+							{
+								for (int m = 0; m < Math.random() * 40 + 40; m++)
 								{
 									PlaceHelper placeHelper = new PlaceHelper(null);
 									BlockPos mushpos = new BlockPos(pos.add(Math.random() * 6 - 3, Math.random() * 6 - 3, Math.random() * 6 - 3));
@@ -186,16 +209,6 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 								
 							}
 
-							if (Math.random() < 0.0001 && world.isAirBlock(pos))
-							{
-								Map<String, Object> $_dependencies = new HashMap<>();
-								$_dependencies.put("x", (double) (pos.getX()));
-								$_dependencies.put("y", (double) (pos.getY()));
-								$_dependencies.put("z", (double) (pos.getZ()));
-								$_dependencies.put("world", iworld);
-								GenerateRuinsProcedure.executeProcedure($_dependencies);
-
-							}
 							
 							else if (world.getBlockState(pos.down(1)) == Blocks.STONE.getDefaultState()) 
 							{

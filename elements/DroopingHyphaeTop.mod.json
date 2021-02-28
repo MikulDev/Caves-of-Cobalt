@@ -96,9 +96,6 @@
     "onNeighbourBlockChanges": {
       "name": "DroopingHyphaeTest"
     },
-    "onTickUpdate": {
-      "name": "StrBudsSpores"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

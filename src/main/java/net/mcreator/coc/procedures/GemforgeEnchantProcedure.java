@@ -23,7 +23,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class GemforgeEnchantProcedure extends CocModElements.ModElement {
 	public GemforgeEnchantProcedure(CocModElements instance) {
-		super(instance, 763);
+		super(instance, 770);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

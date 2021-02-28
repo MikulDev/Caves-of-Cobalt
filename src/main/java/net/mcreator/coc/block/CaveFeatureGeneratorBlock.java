@@ -64,7 +64,7 @@ public class CaveFeatureGeneratorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cavefeaturegenerator")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CaveFeatureGeneratorBlock(CocModElements instance) {
-		super(instance, 717);
+		super(instance, 724);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

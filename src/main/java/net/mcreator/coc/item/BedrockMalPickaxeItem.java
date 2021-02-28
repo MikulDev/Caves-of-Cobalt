@@ -31,7 +31,7 @@ public class BedrockMalPickaxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:bedrock_malachite_pickaxe")
 	public static final Item block = null;
 	public BedrockMalPickaxeItem(CocModElements instance) {
-		super(instance, 281);
+		super(instance, 280);
 	}
 
 	@Override

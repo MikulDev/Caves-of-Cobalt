@@ -20,7 +20,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class IceChestParticlesProcedure extends CocModElements.ModElement {
 	public IceChestParticlesProcedure(CocModElements instance) {
-		super(instance, 385);
+		super(instance, 392);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

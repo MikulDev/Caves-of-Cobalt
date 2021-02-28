@@ -35,7 +35,7 @@ public class EmptyGoldArmorItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:empty_gold_boots")
 	public static final Item boots = null;
 	public EmptyGoldArmorItem(CocModElements instance) {
-		super(instance, 238);
+		super(instance, 237);
 	}
 
 	@Override

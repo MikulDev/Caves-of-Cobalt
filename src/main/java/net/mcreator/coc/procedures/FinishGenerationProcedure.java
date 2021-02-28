@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FinishGenerationProcedure extends CocModElements.ModElement {
 	public FinishGenerationProcedure(CocModElements instance) {
-		super(instance, 718);
+		super(instance, 725);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

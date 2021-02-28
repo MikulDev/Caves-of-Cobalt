@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CrumblerPoweredTickProcedure extends CocModElements.ModElement {
 	public CrumblerPoweredTickProcedure(CocModElements instance) {
-		super(instance, 608);
+		super(instance, 615);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

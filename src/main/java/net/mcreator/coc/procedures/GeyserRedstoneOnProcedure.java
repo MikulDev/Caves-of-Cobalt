@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GeyserRedstoneOnProcedure extends CocModElements.ModElement {
 	public GeyserRedstoneOnProcedure(CocModElements instance) {
-		super(instance, 632);
+		super(instance, 639);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

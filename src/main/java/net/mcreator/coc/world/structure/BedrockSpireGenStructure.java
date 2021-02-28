@@ -31,7 +31,7 @@ import java.util.Random;
 @CocModElements.ModElement.Tag
 public class BedrockSpireGenStructure extends CocModElements.ModElement {
 	public BedrockSpireGenStructure(CocModElements instance) {
-		super(instance, 678);
+		super(instance, 685);
 	}
 
 	@Override

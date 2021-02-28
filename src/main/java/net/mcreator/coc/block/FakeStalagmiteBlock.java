@@ -10,7 +10,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
@@ -20,7 +19,6 @@ import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.shapes.VoxelShapes;
@@ -43,7 +41,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.coc.procedures.StalagmiteUpdateTickProcedure;
 import net.mcreator.coc.procedures.SpawnCrabProcedure;
 import net.mcreator.coc.procedures.FakeStalaPlaceProcedure;
 import net.mcreator.coc.procedures.FakeStalaMineProcedure;
@@ -61,7 +58,7 @@ public class FakeStalagmiteBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:fakestalagmite")
 	public static final Block block = null;
 	public FakeStalagmiteBlock(CocModElements instance) {
-		super(instance, 100);
+		super(instance, 97);
 	}
 
 	@Override
@@ -99,11 +96,6 @@ public class FakeStalagmiteBlock extends CocModElements.ModElement {
 		}
 
 		@Override
-		public int tickRate(IWorldReader world) {
-			return 1;
-		}
-
-		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
@@ -117,7 +109,6 @@ public class FakeStalagmiteBlock extends CocModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
@@ -126,23 +117,6 @@ public class FakeStalagmiteBlock extends CocModElements.ModElement {
 				$_dependencies.put("world", world);
 				FakeStalaPlaceProcedure.executeProcedure($_dependencies);
 			}
-		}
-
-		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(state, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				StalagmiteUpdateTickProcedure.executeProcedure($_dependencies);
-			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
 
 		@Override

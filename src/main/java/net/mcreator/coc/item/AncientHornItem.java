@@ -24,7 +24,7 @@ public class AncientHornItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:ivory_horn")
 	public static final Item block = null;
 	public AncientHornItem(CocModElements instance) {
-		super(instance, 165);
+		super(instance, 164);
 	}
 
 	@Override

@@ -34,7 +34,7 @@ import java.util.Comparator;
 @CocModElements.ModElement.Tag
 public class RadiantTopazHelmEffectProcedure extends CocModElements.ModElement {
 	public RadiantTopazHelmEffectProcedure(CocModElements instance) {
-		super(instance, 571);
+		super(instance, 578);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

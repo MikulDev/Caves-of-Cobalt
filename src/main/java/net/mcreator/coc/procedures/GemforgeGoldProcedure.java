@@ -25,7 +25,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemforgeGoldProcedure extends CocModElements.ModElement {
 	public GemforgeGoldProcedure(CocModElements instance) {
-		super(instance, 853);
+		super(instance, 860);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

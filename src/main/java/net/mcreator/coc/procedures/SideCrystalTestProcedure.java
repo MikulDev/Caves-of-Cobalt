@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SideCrystalTestProcedure extends CocModElements.ModElement {
 	public SideCrystalTestProcedure(CocModElements instance) {
-		super(instance, 903);
+		super(instance, 910);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

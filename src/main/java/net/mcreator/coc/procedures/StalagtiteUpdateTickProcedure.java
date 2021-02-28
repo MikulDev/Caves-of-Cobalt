@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StalagtiteUpdateTickProcedure extends CocModElements.ModElement {
 	public StalagtiteUpdateTickProcedure(CocModElements instance) {
-		super(instance, 310);
+		super(instance, 317);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

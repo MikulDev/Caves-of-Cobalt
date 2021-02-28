@@ -24,7 +24,7 @@ public class MagmaMushTopAltBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:magma_mush_top_alt")
 	public static final Block block = null;
 	public MagmaMushTopAltBlock(CocModElements instance) {
-		super(instance, 65);
+		super(instance, 68);
 	}
 
 	@Override

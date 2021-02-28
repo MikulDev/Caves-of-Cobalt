@@ -1,0 +1,13 @@
+{
+  "group": "coc",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coc:brown_mushroom_shelves"
+    }
+  ],
+  "result": {
+    "item": "minecraft:brown_mushroom",
+    "count": 5
+  }
+}

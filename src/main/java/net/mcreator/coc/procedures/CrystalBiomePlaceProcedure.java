@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CrystalBiomePlaceProcedure extends CocModElements.ModElement {
 	public CrystalBiomePlaceProcedure(CocModElements instance) {
-		super(instance, 949);
+		super(instance, 956);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

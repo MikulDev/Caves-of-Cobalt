@@ -38,7 +38,7 @@ public class MirewoodSlabBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewood_slab")
 	public static final Block block = null;
 	public MirewoodSlabBlock(CocModElements instance) {
-		super(instance, 52);
+		super(instance, 54);
 	}
 
 	@Override

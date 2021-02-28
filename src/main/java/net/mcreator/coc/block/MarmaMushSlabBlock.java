@@ -26,7 +26,7 @@ public class MarmaMushSlabBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:magma_mushroom_slab")
 	public static final Block block = null;
 	public MarmaMushSlabBlock(CocModElements instance) {
-		super(instance, 66);
+		super(instance, 69);
 	}
 
 	@Override

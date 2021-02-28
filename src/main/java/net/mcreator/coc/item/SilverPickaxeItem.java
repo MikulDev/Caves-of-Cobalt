@@ -17,7 +17,7 @@ public class SilverPickaxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:silver_pickaxe")
 	public static final Item block = null;
 	public SilverPickaxeItem(CocModElements instance) {
-		super(instance, 275);
+		super(instance, 274);
 	}
 
 	@Override

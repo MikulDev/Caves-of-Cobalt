@@ -74,7 +74,7 @@ public class BedrockSpireSpawnerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:bedrockspirespawner")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BedrockSpireSpawnerBlock(CocModElements instance) {
-		super(instance, 676);
+		super(instance, 683);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

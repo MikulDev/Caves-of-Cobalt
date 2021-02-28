@@ -31,7 +31,7 @@ public class ColdBiomeBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:coldbiomeblock")
 	public static final Block block = null;
 	public ColdBiomeBlockBlock(CocModElements instance) {
-		super(instance, 372);
+		super(instance, 379);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ShroomiumSpreadProcedure extends CocModElements.ModElement {
 	public ShroomiumSpreadProcedure(CocModElements instance) {
-		super(instance, 400);
+		super(instance, 407);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -51,7 +51,7 @@ public class LavaCakeEat1Block extends CocModElements.ModElement {
 	@ObjectHolder("coc:lavacakeeat1")
 	public static final Block block = null;
 	public LavaCakeEat1Block(CocModElements instance) {
-		super(instance, 566);
+		super(instance, 573);
 	}
 
 	@Override

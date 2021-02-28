@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SilverBowStopDrawProcedure extends CocModElements.ModElement {
 	public SilverBowStopDrawProcedure(CocModElements instance) {
-		super(instance, 471);
+		super(instance, 478);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

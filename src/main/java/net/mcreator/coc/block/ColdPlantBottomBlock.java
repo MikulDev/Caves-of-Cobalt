@@ -41,7 +41,7 @@ public class ColdPlantBottomBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:frozen_fern_bottom")
 	public static final Block block = null;
 	public ColdPlantBottomBlock(CocModElements instance) {
-		super(instance, 374);
+		super(instance, 381);
 	}
 
 	@Override

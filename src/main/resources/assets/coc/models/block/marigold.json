@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coc:blocks/marigold_bud",
+    "particle": "coc:blocks/marigold_bud"
+  }
+}

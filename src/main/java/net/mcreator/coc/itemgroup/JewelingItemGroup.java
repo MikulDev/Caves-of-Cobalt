@@ -13,7 +13,7 @@ import net.mcreator.coc.CocModElements;
 @CocModElements.ModElement.Tag
 public class JewelingItemGroup extends CocModElements.ModElement {
 	public JewelingItemGroup(CocModElements instance) {
-		super(instance, 855);
+		super(instance, 862);
 	}
 
 	@Override

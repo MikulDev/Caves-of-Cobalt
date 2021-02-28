@@ -43,7 +43,7 @@ public class MonumentAltarEmptyBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:monument_altar_empty")
 	public static final Block block = null;
 	public MonumentAltarEmptyBlock(CocModElements instance) {
-		super(instance, 809);
+		super(instance, 816);
 	}
 
 	@Override

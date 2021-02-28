@@ -25,7 +25,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CrystalatorUpdateProcedure extends CocModElements.ModElement {
 	public CrystalatorUpdateProcedure(CocModElements instance) {
-		super(instance, 515);
+		super(instance, 522);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

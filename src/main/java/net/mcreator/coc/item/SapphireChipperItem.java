@@ -31,7 +31,7 @@ public class SapphireChipperItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:sapphire_chipper")
 	public static final Item block = null;
 	public SapphireChipperItem(CocModElements instance) {
-		super(instance, 286);
+		super(instance, 285);
 	}
 
 	@Override

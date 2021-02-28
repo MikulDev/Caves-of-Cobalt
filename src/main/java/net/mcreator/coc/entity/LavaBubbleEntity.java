@@ -42,7 +42,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class LavaBubbleEntity extends CocModElements.ModElement {
 	public static EntityType entity = null;
 	public LavaBubbleEntity(CocModElements instance) {
-		super(instance, 158);
+		super(instance, 157);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

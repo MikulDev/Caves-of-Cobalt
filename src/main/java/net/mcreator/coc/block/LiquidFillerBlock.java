@@ -31,7 +31,7 @@ public class LiquidFillerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:liquidfiller")
 	public static final Block block = null;
 	public LiquidFillerBlock(CocModElements instance) {
-		super(instance, 350);
+		super(instance, 357);
 	}
 
 	@Override

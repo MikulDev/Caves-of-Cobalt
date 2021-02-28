@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class NetherEndSpawnCheckProcedure extends CocModElements.ModElement {
 	public NetherEndSpawnCheckProcedure(CocModElements instance) {
-		super(instance, 553);
+		super(instance, 560);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

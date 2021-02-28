@@ -6,7 +6,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
@@ -17,29 +16,24 @@ import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.coc.item.MalachiteItem;
 import net.mcreator.coc.CocModElements;
 
 import java.util.Random;
-import java.util.List;
-import java.util.Collections;
 
 @CocModElements.ModElement.Tag
 public class MalachiteOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:malachite_ore")
 	public static final Block block = null;
 	public MalachiteOreBlock(CocModElements instance) {
-		super(instance, 31);
+		super(instance, 33);
 	}
 
 	@Override
@@ -53,14 +47,6 @@ public class MalachiteOreBlock extends CocModElements.ModElement {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(4)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("malachite_ore");
-		}
-
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(MalachiteItem.block, (int) (1)));
 		}
 	}
 	@Override

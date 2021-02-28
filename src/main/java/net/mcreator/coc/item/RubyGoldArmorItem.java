@@ -35,7 +35,7 @@ public class RubyGoldArmorItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:ruby_gold_boots")
 	public static final Item boots = null;
 	public RubyGoldArmorItem(CocModElements instance) {
-		super(instance, 244);
+		super(instance, 243);
 	}
 
 	@Override

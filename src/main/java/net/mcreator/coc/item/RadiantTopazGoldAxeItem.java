@@ -29,7 +29,7 @@ public class RadiantTopazGoldAxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_axe_radiant")
 	public static final Item block = null;
 	public RadiantTopazGoldAxeItem(CocModElements instance) {
-		super(instance, 235);
+		super(instance, 234);
 	}
 
 	@Override

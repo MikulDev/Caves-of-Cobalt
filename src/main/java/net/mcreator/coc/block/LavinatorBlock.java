@@ -30,7 +30,7 @@ public class LavinatorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:lavinator")
 	public static final Block block = null;
 	public LavinatorBlock(CocModElements instance) {
-		super(instance, 625);
+		super(instance, 632);
 	}
 
 	@Override

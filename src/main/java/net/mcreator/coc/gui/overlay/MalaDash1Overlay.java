@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMap;
 @CocModElements.ModElement.Tag
 public class MalaDash1Overlay extends CocModElements.ModElement {
 	public MalaDash1Overlay(CocModElements instance) {
-		super(instance, 830);
+		super(instance, 837);
 	}
 
 	@Override

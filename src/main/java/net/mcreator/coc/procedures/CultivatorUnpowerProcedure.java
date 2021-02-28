@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CultivatorUnpowerProcedure extends CocModElements.ModElement {
 	public CultivatorUnpowerProcedure(CocModElements instance) {
-		super(instance, 793);
+		super(instance, 800);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -44,7 +44,7 @@ public class BrownMushroomShelvesBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:brown_mushroom_shelves")
 	public static final Block block = null;
 	public BrownMushroomShelvesBlock(CocModElements instance) {
-		super(instance, 971);
+		super(instance, 966);
 	}
 
 	@Override

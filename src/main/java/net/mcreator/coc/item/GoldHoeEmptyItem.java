@@ -23,7 +23,7 @@ public class GoldHoeEmptyItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_hoe_empty")
 	public static final Item block = null;
 	public GoldHoeEmptyItem(CocModElements instance) {
-		super(instance, 243);
+		super(instance, 242);
 	}
 
 	@Override

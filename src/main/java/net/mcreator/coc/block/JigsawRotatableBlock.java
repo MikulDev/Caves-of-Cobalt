@@ -37,7 +37,7 @@ public class JigsawRotatableBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:jigsaw_rotatable")
 	public static final Block block = null;
 	public JigsawRotatableBlock(CocModElements instance) {
-		super(instance, 779);
+		super(instance, 786);
 	}
 
 	@Override

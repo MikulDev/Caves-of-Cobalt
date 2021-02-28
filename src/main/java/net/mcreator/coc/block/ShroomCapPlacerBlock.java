@@ -27,7 +27,7 @@ public class ShroomCapPlacerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:shroomcapplacer")
 	public static final Block block = null;
 	public ShroomCapPlacerBlock(CocModElements instance) {
-		super(instance, 545);
+		super(instance, 552);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class DrizzlerVeilItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:wanderwart_veil")
 	public static final Item block = null;
 	public DrizzlerVeilItem(CocModElements instance) {
-		super(instance, 193);
+		super(instance, 192);
 	}
 
 	@Override

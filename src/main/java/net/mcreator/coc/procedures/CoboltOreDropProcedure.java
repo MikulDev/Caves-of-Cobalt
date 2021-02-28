@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CoboltOreDropProcedure extends CocModElements.ModElement {
 	public CoboltOreDropProcedure(CocModElements instance) {
-		super(instance, 433);
+		super(instance, 440);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

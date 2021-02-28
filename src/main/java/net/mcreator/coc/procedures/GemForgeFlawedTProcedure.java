@@ -20,7 +20,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemForgeFlawedTProcedure extends CocModElements.ModElement {
 	public GemForgeFlawedTProcedure(CocModElements instance) {
-		super(instance, 865);
+		super(instance, 872);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

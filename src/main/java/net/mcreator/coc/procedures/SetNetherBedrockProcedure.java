@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SetNetherBedrockProcedure extends CocModElements.ModElement {
 	public SetNetherBedrockProcedure(CocModElements instance) {
-		super(instance, 673);
+		super(instance, 680);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

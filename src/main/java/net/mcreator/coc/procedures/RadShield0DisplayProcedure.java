@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadShield0DisplayProcedure extends CocModElements.ModElement {
 	public RadShield0DisplayProcedure(CocModElements instance) {
-		super(instance, 820);
+		super(instance, 827);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {

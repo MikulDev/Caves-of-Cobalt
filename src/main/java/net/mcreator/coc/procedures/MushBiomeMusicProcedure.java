@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MushBiomeMusicProcedure extends CocModElements.ModElement {
 	public MushBiomeMusicProcedure(CocModElements instance) {
-		super(instance, 684);
+		super(instance, 691);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

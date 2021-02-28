@@ -1,0 +1,23 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "CUSTOM:WaterVial"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:ScorchpetalFlower"
+    },
+    "brewingReturnStack": {
+      "value": "CUSTOM:MagmawNectarNormal"
+    },
+    "name": "magmaw_nectar_rec",
+    "namespace": "mod"
+  }
+}

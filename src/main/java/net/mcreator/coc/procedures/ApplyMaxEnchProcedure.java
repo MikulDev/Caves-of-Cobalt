@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ApplyMaxEnchProcedure extends CocModElements.ModElement {
 	public ApplyMaxEnchProcedure(CocModElements instance) {
-		super(instance, 770);
+		super(instance, 777);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

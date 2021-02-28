@@ -13,6 +13,8 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -46,7 +48,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 1,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -90,11 +92,9 @@
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
+    "fluidRestrictions": [],
     "onBlockAdded": {
       "name": "FakeStalaPlace"
-    },
-    "onTickUpdate": {
-      "name": "StalagmiteUpdateTick"
     },
     "onDestroyedByPlayer": {
       "name": "FakeStalaMDestroy"

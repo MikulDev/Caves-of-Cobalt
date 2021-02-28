@@ -23,7 +23,7 @@ public class RawCrabItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:raw_crab")
 	public static final Item block = null;
 	public RawCrabItem(CocModElements instance) {
-		super(instance, 264);
+		super(instance, 263);
 	}
 
 	@Override

@@ -19,7 +19,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class PutMonumentAltarProcedure extends CocModElements.ModElement {
 	public PutMonumentAltarProcedure(CocModElements instance) {
-		super(instance, 811);
+		super(instance, 818);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

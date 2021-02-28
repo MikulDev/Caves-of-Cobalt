@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FreezingMistFreezeProcedure extends CocModElements.ModElement {
 	public FreezingMistFreezeProcedure(CocModElements instance) {
-		super(instance, 438);
+		super(instance, 445);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

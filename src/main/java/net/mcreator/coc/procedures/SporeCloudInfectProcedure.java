@@ -27,7 +27,7 @@ import java.util.Comparator;
 @CocModElements.ModElement.Tag
 public class SporeCloudInfectProcedure extends CocModElements.ModElement {
 	public SporeCloudInfectProcedure(CocModElements instance) {
-		super(instance, 873);
+		super(instance, 880);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

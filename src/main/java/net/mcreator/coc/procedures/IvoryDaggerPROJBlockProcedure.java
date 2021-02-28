@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class IvoryDaggerPROJBlockProcedure extends CocModElements.ModElement {
 	public IvoryDaggerPROJBlockProcedure(CocModElements instance) {
-		super(instance, 581);
+		super(instance, 588);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

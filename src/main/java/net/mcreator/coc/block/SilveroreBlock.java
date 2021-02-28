@@ -39,7 +39,7 @@ public class SilveroreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:silver_ore")
 	public static final Block block = null;
 	public SilveroreBlock(CocModElements instance) {
-		super(instance, 20);
+		super(instance, 22);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class SilveroreBlock extends CocModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(2.8f, 14f).lightValue(0).harvestLevel(2)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 4f).lightValue(0).harvestLevel(2)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("silver_ore");
 		}

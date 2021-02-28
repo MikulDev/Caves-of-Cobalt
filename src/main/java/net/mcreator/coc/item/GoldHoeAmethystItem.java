@@ -31,7 +31,7 @@ public class GoldHoeAmethystItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_hoe_amethyst")
 	public static final Item block = null;
 	public GoldHoeAmethystItem(CocModElements instance) {
-		super(instance, 261);
+		super(instance, 260);
 	}
 
 	@Override

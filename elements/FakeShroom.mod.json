@@ -13,6 +13,8 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -90,9 +92,7 @@
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
-    "onTickUpdate": {
-      "name": "StalagmiteUpdateTick"
-    },
+    "fluidRestrictions": [],
     "onStartToDestroy": {
       "name": "SpawnCrab"
     },

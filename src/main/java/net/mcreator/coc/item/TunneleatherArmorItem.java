@@ -35,7 +35,7 @@ public class TunneleatherArmorItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:tunneleather_boots")
 	public static final Item boots = null;
 	public TunneleatherArmorItem(CocModElements instance) {
-		super(instance, 229);
+		super(instance, 228);
 	}
 
 	@Override

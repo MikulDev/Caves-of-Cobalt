@@ -30,10 +30,10 @@ import java.util.Collections;
 
 @CocModElements.ModElement.Tag
 public class ShaleWallBlock extends CocModElements.ModElement {
-	@ObjectHolder("coc:shale_wall")
+	@ObjectHolder("coc:polished_shale_wall")
 	public static final Block block = null;
 	public ShaleWallBlock(CocModElements instance) {
-		super(instance, 94);
+		super(instance, 90);
 	}
 
 	@Override
@@ -44,7 +44,7 @@ public class ShaleWallBlock extends CocModElements.ModElement {
 	public static class CustomBlock extends WallBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("shale_wall");
+			setRegistryName("polished_shale_wall");
 		}
 
 		private boolean func_220113_a(BlockState state, boolean checkattach, Direction face) {

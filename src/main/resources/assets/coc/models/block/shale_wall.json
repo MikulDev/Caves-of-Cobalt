@@ -1,7 +1,7 @@
 {
   "parent": "block/template_wall_side",
   "textures": {
-    "wall": "coc:blocks/shale_polished",
-    "particle": "coc:blocks/shale_polished"
+    "wall": "coc:blocks/shale",
+    "particle": "coc:blocks/shale"
   }
 }

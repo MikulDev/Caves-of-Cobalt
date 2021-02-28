@@ -38,7 +38,7 @@ public class RichGoldBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:rich_gold_ore")
 	public static final Block block = null;
 	public RichGoldBlock(CocModElements instance) {
-		super(instance, 41);
+		super(instance, 43);
 	}
 
 	@Override

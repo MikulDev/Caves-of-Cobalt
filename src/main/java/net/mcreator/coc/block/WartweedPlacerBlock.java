@@ -30,7 +30,7 @@ public class WartweedPlacerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:wartweedplacer")
 	public static final Block block = null;
 	public WartweedPlacerBlock(CocModElements instance) {
-		super(instance, 680);
+		super(instance, 687);
 	}
 
 	@Override

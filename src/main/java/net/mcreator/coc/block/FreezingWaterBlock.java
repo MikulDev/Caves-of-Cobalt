@@ -44,7 +44,7 @@ public class FreezingWaterBlock extends CocModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public FreezingWaterBlock(CocModElements instance) {
-		super(instance, 381);
+		super(instance, 388);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

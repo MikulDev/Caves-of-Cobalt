@@ -8,7 +8,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.SpawnReason;
@@ -16,7 +15,6 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
 
 import net.mcreator.coc.entity.StalagmetCrabEntity;
 import net.mcreator.coc.entity.HermitShroomEntity;
@@ -25,19 +23,21 @@ import net.mcreator.coc.block.StalagmiteBlock;
 import net.mcreator.coc.block.GlowingStoneBlock;
 import net.mcreator.coc.block.FakeStalagmiteBlock;
 import net.mcreator.coc.block.FakeShroomBlock;
-import net.mcreator.coc.CocModVariables;
 import net.mcreator.coc.CocModElements;
 import net.mcreator.coc.CocMod;
 
+import java.util.stream.Collectors;
+import java.util.function.Function;
 import java.util.Map;
 import java.util.List;
 import java.util.Iterator;
 import java.util.HashMap;
+import java.util.Comparator;
 
 @CocModElements.ModElement.Tag
 public class StalagmiteUpdateTickProcedure extends CocModElements.ModElement {
 	public StalagmiteUpdateTickProcedure(CocModElements instance) {
-		super(instance, 311);
+		super(instance, 318);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -68,36 +68,19 @@ public class StalagmiteUpdateTickProcedure extends CocModElements.ModElement {
 		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == FakeShroomBlock.block.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == FakeStalagmiteBlock.block.getDefaultState()
 						.getBlock()))) {
-			if (((new Object() {
-				public double getValue(IWorld world, BlockPos pos, String tag) {
-					TileEntity tileEntity = world.getTileEntity(pos);
-					if (tileEntity != null)
-						return tileEntity.getTileData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "time")) < 10)) {
-				if (!world.getWorld().isRemote) {
-					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-					TileEntity _tileEntity = world.getTileEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_tileEntity != null)
-						_tileEntity.getTileData().putDouble("time", ((new Object() {
-							public double getValue(IWorld world, BlockPos pos, String tag) {
-								TileEntity tileEntity = world.getTileEntity(pos);
-								if (tileEntity != null)
-									return tileEntity.getTileData().getDouble(tag);
-								return -1;
+			{
+				List<Entity> _entfound = world
+						.getEntitiesWithinAABB(Entity.class,
+								new AxisAlignedBB(x - (8 / 2d), y - (8 / 2d), z - (8 / 2d), x + (8 / 2d), y + (8 / 2d), z + (8 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 							}
-						}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "time")) + 1));
-					world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
-				}
-				if ((((x > ((CocModVariables.WorldVariables.get(world).CrabHurtX) - 15))
-						&& (x < ((CocModVariables.WorldVariables.get(world).CrabHurtX) + 15)))
-						&& (((y > ((CocModVariables.WorldVariables.get(world).CrabHurtY) - 15))
-								&& (y > ((CocModVariables.WorldVariables.get(world).CrabHurtY) - 15)))
-								&& ((z > ((CocModVariables.WorldVariables.get(world).CrabHurtZ) - 15))
-										&& (z > ((CocModVariables.WorldVariables.get(world).CrabHurtZ) - 15)))))) {
-					if ((Math.random() < 0.05)) {
+						}.compareDistOf(x, y, z)).collect(Collectors.toList());
+				for (Entity entityiterator : _entfound) {
+					if (((entityiterator instanceof PlayerEntity)
+							&& ((!((entityiterator instanceof PlayerEntity) ? ((PlayerEntity) entityiterator).abilities.isCreativeMode : false))
+									&& ((!(entityiterator.isSpectator())) && ((!(entityiterator.isSneaking())) && (Math.random() < 0.5)))))) {
 						{
 							Map<String, Object> $_dependencies = new HashMap<>();
 							$_dependencies.put("world", world);

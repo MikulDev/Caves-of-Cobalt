@@ -31,7 +31,7 @@ public class RubyChipperItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:ruby_chipper")
 	public static final Item block = null;
 	public RubyChipperItem(CocModElements instance) {
-		super(instance, 285);
+		super(instance, 284);
 	}
 
 	@Override

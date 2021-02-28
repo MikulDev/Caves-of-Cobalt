@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class PlaceJungleLootProcedure extends CocModElements.ModElement {
 	public PlaceJungleLootProcedure(CocModElements instance) {
-		super(instance, 868);
+		super(instance, 875);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

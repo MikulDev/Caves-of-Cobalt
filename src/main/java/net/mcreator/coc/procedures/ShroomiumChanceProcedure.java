@@ -25,7 +25,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class ShroomiumChanceProcedure extends CocModElements.ModElement {
 	public ShroomiumChanceProcedure(CocModElements instance) {
-		super(instance, 401);
+		super(instance, 408);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

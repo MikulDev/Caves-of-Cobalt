@@ -10,7 +10,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class InfernalArmorResistProcedure extends CocModElements.ModElement {
 	public InfernalArmorResistProcedure(CocModElements instance) {
-		super(instance, 480);
+		super(instance, 487);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

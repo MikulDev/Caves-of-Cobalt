@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ShroomSporeDetectProcedure extends CocModElements.ModElement {
 	public ShroomSporeDetectProcedure(CocModElements instance) {
-		super(instance, 403);
+		super(instance, 410);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

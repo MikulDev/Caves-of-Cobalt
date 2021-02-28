@@ -32,7 +32,7 @@ public class LiquidGeneratorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:liquidgenerator")
 	public static final Block block = null;
 	public LiquidGeneratorBlock(CocModElements instance) {
-		super(instance, 349);
+		super(instance, 356);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadiantHoeBreakProcedure extends CocModElements.ModElement {
 	public RadiantHoeBreakProcedure(CocModElements instance) {
-		super(instance, 896);
+		super(instance, 903);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

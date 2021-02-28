@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FillLavaProcedure extends CocModElements.ModElement {
 	public FillLavaProcedure(CocModElements instance) {
-		super(instance, 968);
+		super(instance, 975);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

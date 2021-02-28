@@ -26,7 +26,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class TikiTorchPlaceProcedure extends CocModElements.ModElement {
 	public TikiTorchPlaceProcedure(CocModElements instance) {
-		super(instance, 451);
+		super(instance, 458);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

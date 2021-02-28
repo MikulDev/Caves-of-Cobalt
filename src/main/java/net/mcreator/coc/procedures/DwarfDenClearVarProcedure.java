@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class DwarfDenClearVarProcedure extends CocModElements.ModElement {
 	public DwarfDenClearVarProcedure(CocModElements instance) {
-		super(instance, 981);
+		super(instance, 988);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

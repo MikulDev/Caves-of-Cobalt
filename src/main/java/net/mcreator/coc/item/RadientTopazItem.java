@@ -18,7 +18,7 @@ public class RadientTopazItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:radiant_topaz")
 	public static final Item block = null;
 	public RadientTopazItem(CocModElements instance) {
-		super(instance, 185);
+		super(instance, 184);
 	}
 
 	@Override

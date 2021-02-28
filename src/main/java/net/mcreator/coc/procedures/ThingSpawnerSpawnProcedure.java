@@ -21,7 +21,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ThingSpawnerSpawnProcedure extends CocModElements.ModElement {
 	public ThingSpawnerSpawnProcedure(CocModElements instance) {
-		super(instance, 506);
+		super(instance, 513);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

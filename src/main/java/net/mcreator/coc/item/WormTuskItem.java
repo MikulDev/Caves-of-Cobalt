@@ -16,7 +16,7 @@ public class WormTuskItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:wormtusk")
 	public static final Item block = null;
 	public WormTuskItem(CocModElements instance) {
-		super(instance, 164);
+		super(instance, 163);
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class BlastedShaleStairsBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:blasted_shale_stairs")
 	public static final Block block = null;
 	public BlastedShaleStairsBlock(CocModElements instance) {
-		super(instance, 16);
+		super(instance, 18);
 	}
 
 	@Override

@@ -1,0 +1,10 @@
+{
+  "parent": "coc:custom/nimblemarigold",
+  "textures": {
+    "all": "coc:blocks/nimble_marigold_center",
+    "particle": "coc:blocks/nimble_marigold_center",
+    "nimble_marigold_center": "coc:blocks/nimble_marigold_center",
+    "nimble_marigold_leaf": "coc:blocks/nimble_marigold_leaf",
+    "nimble_marigold_base": "coc:blocks/nimble_marigold_base"
+  }
+}

@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemforgeParticlesProcedure extends CocModElements.ModElement {
 	public GemforgeParticlesProcedure(CocModElements instance) {
-		super(instance, 644);
+		super(instance, 651);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

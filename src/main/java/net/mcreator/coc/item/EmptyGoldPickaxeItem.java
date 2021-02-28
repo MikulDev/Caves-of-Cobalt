@@ -23,7 +23,7 @@ public class EmptyGoldPickaxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:emptygoldpickaxe")
 	public static final Item block = null;
 	public EmptyGoldPickaxeItem(CocModElements instance) {
-		super(instance, 240);
+		super(instance, 239);
 	}
 
 	@Override

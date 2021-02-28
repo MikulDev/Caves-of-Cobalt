@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "nimble_marigold_center": "nimble_marigold_center",
+        "nimble_marigold_leaf": "nimble_marigold_leaf",
+        "nimble_marigold_base": "nimble_marigold_base"
+      },
+      "name": "default"
+    }
+  }
+}

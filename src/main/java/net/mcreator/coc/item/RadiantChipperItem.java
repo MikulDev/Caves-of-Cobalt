@@ -31,7 +31,7 @@ public class RadiantChipperItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:radiant_chipper")
 	public static final Item block = null;
 	public RadiantChipperItem(CocModElements instance) {
-		super(instance, 288);
+		super(instance, 287);
 	}
 
 	@Override

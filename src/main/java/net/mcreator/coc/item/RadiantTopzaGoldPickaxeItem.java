@@ -33,7 +33,7 @@ public class RadiantTopzaGoldPickaxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_pickaxe_radiant")
 	public static final Item block = null;
 	public RadiantTopzaGoldPickaxeItem(CocModElements instance) {
-		super(instance, 234);
+		super(instance, 233);
 	}
 
 	@Override

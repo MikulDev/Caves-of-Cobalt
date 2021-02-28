@@ -35,7 +35,7 @@ public class AmethystGoldArmorItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:amethyst_gold_boots")
 	public static final Item boots = null;
 	public AmethystGoldArmorItem(CocModElements instance) {
-		super(instance, 256);
+		super(instance, 255);
 	}
 
 	@Override

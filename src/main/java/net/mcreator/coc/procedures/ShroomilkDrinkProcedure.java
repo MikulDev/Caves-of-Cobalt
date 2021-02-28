@@ -18,7 +18,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ShroomilkDrinkProcedure extends CocModElements.ModElement {
 	public ShroomilkDrinkProcedure(CocModElements instance) {
-		super(instance, 387);
+		super(instance, 394);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

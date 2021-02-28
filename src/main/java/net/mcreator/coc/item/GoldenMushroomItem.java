@@ -23,7 +23,7 @@ public class GoldenMushroomItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:golden_mushroom")
 	public static final Item block = null;
 	public GoldenMushroomItem(CocModElements instance) {
-		super(instance, 273);
+		super(instance, 272);
 	}
 
 	@Override

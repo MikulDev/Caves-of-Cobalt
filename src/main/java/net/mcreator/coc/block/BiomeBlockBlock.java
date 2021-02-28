@@ -37,7 +37,7 @@ public class BiomeBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:biomeblock")
 	public static final Block block = null;
 	public BiomeBlockBlock(CocModElements instance) {
-		super(instance, 348);
+		super(instance, 355);
 	}
 
 	@Override

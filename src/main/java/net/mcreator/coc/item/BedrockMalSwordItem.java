@@ -31,7 +31,7 @@ public class BedrockMalSwordItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:bedrock_malachite_sword")
 	public static final Item block = null;
 	public BedrockMalSwordItem(CocModElements instance) {
-		super(instance, 220);
+		super(instance, 219);
 	}
 
 	@Override

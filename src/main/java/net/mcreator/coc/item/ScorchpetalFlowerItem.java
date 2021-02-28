@@ -26,7 +26,7 @@ public class ScorchpetalFlowerItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:scorchpetal_flower")
 	public static final Item block = null;
 	public ScorchpetalFlowerItem(CocModElements instance) {
-		super(instance, 202);
+		super(instance, 201);
 	}
 
 	@Override

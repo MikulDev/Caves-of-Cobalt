@@ -47,7 +47,7 @@ public class GlowingMushroomSideBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:glowing_mushroom_side")
 	public static final Block block = null;
 	public GlowingMushroomSideBlock(CocModElements instance) {
-		super(instance, 783);
+		super(instance, 790);
 	}
 
 	@Override

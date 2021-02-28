@@ -29,7 +29,7 @@
     "name": "Sapphire Ore",
     "specialInfo": [],
     "hardness": 3.0,
-    "resistance": 20.0,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -37,10 +37,10 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Sappphire"
+      "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
@@ -105,6 +105,6 @@
     "frequencyPerChunks": 5,
     "frequencyOnChunk": 3,
     "minGenerateHeight": 1,
-    "maxGenerateHeight": 45
+    "maxGenerateHeight": 47
   }
 }

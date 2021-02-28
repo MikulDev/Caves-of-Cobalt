@@ -67,7 +67,7 @@ public class ObliteratorCrystalBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:obliterator_crystal")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public ObliteratorCrystalBlock(CocModElements instance) {
-		super(instance, 948);
+		super(instance, 955);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

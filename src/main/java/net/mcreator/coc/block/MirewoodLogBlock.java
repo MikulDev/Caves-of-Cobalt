@@ -36,7 +36,7 @@ public class MirewoodLogBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewood_log")
 	public static final Block block = null;
 	public MirewoodLogBlock(CocModElements instance) {
-		super(instance, 48);
+		super(instance, 50);
 	}
 
 	@Override

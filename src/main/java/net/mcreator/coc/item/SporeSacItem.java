@@ -51,7 +51,7 @@ public class SporeSacItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:entitybulletspore_sac")
 	public static final EntityType arrow = null;
 	public SporeSacItem(CocModElements instance) {
-		super(instance, 915);
+		super(instance, 922);
 	}
 
 	@Override

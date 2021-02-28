@@ -6,7 +6,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.CountRangeConfig;
@@ -21,7 +20,6 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -32,21 +30,18 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.coc.procedures.SulphurGetFireProcedure;
-import net.mcreator.coc.item.SulphurPowderItem;
 import net.mcreator.coc.CocModElements;
 
 import java.util.Random;
 import java.util.Map;
-import java.util.List;
 import java.util.HashMap;
-import java.util.Collections;
 
 @CocModElements.ModElement.Tag
 public class SulphurOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:sulphur_ore")
 	public static final Block block = null;
 	public SulphurOreBlock(CocModElements instance) {
-		super(instance, 37);
+		super(instance, 39);
 	}
 
 	@Override
@@ -65,14 +60,6 @@ public class SulphurOreBlock extends CocModElements.ModElement {
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 15;
-		}
-
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(SulphurPowderItem.block, (int) (1)));
 		}
 
 		@Override

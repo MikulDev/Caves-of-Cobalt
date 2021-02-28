@@ -30,7 +30,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SpawnCrabProcedure extends CocModElements.ModElement {
 	public SpawnCrabProcedure(CocModElements instance) {
-		super(instance, 334);
+		super(instance, 341);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -37,7 +37,7 @@ public class NetherMalachiteOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:nether_malachite_ore")
 	public static final Block block = null;
 	public NetherMalachiteOreBlock(CocModElements instance) {
-		super(instance, 74);
+		super(instance, 77);
 	}
 
 	@Override

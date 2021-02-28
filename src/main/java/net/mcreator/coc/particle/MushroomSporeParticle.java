@@ -28,7 +28,7 @@ import com.google.common.collect.ImmutableMap;
 public class MushroomSporeParticle extends CocModElements.ModElement {
 	public static final BasicParticleType particle = new BasicParticleType(false);
 	public MushroomSporeParticle(CocModElements instance) {
-		super(instance, 869);
+		super(instance, 876);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

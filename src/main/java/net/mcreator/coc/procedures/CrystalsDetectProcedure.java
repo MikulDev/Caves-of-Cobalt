@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CrystalsDetectProcedure extends CocModElements.ModElement {
 	public CrystalsDetectProcedure(CocModElements instance) {
-		super(instance, 527);
+		super(instance, 534);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

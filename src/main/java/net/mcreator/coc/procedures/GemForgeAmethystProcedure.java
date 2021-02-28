@@ -33,7 +33,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class GemForgeAmethystProcedure extends CocModElements.ModElement {
 	public GemForgeAmethystProcedure(CocModElements instance) {
-		super(instance, 370);
+		super(instance, 377);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

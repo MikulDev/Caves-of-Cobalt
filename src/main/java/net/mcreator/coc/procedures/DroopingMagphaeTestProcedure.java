@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class DroopingMagphaeTestProcedure extends CocModElements.ModElement {
 	public DroopingMagphaeTestProcedure(CocModElements instance) {
-		super(instance, 964);
+		super(instance, 971);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

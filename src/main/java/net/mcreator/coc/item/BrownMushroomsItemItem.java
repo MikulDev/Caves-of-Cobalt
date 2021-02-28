@@ -26,7 +26,7 @@ public class BrownMushroomsItemItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:brown_mushrooms_item")
 	public static final Item block = null;
 	public BrownMushroomsItemItem(CocModElements instance) {
-		super(instance, 133);
+		super(instance, 130);
 	}
 
 	@Override

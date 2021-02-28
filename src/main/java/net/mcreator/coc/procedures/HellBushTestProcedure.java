@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class HellBushTestProcedure extends CocModElements.ModElement {
 	public HellBushTestProcedure(CocModElements instance) {
-		super(instance, 555);
+		super(instance, 562);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

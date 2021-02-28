@@ -16,7 +16,7 @@ public class SilveringotItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:silver_ingot")
 	public static final Item block = null;
 	public SilveringotItem(CocModElements instance) {
-		super(instance, 171);
+		super(instance, 170);
 	}
 
 	@Override

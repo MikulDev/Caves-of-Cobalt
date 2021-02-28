@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class FakeStalaMDestroyProcedure extends CocModElements.ModElement {
 	public FakeStalaMDestroyProcedure(CocModElements instance) {
-		super(instance, 652);
+		super(instance, 659);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

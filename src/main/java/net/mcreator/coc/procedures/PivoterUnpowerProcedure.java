@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class PivoterUnpowerProcedure extends CocModElements.ModElement {
 	public PivoterUnpowerProcedure(CocModElements instance) {
-		super(instance, 586);
+		super(instance, 593);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

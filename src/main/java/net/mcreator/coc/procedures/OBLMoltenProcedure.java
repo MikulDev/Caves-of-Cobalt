@@ -23,7 +23,6 @@ import net.mcreator.coc.CocModElements;
 import net.mcreator.coc.PlaceHelper;
 import net.mcreator.coc.block.CharstoneBlock;
 import net.mcreator.coc.block.LiquidFillerBlock;
-import net.mcreator.coc.block.WaterRemoverBlock;
 import java.util.Map;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.registries.ClearableRegistry;
@@ -101,19 +100,13 @@ public class OBLMoltenProcedure extends CocModElements.ModElement {
 							placepos = new Vec3d(x + lengthX, placeY, z + lengthZ);
 							
 							for (int k = 0; k < 150; ++k) 
-							{
-								
+							{	
 								BlockPos waterpos = new BlockPos(placepos.x + (Math.random() * 16) - 8, placepos.y + (Math.random() * 16) - 8, placepos.z + (Math.random() * 16) - 8);
-
-								if (world.getBlockState(waterpos).getMaterial() == Material.WATER)
-								{
-									world.setBlockState(waterpos, WaterRemoverBlock.block.getDefaultState(), 3);
-								}
 							}
 
-							Block[] replaces = {Blocks.STONE, Blocks.ANDESITE, Blocks.DIORITE, Blocks.GRANITE, Blocks.DIRT, Blocks.GRAVEL};
-							List<Block> blocklist = Arrays.asList(replaces);
-							placeHelper.carveAreaHollow(world, HellBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos), (int) (Math.random() * 3 + 6), (int) (Math.random() * 3 + 4), (int) (Math.random() * 3 + 6), blocklist);
+							Block[] blocks = {Blocks.CAVE_AIR, Blocks.AIR};
+							List<Block> blocklist = Arrays.asList(blocks);
+							placeHelper.carveAreaHollow(world, HellBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos), (int) (Math.random() * 3 + 6), (int) (Math.random() * 3 + 4), (int) (Math.random() * 3 + 6), blocklist, true);
 							//placeHelper.carveAreaHollow(world, new BlockPos(placepos), (int) (Math.random() * 3 + 6), (int) (Math.random() * 3 + 4), (int) (Math.random() * 3 + 6));
 							//world.setBlockState(new BlockPos(placepos.getX(), yo - 10, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
 

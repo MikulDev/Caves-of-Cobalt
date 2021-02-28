@@ -16,7 +16,7 @@ public class TunnelbugHideItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:tunnelbug_hide")
 	public static final Item block = null;
 	public TunnelbugHideItem(CocModElements instance) {
-		super(instance, 166);
+		super(instance, 165);
 	}
 
 	@Override

@@ -24,7 +24,7 @@ public class SapphireBlockBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:sapphire_block")
 	public static final Block block = null;
 	public SapphireBlockBlock(CocModElements instance) {
-		super(instance, 27);
+		super(instance, 29);
 	}
 
 	@Override

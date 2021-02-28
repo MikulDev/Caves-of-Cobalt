@@ -1,12 +1,31 @@
 {
-  "parent": "block/cube",
-  "textures": {
-    "down": "coc:blocks/planks_oak",
-    "up": "coc:blocks/planks_oak",
-    "north": "coc:blocks/runic_bookshelf",
-    "east": "coc:blocks/runic_bookshelf",
-    "south": "coc:blocks/runic_bookshelf",
-    "west": "coc:blocks/runic_bookshelf",
-    "particle": "coc:blocks/planks_oak"
-  }
+	"parent": "block/block",
+    "textures": {
+        "particle": "minecraft:block/oak_planks",
+        "shelves": "coc:blocks/runic_bookshelf",
+        "planks": "minecraft:block/oak_planks"
+    },
+    "elements": [
+        
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+            	"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#planks", "cullface": "up" },
+            	"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#planks", "cullface": "down" },
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#planks", "cullface": "north" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#planks", "cullface": "south" },
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#planks", "cullface": "east" },
+                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#planks", "cullface": "west" }
+            }
+        },
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#shelves", "cullface": "north" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#shelves", "cullface": "south" },
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#shelves", "cullface": "east" },
+                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#shelves", "cullface": "west" }
+            }
+        }
+    ]
 }

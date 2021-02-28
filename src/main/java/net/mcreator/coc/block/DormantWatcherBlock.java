@@ -82,7 +82,7 @@ public class DormantWatcherBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:dormantwatcher")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public DormantWatcherBlock(CocModElements instance) {
-		super(instance, 106);
+		super(instance, 103);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

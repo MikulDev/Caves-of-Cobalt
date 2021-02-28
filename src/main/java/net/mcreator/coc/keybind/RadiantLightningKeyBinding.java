@@ -31,7 +31,7 @@ public class RadiantLightningKeyBinding extends CocModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public RadiantLightningKeyBinding(CocModElements instance) {
-		super(instance, 588);
+		super(instance, 595);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

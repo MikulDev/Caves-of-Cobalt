@@ -37,7 +37,7 @@ public class ColdSeedBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:coldseed")
 	public static final Block block = null;
 	public ColdSeedBlock(CocModElements instance) {
-		super(instance, 375);
+		super(instance, 382);
 	}
 
 	@Override

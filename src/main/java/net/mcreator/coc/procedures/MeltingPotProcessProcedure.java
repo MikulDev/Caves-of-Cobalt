@@ -44,7 +44,7 @@ import java.util.Iterator;
 @CocModElements.ModElement.Tag
 public class MeltingPotProcessProcedure extends CocModElements.ModElement {
 	public MeltingPotProcessProcedure(CocModElements instance) {
-		super(instance, 396);
+		super(instance, 403);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

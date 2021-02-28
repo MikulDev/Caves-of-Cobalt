@@ -12,7 +12,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class InfusionTableRemoveProcedure extends CocModElements.ModElement {
 	public InfusionTableRemoveProcedure(CocModElements instance) {
-		super(instance, 740);
+		super(instance, 747);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

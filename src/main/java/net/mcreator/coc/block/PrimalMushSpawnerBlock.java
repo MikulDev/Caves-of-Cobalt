@@ -33,7 +33,7 @@ public class PrimalMushSpawnerBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:primal_mush_spawner")
 	public static final Block block = null;
 	public PrimalMushSpawnerBlock(CocModElements instance) {
-		super(instance, 966);
+		super(instance, 973);
 	}
 
 	@Override

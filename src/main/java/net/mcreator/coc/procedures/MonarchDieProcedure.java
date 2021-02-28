@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MonarchDieProcedure extends CocModElements.ModElement {
 	public MonarchDieProcedure(CocModElements instance) {
-		super(instance, 504);
+		super(instance, 511);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

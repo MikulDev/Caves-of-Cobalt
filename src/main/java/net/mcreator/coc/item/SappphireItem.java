@@ -16,7 +16,7 @@ public class SappphireItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:sapphire")
 	public static final Item block = null;
 	public SappphireItem(CocModElements instance) {
-		super(instance, 177);
+		super(instance, 176);
 	}
 
 	@Override

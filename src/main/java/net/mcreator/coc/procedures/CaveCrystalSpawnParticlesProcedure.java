@@ -16,7 +16,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CaveCrystalSpawnParticlesProcedure extends CocModElements.ModElement {
 	public CaveCrystalSpawnParticlesProcedure(CocModElements instance) {
-		super(instance, 520);
+		super(instance, 527);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

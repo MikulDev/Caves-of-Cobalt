@@ -33,7 +33,7 @@ public class SoulboundDaggerItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:soulbound_dagger")
 	public static final Item block = null;
 	public SoulboundDaggerItem(CocModElements instance) {
-		super(instance, 222);
+		super(instance, 221);
 	}
 
 	@Override

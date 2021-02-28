@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class ColdPlantBTestProcedure extends CocModElements.ModElement {
 	public ColdPlantBTestProcedure(CocModElements instance) {
-		super(instance, 377);
+		super(instance, 384);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -40,7 +40,7 @@ public class CoboltOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cobalt_ore_nether")
 	public static final Block block = null;
 	public CoboltOreBlock(CocModElements instance) {
-		super(instance, 29);
+		super(instance, 31);
 	}
 
 	@Override

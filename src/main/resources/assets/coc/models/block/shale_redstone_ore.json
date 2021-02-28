@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coc:blocks/shale_redstone",
+    "particle": "coc:blocks/shale_redstone"
+  }
+}

@@ -25,7 +25,7 @@ public class IvoryDaggerItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:ivory_dagger")
 	public static final Item block = null;
 	public IvoryDaggerItem(CocModElements instance) {
-		super(instance, 221);
+		super(instance, 220);
 	}
 
 	@Override

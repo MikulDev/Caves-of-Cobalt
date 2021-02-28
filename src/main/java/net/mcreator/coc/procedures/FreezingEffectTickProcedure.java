@@ -15,7 +15,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class FreezingEffectTickProcedure extends CocModElements.ModElement {
 	public FreezingEffectTickProcedure(CocModElements instance) {
-		super(instance, 439);
+		super(instance, 446);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

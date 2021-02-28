@@ -32,7 +32,7 @@ public class MirewoodTrapdoorBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:mirewood_trapdoor")
 	public static final Block block = null;
 	public MirewoodTrapdoorBlock(CocModElements instance) {
-		super(instance, 300);
+		super(instance, 307);
 	}
 
 	@Override

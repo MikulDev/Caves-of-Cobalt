@@ -25,7 +25,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class RadAxeAbilityProcedure extends CocModElements.ModElement {
 	public RadAxeAbilityProcedure(CocModElements instance) {
-		super(instance, 856);
+		super(instance, 863);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

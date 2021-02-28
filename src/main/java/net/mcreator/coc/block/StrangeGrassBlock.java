@@ -35,7 +35,7 @@ public class StrangeGrassBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:strange_grass")
 	public static final Block block = null;
 	public StrangeGrassBlock(CocModElements instance) {
-		super(instance, 47);
+		super(instance, 49);
 	}
 
 	@Override

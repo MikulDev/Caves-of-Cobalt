@@ -78,7 +78,7 @@ public class GenRuins2Procedure extends CocModElements.ModElement {
 								for (int l = 0; l < Math.random() * (factor * 5) + (factor * 3); l++)
 								{
 									BlockPos lpos = vpos.add((int) (Math.random() * factor) - (factor / 2), (int) (Math.random() * (factor * 0.75)), (int) (Math.random() * factor) - (factor / 2));
-									if (placeHelper.touchingBlock(world, lpos) != null && world.isAirBlock(lpos))
+									if (placeHelper.touchingAny(world, lpos) != null && world.isAirBlock(lpos))
 									{
 										world.setBlockState(lpos, Blocks.JUNGLE_LEAVES.getDefaultState(), 2);
 									}

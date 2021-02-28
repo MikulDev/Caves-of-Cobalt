@@ -1,1 +1,10 @@
-{"mappings":{"default":{"map":{"tiki_torch":"tiki_torch"},"name":"default"}}}
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "tiki_torch": "tiki_torch"
+      },
+      "name": "default"
+    }
+  }
+}

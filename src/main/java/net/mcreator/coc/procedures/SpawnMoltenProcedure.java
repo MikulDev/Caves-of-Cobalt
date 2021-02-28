@@ -28,7 +28,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class SpawnMoltenProcedure extends CocModElements.ModElement {
 	public SpawnMoltenProcedure(CocModElements instance) {
-		super(instance, 535);
+		super(instance, 542);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

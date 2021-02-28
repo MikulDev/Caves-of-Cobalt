@@ -20,7 +20,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class DragonDeathProcedure extends CocModElements.ModElement {
 	public DragonDeathProcedure(CocModElements instance) {
-		super(instance, 863);
+		super(instance, 870);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

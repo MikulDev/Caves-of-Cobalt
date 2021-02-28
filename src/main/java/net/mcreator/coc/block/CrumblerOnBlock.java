@@ -68,7 +68,7 @@ public class CrumblerOnBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:crumbleron")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CrumblerOnBlock(CocModElements instance) {
-		super(instance, 604);
+		super(instance, 611);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

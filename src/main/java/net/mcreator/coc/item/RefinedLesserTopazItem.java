@@ -24,7 +24,7 @@ public class RefinedLesserTopazItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:refined_topaz")
 	public static final Item block = null;
 	public RefinedLesserTopazItem(CocModElements instance) {
-		super(instance, 184);
+		super(instance, 183);
 	}
 
 	@Override

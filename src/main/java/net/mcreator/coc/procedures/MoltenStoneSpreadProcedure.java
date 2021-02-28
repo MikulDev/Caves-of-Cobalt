@@ -7,7 +7,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MoltenStoneSpreadProcedure extends CocModElements.ModElement {
 	public MoltenStoneSpreadProcedure(CocModElements instance) {
-		super(instance, 507);
+		super(instance, 514);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

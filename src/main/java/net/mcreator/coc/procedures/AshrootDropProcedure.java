@@ -13,7 +13,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class AshrootDropProcedure extends CocModElements.ModElement {
 	public AshrootDropProcedure(CocModElements instance) {
-		super(instance, 774);
+		super(instance, 781);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

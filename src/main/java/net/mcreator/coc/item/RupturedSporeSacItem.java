@@ -16,7 +16,7 @@ public class RupturedSporeSacItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:ruptured_spore_sac")
 	public static final Item block = null;
 	public RupturedSporeSacItem(CocModElements instance) {
-		super(instance, 194);
+		super(instance, 193);
 	}
 
 	@Override

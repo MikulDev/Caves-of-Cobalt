@@ -8,7 +8,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.world.Difficulty;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
@@ -54,7 +53,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class PlayerTickProcedure extends CocModElements.ModElement {
 	public PlayerTickProcedure(CocModElements instance) {
-		super(instance, 472);
+		super(instance, 479);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -395,14 +394,6 @@ public class PlayerTickProcedure extends CocModElements.ModElement {
 						"effect @a[score_exHealth_min=2,score_exHealth=2] minecraft:health_boost 1000000 1 true");
 			}
 			entity.getPersistentData().putBoolean("hasTicked", (true));
-		}
-		if ((((!(entity.isSneaking())) && (!(world.getDifficulty() == Difficulty.PEACEFUL))) && (Math.random() < 0.1))) {
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"fill ~2 ~2 ~2 ~-2 ~-2 ~-2 coc:crabspawner replace coc:fakestalagmite");
-			}
 		}
 		if (((entity.getPersistentData().getDouble("staticCool")) > 0)) {
 			if (((entity.getPersistentData().getDouble("staticCool")) == 95)) {

@@ -25,7 +25,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class TheKingADVGiveProcedure extends CocModElements.ModElement {
 	public TheKingADVGiveProcedure(CocModElements instance) {
-		super(instance, 548);
+		super(instance, 555);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -16,7 +16,7 @@ public class TridentRodItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:trident_rod")
 	public static final Item block = null;
 	public TridentRodItem(CocModElements instance) {
-		super(instance, 207);
+		super(instance, 206);
 	}
 
 	@Override

@@ -47,7 +47,7 @@ public class ScortchpetalBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:scorchpetal")
 	public static final Block block = null;
 	public ScortchpetalBlock(CocModElements instance) {
-		super(instance, 590);
+		super(instance, 597);
 	}
 
 	@Override

@@ -68,7 +68,7 @@ public class FungalForcefieldBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cobalt_cleanser")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public FungalForcefieldBlock(CocModElements instance) {
-		super(instance, 103);
+		super(instance, 100);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

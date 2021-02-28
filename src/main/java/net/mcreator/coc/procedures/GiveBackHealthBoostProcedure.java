@@ -23,7 +23,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class GiveBackHealthBoostProcedure extends CocModElements.ModElement {
 	public GiveBackHealthBoostProcedure(CocModElements instance) {
-		super(instance, 559);
+		super(instance, 566);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -29,7 +29,7 @@ public class RadiantTopazGoldSwordItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_sword_radiant")
 	public static final Item block = null;
 	public RadiantTopazGoldSwordItem(CocModElements instance) {
-		super(instance, 233);
+		super(instance, 232);
 	}
 
 	@Override

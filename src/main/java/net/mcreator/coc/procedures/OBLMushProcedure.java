@@ -165,16 +165,17 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 						
 						//placeHelper.carveArea(world, new BlockPos(placepos), sizeX, sizeY, sizeZ);
 						//System.out.println("carve area");
-						Block[] replaces = {Blocks.STONE, Blocks.ANDESITE, Blocks.DIORITE, Blocks.GRANITE, Blocks.DIRT, Blocks.GRAVEL};
-						List<Block> blocklist = Arrays.asList(replaces);
+						Block[] blocks = {Blocks.CAVE_AIR, Blocks.AIR};
+						List<Block> blocklist = Arrays.asList(blocks);
 						if (primalBiome)
 						{
-							placeHelper.carveAreaHollow(world, RedBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, Material.ROCK);
+							placeHelper.carveAreaHollow(world, RedBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, blocklist, true);
+							placeHelper.fillArea(world, RedBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, 5, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, Blocks.GRAVEL);
 							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LavaFillerBlock.block.getDefaultState());
 						}
 						else
 						{
-							placeHelper.carveAreaHollow(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, Material.ROCK);
+							placeHelper.carveAreaHollow(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, blocklist, true);
 							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
 						}
 

@@ -76,7 +76,7 @@ public class PlaceHelper extends CocModElements.ModElement  {
 		}
 	}
 
-	public static void carveAreaHollow (World world, BlockState paint, BlockPos pos, int sizeX, int sizeY, int sizeZ, List replaceblocks)
+	public static void carveAreaHollow (World world, BlockState paint, BlockPos pos, int sizeX, int sizeY, int sizeZ, List replaceblocks, boolean blacklist)
 	{
 		int x = pos.getX() - sizeX;
 		int y = pos.getY() - sizeY;
@@ -92,8 +92,8 @@ public class PlaceHelper extends CocModElements.ModElement  {
 				for (int zr = 0; zr < lengthZ * 2; ++zr)
 				{	
 					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) > 0.9 &&
-					((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1.15D &&
-					replaceblocks.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock()))
+					((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1.2D &&
+					((!blacklist && replaceblocks.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock())) || (blacklist && !replaceblocks.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock()))))
 					{
 						world.setBlockState(new BlockPos(x, y, z), paint, 2);
 					}
@@ -126,13 +126,13 @@ public class PlaceHelper extends CocModElements.ModElement  {
 			{
 				for (int zr = 0; zr < lengthZ * 2; ++zr)
 				{	
-					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) > 0.9 &&
-					((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1.15D &&
+					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) > 0.85 &&
+					((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1.25D &&
 					world.getBlockState(new BlockPos(x, y, z)).getMaterial() == material)
 					{
 						world.setBlockState(new BlockPos(x, y, z), paint, 2);
 					}
-					else if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 0.9)
+					else if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 0.85)
 					{
 						world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 2);
 					}
@@ -146,7 +146,7 @@ public class PlaceHelper extends CocModElements.ModElement  {
 		}
 	}
 
-	public static void fillArea (World world, BlockState block, BlockPos pos, int sizeX, int sizeY, int sizeZ, Block replace)
+	public static void carveSolidHollow (World world, BlockState paint, BlockPos pos, int sizeX, int sizeY, int sizeZ)
 	{
 		int x = pos.getX() - sizeX;
 		int y = pos.getY() - sizeY;
@@ -160,17 +160,17 @@ public class PlaceHelper extends CocModElements.ModElement  {
 			for (int yr = 0; yr < lengthY * 2; ++yr)
 			{
 				for (int zr = 0; zr < lengthZ * 2; ++zr)
-				{
-					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1 
-					&& (world.getBlockState(new BlockPos(x, y, z)).getBlock() == replace || replace == null))
+				{	
+					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) > 0.85 &&
+					((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1.25D &&
+					world.getBlockState(new BlockPos(x, y, z)).isNormalCube(world, pos))
 					{
-						world.setBlockState(new BlockPos(x, y, z), block, 2);
+						world.setBlockState(new BlockPos(x, y, z), paint, 2);
 					}
-					/*else
+					else if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 0.85)
 					{
-						world.setBlockState(new BlockPos(x, y, z), Blocks.GLASS.getDefaultState(), 2);
-					}*/
-					//System.out.println((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2)));
+						world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 2);
+					}
 					z++;
 				}
 				z = pos.getZ() - sizeZ;
@@ -214,6 +214,48 @@ public class PlaceHelper extends CocModElements.ModElement  {
 			y = pos.getY() - sizeY;
 			x++;
 		}
+	}
+
+	public static void fillGradient (World world, BlockState block, BlockPos pos, int sizeX, int sizeY, int sizeZ, List replace, int density)
+	{
+		int x = pos.getX() - sizeX;
+		int y = pos.getY() - sizeY;
+		int z = pos.getZ() - sizeZ;
+		int lengthX = sizeX;
+		int lengthY = sizeY;
+		int lengthZ = sizeZ;
+
+		for (int xr = 0; xr < lengthX * 2; ++xr)
+		{
+			for (int yr = 0; yr < lengthY * 2; ++yr)
+			{
+				for (int zr = 0; zr < lengthZ * 2; ++zr)
+				{
+					double sphereFactor = (Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2));
+					if (sphereFactor <= 1 && replace.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock()) && Math.random() < (1 - sphereFactor) + (density / 100 - 0.5))
+					{
+						world.setBlockState(new BlockPos(x, y, z), block, 2);
+					}
+					/*else
+					{
+						world.setBlockState(new BlockPos(x, y, z), Blocks.GLASS.getDefaultState(), 2);
+					}*/
+					//System.out.println((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2)));
+					z++;
+				}
+				z = pos.getZ() - sizeZ;
+				y++;
+			}
+			y = pos.getY() - sizeY;
+			x++;
+		}
+	}
+	
+	public static void fillArea (World world, BlockState block, BlockPos pos, int sizeX, int sizeY, int sizeZ, Block replace)
+	{
+		Block[] replaces = {replace};
+		List<Block> blocklist = Arrays.asList(replaces);
+		fillAreaList(world, block, pos, sizeX, sizeY, sizeZ, blocklist);
 	}
 
 	public static void carveArea (World world, BlockPos pos, int size)
@@ -408,7 +450,18 @@ public class PlaceHelper extends CocModElements.ModElement  {
 		return null;
 	}
 
-	public Direction touchingBlock(World world, BlockPos testPos)
+	public Direction touchingBlock(World world, BlockPos testPos, Block block)
+	{
+		if		(world.getBlockState(testPos.add(1, 0, 0)).getBlock() == block) return Direction.EAST;
+		else if (world.getBlockState(testPos.add(-1, 0, 0)).getBlock() == block) return Direction.WEST;
+		else if (world.getBlockState(testPos.add(0, 1, 0)).getBlock() == block) return Direction.UP;
+		else if (world.getBlockState(testPos.add(0, -1, 0)).getBlock() == block) return Direction.DOWN;
+		else if (world.getBlockState(testPos.add(0, 0, 1)).getBlock() == block) return Direction.SOUTH;
+		else if (world.getBlockState(testPos.add(0, 0, -1)).getBlock() == block) return Direction.NORTH;
+		return null;
+	}
+
+	public Direction touchingAny(World world, BlockPos testPos)
 	{
 		if		(!world.isAirBlock(testPos.add(1, 0, 0))) return Direction.EAST;
 		else if (!world.isAirBlock(testPos.add(-1, 0, 0))) return Direction.WEST;

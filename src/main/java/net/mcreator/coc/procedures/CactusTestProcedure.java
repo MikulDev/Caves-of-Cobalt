@@ -15,7 +15,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CactusTestProcedure extends CocModElements.ModElement {
 	public CactusTestProcedure(CocModElements instance) {
-		super(instance, 777);
+		super(instance, 784);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

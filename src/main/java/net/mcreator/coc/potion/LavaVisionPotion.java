@@ -21,7 +21,7 @@ public class LavaVisionPotion extends CocModElements.ModElement {
 	@ObjectHolder("coc:lavavision")
 	public static final Potion potionType = null;
 	public LavaVisionPotion(CocModElements instance) {
-		super(instance, 666);
+		super(instance, 673);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

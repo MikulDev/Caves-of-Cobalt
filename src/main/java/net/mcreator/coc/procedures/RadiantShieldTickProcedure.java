@@ -12,7 +12,7 @@ import java.util.Collections;
 @CocModElements.ModElement.Tag
 public class RadiantShieldTickProcedure extends CocModElements.ModElement {
 	public RadiantShieldTickProcedure(CocModElements instance) {
-		super(instance, 582);
+		super(instance, 589);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

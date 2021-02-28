@@ -38,7 +38,7 @@ public class ShroomiumInfectionBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:shroomium_infection")
 	public static final Block block = null;
 	public ShroomiumInfectionBlock(CocModElements instance) {
-		super(instance, 399);
+		super(instance, 406);
 	}
 
 	@Override

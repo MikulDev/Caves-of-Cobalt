@@ -17,7 +17,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StalagmiteWalkProcedure extends CocModElements.ModElement {
 	public StalagmiteWalkProcedure(CocModElements instance) {
-		super(instance, 479);
+		super(instance, 486);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

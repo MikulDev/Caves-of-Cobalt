@@ -45,7 +45,7 @@ public class AshrootStage2Block extends CocModElements.ModElement {
 	@ObjectHolder("coc:ashroot_stage_2")
 	public static final Block block = null;
 	public AshrootStage2Block(CocModElements instance) {
-		super(instance, 773);
+		super(instance, 780);
 	}
 
 	@Override

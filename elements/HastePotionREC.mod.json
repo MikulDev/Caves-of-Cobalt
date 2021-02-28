@@ -1,0 +1,23 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "CUSTOM:WaterVial"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:NimbleMarigold"
+    },
+    "brewingReturnStack": {
+      "value": "CUSTOM:HasteNectarNormal"
+    },
+    "name": "haste_potion_rec",
+    "namespace": "mod"
+  }
+}

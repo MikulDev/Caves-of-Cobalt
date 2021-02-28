@@ -38,7 +38,7 @@ public class ShroomInfectWeakBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:shroom_infect_weak")
 	public static final Block block = null;
 	public ShroomInfectWeakBlock(CocModElements instance) {
-		super(instance, 862);
+		super(instance, 869);
 	}
 
 	@Override

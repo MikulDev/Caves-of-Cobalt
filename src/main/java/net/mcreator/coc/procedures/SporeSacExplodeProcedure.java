@@ -49,7 +49,7 @@ import java.util.Comparator;
 @CocModElements.ModElement.Tag
 public class SporeSacExplodeProcedure extends CocModElements.ModElement {
 	public SporeSacExplodeProcedure(CocModElements instance) {
-		super(instance, 923);
+		super(instance, 930);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

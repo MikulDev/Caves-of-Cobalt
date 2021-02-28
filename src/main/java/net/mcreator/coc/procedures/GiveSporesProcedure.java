@@ -25,7 +25,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class GiveSporesProcedure extends CocModElements.ModElement {
 	public GiveSporesProcedure(CocModElements instance) {
-		super(instance, 363);
+		super(instance, 370);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

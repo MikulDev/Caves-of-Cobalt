@@ -76,7 +76,7 @@ public class CultivatorDisabledBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:cultivator")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public CultivatorDisabledBlock(CocModElements instance) {
-		super(instance, 299);
+		super(instance, 306);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

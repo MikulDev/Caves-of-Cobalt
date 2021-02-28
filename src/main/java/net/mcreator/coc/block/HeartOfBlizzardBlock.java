@@ -36,7 +36,7 @@ public class HeartOfBlizzardBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:heartofblizzard")
 	public static final Block block = null;
 	public HeartOfBlizzardBlock(CocModElements instance) {
-		super(instance, 499);
+		super(instance, 506);
 	}
 
 	@Override

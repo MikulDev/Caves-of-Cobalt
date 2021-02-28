@@ -14,7 +14,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class StunnedTickProcedure extends CocModElements.ModElement {
 	public StunnedTickProcedure(CocModElements instance) {
-		super(instance, 889);
+		super(instance, 896);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

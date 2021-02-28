@@ -37,10 +37,10 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Amethyst"
+      "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
@@ -104,7 +104,7 @@
     ],
     "frequencyPerChunks": 5,
     "frequencyOnChunk": 3,
-    "minGenerateHeight": 10,
-    "maxGenerateHeight": 50
+    "minGenerateHeight": 2,
+    "maxGenerateHeight": 47
   }
 }

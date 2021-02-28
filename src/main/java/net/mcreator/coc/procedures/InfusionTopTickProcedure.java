@@ -19,7 +19,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class InfusionTopTickProcedure extends CocModElements.ModElement {
 	public InfusionTopTickProcedure(CocModElements instance) {
-		super(instance, 742);
+		super(instance, 749);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

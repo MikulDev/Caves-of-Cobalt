@@ -37,7 +37,7 @@ public class BigMushroomStemBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:glowing_mushroom_stem")
 	public static final Block block = null;
 	public BigMushroomStemBlock(CocModElements instance) {
-		super(instance, 54);
+		super(instance, 56);
 	}
 
 	@Override

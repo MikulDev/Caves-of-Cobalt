@@ -70,7 +70,7 @@ public class PivoterOnBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:pivoteron")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public PivoterOnBlock(CocModElements instance) {
-		super(instance, 583);
+		super(instance, 590);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

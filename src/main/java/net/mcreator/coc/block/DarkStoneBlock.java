@@ -27,7 +27,7 @@ public class DarkStoneBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:dormant_sporite")
 	public static final Block block = null;
 	public DarkStoneBlock(CocModElements instance) {
-		super(instance, 46);
+		super(instance, 48);
 	}
 
 	@Override

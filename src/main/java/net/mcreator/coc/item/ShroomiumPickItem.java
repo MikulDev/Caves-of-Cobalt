@@ -27,7 +27,7 @@ public class ShroomiumPickItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:shroomium_pickaxe")
 	public static final Item block = null;
 	public ShroomiumPickItem(CocModElements instance) {
-		super(instance, 277);
+		super(instance, 276);
 	}
 
 	@Override

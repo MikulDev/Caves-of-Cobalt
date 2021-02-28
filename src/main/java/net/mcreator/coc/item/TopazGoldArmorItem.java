@@ -35,7 +35,7 @@ public class TopazGoldArmorItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:topaz_gold__boots")
 	public static final Item boots = null;
 	public TopazGoldArmorItem(CocModElements instance) {
-		super(instance, 262);
+		super(instance, 261);
 	}
 
 	@Override

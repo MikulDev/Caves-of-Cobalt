@@ -11,7 +11,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class MoltenBiomePlaceProcedure extends CocModElements.ModElement {
 	public MoltenBiomePlaceProcedure(CocModElements instance) {
-		super(instance, 950);
+		super(instance, 957);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

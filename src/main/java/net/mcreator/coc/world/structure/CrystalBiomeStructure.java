@@ -37,7 +37,7 @@ import com.google.common.collect.ImmutableMap;
 @CocModElements.ModElement.Tag
 public class CrystalBiomeStructure extends CocModElements.ModElement {
 	public CrystalBiomeStructure(CocModElements instance) {
-		super(instance, 947);
+		super(instance, 954);
 	}
 
 	@Override

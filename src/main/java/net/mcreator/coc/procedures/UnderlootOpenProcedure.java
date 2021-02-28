@@ -29,7 +29,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class UnderlootOpenProcedure extends CocModElements.ModElement {
 	public UnderlootOpenProcedure(CocModElements instance) {
-		super(instance, 728);
+		super(instance, 735);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

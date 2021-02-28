@@ -31,7 +31,7 @@ public class JungleJigEastBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:junglejigeast")
 	public static final Block block = null;
 	public JungleJigEastBlock(CocModElements instance) {
-		super(instance, 444);
+		super(instance, 451);
 	}
 
 	@Override

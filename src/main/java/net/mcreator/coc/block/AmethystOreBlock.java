@@ -6,7 +6,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
@@ -18,7 +17,6 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -28,19 +26,16 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.coc.item.AmethystItem;
 import net.mcreator.coc.CocModElements;
 
 import java.util.Random;
-import java.util.List;
-import java.util.Collections;
 
 @CocModElements.ModElement.Tag
 public class AmethystOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:amethyst_ore")
 	public static final Block block = null;
 	public AmethystOreBlock(CocModElements instance) {
-		super(instance, 24);
+		super(instance, 26);
 	}
 
 	@Override
@@ -59,14 +54,6 @@ public class AmethystOreBlock extends CocModElements.ModElement {
 		@Override
 		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
 			return true;
-		}
-
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(AmethystItem.block, (int) (1)));
 		}
 	}
 	@Override
@@ -88,7 +75,7 @@ public class AmethystOreBlock extends CocModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 3)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(5, 10, 10, 50))));
+			}), block.getDefaultState(), 3)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(5, 2, 2, 47))));
 		}
 	}
 }

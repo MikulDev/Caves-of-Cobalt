@@ -12,7 +12,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class GemForgeCallProcProcedure extends CocModElements.ModElement {
 	public GemForgeCallProcProcedure(CocModElements instance) {
-		super(instance, 359);
+		super(instance, 366);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

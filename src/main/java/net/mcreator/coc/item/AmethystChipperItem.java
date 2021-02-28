@@ -31,7 +31,7 @@ public class AmethystChipperItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:amethyst_chipper")
 	public static final Item block = null;
 	public AmethystChipperItem(CocModElements instance) {
-		super(instance, 287);
+		super(instance, 286);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class AmethystInfusedGoldPickaxeItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:gold_pickaxe_amethyst")
 	public static final Item block = null;
 	public AmethystInfusedGoldPickaxeItem(CocModElements instance) {
-		super(instance, 258);
+		super(instance, 257);
 	}
 
 	@Override

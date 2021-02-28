@@ -22,7 +22,7 @@ import java.util.Map;
 @CocModElements.ModElement.Tag
 public class CorruptorEntityDiesProcedure extends CocModElements.ModElement {
 	public CorruptorEntityDiesProcedure(CocModElements instance) {
-		super(instance, 874);
+		super(instance, 881);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

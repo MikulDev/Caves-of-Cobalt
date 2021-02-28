@@ -7,7 +7,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.RayTraceResult;
@@ -23,12 +22,10 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.coc.procedures.StrBudsSporesProcedure;
 import net.mcreator.coc.procedures.DroopingHyphaeTestProcedure;
 import net.mcreator.coc.procedures.DroopingHyphaePlaceProcedure;
 import net.mcreator.coc.CocModElements;
 
-import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -39,7 +36,7 @@ public class DroopingHyphaeBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:drooping_hyphae_bottom")
 	public static final Block block = null;
 	public DroopingHyphaeBlock(CocModElements instance) {
-		super(instance, 898);
+		super(instance, 905);
 	}
 
 	@Override
@@ -89,7 +86,6 @@ public class DroopingHyphaeBlock extends CocModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
@@ -117,23 +113,6 @@ public class DroopingHyphaeBlock extends CocModElements.ModElement {
 				$_dependencies.put("world", world);
 				DroopingHyphaeTestProcedure.executeProcedure($_dependencies);
 			}
-		}
-
-		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(state, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				StrBudsSporesProcedure.executeProcedure($_dependencies);
-			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
 	}
 }

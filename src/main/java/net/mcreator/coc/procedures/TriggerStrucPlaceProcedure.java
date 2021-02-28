@@ -12,7 +12,7 @@ import java.util.HashMap;
 @CocModElements.ModElement.Tag
 public class TriggerStrucPlaceProcedure extends CocModElements.ModElement {
 	public TriggerStrucPlaceProcedure(CocModElements instance) {
-		super(instance, 982);
+		super(instance, 989);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

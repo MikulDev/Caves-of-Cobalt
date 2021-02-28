@@ -38,7 +38,7 @@ public class RichIronBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:rich_iron_ore")
 	public static final Block block = null;
 	public RichIronBlock(CocModElements instance) {
-		super(instance, 39);
+		super(instance, 41);
 	}
 
 	@Override

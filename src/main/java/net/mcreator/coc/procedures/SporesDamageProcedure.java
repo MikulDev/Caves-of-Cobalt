@@ -36,7 +36,7 @@ import java.util.Collection;
 @CocModElements.ModElement.Tag
 public class SporesDamageProcedure extends CocModElements.ModElement {
 	public SporesDamageProcedure(CocModElements instance) {
-		super(instance, 361);
+		super(instance, 368);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

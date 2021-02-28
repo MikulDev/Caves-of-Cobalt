@@ -37,7 +37,7 @@ public class NetherDiamondOreBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:netherdiamondore")
 	public static final Block block = null;
 	public NetherDiamondOreBlock(CocModElements instance) {
-		super(instance, 73);
+		super(instance, 76);
 	}
 
 	@Override

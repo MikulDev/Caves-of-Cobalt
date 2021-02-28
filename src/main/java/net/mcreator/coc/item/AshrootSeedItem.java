@@ -26,7 +26,7 @@ public class AshrootSeedItem extends CocModElements.ModElement {
 	@ObjectHolder("coc:ashroot_seed")
 	public static final Item block = null;
 	public AshrootSeedItem(CocModElements instance) {
-		super(instance, 189);
+		super(instance, 188);
 	}
 
 	@Override

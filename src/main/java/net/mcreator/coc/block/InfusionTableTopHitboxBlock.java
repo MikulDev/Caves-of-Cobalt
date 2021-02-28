@@ -40,7 +40,7 @@ public class InfusionTableTopHitboxBlock extends CocModElements.ModElement {
 	@ObjectHolder("coc:infusiontabletophitbox")
 	public static final Block block = null;
 	public InfusionTableTopHitboxBlock(CocModElements instance) {
-		super(instance, 744);
+		super(instance, 751);
 	}
 
 	@Override
