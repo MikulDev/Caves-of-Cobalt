@@ -87,14 +87,14 @@ public class ShaleCavernGenProcedure extends CocModElements.ModElement {
 				}
 
 				//Generate Ores: Coal
-				if (vpos.y > 0 && vpos.y < 127 && Math.random() < 0.40)
+				if (vpos.y > 0 && vpos.y < 127 && Math.random() < 0.5)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 127)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
 							placer.fillAreaList(world, ShaleCoalOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 2) + 2, (int) (Math.random() * 2) + 2, (int) (Math.random() * 2) + 2, shales);
 							break;
@@ -103,30 +103,30 @@ public class ShaleCavernGenProcedure extends CocModElements.ModElement {
 				}
 
 				//Generate Ores: Iron
-				if (vpos.y > 0 && vpos.y < 63 && Math.random() < 0.24)
+				if (vpos.y > 0 && vpos.y < 63 && Math.random() < 0.5)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 63)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
-							placer.fillAreaList(world, ShaleIronOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, shales);
+							placer.fillAreaList(world, ShaleIronOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 2) + 2, (int) (Math.random() * 2) + 2, (int) (Math.random() * 2) + 2, shales);
 							break;
 						}
 					}
 				}
 
 				//Generate Ores: Gold
-				if (vpos.y > 0 && vpos.y < 31 && Math.random() < 0.24)
+				if (vpos.y > 0 && vpos.y < 31 && Math.random() < 0.4)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 31)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
 							placer.fillAreaList(world, ShaleGoldOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, shales);
 							break;
@@ -135,14 +135,14 @@ public class ShaleCavernGenProcedure extends CocModElements.ModElement {
 				}
 
 				//Generate Ores: Redstone
-				if (vpos.y > 0 && vpos.y < 15 && Math.random() < 0.40)
+				if (vpos.y > 0 && vpos.y < 15 && Math.random() < 0.5)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 15)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
 							placer.fillAreaList(world, ShaleRedstoneOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 1) + 1, (int) (Math.random() * 1) + 1, (int) (Math.random() * 1) + 1, shales);
 							break;
@@ -151,14 +151,14 @@ public class ShaleCavernGenProcedure extends CocModElements.ModElement {
 				}
 
 				//Generate Ores: Lapis
-				if (vpos.y > 0 && vpos.y < 30 && Math.random() < 0.14)
+				if (vpos.y > 0 && vpos.y < 30 && Math.random() < 0.2)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 30)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
 							placer.fillAreaList(world, ShaleLapisOreBlock.block.getDefaultState(), orePos, 1, 1, 1, shales);
 							break;
@@ -167,30 +167,30 @@ public class ShaleCavernGenProcedure extends CocModElements.ModElement {
 				}
 
 				//Generate Ores: Diamond
-				if (vpos.y > 0 && vpos.y < 16 && Math.random() < 0.14)
+				if (vpos.y > 0 && vpos.y < 30 && Math.random() < 0.4)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 16)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
-							placer.fillAreaList(world, ShaleDiamondOreBlock.block.getDefaultState(), orePos, (int) (1 - Math.random()), (int) (1 - Math.random()), (int) (1 - Math.random()), shales);
+							placer.fillAreaList(world, ShaleDiamondOreBlock.block.getDefaultState(), orePos, 1, 1, 1, shales);
 							break;
 						}
 					}
 				}
 
 				//Generate Ores: Emerald
-				if (vpos.y > 0 && vpos.y < 16 && Math.random() < 0.14)
+				if (vpos.y > 0 && vpos.y < 16 && Math.random() < 0.2)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
-						if (orePos.getY() > 0 && orePos.getY() < 16)
+						if (orePos.getY() > 0 && orePos.getY() < 128)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
 							if (shales.contains(world.getBlockState(orePos).getBlock()))
 							{
@@ -202,78 +202,78 @@ public class ShaleCavernGenProcedure extends CocModElements.ModElement {
 				}
 
 				//Generate Ores: Ruby
-				if (vpos.y > 0 && vpos.y < 47 && Math.random() < 0.24)
+				if (vpos.y > 0 && vpos.y < 47 && Math.random() < 0.4)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 47)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
-							placer.fillAreaList(world, ShaleRubyOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, shales);
+							placer.fillAreaList(world, ShaleRubyOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 1) + 1, (int) (Math.random() * 1) + 1, (int) (Math.random() *1) + 1, shales);
 							break;
 						}
 					}
 				}
 
 				//Generate Ores: Sapphire
-				if (vpos.y > 0 && vpos.y < 47 && Math.random() < 0.24)
+				if (vpos.y > 0 && vpos.y < 47 && Math.random() < 0.4)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 47)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
-							placer.fillAreaList(world, ShaleSapphireOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, shales);
+							placer.fillAreaList(world, ShaleSapphireOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 1) + 1, (int) (Math.random() * 1) + 1, (int) (Math.random() * 1) + 1, shales);
 							break;
 						}
 					}
 				}
 
 				//Generate Ores: Amethyst
-				if (vpos.y > 0 && vpos.y < 47 && Math.random() < 0.24)
+				if (vpos.y > 0 && vpos.y < 47 && Math.random() < 0.4)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 47)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
-							placer.fillAreaList(world, ShaleAmethystOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, shales);
+							placer.fillAreaList(world, ShaleAmethystOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 1) + 1, (int) (Math.random() * 1) + 1, (int) (Math.random() * 1) + 1, shales);
 							break;
 						}
 					}
 				}
 
 				//Generate Ores: Malachite
-				if (vpos.y > 0 && vpos.y < 16 && Math.random() < 0.14)
+				if (vpos.y > 0 && vpos.y < 16 && Math.random() < 0.4)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 16)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
-							placer.fillAreaList(world, ShaleMalachiteOreBlock.block.getDefaultState(), orePos, (int) (1 - Math.random()), (int) (1 - Math.random()), (int) (1 - Math.random()), shales);
+							placer.fillAreaList(world, ShaleMalachiteOreBlock.block.getDefaultState(), orePos, (int) (1.2 - Math.random()), (int) (1.2 - Math.random()), (int) (1.2 - Math.random()), shales);
 							break;
 						}
 					}
 				}
 
 				//Generate Ores: Sulphur
-				if (vpos.y > 0 && vpos.y < 63 && Math.random() < 0.3)
+				if (vpos.y > 0 && vpos.y < 63 && Math.random() < 0.35)
 				{
 					for (int b = 0; b < 50; b++)
 					{
 						BlockPos orePos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 						if (orePos.getY() > 0 && orePos.getY() < 63)
 						{
-							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT};
+							Block[] shaleblock = {ShaleBlock.block, Blocks.DIRT, Blocks.STONE};
 							List shales = Arrays.asList(shaleblock);
 							placer.fillAreaList(world, ShaleSulphurOreBlock.block.getDefaultState(), orePos, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, (int) (Math.random() * 2) + 1, shales);
 							break;
@@ -325,7 +325,7 @@ public class ShaleCavernGenProcedure extends CocModElements.ModElement {
 					}
 				}
 				
-				for (int s = 0; s < (int) (Math.random() * 75) + 75; s++)
+				for (int s = 0; s < (int) (Math.random() * 65) + 65; s++)
 				{
 					BlockPos stalacPos = new BlockPos(vpos.add(Math.random() * (sizeX * 2) - sizeX, Math.random() * (sizeY * 2) - sizeY, Math.random() * (sizeZ * 2) - sizeZ));
 					if (world.getBlockState(stalacPos.up()).getBlock() == ShaleBlock.block && world.isAirBlock(stalacPos))
@@ -367,7 +367,7 @@ public class ShaleCavernGenProcedure extends CocModElements.ModElement {
 			placer.touchingBlock(world, slabspos, ShaleBlock.block) != Direction.UP &&
 			placer.touchingBlock(world, slabspos, ShaleBlock.block) != Direction.DOWN && world.isAirBlock(slabspos))
 			{
-				placer.fillArea(world, ShaleSlabBlock.block.getDefaultState().with(ShaleSlabBlock.CustomBlock.TYPE, slablist.get(halfIndex)), slabspos, (int) (Math.random() * 2 + 2), 1, (int) (Math.random() * 2 + 2), Blocks.CAVE_AIR);
+				placer.fillArea(world, ShaleSlabBlock.block.getDefaultState().with(ShaleSlabBlock.CustomBlock.TYPE, slablist.get(halfIndex)), slabspos, (int) (Math.random() * 2 + 2), 1, (int) (Math.random() * 2 + 2), Blocks.AIR);
 			}
 			halfIndex++;
 		}

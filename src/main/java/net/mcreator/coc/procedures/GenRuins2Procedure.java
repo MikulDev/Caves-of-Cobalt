@@ -24,6 +24,8 @@ import net.mcreator.coc.block.MossyStoneBlock;
 import net.mcreator.coc.block.TikiTorchWallBlock;
 import net.mcreator.coc.block.TikiTorchBlock;
 import net.mcreator.coc.block.DormantWatcherBlock;
+import net.mcreator.coc.block.NimbleMarigoldBlock;
+import net.mcreator.coc.block.MarigoldBlock;
 
 @CocModElements.ModElement.Tag
 public class GenRuins2Procedure extends CocModElements.ModElement {
@@ -86,12 +88,24 @@ public class GenRuins2Procedure extends CocModElements.ModElement {
 								factor++;
 							}
 						}
-						else if (Math.random() < 0.03)
+						else if (Math.random() < 0.3 && world.getBlockState(vpos.down(1)).isSolid() && world.isAirBlock(vpos))
 						{
 							Random rand = new Random();
 							Direction direc = Direction.random(rand);
 							if (direc == Direction.UP || direc == Direction.DOWN) direc = Direction.NORTH;
 							world.setBlockState(vpos, DormantWatcherBlock.block.getDefaultState().with(DormantWatcherBlock.CustomBlock.FACING, direc), 2);
+						}
+						else if (Math.random() < 0.7 && world.getBlockState(vpos.down(1)).isSolid() && world.isAirBlock(vpos))
+						{
+							world.setBlockState(vpos, NimbleMarigoldBlock.block.getDefaultState(), 2);
+							for (int p = 0; p < Math.random() * 20 + 20; p++)
+							{
+								BlockPos ppos = vpos.add(Math.random() * 6 - 3, Math.random() * 6 - 3, Math.random() * 6 - 3);
+								if (world.getBlockState(ppos.down(1)).isSolid() && world.isAirBlock(ppos))
+								{
+									world.setBlockState(vpos, MarigoldBlock.block.getDefaultState(), 2);
+								}
+							}
 						}
 						Direction direc = placeHelper.touchingSolid(world, vpos);
 						if (direc != null && world.isAirBlock(vpos))

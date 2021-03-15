@@ -36,6 +36,8 @@ import net.mcreator.coc.PlaceHelper;
 import net.mcreator.coc.block.BrownMushroomShelvesBlock;
 import java.util.List;
 import net.mcreator.coc.procedures.ShaleCavernGenProcedure;
+import net.mcreator.coc.procedures.MarigoldPatchSpawnProcedure;
+
 
 @CocModElements.ModElement.Tag
 public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
@@ -107,7 +109,7 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 							successX = pos.getX();
 							successY = pos.getY();
 							successZ = pos.getZ();
-							if (Math.random() < 0.0002 && world.isAirBlock(pos))
+							if (Math.random() < 0.0002)
 							{
 								Map<String, Object> $_dependencies = new HashMap<>();
 								$_dependencies.put("x", (double) (pos.getX()));
@@ -118,7 +120,7 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 
 							}
 
-							else if (Math.random() < 0.0002 && world.isAirBlock(pos))
+							else if (Math.random() < 0.0002)
 							{
 								Map<String, Object> $_dependencies = new HashMap<>();
 								$_dependencies.put("x", (double) (pos.getX()));
@@ -127,6 +129,15 @@ public class MakeCaveFeaturesProcedure extends CocModElements.ModElement {
 								$_dependencies.put("world", iworld);
 								ShaleCavernGenProcedure.executeProcedure($_dependencies);
 
+							}
+							else if (Math.random() < 0.002)
+							{
+								Map<String, Object> $_dependencies = new HashMap<>();
+								$_dependencies.put("x", x);
+								$_dependencies.put("y", y);
+								$_dependencies.put("z", z);
+								$_dependencies.put("world", world);
+								MarigoldPatchSpawnProcedure.executeProcedure($_dependencies);
 							}
 							
 							if (Math.random() < 0.004)

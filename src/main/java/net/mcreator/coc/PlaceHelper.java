@@ -78,12 +78,12 @@ public class PlaceHelper extends CocModElements.ModElement  {
 
 	public static void carveAreaHollow (World world, BlockState paint, BlockPos pos, int sizeX, int sizeY, int sizeZ, List replaceblocks, boolean blacklist)
 	{
-		int x = pos.getX() - sizeX;
+		int x = pos.getX() - sizeX - 1;
 		int y = pos.getY() - sizeY;
-		int z = pos.getZ() - sizeZ;
-		int lengthX = sizeX;
+		int z = pos.getZ() - sizeZ - 1;
+		int lengthX = sizeX + 2;
 		int lengthY = sizeY;
-		int lengthZ = sizeZ;
+		int lengthZ = sizeZ + 2;
 
 		for (int xr = 0; xr < lengthX * 2; ++xr)
 		{
@@ -91,15 +91,15 @@ public class PlaceHelper extends CocModElements.ModElement  {
 			{
 				for (int zr = 0; zr < lengthZ * 2; ++zr)
 				{	
-					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) > 0.9 &&
+					if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) > 0.85 &&
 					((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 1.2D &&
 					((!blacklist && replaceblocks.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock())) || (blacklist && !replaceblocks.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock()))))
 					{
 						world.setBlockState(new BlockPos(x, y, z), paint, 2);
 					}
-					else if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 0.9)
+					else if (((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2))) <= 0.85)
 					{
-						world.setBlockState(new BlockPos(x, y, z), Blocks.CAVE_AIR.getDefaultState(), 2);
+						world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 2);
 					}
 					z++;
 				}

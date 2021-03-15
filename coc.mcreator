@@ -15474,6 +15474,109 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "brown_mushrooms_rec"
+    },
+    {
+      "name": "ShaleCobaltOre",
+      "type": "block",
+      "sortid": 1054,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shale_cobalt_ore"
+    },
+    {
+      "name": "ShaleCobaltDrop",
+      "type": "loottable",
+      "sortid": 1055,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shale_cobalt_drop"
+    },
+    {
+      "name": "CobaltOreDrop",
+      "type": "loottable",
+      "sortid": 1056,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobalt_ore_drop"
+    },
+    {
+      "name": "MarigoldPatch",
+      "type": "structure",
+      "sortid": 1057,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marigold_patch"
+    },
+    {
+      "name": "MarigoldPatchGen",
+      "type": "procedure",
+      "sortid": 1058,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "marigold_patch_gen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MarigoldPatchSpawn",
+      "type": "procedure",
+      "sortid": 1059,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marigold_patch_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MushroomBiomeHelper",
+      "type": "code",
+      "sortid": 1060,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "mushroom_biome_helper"
     }
   ],
   "variable_elements": [
@@ -16889,6 +16992,7 @@
       "entity.coc.blueshroom": "Blueshroom",
       "block.coc.shale_ruby_ore": "Shale Ruby Ore",
       "item.shroomium_boots.name": "",
+      "block.coc.shale_cobalt_ore": "Shale Cobalt Ore",
       "block.coc.crumbleron": "Crumbler",
       "block.coc.bedrockspirespawner": "Bedrock Spire Spawner",
       "block.coc.soul_stalk": "Soul Stalk",

@@ -47,6 +47,41 @@ import net.minecraft.block.Block;
 import net.mcreator.coc.procedures.MirewoodSaplingGrowProcedure;
 import java.util.HashMap;
 import java.util.Arrays;
+import net.mcreator.coc.MushroomBiomeHelper;
+import net.mcreator.coc.block.WartweedBlock;
+import net.mcreator.coc.block.StrangeSproutsAltBlock; 
+import net.mcreator.coc.block.StrangeSporoutsBlock;
+import net.mcreator.coc.block.StrangePlantBlock;
+import net.mcreator.coc.block.StrangeGrassBlock;
+import net.mcreator.coc.block.StrangeBudsBlock;
+import net.mcreator.coc.block.HellberryBushBlock;
+import net.mcreator.coc.block.HellBiomeBlockBlock;
+import net.mcreator.coc.block.GlowingStoneBlock;
+import net.mcreator.coc.block.GlowingMushroomBlock;
+import net.mcreator.coc.block.GlowingMushroomAltBlock;
+import net.mcreator.coc.block.FakeShroomBlock;
+import net.mcreator.coc.block.DarkStoneBlock;
+import net.mcreator.coc.block.ColdStoneBlock;
+import net.mcreator.coc.block.ColdBiomeBlockBlock;
+import net.mcreator.coc.block.SporiteInactiveBlock;
+import net.mcreator.coc.block.MoltenStoneBlock;
+import net.mcreator.coc.block.CactusBlock;
+import net.mcreator.coc.block.BiomeBlockBlock;
+import net.mcreator.coc.block.RedBiomeBlockBlock;
+import net.mcreator.coc.CocModElements;
+
+import net.mcreator.coc.block.DroopingHyphaeBlock;
+import net.mcreator.coc.block.DroopingHyphaeTopBlock;
+import net.mcreator.coc.block.DroopingHyphaeMidBlock;
+
+import net.mcreator.coc.block.DroopingMagphaeBBlock;
+import net.mcreator.coc.block.DroopingMagphaeTBlock;
+import net.mcreator.coc.block.DroopingMagphaeMBlock;
+import net.mcreator.coc.block.PrimalMushroomBlock;
+import net.mcreator.coc.block.PrimalMushroomAltBlock;
+
+import net.mcreator.coc.block.SingedGrassBlock;
+import net.mcreator.coc.block.BurningGrassBlock;
 
 @CocModElements.ModElement.Tag
 public class OBLMushProcedure extends CocModElements.ModElement {
@@ -89,6 +124,7 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 		int placeAngle;
 		int liquidY = (int) (y) - 12;
 		PlaceHelper placeHelper = new PlaceHelper(null);
+		MushroomBiomeHelper mushHelper = new MushroomBiomeHelper(null);
 		List<Vec3d> foggers = new ArrayList<Vec3d>();
 		boolean primalBiome = false;
 		if (y < 27) primalBiome = true;
@@ -126,33 +162,27 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 							$_dependencies.put("z", (double) smallpos.getZ());
 							MirewoodSaplingGrowProcedure.executeProcedure($_dependencies);
 
-							if (primalBiome)
-							{
-								placeHelper.fillArea(world, RedBiomeBlockBlock.block.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.GRASS_BLOCK);
-							}
-							else
-							{
-								placeHelper.fillArea(world, BiomeBlockBlock.block.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.GRASS_BLOCK);
-							}
+
+							placeHelper.fillArea(world, BiomeBlockBlock.block.getDefaultState(), smallpos.down(2), 12, 2, 12, Blocks.GRASS_BLOCK);
 						}
 					}
 					break;
 				}
 			}
 		}
-		for (int c = 0; c < Math.random() + 2; ++c)
+		for (int c = 0; c < Math.random() + 1; ++c)
 		{
 			if (!world.isRemote) 
 			{
 				// Carve Area
 				for (int j = 0; j < biomeSize; ++j) 
 				{
-					for (int i = 0; i < scalefactor * 2; ++i) 
+					for (int i = 0; i < scalefactor * 1.2; ++i) 
 					{
 						placeAngle = (int) Math.round(Math.random() * 360);
 						lengthX = (double) Math.sin(placeAngle) * scalefactor;
 						lengthZ = (double) Math.cos(placeAngle) * scalefactor;
-						placeY = prevY + Math.round(((Math.random() - 0.5) * 5));
+						placeY = prevY + Math.round(((Math.random() - 0.5) * 8));
 						
 						if (placeY > y + 5) placeY = y + 5.0D;
 						if (placeY < y - 7) placeY = y - 7.0D;
@@ -165,7 +195,9 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 						
 						//placeHelper.carveArea(world, new BlockPos(placepos), sizeX, sizeY, sizeZ);
 						//System.out.println("carve area");
-						Block[] blocks = {Blocks.CAVE_AIR, Blocks.AIR};
+						Block[] blocks = {StrangeSproutsAltBlock.block, StrangeSporoutsBlock.block, StrangeGrassBlock.block, StrangeBudsBlock.block, GlowingStoneBlock.block, GlowingMushroomBlock.block, 
+						GlowingMushroomAltBlock.block, FakeShroomBlock.block, DarkStoneBlock.block, SporiteInactiveBlock.block, MoltenStoneBlock.block, CactusBlock.block, DroopingHyphaeBlock.block, DroopingHyphaeTopBlock.block, 
+						DroopingHyphaeMidBlock.block, DroopingMagphaeBBlock.block, DroopingMagphaeTBlock.block, DroopingMagphaeMBlock.block, PrimalMushroomBlock.block, PrimalMushroomAltBlock.block, Blocks.CAVE_AIR, Blocks.AIR};
 						List<Block> blocklist = Arrays.asList(blocks);
 						if (primalBiome)
 						{
@@ -179,7 +211,7 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
 						}
 
-						if (!primalBiome)
+						/*if (!primalBiome)
 						{
 							// Place Cobalt
 							for (int b = 0; b < Math.random() * 20 + 20; ++b) 
@@ -190,17 +222,17 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 									world.setBlockState(cobpos, SporiteCobaltOreBlock.block.getDefaultState(), 2);
 								}
 							}
-						}
+						}*/
 						foggers.add(placepos.add(0.0, -2.0, 0.0));
 					}
-					scalefactor += 4;
+					scalefactor += 5;
 					//System.out.println("completed clearance at " + scalefactor + "x");
 				}
 			}
-			x += Math.random() * 50 - 25;
-			z += Math.random() * 50 - 25;
+			x += Math.random() * 90 - 45;
+			z += Math.random() * 90 - 45;
 			//System.out.println("set coordinates for second chunk: " + x + " " + y + " " + z);
-			scalefactor = 3;
+			scalefactor = 5;
 		}
 
 		// Decorate Large Mushrooms

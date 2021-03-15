@@ -2,14 +2,14 @@
   "_fv": 15,
   "_type": "block",
   "definition": {
-    "texture": "cobalt_stone",
-    "textureTop": "cobalt_stone",
-    "textureLeft": "cobalt_stone",
-    "textureFront": "cobalt_stone",
-    "textureRight": "cobalt_stone",
-    "textureBack": "cobalt_stone",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "shale_cobalt",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -26,10 +26,10 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Cobalt Ore",
+    "name": "Shale Cobalt Ore",
     "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 15.0,
+    "hardness": 3.0,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -44,7 +44,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 0,
+    "lightOpacity": 255,
     "material": {
       "value": "ROCK"
     },
@@ -68,10 +68,10 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 2,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:MushroomSpore"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -93,21 +93,16 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "CoboltOreDrop"
-    },
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 12,
-    "frequencyOnChunk": 6,
-    "minGenerateHeight": 10,
-    "maxGenerateHeight": 40
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
