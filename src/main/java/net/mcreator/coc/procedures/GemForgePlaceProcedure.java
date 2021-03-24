@@ -47,11 +47,13 @@ public class GemForgePlaceProcedure extends CocModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), InfusionTableTopHitboxBlock.block.getDefaultState(), 3);
-		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-			world.getWorld().getServer().getCommandManager().handleCommand(
-					new CommandSource(ICommandSource.DUMMY, new Vec3d((x + 0.5), y, (z + 0.5)), Vec2f.ZERO, (ServerWorld) world, 4, "",
-							new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-					"summon coc:infusion_table_model");
+		if ((!(world.getWorld().isRemote))) {
+			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+				world.getWorld().getServer().getCommandManager().handleCommand(
+						new CommandSource(ICommandSource.DUMMY, new Vec3d((x + 0.5), y, (z + 0.5)), Vec2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+						"summon coc:infusion_table_model");
+			}
 		}
 	}
 }

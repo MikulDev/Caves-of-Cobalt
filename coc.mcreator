@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "GUI": 5,
-    "ENTITY": 77
+    "ENTITY": 77,
+    "GUI": 5
   },
   "mod_elements": [
     {
@@ -14792,44 +14792,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "blasted_shale_brick_stairs_rec"
-    },
-    {
-      "name": "TestCommandExecuted",
-      "type": "procedure",
-      "sortid": 1003,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "test_command_executed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Test",
-      "type": "command",
-      "sortid": 1004,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test"
     },
     {
       "name": "ShaleWallR",
