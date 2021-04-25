@@ -38,7 +38,7 @@ public class GoldHoeSapphireItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new HoeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 450;
+				return 800;
 			}
 
 			public float getEfficiency() {
@@ -58,7 +58,7 @@ public class GoldHoeSapphireItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(RubyItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(SappphireItem.block, (int) (1)));
 			}
 		}, -3f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override

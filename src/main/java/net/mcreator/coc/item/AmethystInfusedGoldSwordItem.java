@@ -30,7 +30,7 @@ public class AmethystInfusedGoldSwordItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 3000;
+				return 900;
 			}
 
 			public float getEfficiency() {
@@ -38,7 +38,7 @@ public class AmethystInfusedGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 5f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {
@@ -50,7 +50,7 @@ public class AmethystInfusedGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(AmethystItem.block, (int) (1)));
 			}
 		}, 3, -2.4f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override

@@ -1,0 +1,30 @@
+{
+  "group": "ancient_pickaxe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "coc:shale"
+    },
+    "1": {
+      "item": "coc:shale"
+    },
+    "2": {
+      "item": "coc:shale"
+    },
+    "4": {
+      "item": "coc:broken_tool_piece"
+    },
+    "7": {
+      "item": "coc:stone_rod"
+    }
+  },
+  "result": {
+    "item": "coc:ancient_pickaxe",
+    "count": 1
+  }
+}

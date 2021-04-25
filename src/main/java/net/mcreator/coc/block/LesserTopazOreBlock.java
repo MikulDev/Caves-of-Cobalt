@@ -111,7 +111,7 @@ public class LesserTopazOreBlock extends CocModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.SANDSTONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 6)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(32, 10, 10, 128))));
+			}), block.getDefaultState(), 6)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(32, 40, 40, 128))));
 		}
 	}
 }

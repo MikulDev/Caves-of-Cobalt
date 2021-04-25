@@ -8,6 +8,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
@@ -34,7 +35,7 @@ public class EmptyGoldPickaxeItem extends CocModElements.ModElement {
 			}
 
 			public float getEfficiency() {
-				return 4f;
+				return 12f;
 			}
 
 			public float getAttackDamage() {
@@ -42,15 +43,15 @@ public class EmptyGoldPickaxeItem extends CocModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 1;
-			}
-
-			public int getEnchantability() {
 				return 2;
 			}
 
+			public int getEnchantability() {
+				return 22;
+			}
+
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(LumpOfGoldItem.block, (int) (1)), new ItemStack(Items.GOLD_INGOT, (int) (1)));
 			}
 		}, 1, -1.2f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override

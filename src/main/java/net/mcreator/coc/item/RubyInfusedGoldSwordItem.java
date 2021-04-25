@@ -30,11 +30,11 @@ public class RubyInfusedGoldSwordItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 200;
+				return 600;
 			}
 
 			public float getEfficiency() {
-				return 14f;
+				return 12f;
 			}
 
 			public float getAttackDamage() {
@@ -42,7 +42,7 @@ public class RubyInfusedGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 2;
+				return 3;
 			}
 
 			public int getEnchantability() {
@@ -50,9 +50,9 @@ public class RubyInfusedGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(RubyItem.block, (int) (1)));
 			}
-		}, 3, -2.2f, new Item.Properties().group(JewelingItemGroup.tab)) {
+		}, 3, -2.4f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

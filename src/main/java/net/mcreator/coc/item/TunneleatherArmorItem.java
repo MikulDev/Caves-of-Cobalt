@@ -42,7 +42,7 @@ public class TunneleatherArmorItem extends CocModElements.ModElement {
 	public void initElements() {
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 7;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 15;
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
@@ -50,7 +50,7 @@ public class TunneleatherArmorItem extends CocModElements.ModElement {
 			}
 
 			public int getEnchantability() {
-				return 9;
+				return 15;
 			}
 
 			public net.minecraft.util.SoundEvent getSoundEvent() {

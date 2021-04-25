@@ -30,11 +30,11 @@ public class SapphireInfusedGoldSwordItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 300;
+				return 600;
 			}
 
 			public float getEfficiency() {
-				return 10f;
+				return 12f;
 			}
 
 			public float getAttackDamage() {
@@ -42,17 +42,17 @@ public class SapphireInfusedGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 2;
+				return 1;
 			}
 
 			public int getEnchantability() {
-				return 35;
+				return 36;
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(SappphireItem.block, (int) (1)));
 			}
-		}, 3, -2.2f, new Item.Properties().group(JewelingItemGroup.tab)) {
+		}, 3, -2.4f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

@@ -39,7 +39,7 @@ public class RadiantDashKeyBinding extends CocModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mcreator.radiantdash", GLFW.GLFW_KEY_Z, "key.categories.caves_of_cobalt");
+		keys = new KeyBinding("key.coc.radiantdash", GLFW.GLFW_KEY_Z, "key.categories.caves_of_cobalt");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "stone_column_1",
@@ -18,12 +18,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
-    "mx": 0.30000000000000004,
-    "my": 0.0,
-    "mz": 0.30000000000000004,
-    "Mx": 0.7000000000000001,
-    "My": 1.0,
-    "Mz": 0.7000000000000001,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 4.800000000000001,
+        "my": 0.0,
+        "mz": 4.800000000000001,
+        "Mx": 11.200000000000001,
+        "My": 16.0,
+        "Mz": 11.200000000000001,
+        "subtract": false
+      }
+    ],
     "name": "Stone Comunm",
     "specialInfo": [],
     "hardness": 2.0,
@@ -59,6 +65,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {

@@ -30,19 +30,19 @@ public class RubyInfusedGoldShovelItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ShovelItem(new IItemTier() {
 			public int getMaxUses() {
-				return 300;
+				return 600;
 			}
 
 			public float getEfficiency() {
-				return 14f;
+				return 12f;
 			}
 
 			public float getAttackDamage() {
-				return 1f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {
-				return 2;
+				return 3;
 			}
 
 			public int getEnchantability() {
@@ -50,9 +50,9 @@ public class RubyInfusedGoldShovelItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(RubyItem.block, (int) (1)));
 			}
-		}, 1, -1.2f, new Item.Properties().group(JewelingItemGroup.tab)) {
+		}, 1, -3f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

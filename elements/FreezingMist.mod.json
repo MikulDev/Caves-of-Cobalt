@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "freezing_mist",
@@ -18,12 +18,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "TRANSLUCENT",
-    "mx": 0.0,
-    "my": 0.0,
-    "mz": 0.0,
-    "Mx": 0.1,
-    "My": 0.1,
-    "Mz": 0.1,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 1.6,
+        "My": 1.6,
+        "Mz": 1.6,
+        "subtract": false
+      }
+    ],
     "name": "Freezing Mist",
     "specialInfo": [],
     "hardness": 999.0,
@@ -59,6 +65,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "soundOnStep": {

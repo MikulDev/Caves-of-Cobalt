@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "food",
   "definition": {
     "renderType": 0,
@@ -16,7 +16,7 @@
     "stackSize": 64,
     "nutritionalValue": 3,
     "saturation": 0.3,
-    "eatingSpeed": 20,
+    "eatingSpeed": 12,
     "resultItem": {
       "value": ""
     },

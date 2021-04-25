@@ -13,7 +13,7 @@ import net.mcreator.coc.CocModElements;
 
 @CocModElements.ModElement.Tag
 public class WormTuskItem extends CocModElements.ModElement {
-	@ObjectHolder("coc:wormtusk")
+	@ObjectHolder("coc:tunnelbug_tusk")
 	public static final Item block = null;
 	public WormTuskItem(CocModElements instance) {
 		super(instance, 163);
@@ -26,7 +26,7 @@ public class WormTuskItem extends CocModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("wormtusk");
+			setRegistryName("tunnelbug_tusk");
 		}
 
 		@Override

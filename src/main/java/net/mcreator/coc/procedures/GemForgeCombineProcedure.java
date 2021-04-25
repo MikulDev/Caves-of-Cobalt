@@ -130,7 +130,7 @@ public class GemForgeCombineProcedure extends CocModElements.ModElement {
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
-				GemForgeFlawedTProcedure.executeProcedure($_dependencies);
+				GemforgeAncientProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

@@ -11,6 +11,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IArmorMaterial;
@@ -46,11 +47,11 @@ public class EmptyGoldArmorItem extends CocModElements.ModElement {
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{3, 5, 6, 3}[slot.getIndex()];
+				return new int[]{3, 4, 5, 3}[slot.getIndex()];
 			}
 
 			public int getEnchantability() {
-				return 9;
+				return 22;
 			}
 
 			public net.minecraft.util.SoundEvent getSoundEvent() {
@@ -58,7 +59,7 @@ public class EmptyGoldArmorItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(Items.GOLD_INGOT, (int) (1)), new ItemStack(LumpOfGoldItem.block, (int) (1)));
 			}
 
 			@OnlyIn(Dist.CLIENT)

@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -48,12 +48,12 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 7,
+    "maxDamage": 15,
     "damageValueHelmet": 2,
     "damageValueBody": 3,
     "damageValueLeggings": 3,
     "damageValueBoots": 2,
-    "enchantability": 9,
+    "enchantability": 15,
     "toughness": 0.75,
     "knockbackResistance": 0.0,
     "equipSound": {

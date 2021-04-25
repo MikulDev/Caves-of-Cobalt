@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -40,15 +40,22 @@
     "bootsModelTexture": "From armor",
     "maxDamage": 25,
     "damageValueHelmet": 3,
-    "damageValueBody": 6,
-    "damageValueLeggings": 5,
+    "damageValueBody": 5,
+    "damageValueLeggings": 4,
     "damageValueBoots": 3,
-    "enchantability": 9,
+    "enchantability": 22,
     "toughness": 1.5,
     "knockbackResistance": 0.0,
     "equipSound": {
       "value": ""
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "CUSTOM:LumpOfGold"
+      }
+    ]
   }
 }

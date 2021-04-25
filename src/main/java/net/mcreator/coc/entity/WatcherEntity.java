@@ -51,6 +51,9 @@ import net.mcreator.coc.item.BrokenChipperItem;
 import net.mcreator.coc.CocModElements;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
+import net.minecraft.util.SoundEvents;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.BlockState;
 
 @CocModElements.ModElement.Tag
 public class WatcherEntity extends CocModElements.ModElement {
@@ -89,8 +92,11 @@ public class WatcherEntity extends CocModElements.ModElement {
 			return new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer());
 		});
 	}
-	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
+	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob 
+	{
 		int attackTimer = 0;
+		double strafeX = 0;
+		double strafeZ = 0;
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -159,25 +165,52 @@ public class WatcherEntity extends CocModElements.ModElement {
 				this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
 		}
 
-		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
-			CustomEntity.this.attackTimer++;
-			if (CustomEntity.this.attackTimer == 2) {
-				world.playSound((PlayerEntity) null, this.getPosX(), this.getPosY(), this.getPosZ(),
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("coc:entity.watcher.snort")),
-						SoundCategory.HOSTILE, (float) 10, (float) ((Math.random() / 5) + 0.9));
+		protected void playStepSound(BlockPos pos, BlockState blockIn) 
+		{
+	    	this.playSound(SoundEvents.ENTITY_COW_STEP, 0.15F, 1.5F);
+	   	}
+
+		public void tick()
+		{
+			super.tick();
+			if (this.getAttackTarget() != null)
+			{
+				strafeX += (Math.random() - 0.5) / 6;
+				strafeZ += (Math.random() - 0.5) / 6;
+				if (strafeX > 0.1) strafeX = 0.1; if (strafeX < -0.1) strafeX = -0.1; 
+				if (strafeZ > 0.1) strafeZ = 0.1; if (strafeZ < -0.1) strafeZ = -0.1; 
+				this.setMotion(this.getMotion().add(strafeX, 0, strafeZ));
+
+				Entity target = this.getAttackTarget();
+				CustomEntity.this.attackTimer++;
+				if (CustomEntity.this.attackTimer == 25) 
+				{
+					world.playSound((PlayerEntity) null, this.getPosX(), this.getPosY(), this.getPosZ(),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("coc:entity.watcher.snort")),
+							SoundCategory.HOSTILE, (float) 10, (float) ((Math.random() / 5) + 0.9));
+				}
+				if (CustomEntity.this.attackTimer >= 40) 
+				{
+					ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, this, this.world);
+					double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
+					double d1 = target.getPosX() - this.getPosX();
+					double d3 = target.getPosZ() - this.getPosZ();
+					entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+					world.addEntity(entityarrow);
+					CustomEntity.this.attackTimer = 0;
+					world.playSound((PlayerEntity) null, this.getPosX(), this.getPosY(), this.getPosZ(),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("coc:entity.watcher.spit")),
+							SoundCategory.HOSTILE, (float) 10, (float) ((Math.random() / 5) + 0.9));
+				}
+
+				this.lookController.setLookPosition(target.getPosX(), target.getPosY(), target.getPosZ(), 180.0F, 20.0F);
+				this.renderYawOffset = this.rotationYaw;
 			}
-			if (CustomEntity.this.attackTimer >= 3) {
-				ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, this, this.world);
-				double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
-				double d1 = target.getPosX() - this.getPosX();
-				double d3 = target.getPosZ() - this.getPosZ();
-				entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
-				world.addEntity(entityarrow);
-				CustomEntity.this.attackTimer = 0;
-				world.playSound((PlayerEntity) null, this.getPosX(), this.getPosY(), this.getPosZ(),
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("coc:entity.watcher.spit")),
-						SoundCategory.HOSTILE, (float) 10, (float) ((Math.random() / 5) + 0.9));
-			}
+		}
+
+		public void attackEntityWithRangedAttack(LivingEntity target, float flval) 
+		{
+			
 		}
 	}
 

@@ -124,17 +124,15 @@ public class MidasMeltingPotBlock extends CocModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
 			switch ((Direction) state.get(FACING)) {
-				case UP :
-				case DOWN :
 				case SOUTH :
 				default :
-					return VoxelShapes.create(0.945D, 0D, 0.945D, 0.045D, 1.15D, 0.045D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(15.12, 0, 15.12, 0.72, 18.4, 0.72)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.create(0.055D, 0D, 0.055D, 0.955D, 1.15D, 0.955D).withOffset(offset.x, offset.y, offset.z);
-				case WEST :
-					return VoxelShapes.create(0.055D, 0D, 0.945D, 0.955D, 1.15D, 0.045D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(0.88, 0, 0.88, 15.28, 18.4, 15.28)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.create(0.945D, 0D, 0.055D, 0.045D, 1.15D, 0.955D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(15.12, 0, 0.88, 0.72, 18.4, 15.28)).withOffset(offset.x, offset.y, offset.z);
+				case WEST :
+					return VoxelShapes.or(makeCuboidShape(0.88, 0, 15.12, 15.28, 18.4, 0.72)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 

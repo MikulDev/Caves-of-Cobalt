@@ -38,7 +38,7 @@ public class BedrockMalPickaxeItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 1000;
+				return 1500;
 			}
 
 			public float getEfficiency() {

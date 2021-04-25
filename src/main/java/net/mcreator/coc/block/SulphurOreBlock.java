@@ -38,7 +38,7 @@ import java.util.HashMap;
 
 @CocModElements.ModElement.Tag
 public class SulphurOreBlock extends CocModElements.ModElement {
-	@ObjectHolder("coc:sulphur_ore")
+	@ObjectHolder("coc:sulfur_ore")
 	public static final Block block = null;
 	public SulphurOreBlock(CocModElements instance) {
 		super(instance, 39);
@@ -54,7 +54,7 @@ public class SulphurOreBlock extends CocModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.2f, 10f).lightValue(0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("sulphur_ore");
+			setRegistryName("sulfur_ore");
 		}
 
 		@Override
@@ -102,7 +102,7 @@ public class SulphurOreBlock extends CocModElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("sulphur_ore", "sulphur_ore", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("sulfur_ore", "sulfur_ore", blockAt -> {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;

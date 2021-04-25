@@ -39,7 +39,7 @@ public class RadiantLightningKeyBinding extends CocModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mcreator.radiantlightning", GLFW.GLFW_KEY_X, "key.categories.caves_of_cobalt");
+		keys = new KeyBinding("key.coc.radiantlightning", GLFW.GLFW_KEY_X, "key.categories.caves_of_cobalt");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

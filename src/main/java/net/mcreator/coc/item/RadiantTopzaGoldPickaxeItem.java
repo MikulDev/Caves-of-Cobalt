@@ -40,7 +40,7 @@ public class RadiantTopzaGoldPickaxeItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 2000;
+				return 1500;
 			}
 
 			public float getEfficiency() {
@@ -62,7 +62,7 @@ public class RadiantTopzaGoldPickaxeItem extends CocModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(LesserTopazItem.block, (int) (1)));
 			}
-		}, 1, -2.2f, new Item.Properties().group(JewelingItemGroup.tab)) {
+		}, 1, -2.8f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

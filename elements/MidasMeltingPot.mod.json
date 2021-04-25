@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "cobalt_compounder_side",
@@ -19,12 +19,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
-    "mx": 0.055,
-    "my": 0.0,
-    "mz": 0.055,
-    "Mx": 0.955,
-    "My": 1.15,
-    "Mz": 0.955,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.88,
+        "my": 0.0,
+        "mz": 0.88,
+        "Mx": 15.28,
+        "My": 18.4,
+        "Mz": 15.28,
+        "subtract": false
+      }
+    ],
     "name": "Midas' Melting Pot",
     "specialInfo": [],
     "hardness": 2.5,
@@ -60,6 +66,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {

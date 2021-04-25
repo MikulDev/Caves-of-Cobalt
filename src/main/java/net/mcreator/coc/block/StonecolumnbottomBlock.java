@@ -76,7 +76,8 @@ public class StonecolumnbottomBlock extends CocModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.3D, 0D, 0.3D, 0.7000000000000001D, 1D, 0.7000000000000001D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(4.800000000000001, 0, 4.800000000000001, 11.200000000000001, 16, 11.200000000000001))
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

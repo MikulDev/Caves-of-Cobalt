@@ -25,8 +25,8 @@ public class MagmawNormalEffectProcedure extends CocModElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, (int) 3600, (int) 0));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, (int) 6000, (int) 0));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(LavaVisionPotion.potion, (int) 3600, (int) 0));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(LavaVisionPotion.potion, (int) 6000, (int) 0));
 	}
 }

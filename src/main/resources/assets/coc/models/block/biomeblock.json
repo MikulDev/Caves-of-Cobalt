@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "coc:blocks/glowing_stone",
-    "up": "coc:blocks/glowing_stone",
-    "north": "coc:blocks/glowing_stone",
-    "east": "coc:blocks/glowing_stone",
-    "south": "coc:blocks/glowing_stone",
-    "west": "coc:blocks/glowing_stone",
+    "all": "coc:blocks/glowing_stone",
     "particle": "coc:blocks/glowing_stone"
   }
 }

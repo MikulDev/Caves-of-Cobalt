@@ -125,17 +125,15 @@ public class DormantWatcherBlock extends CocModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
 			switch ((Direction) state.get(FACING)) {
-				case UP :
-				case DOWN :
 				case SOUTH :
 				default :
-					return VoxelShapes.create(0.91D, 0D, 0.91D, 0.09D, 1.2D, 0.09D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(14.56, 0, 14.56, 1.44, 19.2, 1.44)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.create(0.09D, 0D, 0.09D, 0.91D, 1.2D, 0.91D).withOffset(offset.x, offset.y, offset.z);
-				case WEST :
-					return VoxelShapes.create(0.09D, 0D, 0.91D, 0.91D, 1.2D, 0.09D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(1.44, 0, 1.44, 14.56, 19.2, 14.56)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.create(0.91D, 0D, 0.09D, 0.09D, 1.2D, 0.91D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(14.56, 0, 1.44, 1.44, 19.2, 14.56)).withOffset(offset.x, offset.y, offset.z);
+				case WEST :
+					return VoxelShapes.or(makeCuboidShape(1.44, 0, 14.56, 14.56, 19.2, 1.44)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 

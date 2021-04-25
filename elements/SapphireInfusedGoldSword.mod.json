@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -13,15 +13,19 @@
       "value": "CUSTOM:Jeweling"
     },
     "toolType": "Sword",
-    "harvestLevel": 2,
-    "efficiency": 10.0,
-    "attackSpeed": 1.8,
-    "enchantability": 35,
+    "harvestLevel": 1,
+    "efficiency": 12.0,
+    "attackSpeed": 1.6,
+    "enchantability": 36,
     "damageVsEntity": 4.0,
-    "usageCount": 300,
+    "usageCount": 600,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Sappphire"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false

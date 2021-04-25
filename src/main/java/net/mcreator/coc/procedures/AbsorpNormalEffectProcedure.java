@@ -24,6 +24,6 @@ public class AbsorpNormalEffectProcedure extends CocModElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 3600, (int) 0));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 6000, (int) 0));
 	}
 }

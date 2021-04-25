@@ -24,6 +24,6 @@ public class AbsorpLongEffectProcedure extends CocModElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 7200, (int) 0));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 10800, (int) 0));
 	}
 }

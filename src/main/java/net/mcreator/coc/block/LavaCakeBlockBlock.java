@@ -87,17 +87,15 @@ public class LavaCakeBlockBlock extends CocModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
 			switch ((Direction) state.get(FACING)) {
-				case UP :
-				case DOWN :
 				case SOUTH :
 				default :
-					return VoxelShapes.create(0.8D, 0D, 0.8D, 0.2D, 0.45D, 0.2D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(12.8, 0, 12.8, 3.2, 7.2, 3.2)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.create(0.2D, 0D, 0.2D, 0.8D, 0.45D, 0.8D).withOffset(offset.x, offset.y, offset.z);
-				case WEST :
-					return VoxelShapes.create(0.2D, 0D, 0.8D, 0.8D, 0.45D, 0.2D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(3.2, 0, 3.2, 12.8, 7.2, 12.8)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.create(0.8D, 0D, 0.2D, 0.2D, 0.45D, 0.8D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(12.8, 0, 3.2, 3.2, 7.2, 12.8)).withOffset(offset.x, offset.y, offset.z);
+				case WEST :
+					return VoxelShapes.or(makeCuboidShape(3.2, 0, 12.8, 12.8, 7.2, 3.2)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 

@@ -30,7 +30,7 @@ public class GoldHoeRubyItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new HoeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 450;
+				return 800;
 			}
 
 			public float getEfficiency() {

@@ -15,7 +15,7 @@ import net.mcreator.coc.CocModElements;
 
 @CocModElements.ModElement.Tag
 public class ShaleSulphurOreBlock extends CocModElements.ModElement {
-	@ObjectHolder("coc:shale_sulphur_ore")
+	@ObjectHolder("coc:shale_sulfur_ore")
 	public static final Block block = null;
 	public ShaleSulphurOreBlock(CocModElements instance) {
 		super(instance, 1046);
@@ -31,7 +31,7 @@ public class ShaleSulphurOreBlock extends CocModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 3f).lightValue(0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("shale_sulphur_ore");
+			setRegistryName("shale_sulfur_ore");
 		}
 	}
 }

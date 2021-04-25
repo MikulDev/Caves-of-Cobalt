@@ -13,7 +13,7 @@ import net.mcreator.coc.CocModElements;
 
 @CocModElements.ModElement.Tag
 public class BrokenChipperItem extends CocModElements.ModElement {
-	@ObjectHolder("coc:broken_chipper")
+	@ObjectHolder("coc:broken_tool_piece")
 	public static final Item block = null;
 	public BrokenChipperItem(CocModElements instance) {
 		super(instance, 166);
@@ -26,7 +26,7 @@ public class BrokenChipperItem extends CocModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(16).rarity(Rarity.COMMON));
-			setRegistryName("broken_chipper");
+			setRegistryName("broken_tool_piece");
 		}
 
 		@Override

@@ -30,7 +30,7 @@ public class AmethystInfusedGoldAxeItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new AxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 3000;
+				return 900;
 			}
 
 			public float getEfficiency() {
@@ -42,17 +42,17 @@ public class AmethystInfusedGoldAxeItem extends CocModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 2;
+				return 3;
 			}
 
 			public int getEnchantability() {
-				return 20;
+				return 22;
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(AmethystItem.block, (int) (1)));
 			}
-		}, 1, -2.6f, new Item.Properties().group(JewelingItemGroup.tab)) {
+		}, 1, -3f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

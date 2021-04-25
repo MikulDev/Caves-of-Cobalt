@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -13,17 +13,24 @@
       "value": "CUSTOM:Jeweling"
     },
     "toolType": "Spade",
-    "harvestLevel": 2,
-    "efficiency": 10.0,
-    "attackSpeed": 2.8,
-    "enchantability": 35,
+    "harvestLevel": 3,
+    "efficiency": 12.0,
+    "attackSpeed": 1.0,
+    "enchantability": 36,
     "damageVsEntity": 4.0,
-    "usageCount": 300,
+    "usageCount": 600,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Sappphire"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "SapphireToolXP"
+    }
   }
 }

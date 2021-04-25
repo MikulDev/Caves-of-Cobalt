@@ -46,7 +46,7 @@ public class AmethystGoldArmorItem extends CocModElements.ModElement {
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{2, 4, 5, 2}[slot.getIndex()];
+				return new int[]{2, 6, 7, 2}[slot.getIndex()];
 			}
 
 			public int getEnchantability() {
@@ -58,7 +58,7 @@ public class AmethystGoldArmorItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(AmethystItem.block, (int) (1)));
 			}
 
 			@OnlyIn(Dist.CLIENT)

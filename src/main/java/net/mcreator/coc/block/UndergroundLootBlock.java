@@ -118,7 +118,7 @@ public class UndergroundLootBlock extends CocModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.063D, 0D, 0.063D, 0.937D, 0.874D, 0.937D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(1.008, 0, 1.008, 14.992, 13.984, 14.992)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

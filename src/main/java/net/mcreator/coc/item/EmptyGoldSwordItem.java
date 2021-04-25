@@ -8,6 +8,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
@@ -30,7 +31,7 @@ public class EmptyGoldSwordItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 400;
+				return 100;
 			}
 
 			public float getEfficiency() {
@@ -38,11 +39,11 @@ public class EmptyGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 4f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {
-				return 1;
+				return 2;
 			}
 
 			public int getEnchantability() {
@@ -50,9 +51,9 @@ public class EmptyGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(Items.GOLD_INGOT, (int) (1)), new ItemStack(LumpOfGoldItem.block, (int) (1)));
 			}
-		}, 3, -2.2f, new Item.Properties().group(JewelingItemGroup.tab)) {
+		}, 3, -2.4f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

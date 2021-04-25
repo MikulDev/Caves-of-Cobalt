@@ -73,7 +73,7 @@ public class NimbleMarigoldBlock extends CocModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.15D, 0D, 0.15D, 0.85D, 0.7D, 0.85D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(2.4, 0, 2.4, 13.6, 11.2, 13.6)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

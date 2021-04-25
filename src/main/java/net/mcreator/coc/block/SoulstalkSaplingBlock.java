@@ -75,7 +75,7 @@ public class SoulstalkSaplingBlock extends CocModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.25D, 0D, 0.25D, 0.75D, 0.8D, 0.75D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(4, 0, 4, 12, 12.8, 12)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

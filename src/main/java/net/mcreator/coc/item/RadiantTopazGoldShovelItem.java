@@ -30,7 +30,7 @@ public class RadiantTopazGoldShovelItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ShovelItem(new IItemTier() {
 			public int getMaxUses() {
-				return 2000;
+				return 1500;
 			}
 
 			public float getEfficiency() {
@@ -50,9 +50,9 @@ public class RadiantTopazGoldShovelItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(LesserTopazItem.block, (int) (1)));
 			}
-		}, 1, -1.2f, new Item.Properties().group(JewelingItemGroup.tab)) {
+		}, 1, -3f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

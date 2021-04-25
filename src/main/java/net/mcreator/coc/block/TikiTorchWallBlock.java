@@ -89,17 +89,15 @@ public class TikiTorchWallBlock extends CocModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
 			switch ((Direction) state.get(FACING)) {
-				case UP :
-				case DOWN :
 				case SOUTH :
 				default :
-					return VoxelShapes.create(0.7D, 0D, 0.99D, 0.3D, 1D, 0.4D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(11.2, 0, 15.84, 4.8, 16, 6.4)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.create(0.3D, 0D, 0.01D, 0.7D, 1D, 0.6D).withOffset(offset.x, offset.y, offset.z);
-				case WEST :
-					return VoxelShapes.create(0.01D, 0D, 0.7D, 0.6D, 1D, 0.3D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(4.8, 0, 0.16, 11.2, 16, 9.6)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.create(0.99D, 0D, 0.3D, 0.4D, 1D, 0.7D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(15.84, 0, 4.8, 6.4, 16, 11.2)).withOffset(offset.x, offset.y, offset.z);
+				case WEST :
+					return VoxelShapes.or(makeCuboidShape(0.16, 0, 11.2, 9.6, 16, 4.8)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 

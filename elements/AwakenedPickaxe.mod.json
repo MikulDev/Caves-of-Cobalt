@@ -1,0 +1,36 @@
+{
+  "_fv": 17,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ancient_pickaxe_activated",
+    "customModelName": "Normal",
+    "name": "§dAncient Pickaxe§r",
+    "specialInfo": [
+      "§cAwakened§r"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 5,
+    "efficiency": 19.0,
+    "attackSpeed": 1.0,
+    "enchantability": 22,
+    "damageVsEntity": 4.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Blocks.MAGMA"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "AwakenedPickUse"
+    }
+  }
+}

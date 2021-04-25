@@ -92,7 +92,8 @@ public class FakeStalagmiteBlock extends CocModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.2D, 0D, 0.2D, 0.7999999999999999D, 0.7D, 0.7999999999999999D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(3.1999999999999997, 0, 3.1999999999999997, 12.799999999999999, 11.2, 12.799999999999999))
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

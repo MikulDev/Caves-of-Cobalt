@@ -58,7 +58,7 @@ public class SapphireGoldArmorItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(SappphireItem.block, (int) (1)));
 			}
 
 			@OnlyIn(Dist.CLIENT)

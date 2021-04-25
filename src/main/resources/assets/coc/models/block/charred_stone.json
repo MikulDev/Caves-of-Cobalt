@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "coc:blocks/charred_stone",
-    "up": "coc:blocks/charred_stone",
-    "north": "coc:blocks/charred_stone",
-    "east": "coc:blocks/charred_stone",
-    "south": "coc:blocks/charred_stone",
-    "west": "coc:blocks/charred_stone",
+    "all": "coc:blocks/charred_stone",
     "particle": "coc:blocks/charred_stone"
   }
 }

@@ -79,7 +79,7 @@ public class AshrootStage2Block extends CocModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.1D, 0.1D, 0.1D, 0.9D, 1D, 0.9D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(1.6, 1.6, 1.6, 14.4, 16, 14.4)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

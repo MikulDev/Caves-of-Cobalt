@@ -1,11 +1,11 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "sulphur_powder",
     "customModelName": "Normal",
-    "name": "Sulphur Powder",
+    "name": "Sulfur Powder",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
@@ -15,6 +15,9 @@
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

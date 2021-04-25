@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "monument_altar_top",
@@ -19,12 +19,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "mx": 0.125,
-    "my": 0.0,
-    "mz": 0.125,
-    "Mx": 1.875,
-    "My": 0.8125,
-    "Mz": 1.875,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 2.0,
+        "my": 0.0,
+        "mz": 2.0,
+        "Mx": 30.0,
+        "My": 13.0,
+        "Mz": 30.0,
+        "subtract": false
+      }
+    ],
     "name": "Monument Altar",
     "specialInfo": [],
     "hardness": 1.0,
@@ -60,6 +66,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {

@@ -13,7 +13,7 @@ import net.mcreator.coc.CocModElements;
 
 @CocModElements.ModElement.Tag
 public class SulphurPowderItem extends CocModElements.ModElement {
-	@ObjectHolder("coc:sulphur_powder")
+	@ObjectHolder("coc:sulfur_powder")
 	public static final Item block = null;
 	public SulphurPowderItem(CocModElements instance) {
 		super(instance, 168);
@@ -26,7 +26,7 @@ public class SulphurPowderItem extends CocModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("sulphur_powder");
+			setRegistryName("sulfur_powder");
 		}
 
 		@Override

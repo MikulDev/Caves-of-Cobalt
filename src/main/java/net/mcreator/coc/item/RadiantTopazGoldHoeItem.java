@@ -36,7 +36,7 @@ public class RadiantTopazGoldHoeItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new HoeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 2000;
+				return 1500;
 			}
 
 			public float getEfficiency() {
@@ -56,7 +56,7 @@ public class RadiantTopazGoldHoeItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(RadientTopazItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(LesserTopazItem.block, (int) (1)));
 			}
 		}, -3f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override

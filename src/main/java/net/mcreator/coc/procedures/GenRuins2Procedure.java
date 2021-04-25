@@ -110,30 +110,20 @@ public class GenRuins2Procedure extends CocModElements.ModElement {
 						Direction direc = placeHelper.touchingSolid(world, vpos);
 						if (direc != null && world.isAirBlock(vpos))
 						{
-							if (Math.random() < 0.7)
+							if (direc != Direction.UP && direc != Direction.DOWN)
 							{
-								if (direc != Direction.UP && direc != Direction.DOWN)
+								int length = 0;
+								for (int v = 0; v < Math.random() * 6; v++)
 								{
-									int length = 0;
-									for (int v = 0; v < Math.random() * 6; v++)
+									if (world.isAirBlock(vpos.down(length)))
 									{
-										if (world.isAirBlock(vpos.down(length)))
-										{
-											world.setBlockState(vpos.down(length), Blocks.VINE.getDefaultState().with(VineBlock.getPropertyFor(direc), Boolean.valueOf(true)));
-											length++;
-										}
-										else
-										{
-											break;
-										}
+										world.setBlockState(vpos.down(length), Blocks.VINE.getDefaultState().with(VineBlock.getPropertyFor(direc), Boolean.valueOf(true)));
+										length++;
 									}
-								}
-							}
-							else
-							{
-								if (direc != Direction.UP && direc != Direction.DOWN)
-								{
-									world.setBlockState(vpos, TikiTorchWallBlock.block.getDefaultState().with(TikiTorchWallBlock.CustomBlock.FACING, direc));
+									else
+									{
+										break;
+									}
 								}
 							}
 						}

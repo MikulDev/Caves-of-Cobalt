@@ -38,7 +38,7 @@ public class GoldHoeAmethystItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new HoeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 450;
+				return 1500;
 			}
 
 			public float getEfficiency() {
@@ -58,14 +58,14 @@ public class GoldHoeAmethystItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(RubyItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(AmethystItem.block, (int) (1)));
 			}
 		}, -3f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
 				list.add(new StringTextComponent("\u00A75Amethyst\u00A7r"));
-				list.add(new StringTextComponent("\u00A78Plants seeds from offhand when harvesting crops\u00A7r"));
+				list.add(new StringTextComponent("\u00A78Tills a 3x3 of crops\u00A7r"));
 			}
 
 			@Override

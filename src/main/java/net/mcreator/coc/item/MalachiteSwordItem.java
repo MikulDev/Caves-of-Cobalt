@@ -52,7 +52,7 @@ public class MalachiteSwordItem extends CocModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(MalachiteItem.block, (int) (1)));
 			}
-		}, 3, -2.7f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -2.4f, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
 				super.inventoryTick(itemstack, world, entity, slot, selected);

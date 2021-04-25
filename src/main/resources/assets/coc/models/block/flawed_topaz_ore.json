@@ -1,12 +1,28 @@
 {
-  "parent": "block/cube",
-  "textures": {
-    "down": "coc:blocks/sandstone_bottom",
-    "up": "coc:blocks/sandstone_top",
-    "north": "coc:blocks/topaz_sandstone",
-    "east": "coc:blocks/topaz_sandstone",
-    "south": "coc:blocks/topaz_sandstone",
-    "west": "coc:blocks/topaz_sandstone",
-    "particle": "coc:blocks/sandstone_bottom"
-  }
+	"parent": "block/block",
+    "textures": {
+        "particle": "minecraft:block/sandstone",
+        "ore": "coc:blocks/topaz_sandstone",
+        "top": "minecraft:block/sandstone_top",
+        "bottom": "minecraft:block/sandstone_bottom"
+    },
+    "elements": [
+        
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+            	"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#top", "cullface": "up" },
+            	"down": { "uv": [ 0, 0, 16, 16 ], "texture": "bottom", "cullface": "down" }
+            }
+        },
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#ore", "cullface": "north" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#ore", "cullface": "south" },
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#ore", "cullface": "east" },
+                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#ore", "cullface": "west" }
+            }
+        }
+    ]
 }

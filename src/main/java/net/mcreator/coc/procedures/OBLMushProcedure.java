@@ -89,6 +89,66 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 		super(instance, 459);
 	}
 
+	public static void carveAreaBlue (World world, BlockPos pos, int sizeX, int sizeY, int sizeZ, double noise, List replaceblocks, boolean blacklist, boolean primal)
+	{
+		int x = pos.getX() - sizeX - 1;
+		int y = pos.getY() + sizeY;
+		int z = pos.getZ() - sizeZ - 1;
+		int lengthX = sizeX + 2;
+		int lengthY = sizeY;
+		int lengthZ = sizeZ + 2;
+		int oSizeX = sizeX;
+		int oSizeY = sizeY;
+		int oSizeZ = sizeZ;
+		double noiseFactor = 0;
+		Block placeblock = !primal ? GlowingStoneBlock.block : MoltenStoneBlock.block;
+		Block placeblock2 = !primal ? DarkStoneBlock.block : MoltenStoneBlock.block;
+		Block placebiome = !primal ? BiomeBlockBlock.block : RedBiomeBlockBlock.block;
+
+		for (int xr = 0; xr < lengthX * 2; ++xr)
+		{
+			for (int yr = 0; yr < lengthY * 2; ++yr)
+			{
+				for (int zr = 0; zr < lengthZ * 2; ++zr)
+				{		
+					noiseFactor += (Math.random() - 0.5) / 4;
+					//System.out.println("noisefactor");
+					
+					double ellipsoid = ((Math.pow(x - pos.getX(), 2) / Math.pow(sizeX, 2)) + (Math.pow(y - pos.getY(), 2) / Math.pow(sizeY, 2)) + (Math.pow(z - pos.getZ(), 2) / Math.pow(sizeZ, 2)));
+					
+					if (ellipsoid > 0.8 && ellipsoid < 1.0D && !replaceblocks.contains(world.getBlockState(new BlockPos(x, y, z)).getBlock()))
+					{
+						if (world.isAirBlock(new BlockPos(x, y + 1, z)) || Math.random() < 0.008)
+						{
+							world.setBlockState(new BlockPos(x, y, z), placebiome.getDefaultState(), 2);
+						}
+						else
+						{
+							if (Math.random() < 0.7)
+							{
+								world.setBlockState(new BlockPos(x, y, z), placeblock.getDefaultState(), 2);
+							}
+							else
+							{
+								world.setBlockState(new BlockPos(x, y, z), placeblock2.getDefaultState(), 2);
+							}
+						}
+					}
+					else if (ellipsoid <= 0.85)
+					{
+						world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 2);
+					}
+					//System.out.println("placeblock");
+					z++;
+				}
+				z = pos.getZ() - sizeZ - 1;
+				y--;
+			}
+			y = pos.getY() + sizeY;
+			x++;
+		}
+	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure OBLMush!");
@@ -126,8 +186,10 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 		PlaceHelper placeHelper = new PlaceHelper(null);
 		MushroomBiomeHelper mushHelper = new MushroomBiomeHelper(null);
 		List<Vec3d> foggers = new ArrayList<Vec3d>();
+		List<BlockPos> liqpos = new ArrayList<BlockPos>();
 		boolean primalBiome = false;
 		if (y < 27) primalBiome = true;
+		if (y < 32 && y > 27) y = 32;
 		//System.out.println("initialized variables");
 		Template tree = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager().getTemplateDefaulted(new ResourceLocation("coc", "mushroom_tree"));
 		{
@@ -177,20 +239,20 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 				// Carve Area
 				for (int j = 0; j < biomeSize; ++j) 
 				{
-					for (int i = 0; i < scalefactor * 1.2; ++i) 
+					for (int i = 0; i < scalefactor / 10; ++i) 
 					{
 						placeAngle = (int) Math.round(Math.random() * 360);
 						lengthX = (double) Math.sin(placeAngle) * scalefactor;
 						lengthZ = (double) Math.cos(placeAngle) * scalefactor;
 						placeY = prevY + Math.round(((Math.random() - 0.5) * 8));
 						
-						if (placeY > y + 5) placeY = y + 5.0D;
-						if (placeY < y - 7) placeY = y - 7.0D;
+						if (placeY > y + 3) placeY = y + 3.0D;
+						if (placeY < y - 3) placeY = y - 3.0D;
 							
 						placepos = new Vec3d(x + lengthX, placeY, z + lengthZ);
-						int sizeX = (int) (Math.random() * 3 + 6);
-						int sizeY = (int) (Math.random() * 3 + 6);
-						int sizeZ = (int) (Math.random() * 3 + 6);
+						int sizeX = (int) (Math.random() * 8 + 12);
+						int sizeY = (int) (Math.random() * 3 + 5);
+						int sizeZ = (int) (Math.random() * 8 + 12);
 						//System.out.println("initialized variables 2");
 						
 						//placeHelper.carveArea(world, new BlockPos(placepos), sizeX, sizeY, sizeZ);
@@ -201,14 +263,27 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 						List<Block> blocklist = Arrays.asList(blocks);
 						if (primalBiome)
 						{
-							placeHelper.carveAreaHollow(world, RedBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, blocklist, true);
-							placeHelper.fillArea(world, RedBiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, 5, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, Blocks.GRAVEL);
-							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LavaFillerBlock.block.getDefaultState());
+							carveAreaBlue(world, new BlockPos(placepos.add(-1, -1, -1)), 
+							sizeX + 2, sizeY + 2, sizeZ + 2, Math.random(), blocklist, true, true);
+							
+							if (Math.random() < 0.08)
+							{
+
+								liqpos.add(new BlockPos(placepos.add(-1, 0, -1)));
+								System.out.println("liquid_slime");
+							}
 						}
 						else
 						{
-							placeHelper.carveAreaHollow(world, BiomeBlockBlock.block.getDefaultState(), new BlockPos(placepos.add(-1, -1, -1)), sizeX + 2, sizeY + 2, sizeZ + 2, blocklist, true);
-							world.setBlockState(new BlockPos(placepos.getX(), liquidY, placepos.getZ()), LiquidFillerBlock.block.getDefaultState());
+							carveAreaBlue(world, new BlockPos(placepos.add(-1, -1, -1)), 
+							sizeX + 2, sizeY + 2, sizeZ + 2, Math.random(), blocklist, true, false);
+							
+							if (Math.random() < 0.08)
+							{
+
+								liqpos.add(new BlockPos(placepos.add(-1, 0, -1)));
+								System.out.println("liquid_slime");
+							}
 						}
 
 						/*if (!primalBiome)
@@ -259,8 +334,29 @@ public class OBLMushProcedure extends CocModElements.ModElement {
 			BlockPos fogpos;
 			while (iter.hasNext())
 			{
-				fogpos = (new BlockPos((Vec3d) iter.next()));
+				fogpos = new BlockPos((Vec3d) iter.next());
 				world.setBlockState(fogpos, MushFoggerBlock.block.getDefaultState(), 2);
+			}
+		}
+
+		if (!liqpos.isEmpty())
+		{
+			Iterator iter = liqpos.iterator();
+			BlockPos liq;
+			while (iter.hasNext())
+			{
+				liq = (BlockPos) iter.next();
+				int liqY = (int) liq.getY();
+				for (int l = 0; l < 15; l++)
+				{
+					if (!world.isAirBlock(new BlockPos(liq.getX(), liqY - 1, liq.getZ()))) break;
+					liqY--;
+				}
+				BlockPos liq2 = new BlockPos(liq.getX(), liqY, liq.getZ());
+				if (liqY < y - 10)
+				{
+					world.setBlockState(liq2.up(3), LiquidGeneratorBlock.block.getDefaultState(), 3);
+				}
 			}
 		}
 		//System.out.println("placed fog emitters");

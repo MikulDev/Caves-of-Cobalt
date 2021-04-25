@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "stalagmite",
@@ -20,12 +20,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
-    "mx": 0.19999999999999998,
-    "my": 0.0,
-    "mz": 0.19999999999999998,
-    "Mx": 0.7999999999999999,
-    "My": 0.7,
-    "Mz": 0.7999999999999999,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 3.1999999999999997,
+        "my": 0.0,
+        "mz": 3.1999999999999997,
+        "Mx": 12.799999999999999,
+        "My": 11.2,
+        "Mz": 12.799999999999999,
+        "subtract": false
+      }
+    ],
     "name": "Infested Stalagmite",
     "specialInfo": [],
     "hardness": 2.0,
@@ -61,6 +67,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {

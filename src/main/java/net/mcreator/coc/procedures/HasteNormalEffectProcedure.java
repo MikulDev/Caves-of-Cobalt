@@ -24,6 +24,6 @@ public class HasteNormalEffectProcedure extends CocModElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HASTE, (int) 3600, (int) 0, (false), (true)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HASTE, (int) 6000, (int) 0, (false), (true)));
 	}
 }

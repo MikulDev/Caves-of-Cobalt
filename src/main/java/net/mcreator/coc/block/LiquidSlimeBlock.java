@@ -64,7 +64,7 @@ public class LiquidSlimeBlock extends CocModElements.ModElement {
 	@Override
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing,
-				FluidAttributes.builder(new ResourceLocation("coc:blocks/mire_still"), new ResourceLocation("coc:blocks/mire_flowing")).luminosity(0)
+				FluidAttributes.builder(new ResourceLocation("coc:blocks/mire_still"), new ResourceLocation("coc:blocks/mire_flowing")).luminosity(1)
 						.density(50000).viscosity(6000)).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("liquid_slime");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("liquid_slime_flowing");

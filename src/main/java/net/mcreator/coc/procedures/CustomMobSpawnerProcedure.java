@@ -147,7 +147,7 @@ public class CustomMobSpawnerProcedure extends CocModElements.ModElement {
 						k - 40 + Math.round(Math.random() * 80));
 				if (world.getBlockState(new BlockPos(location.getX(), location.getY() - 1, location.getZ())).getBlock() == Blocks.STONE
 						&& entity.getDistanceSq((double) location.getX(), (double) location.getY(), (double) location.getZ()) > 200
-						&& world.getBlockState(location).getBlock() == Blocks.AIR) {
+						&& world.getBlockState(location).getBlock() == Blocks.CAVE_AIR) {
 					Entity watcher = new WatcherEntity.CustomEntity(WatcherEntity.entity, world);
 					watcher.setPosition((double) location.getX(), (double) location.getY(), (double) location.getZ());
 					if (!world.isRemote)

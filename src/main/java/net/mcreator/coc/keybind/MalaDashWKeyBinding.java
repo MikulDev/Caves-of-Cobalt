@@ -40,7 +40,7 @@ public class MalaDashWKeyBinding extends CocModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mcreator.mala_dash_w", GLFW.GLFW_KEY_W, "key.categories.caves_of_cobalt");
+		keys = new KeyBinding("key.coc.mala_dash_w", GLFW.GLFW_KEY_W, "key.categories.caves_of_cobalt");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

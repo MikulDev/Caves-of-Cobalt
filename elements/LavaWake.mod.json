@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "particle",
   "definition": {
     "texture": "ambient_lava_bubble.png",
@@ -12,6 +12,8 @@
     "gravity": -0.05,
     "maxAge": 30,
     "maxAgeDiff": 10,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
     "canCollide": true,
     "alwaysShow": false,
     "renderType": "TRANSLUCENT"

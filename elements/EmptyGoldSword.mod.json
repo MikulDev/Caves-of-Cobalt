@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -13,15 +13,22 @@
       "value": "CUSTOM:Jeweling"
     },
     "toolType": "Sword",
-    "harvestLevel": 1,
+    "harvestLevel": 2,
     "efficiency": 4.0,
-    "attackSpeed": 1.8,
+    "attackSpeed": 1.6,
     "enchantability": 2,
-    "damageVsEntity": 6.0,
-    "usageCount": 400,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "CUSTOM:LumpOfGold"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false

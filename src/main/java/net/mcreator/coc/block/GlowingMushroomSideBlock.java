@@ -84,17 +84,15 @@ public class GlowingMushroomSideBlock extends CocModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
 			switch ((Direction) state.get(FACING)) {
-				case UP :
-				case DOWN :
 				case SOUTH :
 				default :
-					return VoxelShapes.create(0.8D, 0D, 0.7D, 0.2D, 1D, 0D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(12.8, 0, 11.2, 3.2, 16, 0)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.create(0.2D, 0D, 0.3D, 0.8D, 1D, 1D).withOffset(offset.x, offset.y, offset.z);
-				case WEST :
-					return VoxelShapes.create(0.3D, 0D, 0.8D, 1D, 1D, 0.2D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(3.2, 0, 4.8, 12.8, 16, 16)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.create(0.7D, 0D, 0.2D, 0D, 1D, 0.8D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(11.2, 0, 3.2, 0, 16, 12.8)).withOffset(offset.x, offset.y, offset.z);
+				case WEST :
+					return VoxelShapes.or(makeCuboidShape(4.8, 0, 12.8, 16, 16, 3.2)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 

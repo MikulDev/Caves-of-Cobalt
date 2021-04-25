@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -40,8 +40,8 @@
     "bootsModelTexture": "From armor",
     "maxDamage": 50,
     "damageValueHelmet": 2,
-    "damageValueBody": 7,
-    "damageValueLeggings": 6,
+    "damageValueBody": 5,
+    "damageValueLeggings": 4,
     "damageValueBoots": 2,
     "enchantability": 22,
     "toughness": 1.0,
@@ -49,6 +49,10 @@
     "equipSound": {
       "value": ""
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ]
   }
 }

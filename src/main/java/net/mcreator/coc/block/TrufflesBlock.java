@@ -126,17 +126,15 @@ public class TrufflesBlock extends CocModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
 			switch ((Direction) state.get(FACING)) {
-				case UP :
-				case DOWN :
 				case SOUTH :
 				default :
-					return VoxelShapes.create(0.874D, 0D, 0.937D, 0.126D, 0.5D, 0.189D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(13.984, 0, 14.992, 2.016, 8, 3.024)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.create(0.126D, 0D, 0.063D, 0.874D, 0.5D, 0.811D).withOffset(offset.x, offset.y, offset.z);
-				case WEST :
-					return VoxelShapes.create(0.063D, 0D, 0.874D, 0.811D, 0.5D, 0.126D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(2.016, 0, 1.008, 13.984, 8, 12.976)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.create(0.937D, 0D, 0.126D, 0.189D, 0.5D, 0.874D).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(14.992, 0, 2.016, 3.024, 8, 13.984)).withOffset(offset.x, offset.y, offset.z);
+				case WEST :
+					return VoxelShapes.or(makeCuboidShape(1.008, 0, 13.984, 12.976, 8, 2.016)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 

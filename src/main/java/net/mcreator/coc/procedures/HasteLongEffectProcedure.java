@@ -24,6 +24,6 @@ public class HasteLongEffectProcedure extends CocModElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HASTE, (int) 7200, (int) 0, (false), (true)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HASTE, (int) 10800, (int) 0, (false), (true)));
 	}
 }

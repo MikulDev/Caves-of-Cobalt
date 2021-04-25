@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -13,15 +13,19 @@
       "value": "CUSTOM:Jeweling"
     },
     "toolType": "Sword",
-    "harvestLevel": 3,
+    "harvestLevel": 4,
     "efficiency": 14.0,
-    "attackSpeed": 1.8,
+    "attackSpeed": 1.6,
     "enchantability": 50,
     "damageVsEntity": 6.0,
-    "usageCount": 2000,
+    "usageCount": 1500,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:LesserTopaz"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,

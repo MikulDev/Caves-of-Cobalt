@@ -158,8 +158,7 @@ public class GhastletEntity extends CocModElements.ModElement {
 						// System.out.println("has path to follow");
 						if (!this.moving)
 						{
-							this.nextMove = new Vec3d((double) pathBlocks.get(this.moveNumber).getX(),
-									(double) pathBlocks.get(this.moveNumber).getY(), (double) pathBlocks.get(this.moveNumber).getZ());
+							this.nextMove = new Vec3d((double) pathBlocks.get(this.moveNumber).getX(), (double) pathBlocks.get(this.moveNumber).getY(), (double) pathBlocks.get(this.moveNumber).getZ());
 							// System.out.println(nextMove);
 							this.moving = true;
 							this.moveNumber++;
@@ -277,7 +276,7 @@ public class GhastletEntity extends CocModElements.ModElement {
 				{
 					for (int c = 0; c < 6; ++c) 
 					{
-						nextCheck = nextBlock.add(Math.round((Math.random() - 0.5) * 2.5), Math.round((Math.random() - 0.5) * 2.5), Math.round((Math.random() - 0.5) * 2.5));
+						nextCheck = nextBlock.add(Math.round((Math.random() - 0.5) * 4), Math.round((Math.random() - 0.5) * 2), Math.round((Math.random() - 0.5) * 4));
 						if (world.isAirBlock(nextCheck) && nextCheck != prevBlock) 
 						{
 							if ((CustomEntity.this.homePos != null && Math.abs(nextCheck.getX() - CustomEntity.this.homePos.getX()) < 13

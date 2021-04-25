@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -40,8 +40,8 @@
     "bootsModelTexture": "From armor",
     "maxDamage": 80,
     "damageValueHelmet": 2,
-    "damageValueBody": 5,
-    "damageValueLeggings": 4,
+    "damageValueBody": 7,
+    "damageValueLeggings": 6,
     "damageValueBoots": 2,
     "enchantability": 22,
     "toughness": 2.5,
@@ -49,6 +49,10 @@
     "equipSound": {
       "value": ""
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:Amethyst"
+      }
+    ]
   }
 }

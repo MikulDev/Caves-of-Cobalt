@@ -75,7 +75,7 @@ public class ColdPlantBottomBlock extends CocModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.2D, 0D, 0.2D, 0.8D, 1D, 0.8D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(3.2, 0, 3.2, 12.8, 16, 12.8)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

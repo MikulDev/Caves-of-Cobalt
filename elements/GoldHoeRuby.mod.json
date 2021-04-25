@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -19,7 +19,7 @@
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 450,
+    "usageCount": 800,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [

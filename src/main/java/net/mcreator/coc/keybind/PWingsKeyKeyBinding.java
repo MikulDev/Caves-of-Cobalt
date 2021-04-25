@@ -39,7 +39,7 @@ public class PWingsKeyKeyBinding extends CocModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mcreator.pwingskey", GLFW.GLFW_KEY_SPACE, "key.categories.caves_of_cobalt");
+		keys = new KeyBinding("key.coc.pwingskey", GLFW.GLFW_KEY_SPACE, "key.categories.caves_of_cobalt");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

@@ -1,11 +1,11 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "fluid",
   "definition": {
     "name": "LiquidSlime",
     "textureStill": "mire_still",
     "textureFlowing": "mire_flowing",
-    "luminosity": 0,
+    "luminosity": 1,
     "density": 50000,
     "viscosity": 6000,
     "isGas": false,

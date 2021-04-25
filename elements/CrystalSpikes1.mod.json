@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "crystal_spike_1",
@@ -20,12 +20,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "TRANSLUCENT",
-    "mx": 0.1,
-    "my": 0.0,
-    "mz": 0.1,
-    "Mx": 0.9,
-    "My": 0.6,
-    "Mz": 0.9,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 1.6,
+        "my": 0.0,
+        "mz": 1.6,
+        "Mx": 14.4,
+        "My": 9.6,
+        "Mz": 14.4,
+        "subtract": false
+      }
+    ],
     "name": "Crystals",
     "specialInfo": [],
     "hardness": 1.0,
@@ -61,6 +67,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "soundOnStep": {

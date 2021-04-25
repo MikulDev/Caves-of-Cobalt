@@ -26,6 +26,7 @@ import net.minecraft.client.renderer.entity.model.BipedModel;
 
 import net.mcreator.coc.procedures.RadiantTopazHelmEffectProcedure;
 import net.mcreator.coc.procedures.RadiantTopazBootsEffectProcedure;
+import net.mcreator.coc.item.RadientTopazItem;
 import net.mcreator.coc.itemgroup.JewelingItemGroup;
 import net.mcreator.coc.CocModElements;
 
@@ -56,7 +57,7 @@ public class RadiantTopazGoldArmorItem extends CocModElements.ModElement {
 	public void initElements() {
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 150;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 115;
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
@@ -72,7 +73,7 @@ public class RadiantTopazGoldArmorItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(RadientTopazItem.block, (int) (1)), new ItemStack(LumpOfGoldItem.block, (int) (1)));
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -245,7 +246,7 @@ public class RadiantTopazGoldArmorItem extends CocModElements.ModElement {
 			this.leg_over_left.addBox(-2.0F, 0.0F, -2.0F, 4, 12, 4, 0.25F);
 			this.helmet = new ModelRenderer(this, 0, 64);
 			this.helmet.setRotationPoint(0.0F, 0.0F, 0.0F);
-			this.helmet.addBox(-4.5F, -8.5F, -4.5F, 9, 9, 9, 0.0F);
+			this.helmet.addBox(-4.5F, -8.5F, -4.5F, 9, 9, 9, 0.2F);
 			this.leg_over_right = new ModelRenderer(this, 0, 48);
 			this.leg_over_right.setRotationPoint(1.9F, 12.0F, 0.1F);
 			this.leg_over_right.addBox(-2.0F, 0.0F, -2.0F, 4, 12, 4, 0.25F);

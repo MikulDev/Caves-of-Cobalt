@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "food",
   "definition": {
     "renderType": 0,
@@ -15,6 +15,9 @@
     "nutritionalValue": 6,
     "saturation": 0.3,
     "eatingSpeed": 40,
+    "resultItem": {
+      "value": ""
+    },
     "forDogs": true,
     "isAlwaysEdible": false,
     "animation": "eat",

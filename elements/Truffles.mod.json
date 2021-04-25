@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "truffle_item",
@@ -18,12 +18,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
-    "mx": 0.126,
-    "my": 0.0,
-    "mz": 0.063,
-    "Mx": 0.874,
-    "My": 0.5,
-    "Mz": 0.811,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 2.016,
+        "my": 0.0,
+        "mz": 1.008,
+        "Mx": 13.984,
+        "My": 8.0,
+        "Mz": 12.976,
+        "subtract": false
+      }
+    ],
     "name": "Truffles",
     "specialInfo": [],
     "hardness": 0.1,
@@ -59,6 +65,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "soundOnStep": {

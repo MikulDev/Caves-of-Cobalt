@@ -36,7 +36,7 @@ public class RadiantTopazGoldSwordItem extends CocModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 2000;
+				return 1500;
 			}
 
 			public float getEfficiency() {
@@ -48,7 +48,7 @@ public class RadiantTopazGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 3;
+				return 4;
 			}
 
 			public int getEnchantability() {
@@ -56,9 +56,9 @@ public class RadiantTopazGoldSwordItem extends CocModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(LesserTopazItem.block, (int) (1)));
 			}
-		}, 3, -2.2f, new Item.Properties().group(JewelingItemGroup.tab)) {
+		}, 3, -2.4f, new Item.Properties().group(JewelingItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -13,15 +13,19 @@
       "value": "CUSTOM:Jeweling"
     },
     "toolType": "Axe",
-    "harvestLevel": 2,
+    "harvestLevel": 3,
     "efficiency": 14.0,
-    "attackSpeed": 1.4,
+    "attackSpeed": 1.0,
     "enchantability": 22,
     "damageVsEntity": 10.0,
-    "usageCount": 300,
+    "usageCount": 600,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false

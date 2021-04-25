@@ -41,7 +41,12 @@ public class HellBushDropProcedure extends CocModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		for (int index0 = 0; index0 < (int) ((1 + ((new java.util.Random()).nextInt((int) 1 + 1)))); index0++) {
+		if (!world.getWorld().isRemote) {
+			ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), (x + 0.5), y, (z + 0.5), new ItemStack(HellberryItem.block, (int) (1)));
+			entityToSpawn.setPickupDelay((int) 10);
+			world.addEntity(entityToSpawn);
+		}
+		if ((Math.random() < 0.3)) {
 			if (!world.getWorld().isRemote) {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), (x + 0.5), y, (z + 0.5), new ItemStack(HellberryItem.block, (int) (1)));
 				entityToSpawn.setPickupDelay((int) 10);

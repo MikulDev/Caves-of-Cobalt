@@ -47,7 +47,7 @@ public class HellberryItem extends CocModElements.ModElement {
 
 		@Override
 		public int getUseDuration(ItemStack stack) {
-			return 20;
+			return 12;
 		}
 
 		@Override

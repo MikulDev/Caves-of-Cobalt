@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "brown_mushroom_shelves_caps",
@@ -20,12 +20,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
-    "mx": 0.2,
-    "my": 0.2,
-    "mz": 0.7,
-    "Mx": 0.8,
-    "My": 0.9,
-    "Mz": 1.0,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 3.2,
+        "my": 3.2,
+        "mz": 11.2,
+        "Mx": 12.8,
+        "My": 14.4,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
     "name": "Brown Mushroom Shelves",
     "specialInfo": [],
     "hardness": 0.0,
@@ -61,6 +67,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "soundOnStep": {

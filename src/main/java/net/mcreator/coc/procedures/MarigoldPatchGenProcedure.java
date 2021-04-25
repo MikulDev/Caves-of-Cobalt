@@ -58,6 +58,7 @@ public class MarigoldPatchGenProcedure extends CocModElements.ModElement {
 		placer.carveAreaHollow(world.getWorld(), Blocks.DIRT.getDefaultState(), spawnOrigin, sizeX, sizeY, sizeZ, blocks, true);
 		int flowerY = spawnOrigin.getY();
 		int reps = 0;
+		if (y < 10) y = 10;
 		while (!world.getBlockState(new BlockPos(spawnOrigin.getX(), flowerY, spawnOrigin.getZ())).isSolid())
 		{
 			flowerY--;

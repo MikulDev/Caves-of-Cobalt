@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -15,10 +15,10 @@
     "toolType": "Pickaxe",
     "harvestLevel": 5,
     "efficiency": 14.0,
-    "attackSpeed": 1.8,
+    "attackSpeed": 1.2,
     "enchantability": 30,
     "damageVsEntity": 6.0,
-    "usageCount": 2000,
+    "usageCount": 1500,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [

@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "block",
   "definition": {
     "texture": "tendrils_bottom",
@@ -20,12 +20,18 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
-    "mx": 0.15,
-    "my": 0.0,
-    "mz": 0.15,
-    "Mx": 0.85,
-    "My": 1.0,
-    "Mz": 0.85,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 2.4,
+        "my": 0.0,
+        "mz": 2.4,
+        "Mx": 13.6,
+        "My": 16.0,
+        "Mz": 13.6,
+        "subtract": false
+      }
+    ],
     "name": "Tendrils End",
     "specialInfo": [],
     "hardness": 0.0,
@@ -61,6 +67,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": true,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "soundOnStep": {

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "coc:jeweling_tab_icon"
+    },
+    "title": {
+      "translate": "advancements.socket_gem_adv.title"
+    },
+    "description": {
+      "translate": "advancements.socket_gem_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "socket_gem_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "minecraft:story/iron_tools"
+}

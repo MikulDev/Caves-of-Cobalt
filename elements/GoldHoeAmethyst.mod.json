@@ -1,5 +1,5 @@
 {
-  "_fv": 15,
+  "_fv": 17,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -8,7 +8,7 @@
     "name": "Golden Hoe",
     "specialInfo": [
       "§5Amethyst§r",
-      "§8Plants seeds from offhand when harvesting crops§r"
+      "§8Tills a 3x3 of crops§r"
     ],
     "creativeTab": {
       "value": "CUSTOM:Jeweling"
@@ -19,12 +19,12 @@
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 450,
+    "usageCount": 1500,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:Ruby"
+        "value": "CUSTOM:Amethyst"
       }
     ],
     "immuneToFire": false,
